@@ -1,0 +1,6 @@
+name: wids-pune
+recipe: pantheon
+config:
+  framework: drupal8
+  site: wids-pune
+  id: c9066957-0617-4aac-b7ba-ec0d78b6cd5c
