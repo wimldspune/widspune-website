@@ -1,20 +1,11 @@
 favicon:
   mimetype: image/vnd.microsoft.icon
   path: ''
-  url: 'http://widspune2019.lndo.site/themes/custom/widspune/favicon.ico'
+  url: 'http://wids-pune.lndo.site/themes/custom/widspune/favicon.ico'
   use_default: true
 schemas:
   bootstrap: 8000
   widspune: 8000
-features:
-  comment_user_picture: true
-  comment_user_verification: true
-  favicon: true
-  node_user_picture: true
-logo:
-  path: ''
-  url: ''
-  use_default: true
 fluid_container: 1
 table_responsive: '-1'
 region_wells:
@@ -27,7 +18,7 @@ region_wells:
   content_top: ''
   content: ''
   sidebar_first: ''
-  sidebar_second: well
+  sidebar_second: ''
   content_bottom: ''
   footer: ''
 cdn_theme: bootstrap
@@ -37,3 +28,12 @@ cdn_cache_ttl_assets: '0'
 cdn_cache_ttl_library: '0'
 reset_http_request_cache: ''
 table: ''
+logo:
+  path: 'public://widspunelogo.png'
+  url: ''
+  use_default: false
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+  node_user_picture: true
