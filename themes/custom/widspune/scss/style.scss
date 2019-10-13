@@ -1,0 +1,18 @@
+// Bootstrap Framework.
+//@import '../bootstrap/default-variables';
+//@import '../bootstrap/drupal-bootstrap';
+@import '../bootstrap/assets/stylesheets/bootstrap';
+
+// Base-theme overrides.
+@import 'overrides';
+
+//custom subtheme variable
+@import "variables/color-variables";
+@import "variables/default-variables";
+
+//custom subtheme components
+@import "component/pages/default-pages";
+@import "component/pages/front-page";
+@import "component/pages/responsive_page";
+
+@import "component/regions/page-banner";

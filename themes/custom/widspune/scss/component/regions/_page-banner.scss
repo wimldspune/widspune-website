@@ -1,0 +1,23 @@
+#block-homepagebanner {
+  font-family: 'News Cycle';
+  vertical-align: middle;
+  height: auto;
+  background: url(../images/homepage_banner.jpg) 50% 50% no-repeat;
+  background-size: cover;
+  .field {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0px;
+    color: $lightcolor;
+    text-align: center;
+    background-color: #00000069;
+    background-clip: content-box;
+    h3 {
+      font-size: 60px;
+    }
+    p {
+      font-size: 25px;
+      margin-bottom: 20px;
+    }
+  }
+}
