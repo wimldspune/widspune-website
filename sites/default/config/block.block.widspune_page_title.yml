@@ -1,0 +1,27 @@
+uuid: 70150512-1f07-44cd-893b-758542741296
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - widspune
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: widspune_page_title
+theme: widspune
+region: content
+weight: -8
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }

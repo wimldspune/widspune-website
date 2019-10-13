@@ -1,0 +1,22 @@
+uuid: c6b18365-b42a-4276-8909-9d8c2373fee5
+langcode: en
+status: true
+dependencies:
+  theme:
+    - widspune
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: widspune_local_tasks
+theme: widspune
+region: content
+weight: -7
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

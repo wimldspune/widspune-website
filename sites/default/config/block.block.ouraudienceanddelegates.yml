@@ -1,0 +1,31 @@
+uuid: 03d11330-62cd-4995-b8ef-e09a1a3569f8
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:description_and_images:67d05a3e-9b18-437d-9bc0-bbcc26385782'
+  module:
+    - block_content
+    - system
+  theme:
+    - widspune
+id: ouraudienceanddelegates
+theme: widspune
+region: content_bottom
+weight: 0
+provider: null
+plugin: 'block_content:67d05a3e-9b18-437d-9bc0-bbcc26385782'
+settings:
+  id: 'block_content:67d05a3e-9b18-437d-9bc0-bbcc26385782'
+  label: 'Our Audience and Delegates'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

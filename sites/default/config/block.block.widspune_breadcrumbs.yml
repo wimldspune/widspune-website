@@ -1,0 +1,22 @@
+uuid: 8705145f-f2de-4500-a904-afb33302add2
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - widspune
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: widspune_breadcrumbs
+theme: widspune
+region: navigation_collapsible
+weight: -7
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

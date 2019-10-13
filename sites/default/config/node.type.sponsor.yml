@@ -1,0 +1,18 @@
+uuid: 67b59d48-74ba-4744-9a1b-59ccea8f987b
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Sponsor
+type: sponsor
+description: 'Sponsor for the event'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

@@ -1,0 +1,28 @@
+uuid: 8bacd3a2-ca22-44fa-b54d-73fb790a3727
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.tracks.body
+    - node.type.tracks
+  module:
+    - text
+    - user
+id: node.tracks.default
+targetEntityType: node
+bundle: tracks
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

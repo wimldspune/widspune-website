@@ -1,0 +1,8 @@
+uuid: 0553964f-af6b-47a5-b1ed-4fa30bbc88ef
+langcode: en
+status: true
+dependencies: {  }
+name: 'Sponsor type'
+vid: sponsor_type
+description: 'Type of the sponsor '
+weight: 0

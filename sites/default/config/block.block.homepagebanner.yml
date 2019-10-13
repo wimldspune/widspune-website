@@ -1,0 +1,31 @@
+uuid: ea03f0fc-3c8b-4d78-8d01-06bb4a2bba4a
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:b580d776-be1a-4d0c-8257-a7d96d84f4a9'
+  module:
+    - block_content
+    - system
+  theme:
+    - widspune
+id: homepagebanner
+theme: widspune
+region: page_banner
+weight: 0
+provider: null
+plugin: 'block_content:b580d776-be1a-4d0c-8257-a7d96d84f4a9'
+settings:
+  id: 'block_content:b580d776-be1a-4d0c-8257-a7d96d84f4a9'
+  label: 'Homepage Banner'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

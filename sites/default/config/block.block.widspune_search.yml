@@ -1,0 +1,22 @@
+uuid: a2569924-ad13-4e6c-b751-3246999ad34e
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - widspune
+_core:
+  default_config_hash: za-39d5WDUg6XvbyqSnuVYEeq6QM4qKJxW8MnoAha5A
+id: widspune_search
+theme: widspune
+region: sidebar_second
+weight: -6
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+visibility: {  }
