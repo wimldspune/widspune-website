@@ -4,3 +4,21 @@ config:
   framework: drupal8
   site: wids-pune
   id: c9066957-0617-4aac-b7ba-ec0d78b6cd5c
+proxy:
+  mailhog:
+    - mail.wids-pune.lndo.site
+services:
+  mailhog:
+    type: mailhog
+    hogfrom:
+      - appserver
+    portforward: true
+tooling:
+  npm:
+    service: node
+  yarn:
+    service: node
+  node:
+    service: node
+  gulp:
+    service: node
