@@ -60,3 +60,10 @@ Thumbs.db
 # Things in the core directory that Drupal 8 commits in the repository.
 !core/**/*.gz
 
+# Ignore custom theme build artifacts
+themes/custom/*/node_modules
+themes/contrib/bootstrap/bower_components
+themes/contrib/bootstrap/config.codekit
+themes/contrib/bootstrap/node_modules
+themes/contrib/bootstrap/npm-debug.log
+
