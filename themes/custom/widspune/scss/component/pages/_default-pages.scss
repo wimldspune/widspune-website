@@ -12,7 +12,7 @@ h1, h2, h3, h4, h5 {
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 50px;
   color: $basetextcolor;
 }
 
@@ -32,7 +32,7 @@ a, a:hover, a:focus, a:active {
   .navbar-collapse {
     width: 100%;
     .region-navigation-collapsible {
-      .contextual-region {
+      nav {
         float: right;
       }
     }

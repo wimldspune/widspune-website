@@ -8784,7 +8784,7 @@ h1, h2, h3, h4, h5 {
 
 /* line 14, ../scss/component/pages/_default-pages.scss */
 h2 {
-  font-size: 40px;
+  font-size: 50px;
   color: #00b140;
 }
 
@@ -8805,7 +8805,7 @@ a, a:hover, a:focus, a:active {
   width: 100%;
 }
 /* line 35, ../scss/component/pages/_default-pages.scss */
-.navbar .navbar-collapse .region-navigation-collapsible .contextual-region {
+.navbar .navbar-collapse .region-navigation-collapsible nav {
   float: right;
 }
 
@@ -8866,12 +8866,13 @@ a, a:hover, a:focus, a:active {
 /* line 52, ../scss/component/pages/_front-page.scss */
 .path-frontpage .content_bottom .region-content-bottom .field--type-image .field--item {
   display: inline-block;
+  padding: 0 20px;
 }
-/* line 54, ../scss/component/pages/_front-page.scss */
+/* line 55, ../scss/component/pages/_front-page.scss */
 .path-frontpage .content_bottom .region-content-bottom .field--type-image .field--item img {
   margin: 0 auto;
 }
-/* line 61, ../scss/component/pages/_front-page.scss */
+/* line 62, ../scss/component/pages/_front-page.scss */
 .path-frontpage #block-globalwids2019 {
   height: 450px;
   background: url(../images/counter_background.jpg) 50% 50% no-repeat;
@@ -8880,48 +8881,47 @@ a, a:hover, a:focus, a:active {
   margin: 40px 0;
   font-family: 'News Cycle';
 }
-/* line 68, ../scss/component/pages/_front-page.scss */
+/* line 69, ../scss/component/pages/_front-page.scss */
 .path-frontpage #block-globalwids2019 h2 {
   font-size: 72px;
   color: #fff;
   padding: 35px;
 }
-/* line 73, ../scss/component/pages/_front-page.scss */
+/* line 74, ../scss/component/pages/_front-page.scss */
 .path-frontpage #block-globalwids2019 .counter_outer {
   max-width: 1300px;
   margin: 0 auto;
 }
-/* line 76, ../scss/component/pages/_front-page.scss */
+/* line 77, ../scss/component/pages/_front-page.scss */
 .path-frontpage #block-globalwids2019 .counter_outer .counter {
   width: 30%;
   display: inline-block;
   font-size: 25px;
   line-height: 50px;
 }
-/* line 83, ../scss/component/pages/_front-page.scss */
+/* line 84, ../scss/component/pages/_front-page.scss */
 .path-frontpage #block-globalwids2019 .counter_outer .counter .mid {
   font-family: 'Actor';
   font-size: 18px;
 }
-/* line 88, ../scss/component/pages/_front-page.scss */
+/* line 89, ../scss/component/pages/_front-page.scss */
 .path-frontpage #block-globalwids2019 .counter_outer .counter .counter_number .count {
   font-size: 70px;
 }
-/* line 95, ../scss/component/pages/_front-page.scss */
+/* line 96, ../scss/component/pages/_front-page.scss */
 .path-frontpage .view-sponsor-list {
   max-width: 1300px;
   margin: 0 auto;
 }
-/* line 98, ../scss/component/pages/_front-page.scss */
+/* line 99, ../scss/component/pages/_front-page.scss */
 .path-frontpage .view-sponsor-list .views-row {
-  clear: both;
+  display: inline-block;
 }
-/* line 100, ../scss/component/pages/_front-page.scss */
+/* line 102, ../scss/component/pages/_front-page.scss */
 .path-frontpage .view-sponsor-list .views-row .views-field {
   display: inline-block;
-  float: left;
 }
-/* line 103, ../scss/component/pages/_front-page.scss */
+/* line 105, ../scss/component/pages/_front-page.scss */
 .path-frontpage .view-sponsor-list .views-row .views-field .field-content {
   padding: 0 10px;
 }
