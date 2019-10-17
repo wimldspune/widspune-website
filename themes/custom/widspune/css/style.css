@@ -8927,15 +8927,14 @@ a, a:hover, a:focus, a:active {
 }
 
 /* line 1, ../scss/component/regions/_page-banner.scss */
-#block-homepagebanner {
+.header-banner-wrapper {
   font-family: 'News Cycle';
   vertical-align: middle;
   height: auto;
-  background: url(../images/homepage_banner.jpg) 50% 50% no-repeat;
   background-size: cover;
 }
-/* line 7, ../scss/component/regions/_page-banner.scss */
-#block-homepagebanner .field {
+/* line 6, ../scss/component/regions/_page-banner.scss */
+.header-banner-wrapper .header-content {
   max-width: 1200px;
   margin: 0 auto;
   padding: 100px 0px;
@@ -8944,12 +8943,12 @@ a, a:hover, a:focus, a:active {
   background-color: #00000069;
   background-clip: content-box;
 }
-/* line 15, ../scss/component/regions/_page-banner.scss */
-#block-homepagebanner .field h3 {
+/* line 14, ../scss/component/regions/_page-banner.scss */
+.header-banner-wrapper .header-content h3 {
   font-size: 60px;
 }
-/* line 18, ../scss/component/regions/_page-banner.scss */
-#block-homepagebanner .field p {
+/* line 17, ../scss/component/regions/_page-banner.scss */
+.header-banner-wrapper .header-content .field--name-body {
   font-size: 25px;
   margin-bottom: 20px;
 }
