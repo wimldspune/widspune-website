@@ -1,0 +1,5 @@
+name: "WiDS Pune Homepage"
+description: "Homepage controller."
+type: "module"
+core: "8.x"
+package: "Widspune"
