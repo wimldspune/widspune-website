@@ -11,7 +11,7 @@ _core:
 id: widspune_powered
 theme: widspune
 region: footer
-weight: -6
+weight: -9
 provider: null
 plugin: system_powered_by_block
 settings:

@@ -1,0 +1,20 @@
+uuid: 7cb78b0c-94bf-4fe4-8178-e2f01b5ec6b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_education
+  module:
+    - user
+id: user.user.field_education
+field_name: field_education
+entity_type: user
+bundle: user
+label: 'Educational Qualifications with Specialisation e.g. BE - Computer Science'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,16 +1,17 @@
-uuid: a8fd69fa-b548-44eb-bdfc-2196a3f522d5
+uuid: 42e0db55-1507-432b-a852-d0e47c766644
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_sponsoring_year
-    - node.type.sponsor
-    - taxonomy.vocabulary.sponsoring_year
-id: node.sponsor.field_sponsoring_year
-field_name: field_sponsoring_year
-entity_type: node
-bundle: sponsor
-label: 'Sponsoring Year'
+    - field.storage.user.field_user_phone_type
+    - taxonomy.vocabulary.smartphone_type
+  module:
+    - user
+id: user.user.field_user_phone_type
+field_name: field_user_phone_type
+entity_type: user
+bundle: user
+label: 'What is your smart phone type?'
 description: ''
 required: false
 translatable: false
@@ -20,7 +21,7 @@ settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      sponsoring_year: sponsoring_year
+      smartphone_type: smartphone_type
     sort:
       field: name
       direction: asc

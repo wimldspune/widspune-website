@@ -1,0 +1,21 @@
+uuid: b125b619-316e-4cfd-a4fb-f51217562fac
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.field_whatsapp_number
+field_name: field_whatsapp_number
+entity_type: user
+type: string
+settings:
+  max_length: 20
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

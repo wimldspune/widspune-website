@@ -1,16 +1,17 @@
-uuid: a8fd69fa-b548-44eb-bdfc-2196a3f522d5
+uuid: f082cc40-be10-4655-bf88-bbad21b7179a
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_sponsoring_year
-    - node.type.sponsor
-    - taxonomy.vocabulary.sponsoring_year
-id: node.sponsor.field_sponsoring_year
-field_name: field_sponsoring_year
-entity_type: node
-bundle: sponsor
-label: 'Sponsoring Year'
+    - field.storage.user.field_promotion_source
+    - taxonomy.vocabulary.promotion_source
+  module:
+    - user
+id: user.user.field_promotion_source
+field_name: field_promotion_source
+entity_type: user
+bundle: user
+label: 'From where did you hear about this event?'
 description: ''
 required: false
 translatable: false
@@ -20,7 +21,7 @@ settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      sponsoring_year: sponsoring_year
+      promotion_source: promotion_source
     sort:
       field: name
       direction: asc

@@ -1,0 +1,8 @@
+uuid: 70e86cdb-2161-439b-aa9e-5b437c0fa597
+langcode: en
+status: true
+dependencies: {  }
+id: header_banner
+label: 'Header Banner'
+revision: 0
+description: 'Header banner for different pages'

@@ -1,13 +1,13 @@
-uuid: 32e70ea8-773b-41ed-b238-e69c2f6b8edc
+uuid: cf1fe122-fd4a-4ae6-b460-568151e86b05
 langcode: en
 status: true
 dependencies:
   module:
-    - node
     - taxonomy
-id: node.field_sponsoring_year
-field_name: field_sponsoring_year
-entity_type: node
+    - user
+id: user.field_promotion_source
+field_name: field_promotion_source
+entity_type: user
 type: entity_reference
 settings:
   target_type: taxonomy_term

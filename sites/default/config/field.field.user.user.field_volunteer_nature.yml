@@ -1,0 +1,21 @@
+uuid: 83cbfcf1-099c-4d76-bd91-5baa0a4a914f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_volunteer_nature
+  module:
+    - options
+    - user
+id: user.user.field_volunteer_nature
+field_name: field_volunteer_nature
+entity_type: user
+bundle: user
+label: 'Do you want to Volunteer or contribute in any way for this community?'
+description: ' If Yes, specify your interests and what you would like to contribute too?'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

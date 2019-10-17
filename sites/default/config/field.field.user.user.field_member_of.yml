@@ -1,0 +1,21 @@
+uuid: 1ef40422-7f17-4f00-b5cc-e93bd60d4323
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_member_of
+  module:
+    - options
+    - user
+id: user.user.field_member_of
+field_name: field_member_of
+entity_type: user
+bundle: user
+label: 'Are you a member'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

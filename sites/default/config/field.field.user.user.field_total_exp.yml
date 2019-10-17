@@ -1,0 +1,20 @@
+uuid: d3ce8eb9-9c45-4585-a5e3-a48241b5a515
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_total_exp
+  module:
+    - user
+id: user.user.field_total_exp
+field_name: field_total_exp
+entity_type: user
+bundle: user
+label: 'Total Experience'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

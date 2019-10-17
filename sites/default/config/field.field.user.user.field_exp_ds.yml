@@ -1,0 +1,20 @@
+uuid: b4a1b6af-b864-4426-baac-0ae75bf92700
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_exp_ds
+  module:
+    - user
+id: user.user.field_exp_ds
+field_name: field_exp_ds
+entity_type: user
+bundle: user
+label: 'Experience in DS (Data Science)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,8 @@
+uuid: 22da3106-9e48-4147-888c-34a138479a54
+langcode: en
+status: true
+dependencies: {  }
+name: 'Event promotion source'
+vid: promotion_source
+description: 'From where did you hear about this event?:'
+weight: 0

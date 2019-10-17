@@ -1,0 +1,27 @@
+uuid: 9aabf5f1-e861-49ed-a0ca-cc7cff521904
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - user
+id: user.field_volunteer_nature
+field_name: field_volunteer_nature
+entity_type: user
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: yes|
+      label: 'Yes'
+    -
+      value: no|
+      label: 'No'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,8 @@
+uuid: fee1ba98-4ded-4326-8978-ad7bb13c34b5
+langcode: en
+status: true
+dependencies: {  }
+name: 'User smart phone type'
+vid: smartphone_type
+description: 'Mobile type of the user'
+weight: 0
