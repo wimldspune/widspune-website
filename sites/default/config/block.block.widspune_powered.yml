@@ -1,6 +1,6 @@
-uuid: dd070be4-3201-4f83-964c-dc7a09cbc859
+uuid: 316b2d37-1753-4cbf-a4ad-babe4039ce52
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - system
@@ -11,7 +11,7 @@ _core:
 id: widspune_powered
 theme: widspune
 region: footer
-weight: -9
+weight: -12
 provider: null
 plugin: system_powered_by_block
 settings:

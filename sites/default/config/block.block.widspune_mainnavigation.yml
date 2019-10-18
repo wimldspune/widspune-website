@@ -1,4 +1,4 @@
-uuid: e6c41ce1-3cca-4c5f-b48c-3ebf0f5c5fb7
+uuid: aaf7a765-fd94-45b2-b695-34b0748ea708
 langcode: en
 status: true
 dependencies:
@@ -8,12 +8,10 @@ dependencies:
     - system
   theme:
     - widspune
-_core:
-  default_config_hash: ChCx7DYNUrPTt5uiRdQAPDKJQMc-_SyAQTrZh8H0o-c
-id: widspune_main_menu
+id: widspune_mainnavigation
 theme: widspune
-region: navigation_collapsible
-weight: -4
+region: navigation
+weight: -11
 provider: null
 plugin: 'system_menu_block:main'
 settings:
@@ -22,6 +20,6 @@ settings:
   provider: system
   label_display: '0'
   level: 1
-  depth: 1
+  depth: 0
   expand_all_items: false
 visibility: {  }

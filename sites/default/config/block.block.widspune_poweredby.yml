@@ -1,0 +1,25 @@
+uuid: c5ec5e1f-c7f5-404c-938b-1d800a67b2db
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:description_and_images:0842ed50-d4e4-405d-b827-83277338a74e'
+  module:
+    - block_content
+  theme:
+    - widspune
+id: widspune_poweredby
+theme: widspune
+region: navigation
+weight: -11
+provider: null
+plugin: 'block_content:0842ed50-d4e4-405d-b827-83277338a74e'
+settings:
+  id: 'block_content:0842ed50-d4e4-405d-b827-83277338a74e'
+  label: 'Powered by:'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,31 @@
+uuid: 8b3b6d29-6724-4013-858b-236568597401
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:2f161557-a9e0-4ebc-b694-8b11f3c98c1f'
+  module:
+    - block_content
+    - system
+  theme:
+    - widspune
+id: widspune_globalwids2019
+theme: widspune
+region: content_bottom
+weight: -7
+provider: null
+plugin: 'block_content:2f161557-a9e0-4ebc-b694-8b11f3c98c1f'
+settings:
+  id: 'block_content:2f161557-a9e0-4ebc-b694-8b11f3c98c1f'
+  label: 'Global WiDS 2019'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

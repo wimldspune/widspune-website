@@ -1,4 +1,4 @@
-uuid: 9eaf4d91-3c28-4156-8f77-b6751d1c1e79
+uuid: 55eb4d59-7416-4662-b28c-cb90fd0cefc1
 langcode: en
 status: false
 dependencies:
@@ -13,7 +13,7 @@ _core:
 id: widspune_footer
 theme: widspune
 region: footer
-weight: -8
+weight: -11
 provider: null
 plugin: 'system_menu_block:footer'
 settings:

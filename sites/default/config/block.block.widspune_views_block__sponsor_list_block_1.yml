@@ -1,0 +1,30 @@
+uuid: 0af49449-9dd9-49cf-b44f-2d32b3cd3fa6
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.sponsor_list
+  module:
+    - system
+    - views
+  theme:
+    - widspune
+id: widspune_views_block__sponsor_list_block_1
+theme: widspune
+region: content_bottom
+weight: 0
+provider: null
+plugin: 'views_block:sponsor_list-block_1'
+settings:
+  id: 'views_block:sponsor_list-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
