@@ -1,0 +1,5 @@
+# Schema for the theme setting configuration file of the THEMETITLE theme.
+
+widspune20.settings:
+  type: theme_settings
+  label: 'WiDS Pune 2019 settings'

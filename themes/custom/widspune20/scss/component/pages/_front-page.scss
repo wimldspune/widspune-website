@@ -1,0 +1,113 @@
+.path-frontpage {
+  .main-container {
+    .row {
+      max-width: $default-max-width;
+      margin: 0 auto;
+      .view-frontpage {
+        display: none;
+        margin: 20px;
+        .views-row {
+          .content {
+            background-color: $basetextcolor;
+            color: $lightcolor;
+            padding: 20px;
+            a, a:hover, a:active {
+              color: $lightcolor;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  #block-widspune20-aboutus {
+    h2 {
+      color: $basetextcolor;
+      font-size: 72px;
+    }
+    .field {
+      background-color: $basetextcolor;
+      color: $lightcolor;
+      padding: 20px;
+      p{
+        margin: 0 0 20px;
+        line-height: 1.7;
+      }
+      .row {
+        text-align: center;
+        font-size: 20px;
+        .social_icon {
+          padding: 0 3px;
+          a, a:hover, a:active {
+            color: $lightcolor;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+  .content_bottom {
+    .region-content-bottom {
+      text-align: center;
+      .field--type-image {
+        .field--item {
+          display: inline-block;
+          padding: 0 20px;
+          img {
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
+  #block-widspune20-globalwids2019 {
+    height: 450px;
+    background: url(../images/counter_background.jpg) 50% 50% no-repeat;
+    background-size: cover;
+    color: $lightcolor;
+    margin: 40px 0;
+    font-family: 'News Cycle';
+    h2 {
+      font-size: 72px;
+      color: $lightcolor;
+      padding: 35px;
+    }
+    .counter_outer {
+      max-width: $default-max-width;
+      margin: 0 auto;
+      .counter {
+        width: 30%;
+        display: inline-block;
+        font-size: 25px;
+        line-height: 50px;
+        .title {
+        }
+        .mid {
+          font-family: 'Actor';
+          font-size: 18px;
+        }
+        .counter_number {
+          .count {
+            font-size: 70px;
+          }
+        }
+      }
+    }
+  }
+  .view-sponsor-list {
+    max-width: $default-max-width;
+    margin: 0 auto;
+    .views-row {
+      //clear: both;
+      display: inline-block;
+      .views-field {
+        display: inline-block;
+        //float: left;
+        .field-content {
+          padding: 0 10px;
+          img {}
+        }
+      }
+    }
+  }
+}

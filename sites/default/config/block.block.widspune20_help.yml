@@ -1,0 +1,22 @@
+uuid: dc8a8b9a-6bb2-4854-8a73-176e8c607ac2
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - widspune20
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: widspune20_help
+theme: widspune20
+region: content
+weight: -6
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

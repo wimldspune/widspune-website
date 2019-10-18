@@ -1,0 +1,31 @@
+uuid: 3b3518a8-c9fe-4c15-b96a-b7ae375f6c41
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:349fff0e-920c-406a-ad49-616d72984670'
+  module:
+    - block_content
+    - system
+  theme:
+    - widspune20
+id: widspune20_aboutus
+theme: widspune20
+region: content
+weight: -4
+provider: null
+plugin: 'block_content:349fff0e-920c-406a-ad49-616d72984670'
+settings:
+  id: 'block_content:349fff0e-920c-406a-ad49-616d72984670'
+  label: About
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

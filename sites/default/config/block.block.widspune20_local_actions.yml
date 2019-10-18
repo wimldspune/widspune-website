@@ -1,0 +1,20 @@
+uuid: 038d7d88-7a30-4af5-974c-c16764b320c7
+langcode: en
+status: true
+dependencies:
+  theme:
+    - widspune20
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: widspune20_local_actions
+theme: widspune20
+region: content
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

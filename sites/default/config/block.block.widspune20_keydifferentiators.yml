@@ -1,0 +1,31 @@
+uuid: 226c2be8-cb80-42ee-954f-1606e090fa02
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:description_and_images:785fb895-af6a-4bdb-8327-9cd11083aef3'
+  module:
+    - block_content
+    - system
+  theme:
+    - widspune20
+id: widspune20_keydifferentiators
+theme: widspune20
+region: content_bottom
+weight: 0
+provider: null
+plugin: 'block_content:785fb895-af6a-4bdb-8327-9cd11083aef3'
+settings:
+  id: 'block_content:785fb895-af6a-4bdb-8327-9cd11083aef3'
+  label: 'Key Differentiators'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

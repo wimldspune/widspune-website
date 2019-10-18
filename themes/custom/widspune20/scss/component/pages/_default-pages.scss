@@ -1,0 +1,45 @@
+// Base typography for WiDS Pune 2019 theme used site-wide as per style guide.
+body {
+  font-family: 'Actor';
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.75;
+}
+h1, h2, h3, h4, h5 {
+  font-family: 'News Cycle';
+  font-style: normal;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 50px;
+  color: $basetextcolor;
+}
+
+a, a:hover, a:focus, a:active {
+  color: $basetextcolor;
+  text-decoration: none;
+}
+
+.container-fluid {
+  //max-width: 1300px;
+}
+
+.navbar {
+  margin-bottom: 0;
+  border: none;
+  background-color: transparent;
+  .navbar-collapse {
+    width: 100%;
+    .region-navigation-collapsible {
+      nav {
+        float: right;
+      }
+    }
+  }
+}
+
+.main-container {
+}
+
+.content_bottom {}

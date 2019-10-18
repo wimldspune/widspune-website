@@ -1,0 +1,22 @@
+uuid: db348097-2da7-4dbf-b64e-f3f4b3593b11
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - widspune20
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: widspune20_messages
+theme: widspune20
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }
