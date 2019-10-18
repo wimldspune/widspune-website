@@ -185,10 +185,33 @@
 </div>
 
 
-{% if page.footer %}
-  {% block footer %}
-    <footer class="footer {{ container }}" role="contentinfo">
+
+<footer class="footer {{ container }}" role="contentinfo">
+  {% if page.footer_left %}
+    {% block footer_left %}
+      <div class="footer-section">
+        {{ page.footer_left }}
+      </div>
+    {% endblock %}
+  {% endif %}
+  {% if page.footer_center %}
+    {% block footer_center %}
+      <div class="footer-section">
+        {{ page.footer_center }}
+      </div>
+    {% endblock %}
+  {% endif %}
+  {% if page.footer_right %}
+    {% block footer_right %}
+      <div class="footer-section">
+        {{ page.footer_right }}
+      </div>
+    {% endblock %}
+  {% endif %}
+  {% if page.footer %}
+    {% block footer %}
       {{ page.footer }}
-    </footer>
-  {% endblock %}
-{% endif %}
+    {% endblock %}
+  {% endif %}
+</footer>
+

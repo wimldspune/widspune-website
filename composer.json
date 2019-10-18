@@ -10,7 +10,8 @@
         "drupal/social_media": "^1.4",
         "drupal/fontyourface": "^3.2",
         "drupal/addtoany": "^1.12",
-        "drupal/address": "^1.7"
+        "drupal/address": "^1.7",
+        "drupal/social_media_links": "^2.6"
     },
     "replace": {
         "drupal/core": "^8.7"

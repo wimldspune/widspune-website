@@ -8799,14 +8799,75 @@ a, a:hover, a:focus, a:active {
   margin-bottom: 0;
   border: none;
   background-color: transparent;
+  max-width: 1300px;
 }
-/* line 32, ../scss/component/pages/_default-pages.scss */
+/* line 33, ../scss/component/pages/_default-pages.scss */
 .navbar .navbar-collapse {
   width: 100%;
+  padding: 0;
 }
-/* line 35, ../scss/component/pages/_default-pages.scss */
+/* line 37, ../scss/component/pages/_default-pages.scss */
 .navbar .navbar-collapse .region-navigation-collapsible nav {
   float: right;
+  padding: 25px 0px;
+}
+/* line 42, ../scss/component/pages/_default-pages.scss */
+.navbar .navbar-collapse .region-navigation-collapsible nav ul li a {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  padding: 15px 20px;
+  font-size: 13px;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: 0.05em;
+}
+
+/* line 64, ../scss/component/pages/_default-pages.scss */
+.footer {
+  background-color: #eee;
+}
+/* line 66, ../scss/component/pages/_default-pages.scss */
+.footer .footer-section {
+  width: 30%;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+}
+/* line 72, ../scss/component/pages/_default-pages.scss */
+.footer .footer-section .contextual-region h2 {
+  font-size: 25px;
+  padding: 0 0 10px;
+}
+/* line 78, ../scss/component/pages/_default-pages.scss */
+.footer .footer-section .contextual-region .field--name-body .made-with span {
+  color: red;
+}
+/* line 85, ../scss/component/pages/_default-pages.scss */
+.footer .footer-section .contextual-region .field--type-image .field--item img {
+  margin: 0 auto;
+}
+/* line 91, ../scss/component/pages/_default-pages.scss */
+.footer .footer-section nav {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+/* line 95, ../scss/component/pages/_default-pages.scss */
+.footer .footer-section nav ul.navbar-nav {
+  float: none;
+}
+/* line 97, ../scss/component/pages/_default-pages.scss */
+.footer .footer-section nav ul.navbar-nav li {
+  float: none;
+}
+/* line 99, ../scss/component/pages/_default-pages.scss */
+.footer .footer-section nav ul.navbar-nav li a {
+  padding: 8px 0;
+}
+/* line 105, ../scss/component/pages/_default-pages.scss */
+.footer .footer-section .block-social-media-links {
+  margin-bottom: 20px;
 }
 
 /* line 3, ../scss/component/pages/_front-page.scss */
