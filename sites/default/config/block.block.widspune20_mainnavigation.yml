@@ -10,8 +10,8 @@ dependencies:
     - widspune20
 id: widspune20_mainnavigation
 theme: widspune20
-region: footer
-weight: -10
+region: footer_left
+weight: -11
 provider: null
 plugin: 'system_menu_block:main'
 settings:

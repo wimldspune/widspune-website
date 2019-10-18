@@ -1,0 +1,25 @@
+uuid: 7242c6a6-890e-43d3-84c4-5965a5a78a1a
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a2abde46-39b7-4b65-b1d5-51e1081bf069'
+  module:
+    - block_content
+  theme:
+    - widspune20
+id: copyrightblock
+theme: widspune20
+region: footer_center
+weight: 0
+provider: null
+plugin: 'block_content:a2abde46-39b7-4b65-b1d5-51e1081bf069'
+settings:
+  id: 'block_content:a2abde46-39b7-4b65-b1d5-51e1081bf069'
+  label: 'Copyright block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

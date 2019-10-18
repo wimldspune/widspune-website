@@ -17,12 +17,12 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 0
+    weight: 1
     settings: {  }
     third_party_settings: {  }
     region: content
   field_block_image:
-    weight: 1
+    weight: 0
     label: hidden
     settings:
       image_style: ''

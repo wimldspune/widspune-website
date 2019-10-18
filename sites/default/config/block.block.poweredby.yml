@@ -1,0 +1,25 @@
+uuid: afd16f71-34ba-4853-a8cf-199bae7ce831
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:description_and_images:0842ed50-d4e4-405d-b827-83277338a74e'
+  module:
+    - block_content
+  theme:
+    - widspune20
+id: poweredby
+theme: widspune20
+region: footer_right
+weight: -11
+provider: null
+plugin: 'block_content:0842ed50-d4e4-405d-b827-83277338a74e'
+settings:
+  id: 'block_content:0842ed50-d4e4-405d-b827-83277338a74e'
+  label: 'Powered by:'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
