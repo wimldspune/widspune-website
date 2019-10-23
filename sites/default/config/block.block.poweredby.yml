@@ -1,9 +1,9 @@
-uuid: afd16f71-34ba-4853-a8cf-199bae7ce831
+uuid: 5bfc5c05-f1b9-414c-b967-074d658c575c
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:description_and_images:0842ed50-d4e4-405d-b827-83277338a74e'
+    - 'block_content:description_and_images:59f6ec90-a689-4923-98a1-8935e1278a64'
   module:
     - block_content
   theme:
@@ -11,14 +11,14 @@ dependencies:
 id: poweredby
 theme: widspune20
 region: footer_right
-weight: -11
+weight: 0
 provider: null
-plugin: 'block_content:0842ed50-d4e4-405d-b827-83277338a74e'
+plugin: 'block_content:59f6ec90-a689-4923-98a1-8935e1278a64'
 settings:
-  id: 'block_content:0842ed50-d4e4-405d-b827-83277338a74e'
+  id: 'block_content:59f6ec90-a689-4923-98a1-8935e1278a64'
   label: 'Powered by:'
   provider: block_content
-  label_display: visible
+  label_display: '0'
   status: true
   info: ''
   view_mode: full

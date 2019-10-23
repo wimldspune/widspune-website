@@ -1,9 +1,9 @@
-uuid: 7242c6a6-890e-43d3-84c4-5965a5a78a1a
+uuid: 72cdbe92-f5b7-4f65-8bc3-24f433b8997a
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:a2abde46-39b7-4b65-b1d5-51e1081bf069'
+    - 'block_content:basic:89dbeea0-0dd6-44bb-beb1-a276efbf169b'
   module:
     - block_content
   theme:
@@ -13,9 +13,9 @@ theme: widspune20
 region: footer_center
 weight: 0
 provider: null
-plugin: 'block_content:a2abde46-39b7-4b65-b1d5-51e1081bf069'
+plugin: 'block_content:89dbeea0-0dd6-44bb-beb1-a276efbf169b'
 settings:
-  id: 'block_content:a2abde46-39b7-4b65-b1d5-51e1081bf069'
+  id: 'block_content:89dbeea0-0dd6-44bb-beb1-a276efbf169b'
   label: 'Copyright block'
   provider: block_content
   label_display: '0'

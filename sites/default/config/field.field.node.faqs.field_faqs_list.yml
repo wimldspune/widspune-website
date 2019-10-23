@@ -1,0 +1,22 @@
+uuid: 89ec005e-a99e-4483-99fb-df4bfbc6dbfb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_faqs_list
+    - node.type.faqs
+  module:
+    - faqfield
+id: node.faqs.field_faqs_list
+field_name: field_faqs_list
+entity_type: node
+bundle: faqs
+label: 'FAQs list'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  default_format: restricted_html
+field_type: faqfield

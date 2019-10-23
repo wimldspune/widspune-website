@@ -1,0 +1,29 @@
+uuid: b4c50107-2ada-4235-9e82-2a0e72aac385
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.faqs.field_faqs_list
+    - node.type.faqs
+  module:
+    - faqfield
+    - user
+id: node.faqs.default
+targetEntityType: node
+bundle: faqs
+mode: default
+content:
+  field_faqs_list:
+    weight: 102
+    label: hidden
+    settings:
+      anchor_list_type: ul
+    third_party_settings: {  }
+    type: faqfield_anchor_list
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,31 @@
+uuid: 9eaa59d4-e54b-4a1e-bea5-c584b7b02ac4
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:description_and_images:f34a66b0-90fe-48d4-98bd-d3e720bbcb66'
+  module:
+    - block_content
+    - system
+  theme:
+    - widspune20
+id: frontpageregistrationblock
+theme: widspune20
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'block_content:f34a66b0-90fe-48d4-98bd-d3e720bbcb66'
+settings:
+  id: 'block_content:f34a66b0-90fe-48d4-98bd-d3e720bbcb66'
+  label: 'Frontpage registration block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

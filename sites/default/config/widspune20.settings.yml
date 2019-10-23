@@ -4,15 +4,10 @@ schemas:
 favicon:
   mimetype: image/vnd.microsoft.icon
   path: ''
-  url: 'http://marchwidspune20.lndo.site/themes/custom/widspune20/favicon.ico'
+  url: 'https://dev-wids-pune.pantheonsite.io/themes/custom/widspune20/favicon.ico'
   use_default: true
-features:
-  comment_user_picture: true
-  comment_user_verification: true
-  favicon: true
-  node_user_picture: true
 logo:
-  path: 'public://widspunelogo_1.png'
+  path: 'public://widspunelogo_1_0.png'
   url: ''
   use_default: false
 fluid_container: 1
@@ -27,9 +22,12 @@ region_wells:
   content_top: ''
   content: ''
   sidebar_first: ''
-  sidebar_second: well
+  sidebar_second: ''
   content_bottom: ''
   footer: ''
+  footer_left: ''
+  footer_center: ''
+  footer_right: ''
 cdn_theme: bootstrap
 cdn_cache_ttl_versions: '604800'
 cdn_cache_ttl_themes: '604800'
@@ -37,3 +35,8 @@ cdn_cache_ttl_assets: '0'
 cdn_cache_ttl_library: '0'
 reset_http_request_cache: ''
 table: ''
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+  node_user_picture: true

@@ -1,0 +1,31 @@
+uuid: a8054005-dd2f-4192-8473-867a70229697
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:header_banner:a0d40305-2c7d-4480-aa68-d74867d75e07'
+  module:
+    - block_content
+    - system
+  theme:
+    - widspune20
+id: frontpageheaderbanner_2
+theme: widspune20
+region: page_banner
+weight: 0
+provider: null
+plugin: 'block_content:a0d40305-2c7d-4480-aa68-d74867d75e07'
+settings:
+  id: 'block_content:a0d40305-2c7d-4480-aa68-d74867d75e07'
+  label: 'Frontpage header banner'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
