@@ -1,8 +1,8 @@
 .path-frontpage {
   .main-container {
     .row {
-      max-width: $default-max-width;
-      margin: 0 auto;
+      //max-width: $default-max-width;
+      //margin: 0 auto;
       .view-frontpage {
         display: none;
         margin: 20px;
@@ -21,6 +21,7 @@
     }
   }
   #block-widspune20-aboutus {
+    padding-right: 30px;
     h2 {
       color: $basetextcolor;
       font-size: 72px;
@@ -39,25 +40,24 @@
         .social_icon {
           padding: 0 3px;
           a, a:hover, a:active {
-            color: $lightcolor;
+            color: #000;
             text-decoration: none;
           }
         }
       }
     }
   }
-  .content_bottom {
-    .region-content-bottom {
-      text-align: center;
-      .field--type-image {
-        .field--item {
-          display: inline-block;
-          padding: 0 20px;
-          img {
-            margin: 0 auto;
-          }
-        }
-      }
+  #block-frontpageregistrationblock {
+    text-align: center;
+    padding-top: 20px;
+    .field--type-image {
+      margin: 0 auto;
+      max-width: 250px;
+    }
+    .field--name-body {
+      color: $basetextcolor;
+      font-weight: 700;
+      font-size: 30px;
     }
   }
   #block-widspune20-globalwids2019 {

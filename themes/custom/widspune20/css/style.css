@@ -8780,38 +8780,55 @@ h1, h2, h3, h4, h5 {
   font-family: 'News Cycle';
   font-style: normal;
   font-weight: 700;
+  letter-spacing: 1px;
 }
 
-/* line 14, ../scss/component/pages/_default-pages.scss */
+/* line 15, ../scss/component/pages/_default-pages.scss */
 h2 {
-  font-size: 50px;
-  color: #00b140;
+  font-size: 40px;
+  color: #3e3e3e;
 }
 
-/* line 19, ../scss/component/pages/_default-pages.scss */
+/* line 20, ../scss/component/pages/_default-pages.scss */
 a, a:hover, a:focus, a:active {
   color: #00b140;
   text-decoration: none;
 }
 
-/* line 28, ../scss/component/pages/_default-pages.scss */
+/* line 25, ../scss/component/pages/_default-pages.scss */
+h1.page-header {
+  color: #00b140;
+  font-size: 50px;
+}
+
+/* line 30, ../scss/component/pages/_default-pages.scss */
+.main-container {
+  max-width: 1300px;
+  margin: 0 auto 30px;
+}
+/* line 33, ../scss/component/pages/_default-pages.scss */
+.main-container .row {
+  margin: 0 20px;
+}
+
+/* line 38, ../scss/component/pages/_default-pages.scss */
 .navbar {
   margin-bottom: 0;
   border: none;
   background-color: transparent;
   max-width: 1300px;
 }
-/* line 33, ../scss/component/pages/_default-pages.scss */
+/* line 43, ../scss/component/pages/_default-pages.scss */
 .navbar .navbar-collapse {
   width: 100%;
   padding: 0;
 }
-/* line 37, ../scss/component/pages/_default-pages.scss */
+/* line 47, ../scss/component/pages/_default-pages.scss */
 .navbar .navbar-collapse .region-navigation-collapsible nav {
   float: right;
   padding: 25px 0px;
 }
-/* line 42, ../scss/component/pages/_default-pages.scss */
+/* line 52, ../scss/component/pages/_default-pages.scss */
 .navbar .navbar-collapse .region-navigation-collapsible nav ul li a {
   font-family: 'Montserrat';
   font-style: normal;
@@ -8823,58 +8840,67 @@ a, a:hover, a:focus, a:active {
   letter-spacing: 0.05em;
 }
 
-/* line 64, ../scss/component/pages/_default-pages.scss */
+/* line 73, ../scss/component/pages/_default-pages.scss */
+.content_bottom .region-content-bottom {
+  text-align: center;
+}
+/* line 76, ../scss/component/pages/_default-pages.scss */
+.content_bottom .region-content-bottom .field--type-image .field--item {
+  display: inline-block;
+  padding: 0 20px;
+}
+/* line 79, ../scss/component/pages/_default-pages.scss */
+.content_bottom .region-content-bottom .field--type-image .field--item img {
+  margin: 0 auto;
+}
+
+/* line 87, ../scss/component/pages/_default-pages.scss */
 .footer {
   background-color: #eee;
 }
-/* line 66, ../scss/component/pages/_default-pages.scss */
+/* line 89, ../scss/component/pages/_default-pages.scss */
 .footer .footer-section {
   width: 30%;
   display: inline-block;
   text-align: center;
   vertical-align: middle;
 }
-/* line 72, ../scss/component/pages/_default-pages.scss */
-.footer .footer-section .contextual-region h2 {
+/* line 94, ../scss/component/pages/_default-pages.scss */
+.footer .footer-section h2 {
   font-size: 25px;
   padding: 0 0 10px;
 }
-/* line 78, ../scss/component/pages/_default-pages.scss */
-.footer .footer-section .contextual-region .field--name-body .made-with span {
+/* line 99, ../scss/component/pages/_default-pages.scss */
+.footer .footer-section .field--name-body span {
   color: red;
 }
-/* line 85, ../scss/component/pages/_default-pages.scss */
-.footer .footer-section .contextual-region .field--type-image .field--item img {
+/* line 105, ../scss/component/pages/_default-pages.scss */
+.footer .footer-section .field--type-image .field--item img {
   margin: 0 auto;
 }
-/* line 91, ../scss/component/pages/_default-pages.scss */
+/* line 110, ../scss/component/pages/_default-pages.scss */
 .footer .footer-section nav {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
-/* line 95, ../scss/component/pages/_default-pages.scss */
+/* line 114, ../scss/component/pages/_default-pages.scss */
 .footer .footer-section nav ul.navbar-nav {
   float: none;
 }
-/* line 97, ../scss/component/pages/_default-pages.scss */
+/* line 116, ../scss/component/pages/_default-pages.scss */
 .footer .footer-section nav ul.navbar-nav li {
   float: none;
 }
-/* line 99, ../scss/component/pages/_default-pages.scss */
+/* line 118, ../scss/component/pages/_default-pages.scss */
 .footer .footer-section nav ul.navbar-nav li a {
   padding: 8px 0;
 }
-/* line 105, ../scss/component/pages/_default-pages.scss */
+/* line 124, ../scss/component/pages/_default-pages.scss */
 .footer .footer-section .block-social-media-links {
   margin-bottom: 20px;
 }
 
-/* line 3, ../scss/component/pages/_front-page.scss */
-.path-frontpage .main-container .row {
-  max-width: 1300px;
-  margin: 0 auto;
-}
 /* line 6, ../scss/component/pages/_front-page.scss */
 .path-frontpage .main-container .row .view-frontpage {
   display: none;
@@ -8891,48 +8917,55 @@ a, a:hover, a:focus, a:active {
   color: #fff;
   text-decoration: none;
 }
-/* line 24, ../scss/component/pages/_front-page.scss */
+/* line 23, ../scss/component/pages/_front-page.scss */
+.path-frontpage #block-widspune20-aboutus {
+  padding-right: 30px;
+}
+/* line 25, ../scss/component/pages/_front-page.scss */
 .path-frontpage #block-widspune20-aboutus h2 {
   color: #00b140;
   font-size: 72px;
 }
-/* line 28, ../scss/component/pages/_front-page.scss */
+/* line 29, ../scss/component/pages/_front-page.scss */
 .path-frontpage #block-widspune20-aboutus .field {
   background-color: #00b140;
   color: #fff;
   padding: 20px;
 }
-/* line 32, ../scss/component/pages/_front-page.scss */
+/* line 33, ../scss/component/pages/_front-page.scss */
 .path-frontpage #block-widspune20-aboutus .field p {
   margin: 0 0 20px;
   line-height: 1.7;
 }
-/* line 36, ../scss/component/pages/_front-page.scss */
+/* line 37, ../scss/component/pages/_front-page.scss */
 .path-frontpage #block-widspune20-aboutus .field .row {
   text-align: center;
   font-size: 20px;
 }
-/* line 39, ../scss/component/pages/_front-page.scss */
+/* line 40, ../scss/component/pages/_front-page.scss */
 .path-frontpage #block-widspune20-aboutus .field .row .social_icon {
   padding: 0 3px;
 }
-/* line 41, ../scss/component/pages/_front-page.scss */
+/* line 42, ../scss/component/pages/_front-page.scss */
 .path-frontpage #block-widspune20-aboutus .field .row .social_icon a, .path-frontpage #block-widspune20-aboutus .field .row .social_icon a:hover, .path-frontpage #block-widspune20-aboutus .field .row .social_icon a:active {
-  color: #fff;
+  color: #000;
   text-decoration: none;
 }
 /* line 50, ../scss/component/pages/_front-page.scss */
-.path-frontpage .content_bottom .region-content-bottom {
+.path-frontpage #block-frontpageregistrationblock {
   text-align: center;
+  padding-top: 20px;
 }
 /* line 53, ../scss/component/pages/_front-page.scss */
-.path-frontpage .content_bottom .region-content-bottom .field--type-image .field--item {
-  display: inline-block;
-  padding: 0 20px;
-}
-/* line 56, ../scss/component/pages/_front-page.scss */
-.path-frontpage .content_bottom .region-content-bottom .field--type-image .field--item img {
+.path-frontpage #block-frontpageregistrationblock .field--type-image {
   margin: 0 auto;
+  max-width: 250px;
+}
+/* line 57, ../scss/component/pages/_front-page.scss */
+.path-frontpage #block-frontpageregistrationblock .field--name-body {
+  color: #00b140;
+  font-weight: 700;
+  font-size: 30px;
 }
 /* line 63, ../scss/component/pages/_front-page.scss */
 .path-frontpage #block-widspune20-globalwids2019 {

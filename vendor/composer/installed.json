@@ -5611,5 +5611,64 @@
             "source": "https://git.drupalcode.org/project/social_media_links",
             "issues": "https://www.drupal.org/project/issues/social_media_links"
         }
+    },
+    {
+        "name": "drupal/faqfield",
+        "version": "1.1.0",
+        "version_normalized": "1.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/faqfield.git",
+            "reference": "8.x-1.1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/faqfield-8.x-1.1.zip",
+            "reference": "8.x-1.1",
+            "shasum": "61aeccae9ebf2347567df1a891772e88e9452aa6"
+        },
+        "require": {
+            "drupal/core": "*"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.1",
+                "datestamp": "1519216085",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Patrick Drotleff (patrickd)",
+                "homepage": "https://www.drupal.org/u/patrickd",
+                "role": "Maintainer"
+            },
+            {
+                "name": "Kevin Quillen (kevinquillen)",
+                "homepage": "https://www.drupal.org/u/kevinquillen",
+                "role": "Maintainer"
+            }
+        ],
+        "description": "This module provides a field for frequently asked questions.",
+        "homepage": "http://drupal.org/project/faqfield",
+        "keywords": [
+            "Drupal"
+        ],
+        "support": {
+            "source": "http://cgit.drupalcode.org/faqfield",
+            "issues": "http://drupal.org/project/issues/faqfield"
+        }
     }
 ]

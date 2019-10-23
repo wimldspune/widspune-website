@@ -9,11 +9,12 @@ h1, h2, h3, h4, h5 {
   font-family: 'News Cycle';
   font-style: normal;
   font-weight: 700;
+  letter-spacing: 1px;
 }
 
 h2 {
-  font-size: 50px;
-  color: $basetextcolor;
+  font-size: 40px;
+  color: $darktextcolor;
 }
 
 a, a:hover, a:focus, a:active {
@@ -21,8 +22,17 @@ a, a:hover, a:focus, a:active {
   text-decoration: none;
 }
 
-.container-fluid {
-  //max-width: 1300px;
+h1.page-header {
+  color: $basetextcolor;
+  font-size: 50px;
+}
+
+.main-container {
+  max-width: $default-max-width;
+  margin: 0 auto 30px;
+  .row {
+    margin: 0 20px;
+  }
 }
 
 .navbar {
@@ -59,7 +69,20 @@ a, a:hover, a:focus, a:active {
 .main-container {
 }
 
-.content_bottom {}
+.content_bottom {
+  .region-content-bottom {
+    text-align: center;
+    .field--type-image {
+      .field--item {
+        display: inline-block;
+        padding: 0 20px;
+        img {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
 
 .footer {
   background-color: $footercolor;
@@ -68,23 +91,19 @@ a, a:hover, a:focus, a:active {
     display: inline-block;
     text-align: center;
     vertical-align: middle;
-    .contextual-region {
-      h2 {
-        font-size: 25px;
-        padding: 0 0 10px;
+    h2 {
+      font-size: 25px;
+      padding: 0 0 10px;
+    }
+    .field--name-body {
+      span {
+        color: red;
       }
-      .field--name-body {
-        .made-with {
-          span {
-            color: red;
-          }
-        }
-      }
-      .field--type-image {
-        .field--item {
-          img {
-            margin: 0 auto;
-          }
+    }
+    .field--type-image {
+      .field--item {
+        img {
+          margin: 0 auto;
         }
       }
     }
