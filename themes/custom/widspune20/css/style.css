@@ -9032,56 +9032,57 @@ h1.page-header {
 /* line 135, ../scss/component/pages/_front-page.scss */
 .path-frontpage #block-highlightsofourpastconferencein2019 h2 {
   color: #fff;
+  font-size: 34px;
 }
-/* line 142, ../scss/component/pages/_front-page.scss */
+/* line 143, ../scss/component/pages/_front-page.scss */
 .path-frontpage .metrics-wrapper .metrics-content .metrics_info {
   padding-top: 30px;
 }
-/* line 144, ../scss/component/pages/_front-page.scss */
+/* line 145, ../scss/component/pages/_front-page.scss */
 .path-frontpage .metrics-wrapper .metrics-content .metrics_info .metrics {
   display: inline-block;
   padding: 0 35px;
   vertical-align: top;
 }
-/* line 150, ../scss/component/pages/_front-page.scss */
+/* line 151, ../scss/component/pages/_front-page.scss */
 .path-frontpage .metrics-wrapper .metrics-content .metrics_info .metrics .img {
   width: 72px;
   display: block;
   height: 67px;
   margin: 0 auto;
 }
-/* line 162, ../scss/component/pages/_front-page.scss */
+/* line 163, ../scss/component/pages/_front-page.scss */
 .path-frontpage .metrics-wrapper .metrics-content .metrics_info .knowledge_sharing_info .img {
   background: url(../images/knowledge_sharing.png) no-repeat;
 }
-/* line 167, ../scss/component/pages/_front-page.scss */
+/* line 168, ../scss/component/pages/_front-page.scss */
 .path-frontpage .metrics-wrapper .metrics-content .metrics_info .speakers_info .img {
   background: url(../images/speakers.png) no-repeat;
 }
-/* line 172, ../scss/component/pages/_front-page.scss */
+/* line 173, ../scss/component/pages/_front-page.scss */
 .path-frontpage .metrics-wrapper .metrics-content .metrics_info .audience_info .img {
   background: url(../images/audience.png) no-repeat;
 }
-/* line 177, ../scss/component/pages/_front-page.scss */
+/* line 178, ../scss/component/pages/_front-page.scss */
 .path-frontpage .metrics-wrapper .metrics-content .metrics_info .partners_info .img {
   background: url(../images/partners.png) no-repeat;
 }
-/* line 182, ../scss/component/pages/_front-page.scss */
+/* line 183, ../scss/component/pages/_front-page.scss */
 .path-frontpage .metrics-wrapper .metrics-content .metrics_info .volunteers_info .img {
   background: url(../images/volunteers.png) no-repeat;
 }
-/* line 187, ../scss/component/pages/_front-page.scss */
+/* line 188, ../scss/component/pages/_front-page.scss */
 .path-frontpage .metrics-wrapper .metrics-content .metrics_info .sectors_info .img {
   background: url(../images/sectors.png) no-repeat;
 }
-/* line 195, ../scss/component/pages/_front-page.scss */
+/* line 196, ../scss/component/pages/_front-page.scss */
 .path-frontpage .extra_metrics_outer .metrics_info {
   display: inline-block;
   max-width: 150px;
   vertical-align: top;
   margin: 0 30px;
 }
-/* line 200, ../scss/component/pages/_front-page.scss */
+/* line 201, ../scss/component/pages/_front-page.scss */
 .path-frontpage .extra_metrics_outer .metrics_info .img {
   width: 86px;
   display: block;
@@ -9090,15 +9091,15 @@ h1.page-header {
   font-size: 0;
   margin: 0 auto;
 }
-/* line 208, ../scss/component/pages/_front-page.scss */
+/* line 209, ../scss/component/pages/_front-page.scss */
 .path-frontpage .extra_metrics_outer .metrics_info .title {
   color: #00b140;
 }
-/* line 213, ../scss/component/pages/_front-page.scss */
+/* line 214, ../scss/component/pages/_front-page.scss */
 .path-frontpage .extra_metrics_outer .media_coverage .img {
   background-image: url(../images/media_coverage.png);
 }
-/* line 218, ../scss/component/pages/_front-page.scss */
+/* line 219, ../scss/component/pages/_front-page.scss */
 .path-frontpage .extra_metrics_outer .delegates_from .img {
   background-image: url(../images/audience.png);
 }
@@ -9106,26 +9107,27 @@ h1.page-header {
 /* line 1, ../scss/component/pages/_about-us-page.scss */
 .vision_philosophy_outer {
   text-align: center;
+  margin-top: 40px;
 }
-/* line 3, ../scss/component/pages/_about-us-page.scss */
+/* line 4, ../scss/component/pages/_about-us-page.scss */
 .vision_philosophy_outer .widspune_vision {
   float: left;
   display: inline-block;
   margin-right: 50px;
 }
-/* line 7, ../scss/component/pages/_about-us-page.scss */
+/* line 8, ../scss/component/pages/_about-us-page.scss */
 .vision_philosophy_outer .widspune_vision h2 {
   text-align: right;
 }
-/* line 10, ../scss/component/pages/_about-us-page.scss */
+/* line 11, ../scss/component/pages/_about-us-page.scss */
 .vision_philosophy_outer .widspune_vision .vision_info {
   clear: both;
 }
-/* line 12, ../scss/component/pages/_about-us-page.scss */
+/* line 13, ../scss/component/pages/_about-us-page.scss */
 .vision_philosophy_outer .widspune_vision .vision_info div {
   display: inline-block;
 }
-/* line 15, ../scss/component/pages/_about-us-page.scss */
+/* line 16, ../scss/component/pages/_about-us-page.scss */
 .vision_philosophy_outer .widspune_vision .vision_info .vision_img {
   width: 70px;
   height: 70px;
@@ -9134,59 +9136,59 @@ h1.page-header {
   font-size: 0;
   margin: 10px 0;
 }
-/* line 23, ../scss/component/pages/_about-us-page.scss */
+/* line 24, ../scss/component/pages/_about-us-page.scss */
 .vision_philosophy_outer .widspune_vision .vision_info .vision_text {
   float: right;
   padding: 25px 20px 25px 0px;
   font-size: 20px;
   color: #00b140;
 }
-/* line 29, ../scss/component/pages/_about-us-page.scss */
+/* line 30, ../scss/component/pages/_about-us-page.scss */
 .vision_philosophy_outer .widspune_vision .vision_info .img1 {
   background-image: url(../images/about_icons/vision_1.png);
 }
-/* line 32, ../scss/component/pages/_about-us-page.scss */
+/* line 33, ../scss/component/pages/_about-us-page.scss */
 .vision_philosophy_outer .widspune_vision .vision_info .img2 {
   background-image: url(../images/about_icons/vision_2.png);
 }
-/* line 35, ../scss/component/pages/_about-us-page.scss */
+/* line 36, ../scss/component/pages/_about-us-page.scss */
 .vision_philosophy_outer .widspune_vision .vision_info .img3 {
   background-image: url(../images/about_icons/vision_3.png);
 }
-/* line 38, ../scss/component/pages/_about-us-page.scss */
+/* line 39, ../scss/component/pages/_about-us-page.scss */
 .vision_philosophy_outer .widspune_vision .vision_info .img4 {
   background-image: url(../images/about_icons/vision_4.png);
 }
-/* line 41, ../scss/component/pages/_about-us-page.scss */
+/* line 42, ../scss/component/pages/_about-us-page.scss */
 .vision_philosophy_outer .widspune_vision .vision_info .img5 {
   background-image: url(../images/about_icons/vision_5.png);
 }
-/* line 44, ../scss/component/pages/_about-us-page.scss */
+/* line 45, ../scss/component/pages/_about-us-page.scss */
 .vision_philosophy_outer .widspune_vision .vision_info .img6 {
   background-image: url(../images/about_icons/vision_6.png);
 }
-/* line 47, ../scss/component/pages/_about-us-page.scss */
+/* line 48, ../scss/component/pages/_about-us-page.scss */
 .vision_philosophy_outer .widspune_vision .vision_info .img7 {
   background-image: url(../images/about_icons/vision_7.png);
 }
-/* line 53, ../scss/component/pages/_about-us-page.scss */
+/* line 54, ../scss/component/pages/_about-us-page.scss */
 .vision_philosophy_outer .widspune_philosophy {
   display: inline-block;
   float: right;
 }
-/* line 56, ../scss/component/pages/_about-us-page.scss */
+/* line 57, ../scss/component/pages/_about-us-page.scss */
 .vision_philosophy_outer .widspune_philosophy h2 {
   text-align: left;
 }
-/* line 59, ../scss/component/pages/_about-us-page.scss */
+/* line 60, ../scss/component/pages/_about-us-page.scss */
 .vision_philosophy_outer .widspune_philosophy .philosophy_info {
   clear: both;
 }
-/* line 61, ../scss/component/pages/_about-us-page.scss */
+/* line 62, ../scss/component/pages/_about-us-page.scss */
 .vision_philosophy_outer .widspune_philosophy .philosophy_info div {
   display: inline-block;
 }
-/* line 64, ../scss/component/pages/_about-us-page.scss */
+/* line 65, ../scss/component/pages/_about-us-page.scss */
 .vision_philosophy_outer .widspune_philosophy .philosophy_info .philosophy_img {
   width: 70px;
   height: 70px;
@@ -9195,38 +9197,38 @@ h1.page-header {
   font-size: 0;
   margin: 10px 0;
 }
-/* line 72, ../scss/component/pages/_about-us-page.scss */
+/* line 73, ../scss/component/pages/_about-us-page.scss */
 .vision_philosophy_outer .widspune_philosophy .philosophy_info .philosophy_text {
   float: left;
   padding: 25px 0px 25px 20px;
   font-size: 20px;
   color: #00b140;
 }
-/* line 78, ../scss/component/pages/_about-us-page.scss */
+/* line 79, ../scss/component/pages/_about-us-page.scss */
 .vision_philosophy_outer .widspune_philosophy .philosophy_info .img1 {
   background-image: url(../images/about_icons/philosophy_1.png);
 }
-/* line 81, ../scss/component/pages/_about-us-page.scss */
+/* line 82, ../scss/component/pages/_about-us-page.scss */
 .vision_philosophy_outer .widspune_philosophy .philosophy_info .img2 {
   background-image: url(../images/about_icons/philosophy_2.png);
 }
-/* line 84, ../scss/component/pages/_about-us-page.scss */
+/* line 85, ../scss/component/pages/_about-us-page.scss */
 .vision_philosophy_outer .widspune_philosophy .philosophy_info .img3 {
   background-image: url(../images/about_icons/philosophy_3.png);
 }
-/* line 87, ../scss/component/pages/_about-us-page.scss */
+/* line 88, ../scss/component/pages/_about-us-page.scss */
 .vision_philosophy_outer .widspune_philosophy .philosophy_info .img4 {
   background-image: url(../images/about_icons/philosophy_4.png);
 }
-/* line 90, ../scss/component/pages/_about-us-page.scss */
+/* line 91, ../scss/component/pages/_about-us-page.scss */
 .vision_philosophy_outer .widspune_philosophy .philosophy_info .img5 {
   background-image: url(../images/about_icons/philosophy_5.png);
 }
-/* line 93, ../scss/component/pages/_about-us-page.scss */
+/* line 94, ../scss/component/pages/_about-us-page.scss */
 .vision_philosophy_outer .widspune_philosophy .philosophy_info .img6 {
   background-image: url(../images/about_icons/philosophy_6.png);
 }
-/* line 96, ../scss/component/pages/_about-us-page.scss */
+/* line 97, ../scss/component/pages/_about-us-page.scss */
 .vision_philosophy_outer .widspune_philosophy .philosophy_info .img7 {
   background-image: url(../images/about_icons/philosophy_7.png);
 }
