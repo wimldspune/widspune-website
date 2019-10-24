@@ -1,9 +1,9 @@
-uuid: 9eaa59d4-e54b-4a1e-bea5-c584b7b02ac4
+uuid: f99d0953-2380-44d5-899a-c4035f8c73cf
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:description_and_images:f34a66b0-90fe-48d4-98bd-d3e720bbcb66'
+    - 'block_content:description_and_images:47e1a52f-1852-444b-8117-b9f41bf218df'
   module:
     - block_content
     - system
@@ -14,9 +14,9 @@ theme: widspune20
 region: sidebar_second
 weight: 0
 provider: null
-plugin: 'block_content:f34a66b0-90fe-48d4-98bd-d3e720bbcb66'
+plugin: 'block_content:47e1a52f-1852-444b-8117-b9f41bf218df'
 settings:
-  id: 'block_content:f34a66b0-90fe-48d4-98bd-d3e720bbcb66'
+  id: 'block_content:47e1a52f-1852-444b-8117-b9f41bf218df'
   label: 'Frontpage registration block'
   provider: block_content
   label_display: '0'

@@ -1,25 +1,25 @@
-uuid: 226c2be8-cb80-42ee-954f-1606e090fa02
+uuid: 194e52ff-2ad9-4af5-a2f9-27319eb7c979
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:description_and_images:785fb895-af6a-4bdb-8327-9cd11083aef3'
+    - 'block_content:metrics_of_events:bba7d30e-db91-4478-a524-8a6190100b9c'
   module:
     - block_content
     - system
   theme:
     - widspune20
-id: widspune20_keydifferentiators
+id: widspunetotaloutreachimpactmetrics
 theme: widspune20
 region: content_bottom
-weight: -14
+weight: -9
 provider: null
-plugin: 'block_content:785fb895-af6a-4bdb-8327-9cd11083aef3'
+plugin: 'block_content:bba7d30e-db91-4478-a524-8a6190100b9c'
 settings:
-  id: 'block_content:785fb895-af6a-4bdb-8327-9cd11083aef3'
-  label: 'Key Differentiators'
+  id: 'block_content:bba7d30e-db91-4478-a524-8a6190100b9c'
+  label: 'WiDS Pune total Outreach & Impact Metrics'
   provider: block_content
-  label_display: visible
+  label_display: '0'
   status: true
   info: ''
   view_mode: full

@@ -1,0 +1,8 @@
+uuid: 10688d10-1076-4386-a15f-a6681728f0b2
+langcode: en
+status: true
+dependencies: {  }
+id: metrics_of_events
+label: 'Metrics of events'
+revision: 0
+description: 'Metrics representation events'

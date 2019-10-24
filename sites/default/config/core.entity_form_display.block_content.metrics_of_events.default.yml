@@ -1,0 +1,83 @@
+uuid: 7fa570e1-e48f-408e-ac31-cabde9596a84
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.metrics_of_events
+    - field.field.block_content.metrics_of_events.field_audience
+    - field.field.block_content.metrics_of_events.field_knowledge_sharing
+    - field.field.block_content.metrics_of_events.field_metrics_event_title
+    - field.field.block_content.metrics_of_events.field_partners
+    - field.field.block_content.metrics_of_events.field_sectors
+    - field.field.block_content.metrics_of_events.field_speakers
+    - field.field.block_content.metrics_of_events.field_volunteers
+id: block_content.metrics_of_events.default
+targetEntityType: block_content
+bundle: metrics_of_events
+mode: default
+content:
+  field_audience:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_knowledge_sharing:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_metrics_event_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_partners:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_sectors:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_speakers:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_volunteers:
+    weight: 6
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

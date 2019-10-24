@@ -1,0 +1,19 @@
+uuid: 58e66e3a-9331-489e-a5d0-fc2b2f5bd4f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.metrics_of_events
+    - field.storage.block_content.field_partners
+id: block_content.metrics_of_events.field_partners
+field_name: field_partners
+entity_type: block_content
+bundle: metrics_of_events
+label: Partners
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
