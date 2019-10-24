@@ -9065,22 +9065,31 @@ h1.page-header {
 .path-frontpage .metrics-wrapper .metrics-content .metrics_info .sectors_info .img {
   background: url(../images/sectors.png) no-repeat;
 }
-/* line 188, ../scss/component/pages/_front-page.scss */
-.path-frontpage .extra_metrics_outer .metrics_info .img {
-  width: 90px;
-  display: block;
-  height: 90px;
-  background-size: cover;
+/* line 187, ../scss/component/pages/_front-page.scss */
+.path-frontpage .extra_metrics_outer .metrics_info {
+  display: inline-block;
+  max-width: 150px;
+  vertical-align: top;
+  margin: 0 30px;
 }
-/* line 194, ../scss/component/pages/_front-page.scss */
+/* line 192, ../scss/component/pages/_front-page.scss */
+.path-frontpage .extra_metrics_outer .metrics_info .img {
+  width: 80px;
+  display: block;
+  height: 80px;
+  background-size: cover;
+  font-size: 0;
+  margin: 0 auto;
+}
+/* line 200, ../scss/component/pages/_front-page.scss */
 .path-frontpage .extra_metrics_outer .metrics_info .title {
   color: #00b140;
 }
-/* line 199, ../scss/component/pages/_front-page.scss */
+/* line 205, ../scss/component/pages/_front-page.scss */
 .path-frontpage .extra_metrics_outer .media_coverage .img {
   background-image: url(../images/media_coverage.png);
 }
-/* line 204, ../scss/component/pages/_front-page.scss */
+/* line 210, ../scss/component/pages/_front-page.scss */
 .path-frontpage .extra_metrics_outer .delegates_from .img {
   background-image: url(../images/audience.png);
 }

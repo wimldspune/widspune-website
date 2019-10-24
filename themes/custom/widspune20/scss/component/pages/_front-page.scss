@@ -185,11 +185,17 @@
   }
   .extra_metrics_outer {
     .metrics_info {
+      display: inline-block;
+      max-width: 150px;
+      vertical-align: top;
+      margin: 0 30px;
       .img {
-        width: 90px;
+        width: 80px;
         display: block;
-        height: 90px;
+        height: 80px;
         background-size: cover;
+        font-size: 0;
+        margin: 0 auto;
       }
       .title {
         color: $basetextcolor;
