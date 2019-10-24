@@ -11,7 +11,7 @@
  */
 function widspune20_page_attachments_alter(&$attachments) {
   if (\Drupal::service('path.matcher')->isFrontPage()) {
-    $attachments['#attached']['library'][] = 'widspune/numscroller';
+    $attachments['#attached']['library'][] = 'widspune20/numscroller';
   }
 }
 

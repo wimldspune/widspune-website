@@ -84,6 +84,61 @@ h1.page-header {
   }
 }
 
+.metrics-wrapper {
+  .metrics-content {
+    .metrics_info {
+      padding-top: 30px;
+      .metrics {
+        display: inline-block;
+        padding: 0 35px;
+        vertical-align: top;
+        span {
+        }
+        .img {
+          width: 72px;
+          display: block;
+          height: 67px;
+          margin: 0 auto;
+        }
+        .title {
+        }
+        .field--item {
+        }
+      }
+      .knowledge_sharing_info {
+        .img {
+          background: url(../images/knowledge_sharing.png) no-repeat;
+        }
+      }
+      .speakers_info {
+        .img {
+          background: url(../images/speakers.png) no-repeat;
+        }
+      }
+      .audience_info {
+        .img {
+          background: url(../images/audience.png) no-repeat;
+        }
+      }
+      .partners_info {
+        .img {
+          background: url(../images/partners.png) no-repeat;
+        }
+      }
+      .volunteers_info {
+        .img {
+          background: url(../images/volunteers.png) no-repeat;
+        }
+      }
+      .sectors_info {
+        .img {
+          background: url(../images/sectors.png) no-repeat;
+        }
+      }
+    }
+  }
+}
+
 .footer {
   background-color: $footercolor;
   .footer-section {
