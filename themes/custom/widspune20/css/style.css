@@ -8785,7 +8785,7 @@ h1, h2, h3, h4, h5 {
 
 /* line 15, ../scss/component/pages/_default-pages.scss */
 h2 {
-  font-size: 40px;
+  font-size: 34px;
   color: #3e3e3e;
 }
 
@@ -8979,37 +8979,42 @@ h1.page-header {
   margin: 0 0 20px;
   line-height: 1.7;
 }
-/* line 37, ../scss/component/pages/_front-page.scss */
+/* line 36, ../scss/component/pages/_front-page.scss */
+.path-frontpage #block-widspune20-aboutus .field p a, .path-frontpage #block-widspune20-aboutus .field p a:hover, .path-frontpage #block-widspune20-aboutus .field p a:active {
+  color: #fff;
+  text-decoration: none;
+}
+/* line 41, ../scss/component/pages/_front-page.scss */
 .path-frontpage #block-widspune20-aboutus .field .row {
   text-align: center;
   font-size: 20px;
 }
-/* line 40, ../scss/component/pages/_front-page.scss */
+/* line 44, ../scss/component/pages/_front-page.scss */
 .path-frontpage #block-widspune20-aboutus .field .row .social_icon {
   padding: 0 3px;
 }
-/* line 42, ../scss/component/pages/_front-page.scss */
+/* line 46, ../scss/component/pages/_front-page.scss */
 .path-frontpage #block-widspune20-aboutus .field .row .social_icon a, .path-frontpage #block-widspune20-aboutus .field .row .social_icon a:hover, .path-frontpage #block-widspune20-aboutus .field .row .social_icon a:active {
   color: #000;
   text-decoration: none;
 }
-/* line 50, ../scss/component/pages/_front-page.scss */
+/* line 54, ../scss/component/pages/_front-page.scss */
 .path-frontpage #block-frontpageregistrationblock {
   text-align: center;
   padding-top: 20px;
 }
-/* line 53, ../scss/component/pages/_front-page.scss */
+/* line 57, ../scss/component/pages/_front-page.scss */
 .path-frontpage #block-frontpageregistrationblock .field--type-image {
   margin: 0 auto;
   max-width: 250px;
 }
-/* line 57, ../scss/component/pages/_front-page.scss */
+/* line 61, ../scss/component/pages/_front-page.scss */
 .path-frontpage #block-frontpageregistrationblock .field--name-body {
   color: #00b140;
   font-weight: 700;
   font-size: 30px;
 }
-/* line 63, ../scss/component/pages/_front-page.scss */
+/* line 67, ../scss/component/pages/_front-page.scss */
 .path-frontpage #block-widspune20-globalwids2019 {
   height: 450px;
   background: url(../images/counter_background.jpg) 50% 50% no-repeat;
@@ -9018,49 +9023,177 @@ h1.page-header {
   margin: 40px 0;
   font-family: 'News Cycle';
 }
-/* line 70, ../scss/component/pages/_front-page.scss */
+/* line 74, ../scss/component/pages/_front-page.scss */
 .path-frontpage #block-widspune20-globalwids2019 h2 {
   font-size: 72px;
   color: #fff;
   padding: 35px;
 }
-/* line 75, ../scss/component/pages/_front-page.scss */
+/* line 79, ../scss/component/pages/_front-page.scss */
 .path-frontpage #block-widspune20-globalwids2019 .counter_outer {
   max-width: 1300px;
   margin: 0 auto;
 }
-/* line 78, ../scss/component/pages/_front-page.scss */
+/* line 82, ../scss/component/pages/_front-page.scss */
 .path-frontpage #block-widspune20-globalwids2019 .counter_outer .counter {
   width: 30%;
   display: inline-block;
   font-size: 25px;
   line-height: 50px;
 }
-/* line 85, ../scss/component/pages/_front-page.scss */
+/* line 89, ../scss/component/pages/_front-page.scss */
 .path-frontpage #block-widspune20-globalwids2019 .counter_outer .counter .mid {
   font-family: 'Actor';
   font-size: 18px;
 }
-/* line 90, ../scss/component/pages/_front-page.scss */
+/* line 94, ../scss/component/pages/_front-page.scss */
 .path-frontpage #block-widspune20-globalwids2019 .counter_outer .counter .counter_number .count {
   font-size: 70px;
 }
-/* line 97, ../scss/component/pages/_front-page.scss */
+/* line 101, ../scss/component/pages/_front-page.scss */
 .path-frontpage .view-sponsor-list {
   max-width: 1300px;
   margin: 0 auto;
 }
-/* line 100, ../scss/component/pages/_front-page.scss */
+/* line 104, ../scss/component/pages/_front-page.scss */
 .path-frontpage .view-sponsor-list .views-row {
   display: inline-block;
 }
-/* line 103, ../scss/component/pages/_front-page.scss */
+/* line 107, ../scss/component/pages/_front-page.scss */
 .path-frontpage .view-sponsor-list .views-row .views-field {
   display: inline-block;
 }
-/* line 106, ../scss/component/pages/_front-page.scss */
+/* line 110, ../scss/component/pages/_front-page.scss */
 .path-frontpage .view-sponsor-list .views-row .views-field .field-content {
   padding: 0 10px;
+}
+
+/* line 1, ../scss/component/pages/_about-us-page.scss */
+.vision_philosophy_outer {
+  text-align: center;
+}
+/* line 3, ../scss/component/pages/_about-us-page.scss */
+.vision_philosophy_outer .widspune_vision {
+  float: left;
+  display: inline-block;
+  margin-right: 50px;
+}
+/* line 7, ../scss/component/pages/_about-us-page.scss */
+.vision_philosophy_outer .widspune_vision h2 {
+  text-align: right;
+}
+/* line 10, ../scss/component/pages/_about-us-page.scss */
+.vision_philosophy_outer .widspune_vision .vision_info {
+  clear: both;
+}
+/* line 12, ../scss/component/pages/_about-us-page.scss */
+.vision_philosophy_outer .widspune_vision .vision_info div {
+  display: inline-block;
+}
+/* line 15, ../scss/component/pages/_about-us-page.scss */
+.vision_philosophy_outer .widspune_vision .vision_info .vision_img {
+  width: 70px;
+  height: 70px;
+  background-size: cover;
+  float: right;
+  font-size: 0;
+  margin: 10px 0;
+}
+/* line 23, ../scss/component/pages/_about-us-page.scss */
+.vision_philosophy_outer .widspune_vision .vision_info .vision_text {
+  float: right;
+  padding: 25px 20px 25px 0px;
+  font-size: 20px;
+  color: #00b140;
+}
+/* line 29, ../scss/component/pages/_about-us-page.scss */
+.vision_philosophy_outer .widspune_vision .vision_info .img1 {
+  background-image: url(../images/about_icons/vision_1.png);
+}
+/* line 32, ../scss/component/pages/_about-us-page.scss */
+.vision_philosophy_outer .widspune_vision .vision_info .img2 {
+  background-image: url(../images/about_icons/vision_2.png);
+}
+/* line 35, ../scss/component/pages/_about-us-page.scss */
+.vision_philosophy_outer .widspune_vision .vision_info .img3 {
+  background-image: url(../images/about_icons/vision_3.png);
+}
+/* line 38, ../scss/component/pages/_about-us-page.scss */
+.vision_philosophy_outer .widspune_vision .vision_info .img4 {
+  background-image: url(../images/about_icons/vision_4.png);
+}
+/* line 41, ../scss/component/pages/_about-us-page.scss */
+.vision_philosophy_outer .widspune_vision .vision_info .img5 {
+  background-image: url(../images/about_icons/vision_5.png);
+}
+/* line 44, ../scss/component/pages/_about-us-page.scss */
+.vision_philosophy_outer .widspune_vision .vision_info .img6 {
+  background-image: url(../images/about_icons/vision_6.png);
+}
+/* line 47, ../scss/component/pages/_about-us-page.scss */
+.vision_philosophy_outer .widspune_vision .vision_info .img7 {
+  background-image: url(../images/about_icons/vision_7.png);
+}
+/* line 53, ../scss/component/pages/_about-us-page.scss */
+.vision_philosophy_outer .widspune_philosophy {
+  display: inline-block;
+  float: right;
+}
+/* line 56, ../scss/component/pages/_about-us-page.scss */
+.vision_philosophy_outer .widspune_philosophy h2 {
+  text-align: left;
+}
+/* line 59, ../scss/component/pages/_about-us-page.scss */
+.vision_philosophy_outer .widspune_philosophy .philosophy_info {
+  clear: both;
+}
+/* line 61, ../scss/component/pages/_about-us-page.scss */
+.vision_philosophy_outer .widspune_philosophy .philosophy_info div {
+  display: inline-block;
+}
+/* line 64, ../scss/component/pages/_about-us-page.scss */
+.vision_philosophy_outer .widspune_philosophy .philosophy_info .philosophy_img {
+  width: 70px;
+  height: 70px;
+  background-size: cover;
+  float: left;
+  font-size: 0;
+  margin: 10px 0;
+}
+/* line 72, ../scss/component/pages/_about-us-page.scss */
+.vision_philosophy_outer .widspune_philosophy .philosophy_info .philosophy_text {
+  float: left;
+  padding: 25px 0px 25px 20px;
+  font-size: 20px;
+  color: #00b140;
+}
+/* line 78, ../scss/component/pages/_about-us-page.scss */
+.vision_philosophy_outer .widspune_philosophy .philosophy_info .img1 {
+  background-image: url(../images/about_icons/philosophy_1.png);
+}
+/* line 81, ../scss/component/pages/_about-us-page.scss */
+.vision_philosophy_outer .widspune_philosophy .philosophy_info .img2 {
+  background-image: url(../images/about_icons/philosophy_2.png);
+}
+/* line 84, ../scss/component/pages/_about-us-page.scss */
+.vision_philosophy_outer .widspune_philosophy .philosophy_info .img3 {
+  background-image: url(../images/about_icons/philosophy_3.png);
+}
+/* line 87, ../scss/component/pages/_about-us-page.scss */
+.vision_philosophy_outer .widspune_philosophy .philosophy_info .img4 {
+  background-image: url(../images/about_icons/philosophy_4.png);
+}
+/* line 90, ../scss/component/pages/_about-us-page.scss */
+.vision_philosophy_outer .widspune_philosophy .philosophy_info .img5 {
+  background-image: url(../images/about_icons/philosophy_5.png);
+}
+/* line 93, ../scss/component/pages/_about-us-page.scss */
+.vision_philosophy_outer .widspune_philosophy .philosophy_info .img6 {
+  background-image: url(../images/about_icons/philosophy_6.png);
+}
+/* line 96, ../scss/component/pages/_about-us-page.scss */
+.vision_philosophy_outer .widspune_philosophy .philosophy_info .img7 {
+  background-image: url(../images/about_icons/philosophy_7.png);
 }
 
 /* line 1, ../scss/component/regions/_page-banner.scss */
