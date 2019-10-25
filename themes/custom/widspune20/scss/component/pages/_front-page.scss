@@ -33,6 +33,10 @@
       p{
         margin: 0 0 20px;
         line-height: 1.7;
+        a, a:hover, a:active {
+          color: $lightcolor;
+          text-decoration: none;
+        }
       }
       .row {
         text-align: center;
@@ -107,6 +111,113 @@
           padding: 0 10px;
           img {}
         }
+      }
+    }
+  }
+  .content_bottom {
+    .region-content-bottom {
+      text-align: center;
+      .field--type-image {
+        .field--item {
+          display: inline-block;
+          padding: 0 20px;
+          img {
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
+
+  #block-highlightsofourpastconferencein2019 {
+    background-color: $basetextcolor;
+    padding: 5px 0 20px;
+    h2 {
+      color: $lightcolor;
+      font-size: 34px;
+    }
+  }
+
+  .metrics-wrapper {
+    .metrics-content {
+      .metrics_info {
+        padding-top: 30px;
+        .metrics {
+          display: inline-block;
+          padding: 0 35px;
+          vertical-align: top;
+          span {
+          }
+          .img {
+            width: 72px;
+            display: block;
+            height: 67px;
+            margin: 0 auto;
+          }
+          .title {
+          }
+          .field--item {
+          }
+        }
+        .knowledge_sharing_info {
+          .img {
+            background: url(../images/knowledge_sharing.png) no-repeat;
+          }
+        }
+        .speakers_info {
+          .img {
+            background: url(../images/speakers.png) no-repeat;
+          }
+        }
+        .audience_info {
+          .img {
+            background: url(../images/audience.png) no-repeat;
+          }
+        }
+        .partners_info {
+          .img {
+            background: url(../images/partners.png) no-repeat;
+          }
+        }
+        .volunteers_info {
+          .img {
+            background: url(../images/volunteers.png) no-repeat;
+          }
+        }
+        .sectors_info {
+          .img {
+            background: url(../images/sectors.png) no-repeat;
+          }
+        }
+      }
+    }
+  }
+  .extra_metrics_outer {
+    .metrics_info {
+      display: inline-block;
+      max-width: 150px;
+      vertical-align: top;
+      margin: 0 30px;
+      .img {
+        width: 86px;
+        display: block;
+        height: 80px;
+        background-size: cover;
+        font-size: 0;
+        margin: 0 auto;
+      }
+      .title {
+        color: $basetextcolor;
+      }
+    }
+    .media_coverage {
+      .img {
+        background-image: url(../images/media_coverage.png);
+      }
+    }
+    .delegates_from {
+      .img {
+        background-image: url(../images/audience.png);
       }
     }
   }

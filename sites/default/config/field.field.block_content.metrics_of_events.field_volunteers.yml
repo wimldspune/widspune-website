@@ -1,0 +1,19 @@
+uuid: ae31df7b-6e15-4929-a2ee-a7ea2ed4f1c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.metrics_of_events
+    - field.storage.block_content.field_volunteers
+id: block_content.metrics_of_events.field_volunteers
+field_name: field_volunteers
+entity_type: block_content
+bundle: metrics_of_events
+label: Volunteers
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

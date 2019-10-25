@@ -1,0 +1,19 @@
+uuid: db147c86-bc07-4d6a-82f2-10218e385d59
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.metrics_of_events
+    - field.storage.block_content.field_metrics_event_title
+id: block_content.metrics_of_events.field_metrics_event_title
+field_name: field_metrics_event_title
+entity_type: block_content
+bundle: metrics_of_events
+label: 'Event Title of Metrics'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

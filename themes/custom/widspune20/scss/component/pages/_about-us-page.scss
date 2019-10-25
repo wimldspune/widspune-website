@@ -1,0 +1,102 @@
+.vision_philosophy_outer {
+  text-align: center;
+  margin-top: 40px;
+  .widspune_vision {
+    float: left;
+    display: inline-block;
+    margin-right: 50px;
+    h2 {
+      text-align: right;
+    }
+    .vision_info {
+      clear: both;
+      div {
+        display: inline-block;
+      }
+      .vision_img {
+        width: 70px;
+        height: 70px;
+        background-size: cover;
+        float: right;
+        font-size: 0;
+        margin: 10px 0;
+      }
+      .vision_text {
+        float: right;
+        padding: 25px 20px 25px 0px;
+        font-size: 20px;
+        color: $basetextcolor;
+      }
+      .img1 {
+        background-image: url(../images/about_icons/vision_1.png);
+      }
+      .img2 {
+        background-image: url(../images/about_icons/vision_2.png);
+      }
+      .img3 {
+        background-image: url(../images/about_icons/vision_3.png);
+      }
+      .img4 {
+        background-image: url(../images/about_icons/vision_4.png);
+      }
+      .img5 {
+        background-image: url(../images/about_icons/vision_5.png);
+      }
+      .img6 {
+        background-image: url(../images/about_icons/vision_6.png);
+      }
+      .img7 {
+        background-image: url(../images/about_icons/vision_7.png);
+      }
+    }
+  }
+
+  .widspune_philosophy {
+    display: inline-block;
+    float: right;
+    h2 {
+      text-align: left;
+    }
+    .philosophy_info {
+      clear: both;
+      div {
+        display: inline-block;
+      }
+      .philosophy_img {
+        width: 70px;
+        height: 70px;
+        background-size: cover;
+        float: left;
+        font-size: 0;
+        margin: 10px 0;
+      }
+      .philosophy_text {
+        float: left;
+        padding: 25px 0px 25px 20px;
+        font-size: 20px;
+        color: $basetextcolor;
+      }
+      .img1 {
+        background-image: url(../images/about_icons/philosophy_1.png);
+      }
+      .img2 {
+        background-image: url(../images/about_icons/philosophy_2.png);
+      }
+      .img3 {
+        background-image: url(../images/about_icons/philosophy_3.png);
+      }
+      .img4 {
+        background-image: url(../images/about_icons/philosophy_4.png);
+      }
+      .img5 {
+        background-image: url(../images/about_icons/philosophy_5.png);
+      }
+      .img6 {
+        background-image: url(../images/about_icons/philosophy_6.png);
+      }
+      .img7 {
+        background-image: url(../images/about_icons/philosophy_7.png);
+      }
+    }
+  }
+}

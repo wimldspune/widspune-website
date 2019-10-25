@@ -1,25 +1,25 @@
-uuid: 226c2be8-cb80-42ee-954f-1606e090fa02
+uuid: 6a0a7bed-f5b2-421b-a4ef-b3c82bf7878b
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:description_and_images:785fb895-af6a-4bdb-8327-9cd11083aef3'
+    - 'block_content:metrics_of_events:fc5ab7db-721f-41a9-8fcd-e62a1d998ec9'
   module:
     - block_content
     - system
   theme:
     - widspune20
-id: widspune20_keydifferentiators
+id: preconferenceeventsmetrics
 theme: widspune20
 region: content_bottom
-weight: -14
+weight: -10
 provider: null
-plugin: 'block_content:785fb895-af6a-4bdb-8327-9cd11083aef3'
+plugin: 'block_content:fc5ab7db-721f-41a9-8fcd-e62a1d998ec9'
 settings:
-  id: 'block_content:785fb895-af6a-4bdb-8327-9cd11083aef3'
-  label: 'Key Differentiators'
+  id: 'block_content:fc5ab7db-721f-41a9-8fcd-e62a1d998ec9'
+  label: 'Pre-Conference Events Metrics'
   provider: block_content
-  label_display: visible
+  label_display: '0'
   status: true
   info: ''
   view_mode: full

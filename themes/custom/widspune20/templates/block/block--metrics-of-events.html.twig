@@ -1,0 +1,76 @@
+{#
+/**
+ * @file
+ * Theme override to display a block.
+ *
+ * Available variables:
+ * - plugin_id: The ID of the block implementation.
+ * - label: The configured label of the block if visible.
+ * - configuration: A list of the block's configuration values.
+ *   - label: The configured label for the block.
+ *   - label_display: The display settings for the label.
+ *   - provider: The module or other provider that provided this block plugin.
+ *   - Block plugin specific settings will also be stored here.
+ * - content: The content of this block.
+ * - attributes: array of HTML attributes populated by modules, intended to
+ *   be added to the main container tag of this template.
+ *   - id: A valid HTML ID and guaranteed unique.
+ * - title_attributes: Same as attributes, except applied to the main title
+ *   tag that appears in the template.
+ * - title_prefix: Additional output populated by modules, intended to be
+ *   displayed in front of the main title tag that appears in the template.
+ * - title_suffix: Additional output populated by modules, intended to be
+ *   displayed after the main title tag that appears in the template.
+ *
+ * @see template_preprocess_block()
+ */
+#}
+{%
+  set classes = [
+  'block',
+  'block-' ~ configuration.provider|clean_class,
+  'block-' ~ plugin_id|clean_class,
+]
+%}
+<div{{attributes.addClass(classes)}}>
+  <div class="metrics-wrapper">
+    <div class="metrics-content">
+      {% block content %}
+        <h2 class="page-title">{{ content.field_metrics_event_title }}</h2>
+        <div class="metrics_info">
+          <div class="metrics knowledge_sharing_info">
+            <span class="img"></span>
+            {{ content.field_knowledge_sharing }}
+            <span class="title">Knowledge<br>sharing</span>
+          </div>
+          <div class="metrics speakers_info">
+            <span class="img"></span>
+            {{ content.field_speakers }}
+            <span class="title">Speakers</span>
+          </div>
+          <div class="metrics audience_info">
+            <span class="img"></span>
+            {{ content.field_audience }}
+            <span class="title">Audience</span>
+          </div>
+          <div class="metrics partners_info">
+            <span class="img"></span>
+            {{ content.field_partners }}
+            <span class="title">Partners</span>
+          </div>
+          <div class="metrics volunteers_info">
+            <span class="img"></span>
+            {{ content.field_volunteers }}
+            <span class="title">Volunteers</span>
+          </div>
+          <div class="metrics sectors_info">
+            <span class="img"></span>
+            {{ content.field_sectors }}
+            <span class="title">Sectors</span>
+          </div>
+        </div>
+      {% endblock %}
+    </div>
+    <div class="border-design"></div>
+  </div>
+</div>

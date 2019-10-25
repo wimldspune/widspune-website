@@ -1,0 +1,21 @@
+uuid: 5bcfdc7b-9008-4a1e-b120-fa5ae6fec218
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.field_partners
+field_name: field_partners
+entity_type: block_content
+type: string
+settings:
+  max_length: 10
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

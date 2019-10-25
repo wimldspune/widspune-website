@@ -13,7 +13,7 @@ h1, h2, h3, h4, h5 {
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 30px;
   color: $darktextcolor;
 }
 
@@ -66,23 +66,7 @@ h1.page-header {
   }
 }
 
-.main-container {
-}
-
-.content_bottom {
-  .region-content-bottom {
-    text-align: center;
-    .field--type-image {
-      .field--item {
-        display: inline-block;
-        padding: 0 20px;
-        img {
-          margin: 0 auto;
-        }
-      }
-    }
-  }
-}
+.main-container {}
 
 .footer {
   background-color: $footercolor;
