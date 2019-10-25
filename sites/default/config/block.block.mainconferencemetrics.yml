@@ -1,9 +1,9 @@
-uuid: ca40570f-fc10-4f4f-b47c-98c8b7712da5
+uuid: fecf1215-cbfc-4b7d-97ab-73656117b293
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:metrics_of_events:22aef446-1ca3-4838-b035-d67161349d3a'
+    - 'block_content:metrics_of_events:85309bfe-52f2-4b08-9b64-aaa43f290b47'
   module:
     - block_content
     - system
@@ -14,9 +14,9 @@ theme: widspune20
 region: content_bottom
 weight: -11
 provider: null
-plugin: 'block_content:22aef446-1ca3-4838-b035-d67161349d3a'
+plugin: 'block_content:85309bfe-52f2-4b08-9b64-aaa43f290b47'
 settings:
-  id: 'block_content:22aef446-1ca3-4838-b035-d67161349d3a'
+  id: 'block_content:85309bfe-52f2-4b08-9b64-aaa43f290b47'
   label: 'Main Conference metrics'
   provider: block_content
   label_display: '0'
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "<front>\r\n/node/1"
+    pages: '<front>'
     negate: false
     context_mapping: {  }

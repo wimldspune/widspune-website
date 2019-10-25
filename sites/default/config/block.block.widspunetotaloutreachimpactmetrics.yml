@@ -1,9 +1,9 @@
-uuid: 194e52ff-2ad9-4af5-a2f9-27319eb7c979
+uuid: 69276e2f-2717-47d4-a01d-767454f34976
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:metrics_of_events:bba7d30e-db91-4478-a524-8a6190100b9c'
+    - 'block_content:metrics_of_events:2cc5837d-bc70-425a-a784-4645bf4c024a'
   module:
     - block_content
     - system
@@ -14,9 +14,9 @@ theme: widspune20
 region: content_bottom
 weight: -9
 provider: null
-plugin: 'block_content:bba7d30e-db91-4478-a524-8a6190100b9c'
+plugin: 'block_content:2cc5837d-bc70-425a-a784-4645bf4c024a'
 settings:
-  id: 'block_content:bba7d30e-db91-4478-a524-8a6190100b9c'
+  id: 'block_content:2cc5837d-bc70-425a-a784-4645bf4c024a'
   label: 'WiDS Pune total Outreach & Impact Metrics'
   provider: block_content
   label_display: '0'
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "<front>\r\n/node/1"
+    pages: '<front>'
     negate: false
     context_mapping: {  }

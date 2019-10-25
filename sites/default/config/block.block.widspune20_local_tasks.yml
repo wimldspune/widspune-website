@@ -9,7 +9,7 @@ _core:
 id: widspune20_local_tasks
 theme: widspune20
 region: content
-weight: -7
+weight: -13
 provider: null
 plugin: local_tasks_block
 settings:

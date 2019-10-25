@@ -27,11 +27,11 @@ settings:
       description: ''
       weight: '-9'
     youtube_channel:
-      value: 'https://www.youtube.com/channel/UCvSSodTZyAKP9ojCgmEHoBg'
+      value: UCvSSodTZyAKP9ojCgmEHoBg
       description: ''
       weight: '-8'
     instagram:
-      value: 'https://www.instagram.com/wids_pune2019/'
+      value: wids_pune2019/
       description: ''
       weight: '-7'
     vimeo:
@@ -67,11 +67,11 @@ settings:
       description: ''
       weight: '1'
     linkedin:
-      value: 'https://www.linkedin.com/groups/10417044/'
+      value: groups/10417044/
       description: ''
       weight: '2'
     twitter:
-      value: 'https://twitter.com/WiDSPune2019'
+      value: WiDSPune2019
       description: ''
       weight: '3'
     youtube:
@@ -87,7 +87,7 @@ settings:
       description: ''
       weight: '6'
     facebook:
-      value: 'https://www.facebook.com/WiDSPune2019'
+      value: WiDSPune2019
       description: ''
       weight: '7'
     googleplus:

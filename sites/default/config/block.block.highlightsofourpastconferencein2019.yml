@@ -1,23 +1,23 @@
-uuid: 00b5209c-f22a-47c4-8148-50c20b248e01
+uuid: c5b9ea34-216e-49dc-a9c1-dddae4d92119
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:description_and_images:e535b7ca-95bb-40f1-a60f-62b34bf76b63'
+    - 'block_content:basic:c08711ff-67e8-40f9-9ffb-41eb88fb5065'
   module:
     - block_content
     - system
   theme:
     - widspune20
-id: ourvisionphilosophy
+id: highlightsofourpastconferencein2019
 theme: widspune20
 region: content_bottom
 weight: -12
 provider: null
-plugin: 'block_content:e535b7ca-95bb-40f1-a60f-62b34bf76b63'
+plugin: 'block_content:c08711ff-67e8-40f9-9ffb-41eb88fb5065'
 settings:
-  id: 'block_content:e535b7ca-95bb-40f1-a60f-62b34bf76b63'
-  label: 'Our vision & philosophy'
+  id: 'block_content:c08711ff-67e8-40f9-9ffb-41eb88fb5065'
+  label: 'Highlights of our past conference in 2019'
   provider: block_content
   label_display: visible
   status: true
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: /node/1
+    pages: '<front>'
     negate: false
     context_mapping: {  }

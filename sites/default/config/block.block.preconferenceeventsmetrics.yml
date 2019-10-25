@@ -1,9 +1,9 @@
-uuid: 6a0a7bed-f5b2-421b-a4ef-b3c82bf7878b
+uuid: eb4fc08f-4468-4b01-9999-504b5506c112
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:metrics_of_events:fc5ab7db-721f-41a9-8fcd-e62a1d998ec9'
+    - 'block_content:metrics_of_events:334f0aa6-6cee-4fc9-9050-42c27907930d'
   module:
     - block_content
     - system
@@ -14,9 +14,9 @@ theme: widspune20
 region: content_bottom
 weight: -10
 provider: null
-plugin: 'block_content:fc5ab7db-721f-41a9-8fcd-e62a1d998ec9'
+plugin: 'block_content:334f0aa6-6cee-4fc9-9050-42c27907930d'
 settings:
-  id: 'block_content:fc5ab7db-721f-41a9-8fcd-e62a1d998ec9'
+  id: 'block_content:334f0aa6-6cee-4fc9-9050-42c27907930d'
   label: 'Pre-Conference Events Metrics'
   provider: block_content
   label_display: '0'
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "<front>\r\n/node/1"
+    pages: '<front>'
     negate: false
     context_mapping: {  }

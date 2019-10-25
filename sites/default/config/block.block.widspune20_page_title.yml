@@ -11,7 +11,7 @@ _core:
 id: widspune20_page_title
 theme: widspune20
 region: content
-weight: -8
+weight: -14
 provider: null
 plugin: page_title_block
 settings:

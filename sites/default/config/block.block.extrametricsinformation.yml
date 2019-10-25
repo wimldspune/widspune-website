@@ -1,23 +1,23 @@
-uuid: fd3cec6d-425d-484b-a22e-655551ae4770
+uuid: b84c67ba-ba85-48ea-8175-9f741bcd7e89
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:header_banner:4b90376a-3e21-4c46-a268-d651d2191f70'
+    - 'block_content:basic:b0f8643b-7252-43f0-9384-dc9b74c8ee5f'
   module:
     - block_content
     - system
   theme:
     - widspune20
-id: widspune20_frontpageheaderbanner
+id: extrametricsinformation
 theme: widspune20
-region: page_banner
-weight: 0
+region: content_bottom
+weight: -8
 provider: null
-plugin: 'block_content:4b90376a-3e21-4c46-a268-d651d2191f70'
+plugin: 'block_content:b0f8643b-7252-43f0-9384-dc9b74c8ee5f'
 settings:
-  id: 'block_content:4b90376a-3e21-4c46-a268-d651d2191f70'
-  label: 'Frontpage header banner'
+  id: 'block_content:b0f8643b-7252-43f0-9384-dc9b74c8ee5f'
+  label: 'Extra Metrics Information'
   provider: block_content
   label_display: '0'
   status: true
