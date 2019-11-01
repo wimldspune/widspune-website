@@ -102,7 +102,7 @@ settings:
     orientation: h
     show_name: 0
   link_attributes:
-    target: '<none>'
+    target: _blank
     rel: '<none>'
   iconset:
     style: 'fontawesome:2x'

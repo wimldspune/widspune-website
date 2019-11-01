@@ -17,7 +17,7 @@ provider: null
 plugin: 'block_content:c08711ff-67e8-40f9-9ffb-41eb88fb5065'
 settings:
   id: 'block_content:c08711ff-67e8-40f9-9ffb-41eb88fb5065'
-  label: 'Highlights of our past conference in 2019'
+  label: 'Highlights of Our Past Conference in 2019'
   provider: block_content
   label_display: visible
   status: true
