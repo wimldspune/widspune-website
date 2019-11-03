@@ -12,7 +12,9 @@
         "drupal/addtoany": "^1.12",
         "drupal/address": "^1.7",
         "drupal/social_media_links": "^2.6",
-        "drupal/faqfield": "^1.1"
+        "drupal/faqfield": "^1.1",
+        "drupal/ctools": "^3.2",
+        "drupal/pathauto": "^1.5"
     },
     "replace": {
         "drupal/core": "^8.7"
