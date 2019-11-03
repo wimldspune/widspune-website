@@ -1,8 +1,0 @@
-uuid: 8f5f9ded-1b21-4829-9f0a-9e58e92ba795
-langcode: en
-status: true
-dependencies: {  }
-name: 'Sponsoring Year'
-vid: sponsoring_year
-description: 'sponsoring year for the company'
-weight: 0
