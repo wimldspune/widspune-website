@@ -1,0 +1,8 @@
+uuid: c6898d04-4e93-4626-8b0e-3e2a73abdbff
+langcode: en
+status: true
+dependencies: {  }
+name: 'Event Year'
+vid: event_year
+description: 'Year of the event'
+weight: 0

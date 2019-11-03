@@ -11,7 +11,7 @@ id: node.sponsor.field_company_url
 field_name: field_company_url
 entity_type: node
 bundle: sponsor
-label: 'Company url'
+label: 'Company Website Address'
 description: ''
 required: false
 translatable: false

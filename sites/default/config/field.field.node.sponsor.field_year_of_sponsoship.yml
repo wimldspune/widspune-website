@@ -1,0 +1,29 @@
+uuid: d12ecd2d-c60c-49dd-ba8e-c3dfc21b4f08
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_year_of_sponsoship
+    - node.type.sponsor
+    - taxonomy.vocabulary.event_year
+id: node.sponsor.field_year_of_sponsoship
+field_name: field_year_of_sponsoship
+entity_type: node
+bundle: sponsor
+label: 'Year of Sponsoship'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      event_year: event_year
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

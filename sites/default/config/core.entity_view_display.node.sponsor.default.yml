@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.sponsor.field_company_url
     - field.field.node.sponsor.field_logo
     - field.field.node.sponsor.field_sponsor_type
+    - field.field.node.sponsor.field_year_of_sponsoship
     - node.type.sponsor
   module:
     - image
@@ -48,6 +49,14 @@ content:
     region: content
   field_sponsor_type:
     weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_year_of_sponsoship:
+    weight: 106
     label: above
     settings:
       link: true
