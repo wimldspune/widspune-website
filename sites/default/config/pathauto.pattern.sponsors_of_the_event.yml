@@ -1,0 +1,22 @@
+uuid: b4046785-7baf-4798-a857-2040a4cab161
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: sponsors_of_the_event
+label: 'Sponsors of the event'
+type: 'canonical_entities:node'
+pattern: 'sponser/[node:title]'
+selection_criteria:
+  61a1dfb7-afee-4f5e-a553-302983fb8bad:
+    id: node_type
+    bundles:
+      sponsor: sponsor
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 61a1dfb7-afee-4f5e-a553-302983fb8bad
+selection_logic: and
+weight: -5
+relationships: {  }

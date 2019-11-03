@@ -1,0 +1,23 @@
+uuid: 31cac0e4-5d1b-4327-9832-c55e3f3a88df
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - taxonomy
+id: sponsoring_year
+label: 'Year of Sponsoship'
+type: 'canonical_entities:taxonomy_term'
+pattern: 'sponser/[term:name]'
+selection_criteria:
+  2e82bab8-122b-4bf9-9f07-08c1ccc9bef9:
+    id: 'entity_bundle:taxonomy_term'
+    bundles:
+      sponsoring_year: sponsoring_year
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    uuid: 2e82bab8-122b-4bf9-9f07-08c1ccc9bef9
+selection_logic: and
+weight: -5
+relationships: {  }
