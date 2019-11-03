@@ -1,0 +1,21 @@
+uuid: eae54318-db50-4fa1-9cc7-02fec4b34014
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_prerequisite
+    - node.type.session
+  module:
+    - text
+id: node.session.field_prerequisite
+field_name: field_prerequisite
+entity_type: node
+bundle: session
+label: Prerequisite
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

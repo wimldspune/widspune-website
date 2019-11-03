@@ -1,0 +1,28 @@
+uuid: 444ab929-ac51-48d6-9689-25ae1c780d0d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_from_registed_user
+    - node.type.testimonials
+id: node.testimonials.field_from_registed_user
+field_name: field_from_registed_user
+entity_type: node
+bundle: testimonials
+label: 'From registed user'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: false
+    filter:
+      type: _none
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

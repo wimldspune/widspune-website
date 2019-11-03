@@ -1,0 +1,29 @@
+uuid: 7ef997c7-11e3-4a72-8acf-d5b7e9a5376a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_year
+    - node.type.testimonials
+    - taxonomy.vocabulary.event_year
+id: node.testimonials.field_event_year
+field_name: field_event_year
+entity_type: node
+bundle: testimonials
+label: 'Event year'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      event_year: event_year
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,21 @@
+uuid: 5312ae3d-84c6-48ec-ab92-24dd956df39d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date
+    - node.type.session
+  module:
+    - datetime_range
+id: node.session.field_date
+field_name: field_date
+entity_type: node
+bundle: session
+label: Date
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: daterange
