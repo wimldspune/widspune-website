@@ -5,4 +5,4 @@ dependencies: {  }
 name: 'Sponsor type'
 vid: sponsor_type
 description: 'Type of the sponsor '
-weight: 0
+weight: -9

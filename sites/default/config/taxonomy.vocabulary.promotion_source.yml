@@ -5,4 +5,4 @@ dependencies: {  }
 name: 'Event promotion source'
 vid: promotion_source
 description: 'From where did you hear about this event?:'
-weight: 0
+weight: -6

@@ -5,4 +5,4 @@ dependencies: {  }
 name: 'Event Year'
 vid: event_year
 description: 'Year of the event'
-weight: 0
+weight: -10

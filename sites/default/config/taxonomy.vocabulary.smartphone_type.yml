@@ -5,4 +5,4 @@ dependencies: {  }
 name: 'User smart phone type'
 vid: smartphone_type
 description: 'Mobile type of the user'
-weight: 0
+weight: -1

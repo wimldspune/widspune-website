@@ -7,4 +7,4 @@ _core:
 name: Classification
 vid: font_classification
 description: 'This is the general font type.'
-weight: 0
+weight: -7

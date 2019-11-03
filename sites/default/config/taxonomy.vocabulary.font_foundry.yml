@@ -7,4 +7,4 @@ _core:
 name: 'Font Foundry'
 vid: font_foundry
 description: 'Font Foundry'
-weight: 0
+weight: -4

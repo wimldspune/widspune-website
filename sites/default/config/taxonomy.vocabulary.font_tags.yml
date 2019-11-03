@@ -7,4 +7,4 @@ _core:
 name: 'Font Tags'
 vid: font_tags
 description: 'The tags that came with the font.'
-weight: 0
+weight: -3
