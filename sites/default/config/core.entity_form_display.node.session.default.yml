@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.session.field_date
     - field.field.node.session.field_event_year
     - field.field.node.session.field_prerequisite
+    - field.field.node.session.field_speakers
     - field.field.node.session.field_venue
     - node.type.session
   module:
@@ -56,6 +57,15 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: text_textarea
+    region: content
+  field_speakers:
+    weight: 26
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
     region: content
   field_venue:
     weight: 10

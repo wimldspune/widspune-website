@@ -1,15 +1,15 @@
-uuid: 444ab929-ac51-48d6-9689-25ae1c780d0d
+uuid: f58303ad-7027-4d7e-ac9f-17d1c92a4405
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_from_registed_user
-    - node.type.testimonials
-id: node.testimonials.field_from_registed_user
-field_name: field_from_registed_user
+    - field.storage.node.field_speakers
+    - node.type.session
+id: node.session.field_speakers
+field_name: field_speakers
 entity_type: node
-bundle: testimonials
-label: 'From registed user'
+bundle: session
+label: Speakers
 description: ''
 required: false
 translatable: false
