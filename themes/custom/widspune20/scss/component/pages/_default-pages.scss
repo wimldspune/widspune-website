@@ -70,43 +70,55 @@ h1.page-header {
 
 .footer {
   background-color: $footercolor;
-  .footer-section {
-    width: 30%;
-    display: inline-block;
-    text-align: center;
-    vertical-align: middle;
-    h2 {
-      font-size: 25px;
-      padding: 0 0 10px;
+  .footer_container {
+    display: flex;
+    max-width: $default-max-width;
+    margin: 0 auto;
+    .footer-section.footer_center {
+      flex: 2;
     }
-    .field--name-body {
-      span {
-        color: red;
+    .footer-section {
+      /*width: 30%;
+      display: inline-block;*/
+      flex: 1;
+      text-align: center;
+      vertical-align: middle;
+      h2 {
+        font-size: 25px;
+        padding: 0 0 10px;
       }
-    }
-    .field--type-image {
-      .field--item {
-        img {
-          margin: 0 auto;
+      .field--name-body {
+        span {
+          color: red;
         }
       }
-    }
-    nav {
-      -webkit-box-flex: 1;
-      -ms-flex: 1;
-      flex: 1;
-      ul.navbar-nav {
-        float: none;
-        li {
-          float: none;
-          a {
-            padding: 8px 0;
+      .field--type-image {
+        .field--item {
+          img {
+            margin: 0 auto;
           }
         }
       }
+      nav {
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        ul.navbar-nav {
+          float: none;
+          li {
+            float: none;
+            a {
+              padding: 8px 0;
+            }
+          }
+        }
+      }
+      .block-social-media-links {
+        margin-bottom: 20px;
+      }
     }
-    .block-social-media-links {
-      margin-bottom: 20px;
+    .small_font {
+      font-size: 14px;
     }
   }
 }

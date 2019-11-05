@@ -27,4 +27,7 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-hidden: {  }
+hidden:
+  field_event_year: true
+  field_from_registed_user: true
+  field_from_unregisted_user: true
