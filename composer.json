@@ -7,7 +7,6 @@
         "composer/installers": "^1.0.24",
         "wikimedia/composer-merge-plugin": "^1.4",
         "drupal/admin_toolbar": "^1.27",
-        "drupal/social_media": "^1.4",
         "drupal/fontyourface": "^3.2",
         "drupal/addtoany": "^1.12",
         "drupal/address": "^1.7",
@@ -15,7 +14,8 @@
         "drupal/faqfield": "^1.1",
         "drupal/ctools": "^3.2",
         "drupal/pathauto": "^1.5",
-        "drupal/views_taxonomy_term_name_into_id": "^1.0@alpha"
+        "drupal/views_taxonomy_term_name_into_id": "^1.0@alpha",
+        "drupal/social_media": "^1.6"
     },
     "replace": {
         "drupal/core": "^8"
