@@ -187,31 +187,33 @@
 
 
 <footer class="footer {{ container }}" role="contentinfo">
-  {% if page.footer_left %}
-    {% block footer_left %}
-      <div class="footer-section footer_left">
-        {{ page.footer_left }}
-      </div>
-    {% endblock %}
-  {% endif %}
-  {% if page.footer_center %}
-    {% block footer_center %}
-      <div class="footer-section footer_center">
-        {{ page.footer_center }}
-      </div>
-    {% endblock %}
-  {% endif %}
-  {% if page.footer_right %}
-    {% block footer_right %}
-      <div class="footer-section footer_right">
-        {{ page.footer_right }}
-      </div>
-    {% endblock %}
-  {% endif %}
-  {% if page.footer %}
-    {% block footer %}
-      {{ page.footer }}
-    {% endblock %}
-  {% endif %}
+  <div class="footer_container">
+    {% if page.footer_left %}
+      {% block footer_left %}
+        <div class="footer-section footer_left">
+          {{ page.footer_left }}
+        </div>
+      {% endblock %}
+    {% endif %}
+    {% if page.footer_center %}
+      {% block footer_center %}
+        <div class="footer-section footer_center">
+          {{ page.footer_center }}
+        </div>
+      {% endblock %}
+    {% endif %}
+    {% if page.footer_right %}
+      {% block footer_right %}
+        <div class="footer-section footer_right">
+          {{ page.footer_right }}
+        </div>
+      {% endblock %}
+    {% endif %}
+    {% if page.footer %}
+      {% block footer %}
+        {{ page.footer }}
+      {% endblock %}
+    {% endif %}
+  </div>
 </footer>
 
