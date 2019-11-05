@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5f5e7de055ebae1df11ced743843fc67",
+    "content-hash": "2907876f43f973769b411d70b9680967",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1373,6 +1373,53 @@
             "homepage": "https://www.drupal.org/project/token",
             "support": {
                 "source": "https://git.drupalcode.org/project/token"
+            }
+        },
+        {
+            "name": "drupal/views_taxonomy_term_name_into_id",
+            "version": "1.0.0-alpha2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/views_taxonomy_term_name_into_id.git",
+                "reference": "8.x-1.0-alpha2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/views_taxonomy_term_name_into_id-8.x-1.0-alpha2.zip",
+                "reference": "8.x-1.0-alpha2",
+                "shasum": "ff4d1065cfd087c8bc730772b8f5122aec89288a"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha2",
+                    "datestamp": "1571317684",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "dww",
+                    "homepage": "https://www.drupal.org/user/46549"
+                }
+            ],
+            "description": "The module provides the Views plugin for a Contextual filter (argument) validator that converts valid term names into IDs.",
+            "homepage": "https://www.drupal.org/project/views_taxonomy_term_name_into_id",
+            "support": {
+                "source": "https://git.drupalcode.org/project/views_taxonomy_term_name_into_id"
             }
         },
         {
@@ -5650,6 +5697,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "drupal/views_taxonomy_term_name_into_id": 15,
         "behat/mink": 20,
         "behat/mink-selenium2-driver": 20
     },

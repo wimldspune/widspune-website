@@ -1745,6 +1745,55 @@
         }
     },
     {
+        "name": "drupal/views_taxonomy_term_name_into_id",
+        "version": "1.0.0-alpha2",
+        "version_normalized": "1.0.0.0-alpha2",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/views_taxonomy_term_name_into_id.git",
+            "reference": "8.x-1.0-alpha2"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/views_taxonomy_term_name_into_id-8.x-1.0-alpha2.zip",
+            "reference": "8.x-1.0-alpha2",
+            "shasum": "ff4d1065cfd087c8bc730772b8f5122aec89288a"
+        },
+        "require": {
+            "drupal/core": "*"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.0-alpha2",
+                "datestamp": "1571317684",
+                "security-coverage": {
+                    "status": "not-covered",
+                    "message": "Alpha releases are not covered by Drupal security advisories."
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "dww",
+                "homepage": "https://www.drupal.org/user/46549"
+            }
+        ],
+        "description": "The module provides the Views plugin for a Contextual filter (argument) validator that converts valid term names into IDs.",
+        "homepage": "https://www.drupal.org/project/views_taxonomy_term_name_into_id",
+        "support": {
+            "source": "https://git.drupalcode.org/project/views_taxonomy_term_name_into_id"
+        }
+    },
+    {
         "name": "easyrdf/easyrdf",
         "version": "0.9.1",
         "version_normalized": "0.9.1.0",

@@ -14,7 +14,8 @@
         "drupal/social_media_links": "^2.6",
         "drupal/faqfield": "^1.1",
         "drupal/ctools": "^3.2",
-        "drupal/pathauto": "^1.5"
+        "drupal/pathauto": "^1.5",
+        "drupal/views_taxonomy_term_name_into_id": "^1.0@alpha"
     },
     "replace": {
         "drupal/core": "^8.7"
