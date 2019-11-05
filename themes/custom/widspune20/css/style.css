@@ -8843,48 +8843,58 @@ h1.page-header {
 /* line 71, ../scss/component/pages/_default-pages.scss */
 .footer {
   background-color: #eee;
+  display: flex;
 }
-/* line 73, ../scss/component/pages/_default-pages.scss */
+/* line 74, ../scss/component/pages/_default-pages.scss */
+.footer .footer_center {
+  flex: 2;
+}
+/* line 77, ../scss/component/pages/_default-pages.scss */
 .footer .footer-section {
-  width: 30%;
-  display: inline-block;
+  /*width: 30%;
+  display: inline-block;*/
+  flex: 1;
   text-align: center;
   vertical-align: middle;
 }
-/* line 78, ../scss/component/pages/_default-pages.scss */
+/* line 83, ../scss/component/pages/_default-pages.scss */
 .footer .footer-section h2 {
   font-size: 25px;
   padding: 0 0 10px;
 }
-/* line 83, ../scss/component/pages/_default-pages.scss */
+/* line 88, ../scss/component/pages/_default-pages.scss */
 .footer .footer-section .field--name-body span {
   color: red;
 }
-/* line 89, ../scss/component/pages/_default-pages.scss */
+/* line 94, ../scss/component/pages/_default-pages.scss */
 .footer .footer-section .field--type-image .field--item img {
   margin: 0 auto;
 }
-/* line 94, ../scss/component/pages/_default-pages.scss */
+/* line 99, ../scss/component/pages/_default-pages.scss */
 .footer .footer-section nav {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
-/* line 98, ../scss/component/pages/_default-pages.scss */
+/* line 103, ../scss/component/pages/_default-pages.scss */
 .footer .footer-section nav ul.navbar-nav {
   float: none;
 }
-/* line 100, ../scss/component/pages/_default-pages.scss */
+/* line 105, ../scss/component/pages/_default-pages.scss */
 .footer .footer-section nav ul.navbar-nav li {
   float: none;
 }
-/* line 102, ../scss/component/pages/_default-pages.scss */
+/* line 107, ../scss/component/pages/_default-pages.scss */
 .footer .footer-section nav ul.navbar-nav li a {
   padding: 8px 0;
 }
-/* line 108, ../scss/component/pages/_default-pages.scss */
+/* line 113, ../scss/component/pages/_default-pages.scss */
 .footer .footer-section .block-social-media-links {
   margin-bottom: 20px;
+}
+/* line 117, ../scss/component/pages/_default-pages.scss */
+.footer .small_font {
+  font-size: 14px;
 }
 
 /* line 6, ../scss/component/pages/_front-page.scss */

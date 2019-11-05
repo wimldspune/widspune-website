@@ -27,4 +27,9 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-hidden: {  }
+hidden:
+  field_date: true
+  field_event_year: true
+  field_prerequisite: true
+  field_speakers: true
+  field_venue: true

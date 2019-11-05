@@ -70,9 +70,14 @@ h1.page-header {
 
 .footer {
   background-color: $footercolor;
+  display: flex;
+  .footer_center {
+    flex: 2;
+  }
   .footer-section {
-    width: 30%;
-    display: inline-block;
+    /*width: 30%;
+    display: inline-block;*/
+    flex: 1;
     text-align: center;
     vertical-align: middle;
     h2 {
@@ -108,5 +113,8 @@ h1.page-header {
     .block-social-media-links {
       margin-bottom: 20px;
     }
+  }
+  .small_font {
+    font-size: 14px;
   }
 }
