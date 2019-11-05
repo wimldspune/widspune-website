@@ -59,9 +59,9 @@ class SocialMediaWidget extends WidgetBase {
    */
   public function formElement(FieldItemListInterface $items, $delta, array $element, array &$form, FormStateInterface $form_state) {
     $element['value'] = $element + [
-        '#type' => 'checkbox',
-        '#default_value' => !empty($items[0]->value),
-      ];
+      '#type' => 'checkbox',
+      '#default_value' => !empty($items[0]->value),
+    ];
 
     // Override the title from the incoming $element.
     if ($this->getSetting('display_label')) {

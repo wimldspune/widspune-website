@@ -18,7 +18,7 @@
         "drupal/views_taxonomy_term_name_into_id": "^1.0@alpha"
     },
     "replace": {
-        "drupal/core": "^8.7"
+        "drupal/core": "^8"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,

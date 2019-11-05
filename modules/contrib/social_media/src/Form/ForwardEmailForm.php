@@ -13,10 +13,14 @@ use Psr\Log\LoggerInterface;
 
 /**
  * Class ForwardEmailForm.
- *
  */
 class ForwardEmailForm extends FormBase {
 
+  /**
+   * The config Factory.
+   *
+   * @var \Drupal\Core\Config\ConfigFactoryInterface
+   */
   protected $configFactory;
 
   /**
@@ -27,7 +31,7 @@ class ForwardEmailForm extends FormBase {
   protected $requestStack;
 
   /**
-   * The mail manager
+   * The mail manager.
    *
    * @var \Drupal\Core\Mail\MailManagerInterface
    */
@@ -107,29 +111,22 @@ class ForwardEmailForm extends FormBase {
       '#title' => $this->t('Subject'),
       '#required' => TRUE,
       '#default_value' => $this->requestStack->getCurrentRequest()
-        ->get('subject')
+        ->get('subject'),
     ];
 
     $form['body'] = [
       '#type' => 'textarea',
       '#title' => $this->t('Body'),
       '#required' => TRUE,
-      '#default_value' => $this->requestStack->getCurrentRequest()->get('body')
+      '#default_value' => $this->requestStack->getCurrentRequest()->get('body'),
     ];
 
     $form['submit'] = [
       '#type' => 'submit',
-      '#value' => $this->t('Send')
+      '#value' => $this->t('Send'),
     ];
 
     return $form;
-  }
-
-  /**
-   * {@inheritdoc}
-   */
-  public function validateForm(array &$form, FormStateInterface $form_state) {
-    parent::validateForm($form, $form_state);
   }
 
   /**
@@ -145,11 +142,12 @@ class ForwardEmailForm extends FormBase {
     $result = $this->mailManager->mail('social_media', 'forward_email', $recipient, $langcode, $params, NULL, TRUE);
     if ($result['result'] !== TRUE) {
       $this->logger->notice('Sent email to %recipient', ['%recipient' => $recipient]);
-      drupal_set_message(t('There was a problem sending your message and it was not sent.'), 'error');
+      $this->messenger()->addError($this->t('There was a problem sending your message and it was not sent.'));
     }
     else {
       $this->logger->notice('Sent email to %recipient', ['%recipient' => $recipient]);
-      drupal_set_message($this->t('Your message has been send to @email', ['@email' => $recipient]));
+      $this->messenger()->addMessage($this->t('Your message has been send to @email', ['@email' => $recipient]));
     }
   }
+
 }

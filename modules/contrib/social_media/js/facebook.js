@@ -1,3 +1,7 @@
+/**
+ * @file
+ */
+
 (function ($) {
 
   'use strict';
@@ -23,4 +27,3 @@
     }
   };
 })(jQuery);
-

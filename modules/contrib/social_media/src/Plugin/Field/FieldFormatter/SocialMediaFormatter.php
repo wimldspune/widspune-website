@@ -21,7 +21,7 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
  *   }
  * )
  */
-class SocialMediaFormatter extends FormatterBase  implements ContainerFactoryPluginInterface  {
+class SocialMediaFormatter extends FormatterBase implements ContainerFactoryPluginInterface {
 
   /**
    * The block manager.
@@ -46,6 +46,7 @@ class SocialMediaFormatter extends FormatterBase  implements ContainerFactoryPlu
       $plugin_id, $plugin_definition, $configuration['field_definition'], $configuration['settings'], $configuration['label'], $configuration['view_mode'], $configuration['third_party_settings'], $container->get('plugin.manager.block')
     );
   }
+
   /**
    * {@inheritdoc}
    */
@@ -56,10 +57,10 @@ class SocialMediaFormatter extends FormatterBase  implements ContainerFactoryPlu
 
       $config = [];
       $block_instance = $this->blockManager->createInstance('social_sharing_block', $config);
-    // Some blocks might implement access check.
+      // Some blocks might implement access check.
       $access_result = $block_instance->access(\Drupal::currentUser());
-    // Return empty render array if user doesn't have access.
-    // $access_result can be boolean or an AccessResult class
+      // Return empty render array if user doesn't have access.
+      // $access_result can be boolean or an AccessResult class.
       if (is_object($access_result) && $access_result->isForbidden() || is_bool($access_result) && !$access_result) {
         return [];
       }

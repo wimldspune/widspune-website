@@ -14,4 +14,4 @@ social_media.forward:
     _form: '\Drupal\social_media\Form\ForwardEmailForm'
     _title: 'Forward email'
   requirements:
-   _access: 'TRUE'
+    _custom_access: '\Drupal\social_media\Controller\AccessController::access'

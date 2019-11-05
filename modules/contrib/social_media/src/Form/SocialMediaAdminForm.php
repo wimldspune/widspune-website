@@ -11,7 +11,6 @@ use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 
 /**
  * Class SocialMediaAdminForm.
- *
  */
 class SocialMediaAdminForm extends ConfigFormBase {
 
@@ -26,7 +25,8 @@ class SocialMediaAdminForm extends ConfigFormBase {
    * {@inheritdoc}
    */
   public function __construct(
-  ConfigFactoryInterface $config_factory, EventDispatcherInterface $event_dispatcher) {
+  ConfigFactoryInterface $config_factory,
+  EventDispatcherInterface $event_dispatcher) {
     parent::__construct($config_factory);
     $this->eventDispatcher = $event_dispatcher;
   }
@@ -65,16 +65,16 @@ class SocialMediaAdminForm extends ConfigFormBase {
     $social_medias = $this->getSocialMedias();
     $token_types = ['current_page'];
     foreach ($social_medias as $key => $label) {
-      $form[$key] = array(
+      $form[$key] = [
         '#type' => 'details',
-        '#title' => t('@social_media settings', array('@social_media' => $label)),
+        '#title' => t('@social_media settings', ['@social_media' => $label]),
         '#open' => TRUE,
-      );
+      ];
       $form[$key][$key . '_enable'] = [
         '#type' => 'checkbox',
         '#title' => $this->t('Enable'),
         '#default_value' => $config->get('social_media.' . $key . '.enable'),
-        '#description' => t('Globally disabled the settings')
+        '#description' => t('Globally disabled the settings'),
       ];
 
       $form[$key][$key . '_api_url'] = [
@@ -91,11 +91,11 @@ class SocialMediaAdminForm extends ConfigFormBase {
       ];
 
       // Handle some extra configuration for email service.
-      if($key == 'email'){
+      if ($key == 'email') {
 
         $form[$key][$key . '_api_url']['#states'] = [
           'invisible' => [
-            ':input[name="'.$key . '_enable_forward'.'"]' => array('checked' => TRUE),
+            ':input[name="' . $key . '_enable_forward' . '"]' => ['checked' => TRUE],
           ],
         ];
 
@@ -103,26 +103,26 @@ class SocialMediaAdminForm extends ConfigFormBase {
           '#type' => 'checkbox',
           '#title' => $this->t('Enable forward instead for client email service'),
           '#default_value' => $config->get('social_media.' . $key . '.enable_forward'),
-          '#description' => t('If it is checked then forward email form will open as model dialog.')
+          '#description' => t('If it is checked then forward email form will open as model dialog.'),
         ];
         $form[$key][$key . '_show_forward'] = [
           '#type' => 'radios',
-          '#options' => [1 => $this->t('Model dialog'),2 => $this->t('Separate page')],
+          '#options' => [1 => $this->t('Model dialog'), 2 => $this->t('Separate page')],
           '#title' => $this->t('Choose how you want to show forward email form'),
-          '#default_value' => $config->get('social_media.' . $key . '.show_forward')?$config->get('social_media.' . $key . '.show_forward'):1,
+          '#default_value' => $config->get('social_media.' . $key . '.show_forward') ? $config->get('social_media.' . $key . '.show_forward') : 1,
           '#states' => [
             'visible' => [
-              ':input[name="'.$key . '_enable_forward'.'"]' => array('checked' => TRUE),
-             ],
+              ':input[name="' . $key . '_enable_forward' . '"]' => ['checked' => TRUE],
             ],
-          '#description' => t('default set as dialog popup, you can change it to show in separate page')
+          ],
+          '#description' => t('default set as dialog popup, you can change it to show in separate page'),
         ];
       }
 
       $form[$key][$key . '_api_event'] = [
         '#type' => 'select',
         '#title' => $this->t('Event'),
-        '#options' => array('href' => 'href', 'onclick' => 'onclick'),
+        '#options' => ['href' => 'href', 'onclick' => 'onclick'],
         '#default_value' => $config->get('social_media.' . $key . '.api_event'),
       ];
 
@@ -130,39 +130,39 @@ class SocialMediaAdminForm extends ConfigFormBase {
         '#type' => 'textarea',
         '#title' => $this->t('drupalSettings variables'),
         '#default_value' => $config->get('social_media.' . $key . '.drupalSettings'),
-        '#description' => t('Defines different drupalSettings variable.Each settings in new line.eg:<br/>application_id|343434434<br/>' .
-          'you can get those variables in js.eg drupalSettings.social_media.application_id')
+        '#description' => t('Defines different drupalSettings variable.Each settings in new line.eg:<br/>application_id|343434434<br/> you can get those variables in js.eg drupalSettings.social_media.application_id'),
       ];
 
       $form[$key][$key . '_library'] = [
         '#type' => 'textfield',
         '#title' => $this->t('Drupal library'),
         '#default_value' => $config->get('social_media.' . $key . '.library'),
-        '#description' => t('Add drupal custom library.eg: social_media/facebook')
+        '#description' => t('Add drupal custom library.eg: social_media/facebook'),
       ];
-
 
       $form[$key][$key . '_text'] = [
         '#type' => 'textfield',
         '#title' => $this->t('Link text'),
         '#default_value' => $config->get('social_media.' . $key . '.text'),
-        '#description' => t('Text of the link')
+        '#description' => t('Text of the link'),
       ];
 
       $form[$key][$key . '_default_img'] = [
         '#type' => 'checkbox',
         '#title' => $this->t('Default image'),
         '#default_value' => $config->get('social_media.' . $key . '.default_img'),
-        '#description' => t('If it is checked default image will be loaded. Make service name with icon name. eg:facebook_share.svg')
+        '#description' => t('If it is checked default image will be loaded. Make service name with icon name. eg:facebook_share.svg'),
       ];
       $form[$key][$key . '_img'] = [
         '#type' => 'textfield',
         '#title' => $this->t('Alternative image link'),
-        '#states' => array('visible' => array(
-            ':input[name="' . $key . '_default_img' . '"]' => array('checked' => FALSE),
-          )),
+        '#states' => [
+          'visible' => [
+            ':input[name="' . $key . '_default_img' . '"]' => ['checked' => FALSE],
+          ],
+        ],
         '#default_value' => $config->get('social_media.' . $key . '.img'),
-        '#description' => t('If you want to have your custom image, give image path.')
+        '#description' => t('If you want to have your custom image, give image path.'),
       ];
       $form[$key][$key . '_weight'] = [
         '#type' => 'number',
@@ -170,25 +170,17 @@ class SocialMediaAdminForm extends ConfigFormBase {
         '#max' => 10,
         '#min' => 0,
         '#default_value' => $config->get('social_media.' . $key . '.weight'),
-        '#description' => t('Order of the share link to render')
+        '#description' => t('Order of the share link to render'),
       ];
 
       $form[$key][$key . '_attributes'] = [
         '#type' => 'textarea',
         '#title' => $this->t('Attributes'),
         '#default_value' => $config->get('social_media.' . $key . '.attributes'),
-        '#description' => t('Defines different attributes of link. Each attribute in new line.eg:<br/>target|blank<br/>'
-          . 'class|facebook-share js-share')
+        '#description' => t('Defines different attributes of link. Each attribute in new line.eg:<br/>target|blank<br/> class|facebook-share js-share'),
       ];
     }
     return parent::buildForm($form, $form_state);
-  }
-
-  /**
-   * {@inheritdoc}
-   */
-  public function validateForm(array &$form, FormStateInterface $form_state) {
-    parent::validateForm($form, $form_state);
   }
 
   /**
@@ -238,15 +230,17 @@ class SocialMediaAdminForm extends ConfigFormBase {
       }
     }
     $config->save();
-    drupal_set_message($this->t('Your configuration has been saved'));
+    $this->messenger()->addMessage($this->t('Your configuration has been saved'));
   }
 
   /**
+   * Get social media elements.
    *
-   * @return type
+   * @return array
+   *   Social media elements.
    */
   protected function getSocialMedias() {
-    $element = array(
+    $elements = [
       'facebook_share' => 'Facebook share',
       'facebook_msg' => 'Facebook messenger',
       'linkedin' => 'Linkedin',
@@ -254,13 +248,14 @@ class SocialMediaAdminForm extends ConfigFormBase {
       'pinterest' => 'Pinterest',
       'google_plus' => 'Google Plus',
       'email' => 'Email',
-    );
+      'print' => 'Print',
+    ];
 
-    $event = new SocialMediaEvent($element);
+    $event = new SocialMediaEvent($elements);
     $this->eventDispatcher->dispatch('social_media.add_more_link', $event);
-    $element = $event->getElement();
+    $elements = $event->getElement();
 
-    return $element;
+    return $elements;
   }
 
 }

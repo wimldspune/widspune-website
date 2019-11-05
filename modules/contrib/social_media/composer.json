@@ -8,6 +8,10 @@
       "name": "Takim Islam",
       "homepage": "http://drupalsharing.com/",
       "role": "Maintainer"
+    },
+    {
+      "name": "Jack Over",
+      "role": "Maintainer"
     }
   ],
   "support": {

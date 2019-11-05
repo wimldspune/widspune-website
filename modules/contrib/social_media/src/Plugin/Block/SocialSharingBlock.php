@@ -11,6 +11,7 @@ use Drupal\Core\Utility\Token;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 use Drupal\Core\Template\Attribute;
 use Drupal\Core\Path\CurrentPathStack;
+use Drupal\Core\Cache\Cache;
 
 /**
  * Provides a 'SocialSharingBlock' block.
@@ -79,11 +80,11 @@ class SocialSharingBlock extends BlockBase implements ContainerFactoryPluginInte
     $library = ['social_media/basic'];
     $settings = [];
     $icon_path = $base_url . '/' . drupal_get_path('module', 'social_media') . '/icons/';
-    $elements = array();
+    $elements = [];
     $social_medias = $this->configFactory->get('social_media.settings')
       ->get('social_media');
 
-    // call pre_execute event before doing anything.
+    // Call pre_execute event before doing anything.
     $event = new SocialMediaEvent($social_medias);
     $this->eventDispatcher->dispatch('social_media.pre_execute', $event);
     $social_medias = $event->getElement();
@@ -91,7 +92,7 @@ class SocialSharingBlock extends BlockBase implements ContainerFactoryPluginInte
     $social_medias = $this->sortSocialMedias($social_medias);
     foreach ($social_medias as $name => $social_media) {
 
-      // replace api url with different link.
+      // Replace api url with different link.
       if ($name == "email" && isset($social_media['enable_forward']) && $social_media['enable_forward']) {
         $social_media['api_url'] = str_replace('mailto:', '/social-media-forward', $social_media['api_url']);
         $social_media['api_url'] .= '&destination=' . $this->currentPath->getPath();
@@ -102,16 +103,16 @@ class SocialSharingBlock extends BlockBase implements ContainerFactoryPluginInte
 
       if ($social_media['enable'] == 1 && !empty($social_media['api_url'])) {
         $elements[$name]['text'] = $social_media['text'];
-        $elements[$name]['api'] = new Attribute(array($social_media['api_event'] => $this->token->replace($social_media['api_url'])));
+        $elements[$name]['api'] = new Attribute([$social_media['api_event'] => $this->token->replace($social_media['api_url'])]);
 
         if (isset($social_media['library']) && !empty($social_media['library'])) {
           $library[] = $social_media['library'];
         }
         if (isset($social_media['attributes']) && !empty($social_media['attributes'])) {
-          $elements[$name]['attr'] = $this->social_media_convert_attributes($social_media['attributes']);
+          $elements[$name]['attr'] = $this->socialMediaConvertAttributes($social_media['attributes']);
         }
         if (isset($social_media['drupalSettings']) && !empty($social_media['drupalSettings'])) {
-          $settings['social_media'] = $this->social_media_convert_drupalSettings($social_media['drupalSettings']);
+          $settings['social_media'] = $this->socialMediaConvertDrupalSettings($social_media['drupalSettings']);
         }
 
         if (isset($social_media['default_img']) && $social_media['default_img']) {
@@ -133,31 +134,25 @@ class SocialSharingBlock extends BlockBase implements ContainerFactoryPluginInte
 
     $build = [];
 
-    // call prerender event before render.
+    // Call prerender event before render.
     $event = new SocialMediaEvent($elements);
     $this->eventDispatcher->dispatch('social_media.pre_render', $event);
     $elements = $event->getElement();
 
-    $build['social_sharing_block'] = array(
+    $build['social_sharing_block'] = [
       '#theme' => 'social_media_links',
       '#elements' => $elements,
       '#attached' => [
         'library' => $library,
-        'drupalSettings' => $settings
+        'drupalSettings' => $settings,
       ],
-      '#cache' => [
-        'tags' => [
-          'social_media:' . $this->currentPath->getPath(),
-        ],
-        'contexts' => [
-          'url',
-        ],
-      ],
-    );
-    //dsm($build);
+    ];
     return $build;
   }
 
+  /**
+   * TODO describe what this does and what $element is.
+   */
   protected function sortSocialMedias(&$element) {
     $weight = [];
     foreach ($element as $key => $row) {
@@ -167,7 +162,10 @@ class SocialSharingBlock extends BlockBase implements ContainerFactoryPluginInte
     return $element;
   }
 
-  protected function social_media_convert_attributes($variables) {
+  /**
+   * TODO describe what this does and what $variables is.
+   */
+  protected function socialMediaConvertAttributes($variables) {
     $variable = explode("\n", $variables);
     $attributes = [];
     if (count($variable)) {
@@ -183,7 +181,10 @@ class SocialSharingBlock extends BlockBase implements ContainerFactoryPluginInte
     return $attributes;
   }
 
-  protected function social_media_convert_drupalSettings($variables) {
+  /**
+   * TODO describe what this does and what $variables is.
+   */
+  protected function socialMediaConvertDrupalSettings($variables) {
     $variable = explode("\n", $variables);
     $settings = [];
     if (count($variable)) {
@@ -194,6 +195,23 @@ class SocialSharingBlock extends BlockBase implements ContainerFactoryPluginInte
     }
 
     return $settings;
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function getCacheTags() {
+    return Cache::mergeTags(parent::getCacheTags(), [
+      'social_media:' . $this->currentPath->getPath(),
+      'config:social_media.settings',
+    ]);
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function getCacheContexts() {
+    return Cache::mergeContexts(parent::getCacheContexts(), ['url.path']);
   }
 
 }

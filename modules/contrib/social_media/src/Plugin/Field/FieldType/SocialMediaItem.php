@@ -23,7 +23,7 @@ use Drupal\Core\TypedData\DataDefinition;
  *   default_formatter = "social_media_default"
  * )
  */
-class SocialMediaItem extends FieldItemBase implements OptionsProviderInterface  {
+class SocialMediaItem extends FieldItemBase implements OptionsProviderInterface {
 
   /**
    * {@inheritdoc}
@@ -59,7 +59,6 @@ class SocialMediaItem extends FieldItemBase implements OptionsProviderInterface 
 
     return $properties;
   }
-
 
   /**
    * {@inheritdoc}
