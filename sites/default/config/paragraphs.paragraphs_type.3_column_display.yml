@@ -1,0 +1,9 @@
+uuid: 1e62c06c-3ff8-4dc0-9265-063c35abccb5
+langcode: en
+status: true
+dependencies: {  }
+id: 3_column_display
+label: '3 column display'
+icon_uuid: null
+description: 'This paragraph used for block 3 column display'
+behavior_plugins: {  }

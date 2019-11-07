@@ -15,7 +15,8 @@
         "drupal/ctools": "^3.2",
         "drupal/pathauto": "^1.5",
         "drupal/views_taxonomy_term_name_into_id": "^1.0@alpha",
-        "drupal/social_media": "^1.6"
+        "drupal/social_media": "^1.6",
+        "drupal/paragraphs": "^1.10"
     },
     "replace": {
         "drupal/core": "^8"

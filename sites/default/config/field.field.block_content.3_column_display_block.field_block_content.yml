@@ -1,0 +1,31 @@
+uuid: 3d36c782-2b73-46cc-b6d6-776bce66d798
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.3_column_display_block
+    - field.storage.block_content.field_block_content
+    - paragraphs.paragraphs_type.3_column_display
+  module:
+    - entity_reference_revisions
+id: block_content.3_column_display_block.field_block_content
+field_name: field_block_content
+entity_type: block_content
+bundle: 3_column_display_block
+label: 'Block Content'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      3_column_display: 3_column_display
+    target_bundles_drag_drop:
+      3_column_display:
+        enabled: true
+        weight: 2
+field_type: entity_reference_revisions

@@ -9277,3 +9277,18 @@ h1.page-header {
   font-size: 25px;
   margin-bottom: 20px;
 }
+
+/* line 1, ../scss/component/regions/_three-column-block.scss */
+.block--three-column-display {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+/* line 4, ../scss/component/regions/_three-column-block.scss */
+.block--three-column-display .field {
+  display: flex;
+  text-align: center;
+}
+/* line 7, ../scss/component/regions/_three-column-block.scss */
+.block--three-column-display .field .field--item {
+  flex: 1;
+}

@@ -1,0 +1,31 @@
+uuid: 99277b58-5b47-4115-aa94-59f6ee6dca8b
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:3_column_display_block:50696616-4bc7-47e0-93ab-6ca8b06354e0'
+  module:
+    - block_content
+    - system
+  theme:
+    - widspune20
+id: audienceprofile
+theme: widspune20
+region: content_bottom
+weight: 0
+provider: null
+plugin: 'block_content:50696616-4bc7-47e0-93ab-6ca8b06354e0'
+settings:
+  id: 'block_content:50696616-4bc7-47e0-93ab-6ca8b06354e0'
+  label: 'Audience Profile'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

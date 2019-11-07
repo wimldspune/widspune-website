@@ -1,0 +1,11 @@
+.block--three-column-display {
+  max-width: $default-max-width;
+  margin: 0 auto;
+  .field {
+    display: flex;
+    text-align: center;
+    .field--item {
+      flex: 1;
+    }
+  }
+}

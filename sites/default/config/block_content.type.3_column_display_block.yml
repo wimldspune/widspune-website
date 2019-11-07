@@ -1,0 +1,8 @@
+uuid: 79d5c386-a99e-4fd6-b16d-9404f3d7c013
+langcode: en
+status: true
+dependencies: {  }
+id: 3_column_display_block
+label: '3 Column Display Block'
+revision: 0
+description: 'This block displays content in 3 columns'
