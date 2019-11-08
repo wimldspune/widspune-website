@@ -12,7 +12,7 @@ dependencies:
 id: frontpageregistrationblock
 theme: widspune20
 region: sidebar_second
-weight: 0
+weight: -16
 provider: null
 plugin: 'block_content:47e1a52f-1852-444b-8117-b9f41bf218df'
 settings:

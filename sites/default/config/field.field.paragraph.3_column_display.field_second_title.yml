@@ -1,15 +1,15 @@
-uuid: 774fae74-1a80-4d3f-850d-ffa90d8ab0da
+uuid: ae131b7f-83ab-4544-9db7-270158e58095
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_title
+    - field.storage.paragraph.field_second_title
     - paragraphs.paragraphs_type.3_column_display
-id: paragraph.3_column_display.field_title
-field_name: field_title
+id: paragraph.3_column_display.field_second_title
+field_name: field_second_title
 entity_type: paragraph
 bundle: 3_column_display
-label: Header
+label: Title
 description: ''
 required: false
 translatable: false
