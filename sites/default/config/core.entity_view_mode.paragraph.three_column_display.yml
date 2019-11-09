@@ -1,0 +1,10 @@
+uuid: 5a7025ab-cc55-48ef-8e08-d05d99d863e0
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.three_column_display
+label: 'Three Column Display'
+targetEntityType: paragraph
+cache: true

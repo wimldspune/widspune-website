@@ -1,4 +1,4 @@
-uuid: b72e91ef-516c-4e59-86b0-d88a013ffc61
+uuid: 1040a6d8-89d5-46f6-b7db-774a3ae5110b
 langcode: en
 status: true
 dependencies:
@@ -6,8 +6,8 @@ dependencies:
     - block_content
     - entity_reference_revisions
     - paragraphs
-id: block_content.field_block_content
-field_name: field_block_content
+id: block_content.field_cards
+field_name: field_cards
 entity_type: block_content
 type: entity_reference_revisions
 settings:

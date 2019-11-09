@@ -1,0 +1,31 @@
+uuid: 524e0393-3e79-45eb-b9d5-04846083816f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.four_column_block
+    - field.storage.block_content.field_cards
+    - paragraphs.paragraphs_type.3_column_display
+  module:
+    - entity_reference_revisions
+id: block_content.four_column_block.field_cards
+field_name: field_cards
+entity_type: block_content
+bundle: four_column_block
+label: Cards
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      3_column_display: 3_column_display
+    target_bundles_drag_drop:
+      3_column_display:
+        enabled: true
+        weight: 2
+field_type: entity_reference_revisions

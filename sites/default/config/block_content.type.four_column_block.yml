@@ -1,0 +1,8 @@
+uuid: 76702776-e844-45e0-87f1-16081dc2ac05
+langcode: en
+status: true
+dependencies: {  }
+id: four_column_block
+label: 'Four Column Block'
+revision: 0
+description: 'This block displays content in 4 columns'

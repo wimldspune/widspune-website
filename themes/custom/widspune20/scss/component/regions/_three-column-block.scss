@@ -1,25 +1,31 @@
 .block--three-column-display {
   max-width: $default-max-width;
   margin: 0 auto;
+  h2.block-title {
+    color: $basetextcolor;
+    font-size: 72px;
+    text-align: left;
+  }
   .field {
-    display: flex;
+    //display: flex;
     justify-content: space-around;
     text-align: center;
     flex-wrap: wrap;
     .field--item {
-      flex-basis: 27%;
+      //flex-basis: 23%;
       margin-bottom: 20px;
       .paragraph {
-        display: flex;
-        flex-direction: column;
+        //display: flex;
+        //flex-direction: column;
         height: 100%;
         .field {
-          flex: 1;
+          //flex: 1;
         }
         .field--name-field-title {
           font-size: 20px;
         }
-        .field--name-field-content-image {
+        .field--name-field-content-image img{
+          margin: 0 auto;
         }
         .field--name-field-second-title {
           color: $basetextcolor;

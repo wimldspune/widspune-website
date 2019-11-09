@@ -8902,6 +8902,55 @@ h1.page-header {
   font-size: 14px;
 }
 
+/* line 127, ../scss/component/pages/_default-pages.scss */
+.block-four-column-para {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+/* line 131, ../scss/component/pages/_default-pages.scss */
+.block-four-column-para h2 {
+  color: #00b140;
+  font-size: 72px;
+  text-align: left;
+}
+/* line 142, ../scss/component/pages/_default-pages.scss */
+.block-four-column-para .field .field--item {
+  margin-bottom: 20px;
+}
+/* line 144, ../scss/component/pages/_default-pages.scss */
+.block-four-column-para .field .field--item .paragraph {
+  height: 100%;
+}
+/* line 151, ../scss/component/pages/_default-pages.scss */
+.block-four-column-para .field .field--item .paragraph .field--name-field-title {
+  font-size: 20px;
+}
+/* line 156, ../scss/component/pages/_default-pages.scss */
+.block-four-column-para .field .field--item .paragraph .field--name-field-second-title {
+  color: #00b140;
+  font-size: 22px;
+  font-family: 'News Cycle';
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 20px 0;
+}
+/* line 165, ../scss/component/pages/_default-pages.scss */
+.block-four-column-para .field .field--item .paragraph .field--name-field-description {
+  margin-bottom: 15px;
+}
+/* line 168, ../scss/component/pages/_default-pages.scss */
+.block-four-column-para .field .field--item .paragraph .field--name-field-content-link {
+  max-height: 58px;
+}
+/* line 170, ../scss/component/pages/_default-pages.scss */
+.block-four-column-para .field .field--item .paragraph .field--name-field-content-link a {
+  background-color: #00b140;
+  border: 1px solid #00b140;
+  padding: 14px 30px;
+  color: #fff;
+}
+
 /* line 6, ../scss/component/pages/_front-page.scss */
 .path-frontpage .main-container .row .view-frontpage {
   display: none;
@@ -9284,32 +9333,34 @@ h1.page-header {
   margin: 0 auto;
 }
 /* line 4, ../scss/component/regions/_three-column-block.scss */
+.block--three-column-display h2.block-title {
+  color: #00b140;
+  font-size: 72px;
+  text-align: left;
+}
+/* line 9, ../scss/component/regions/_three-column-block.scss */
 .block--three-column-display .field {
-  display: flex;
   justify-content: space-around;
   text-align: center;
   flex-wrap: wrap;
 }
-/* line 9, ../scss/component/regions/_three-column-block.scss */
+/* line 14, ../scss/component/regions/_three-column-block.scss */
 .block--three-column-display .field .field--item {
-  flex-basis: 27%;
   margin-bottom: 20px;
 }
-/* line 12, ../scss/component/regions/_three-column-block.scss */
+/* line 17, ../scss/component/regions/_three-column-block.scss */
 .block--three-column-display .field .field--item .paragraph {
-  display: flex;
-  flex-direction: column;
   height: 100%;
 }
-/* line 16, ../scss/component/regions/_three-column-block.scss */
-.block--three-column-display .field .field--item .paragraph .field {
-  flex: 1;
-}
-/* line 19, ../scss/component/regions/_three-column-block.scss */
+/* line 24, ../scss/component/regions/_three-column-block.scss */
 .block--three-column-display .field .field--item .paragraph .field--name-field-title {
   font-size: 20px;
 }
-/* line 24, ../scss/component/regions/_three-column-block.scss */
+/* line 27, ../scss/component/regions/_three-column-block.scss */
+.block--three-column-display .field .field--item .paragraph .field--name-field-content-image img {
+  margin: 0 auto;
+}
+/* line 30, ../scss/component/regions/_three-column-block.scss */
 .block--three-column-display .field .field--item .paragraph .field--name-field-second-title {
   color: #00b140;
   font-size: 22px;
@@ -9319,15 +9370,15 @@ h1.page-header {
   letter-spacing: 1px;
   margin: 20px 0;
 }
-/* line 33, ../scss/component/regions/_three-column-block.scss */
+/* line 39, ../scss/component/regions/_three-column-block.scss */
 .block--three-column-display .field .field--item .paragraph .field--name-field-description {
   margin-bottom: 15px;
 }
-/* line 36, ../scss/component/regions/_three-column-block.scss */
+/* line 42, ../scss/component/regions/_three-column-block.scss */
 .block--three-column-display .field .field--item .paragraph .field--name-field-content-link {
   max-height: 58px;
 }
-/* line 38, ../scss/component/regions/_three-column-block.scss */
+/* line 44, ../scss/component/regions/_three-column-block.scss */
 .block--three-column-display .field .field--item .paragraph .field--name-field-content-link a {
   background-color: #00b140;
   border: 1px solid #00b140;
