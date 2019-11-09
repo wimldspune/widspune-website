@@ -1,9 +1,9 @@
-uuid: b789a536-3344-48b3-af7f-70fb13603257
+uuid: 19e9a1ba-0bf0-40a9-aeaf-a5e16dacb7a0
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:3_column_display_block:56d3d961-9ecd-4b9b-8d1c-74eb77f1ad9f'
+    - 'block_content:3_column_display_block:bb4fb2c5-647a-4fa0-abdd-636b5d41af48'
   module:
     - block_content
     - system
@@ -12,11 +12,11 @@ dependencies:
 id: participate
 theme: widspune20
 region: content_bottom
-weight: -15
+weight: -16
 provider: null
-plugin: 'block_content:56d3d961-9ecd-4b9b-8d1c-74eb77f1ad9f'
+plugin: 'block_content:bb4fb2c5-647a-4fa0-abdd-636b5d41af48'
 settings:
-  id: 'block_content:56d3d961-9ecd-4b9b-8d1c-74eb77f1ad9f'
+  id: 'block_content:bb4fb2c5-647a-4fa0-abdd-636b5d41af48'
   label: Participate
   provider: block_content
   label_display: visible

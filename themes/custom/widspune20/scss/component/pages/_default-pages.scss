@@ -151,7 +151,8 @@ h1.page-header {
         .field--name-field-title {
           font-size: 20px;
         }
-        .field--name-field-content-image {
+        .field--name-field-content-image img{
+          margin: 0 auto;
         }
         .field--name-field-second-title {
           color: $basetextcolor;
@@ -164,7 +165,11 @@ h1.page-header {
         }
         .field--name-field-description {
           margin-bottom: 15px;
+          @media (min-width: $screen-lg-min) {
+            height: 150px;
+          }
         }
+
         .field--name-field-content-link {
           max-height: 58px;
           a {

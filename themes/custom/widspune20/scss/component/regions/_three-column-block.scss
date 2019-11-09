@@ -38,6 +38,12 @@
         }
         .field--name-field-description {
           margin-bottom: 15px;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          @media (min-width: $screen-lg-min) {
+            height: 100px;
+          }
         }
         .field--name-field-content-link {
           max-height: 58px;

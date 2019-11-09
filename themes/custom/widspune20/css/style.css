@@ -8925,7 +8925,11 @@ h1.page-header {
 .block-four-column-para .field .field--item .paragraph .field--name-field-title {
   font-size: 20px;
 }
-/* line 156, ../scss/component/pages/_default-pages.scss */
+/* line 154, ../scss/component/pages/_default-pages.scss */
+.block-four-column-para .field .field--item .paragraph .field--name-field-content-image img {
+  margin: 0 auto;
+}
+/* line 157, ../scss/component/pages/_default-pages.scss */
 .block-four-column-para .field .field--item .paragraph .field--name-field-second-title {
   color: #00b140;
   font-size: 22px;
@@ -8935,15 +8939,21 @@ h1.page-header {
   letter-spacing: 1px;
   margin: 20px 0;
 }
-/* line 165, ../scss/component/pages/_default-pages.scss */
+/* line 166, ../scss/component/pages/_default-pages.scss */
 .block-four-column-para .field .field--item .paragraph .field--name-field-description {
   margin-bottom: 15px;
 }
-/* line 168, ../scss/component/pages/_default-pages.scss */
+@media (min-width: 1200px) {
+  /* line 166, ../scss/component/pages/_default-pages.scss */
+  .block-four-column-para .field .field--item .paragraph .field--name-field-description {
+    height: 150px;
+  }
+}
+/* line 173, ../scss/component/pages/_default-pages.scss */
 .block-four-column-para .field .field--item .paragraph .field--name-field-content-link {
   max-height: 58px;
 }
-/* line 170, ../scss/component/pages/_default-pages.scss */
+/* line 175, ../scss/component/pages/_default-pages.scss */
 .block-four-column-para .field .field--item .paragraph .field--name-field-content-link a {
   background-color: #00b140;
   border: 1px solid #00b140;
@@ -9373,12 +9383,21 @@ h1.page-header {
 /* line 39, ../scss/component/regions/_three-column-block.scss */
 .block--three-column-display .field .field--item .paragraph .field--name-field-description {
   margin-bottom: 15px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
-/* line 42, ../scss/component/regions/_three-column-block.scss */
+@media (min-width: 1200px) {
+  /* line 39, ../scss/component/regions/_three-column-block.scss */
+  .block--three-column-display .field .field--item .paragraph .field--name-field-description {
+    height: 100px;
+  }
+}
+/* line 48, ../scss/component/regions/_three-column-block.scss */
 .block--three-column-display .field .field--item .paragraph .field--name-field-content-link {
   max-height: 58px;
 }
-/* line 44, ../scss/component/regions/_three-column-block.scss */
+/* line 50, ../scss/component/regions/_three-column-block.scss */
 .block--three-column-display .field .field--item .paragraph .field--name-field-content-link a {
   background-color: #00b140;
   border: 1px solid #00b140;
