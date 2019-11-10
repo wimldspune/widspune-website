@@ -19,7 +19,7 @@ settings:
   id: 'block_content:349fff0e-920c-406a-ad49-616d72984670'
   label: About
   provider: block_content
-  label_display: visible
+  label_display: '0'
   status: true
   info: ''
   view_mode: full

@@ -8,7 +8,7 @@ dependencies:
     - field.field.paragraph.3_column_display.field_description
     - field.field.paragraph.3_column_display.field_second_title
     - field.field.paragraph.3_column_display.field_title
-    - image.style.max_325x325
+    - image.style.four_column_image_style
     - paragraphs.paragraphs_type.3_column_display
   module:
     - image
@@ -23,7 +23,7 @@ content:
     weight: 1
     label: hidden
     settings:
-      image_style: max_325x325
+      image_style: four_column_image_style
       image_link: ''
     third_party_settings: {  }
     type: image

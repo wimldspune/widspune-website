@@ -23,3 +23,14 @@ function widspune20_theme_suggestions_block_alter(array &$suggestions, array $va
     array_splice($suggestions, 1, 0, 'block__' . $variables['elements']['content']['#block_content']->bundle());
   }
 }
+
+
+/**
+ * Implements hook_preprocess_HOOK() for block.html.twig.
+ */
+function widspune20_preprocess_block(&$variables) {
+  if ($variables['plugin_id'] == 'views_block:testimonials_list-block_testimonials') {
+    $variables['attributes']['class'][] = 'row';
+    $variables['attributes']['class'][] = 'justify-content-center';
+  }
+}

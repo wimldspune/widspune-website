@@ -1,0 +1,15 @@
+uuid: 3fcbe5e3-ac56-43b8-a7f0-f49abd8005a9
+langcode: en
+status: true
+dependencies: {  }
+name: four_column_image_style
+label: 'Four Column Image style (370×300 )'
+effects:
+  d3977776-8101-4854-aa54-04ceb91dc9e1:
+    uuid: d3977776-8101-4854-aa54-04ceb91dc9e1
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 370
+      height: 300
+      anchor: center-center

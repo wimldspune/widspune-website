@@ -184,7 +184,13 @@
   {% endif %}
 </div>
 
-
+<div class="footer-top">
+  {% if page.footer_top %}
+    {% block footer_top %}
+      {{ page.footer_top }}
+    {% endblock %}
+  {% endif %}
+</div>
 
 <footer class="footer {{ container }}" role="contentinfo">
   <div class="footer_container">
@@ -209,11 +215,7 @@
         </div>
       {% endblock %}
     {% endif %}
-    {% if page.footer %}
-      {% block footer %}
-        {{ page.footer }}
-      {% endblock %}
-    {% endif %}
+
   </div>
 </footer>
 

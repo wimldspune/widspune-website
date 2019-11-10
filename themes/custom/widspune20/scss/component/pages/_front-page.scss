@@ -20,6 +20,7 @@
       }
     }
   }
+
   #block-widspune20-aboutus {
     padding-right: 30px;
     h2 {
@@ -67,6 +68,7 @@
       }
     }
   }
+
   #block-frontpageregistrationblock {
     text-align: center;
     padding-top: 20px;
@@ -80,6 +82,7 @@
       font-size: 30px;
     }
   }
+
   #block-widspune20-globalwids2019 {
     height: 450px;
     background: url(../images/counter_background.jpg) 50% 50% no-repeat;
@@ -114,6 +117,7 @@
       }
     }
   }
+
   .view-sponsor-list {
     max-width: $default-max-width;
     margin: 0 auto;
@@ -126,20 +130,6 @@
         .field-content {
           padding: 0 10px;
           img {}
-        }
-      }
-    }
-  }
-  .content_bottom {
-    .region-content-bottom {
-      text-align: center;
-      .field--type-image {
-        .field--item {
-          display: inline-block;
-          padding: 0 20px;
-          img {
-            margin: 0 auto;
-          }
         }
       }
     }
@@ -208,6 +198,7 @@
       }
     }
   }
+
   .extra_metrics_outer {
     .metrics_info {
       display: inline-block;
@@ -237,4 +228,10 @@
       }
     }
   }
+
+  //.block-views-blocktestimonials-list-block-testimonials {
+  //  background-color: $basetextcolor;
+  //  padding: 5px 0 20px;
+  //}
+
 }
