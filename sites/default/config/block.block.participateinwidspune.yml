@@ -1,23 +1,23 @@
-uuid: 226c2be8-cb80-42ee-954f-1606e090fa02
+uuid: 88dbbca3-2642-455f-a705-aa488ff7da56
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:description_and_images:785fb895-af6a-4bdb-8327-9cd11083aef3'
+    - 'block_content:four_column_block:3ecbfe7d-fd97-4580-bfa3-6221f286ce73'
   module:
     - block_content
     - system
   theme:
     - widspune20
-id: widspune20_keydifferentiators
+id: participateinwidspune
 theme: widspune20
 region: content_bottom
-weight: -14
+weight: -15
 provider: null
-plugin: 'block_content:785fb895-af6a-4bdb-8327-9cd11083aef3'
+plugin: 'block_content:3ecbfe7d-fd97-4580-bfa3-6221f286ce73'
 settings:
-  id: 'block_content:785fb895-af6a-4bdb-8327-9cd11083aef3'
-  label: 'Key Differentiators'
+  id: 'block_content:3ecbfe7d-fd97-4580-bfa3-6221f286ce73'
+  label: Participate
   provider: block_content
   label_display: visible
   status: true
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: /about-us
+    pages: '<front>'
     negate: false
     context_mapping: {  }
