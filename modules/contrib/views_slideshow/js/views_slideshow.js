@@ -1,4 +1,4 @@
-(function ($, Drupal, drupalSettings) {(function ($, Drupal, drupalSettings) {
+(function ($, Drupal, drupalSettings) {
   'use strict';
   Drupal.viewsSlideshow = Drupal.viewsSlideshow || {};
   var pagerLocation;

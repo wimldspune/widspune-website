@@ -17,8 +17,8 @@
         "drupal/views_taxonomy_term_name_into_id": "^1.0@alpha",
         "drupal/social_media": "^1.6",
         "drupal/paragraphs": "^1.10",
-        "drupal/views_slideshow": "^4.6",
-        "drupal/views_slideshow_cycle": "^4.6"
+        "drupal/views_slideshow_cycle": "^4.6",
+        "drupal/views_slideshow": "^4.6"
     },
     "replace": {
         "drupal/core": "^8"
