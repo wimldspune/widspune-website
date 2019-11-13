@@ -9468,13 +9468,14 @@ h1.page-header {
 
 /* line 2, ../scss/component/regions/_six-column-block.scss */
 .block-six-column-para .field--name-field-column-content {
-  margin-top: 25px;
+  margin-top: 15px;
 }
 /* line 5, ../scss/component/regions/_six-column-block.scss */
 .block-six-column-para .field--name-field-column-content .paragraph--view-mode--six-column-display .field {
   text-align: center;
+  margin: 20px 0;
 }
-/* line 7, ../scss/component/regions/_six-column-block.scss */
+/* line 8, ../scss/component/regions/_six-column-block.scss */
 .block-six-column-para .field--name-field-column-content .paragraph--view-mode--six-column-display .field img {
   width: 70px;
   height: auto;
