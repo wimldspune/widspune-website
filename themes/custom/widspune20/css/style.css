@@ -9465,3 +9465,18 @@ h1.page-header {
   padding: 14px 30px;
   color: #fff;
 }
+
+/* line 2, ../scss/component/regions/_six-column-block.scss */
+.block-six-column-para .field--name-field-column-content {
+  margin-top: 25px;
+}
+/* line 5, ../scss/component/regions/_six-column-block.scss */
+.block-six-column-para .field--name-field-column-content .paragraph--view-mode--six-column-display .field {
+  text-align: center;
+}
+/* line 7, ../scss/component/regions/_six-column-block.scss */
+.block-six-column-para .field--name-field-column-content .paragraph--view-mode--six-column-display .field img {
+  width: 70px;
+  height: auto;
+  margin: 0 auto;
+}
