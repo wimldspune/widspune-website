@@ -58,7 +58,7 @@ display:
       style:
         type: slideshow
         options:
-          row_class: testimonial_outer
+          row_class: testimonial-outer
           default_row_class: true
           slideshow_skin: default
           slideshow_type: views_slideshow_cycle
@@ -119,7 +119,7 @@ display:
                 weight: '1'
                 hide_on_single_slide: '0'
               views_slideshow_controls:
-                enable: true
+                enable: false
                 weight: '1'
                 hide_on_single_slide: '0'
                 type: views_slideshow_controls_text
