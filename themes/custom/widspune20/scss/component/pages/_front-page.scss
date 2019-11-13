@@ -234,4 +234,60 @@
   //  padding: 5px 0 20px;
   //}
 
+  .view-testimonials-list {
+    max-width: $default-max-width;
+    margin: 0 auto;
+    .view-content {
+      margin: 20px;
+      text-align: left;
+      .views_slideshow_cycle_slide {
+        .views-row:before {
+          font-family: Georgia, serif;
+          content: "“";
+          position: absolute;
+          top: -10px;
+          left: 10px;
+          font-size: 5em;
+          color: $quotecolor;
+          font-weight: normal;
+        }
+        .views-row:after {
+          font-family: Georgia, serif;
+          content: "”";
+          position: absolute;
+          bottom: -106px;
+          line-height: 100px;
+          right: -15px;
+          font-size: 25em;
+          color: $quotecolor;
+          font-weight: normal;
+        }
+        .views-row {
+          text-align: justify;
+          background: $basetextcolor;
+          color: $lightcolor;
+          box-shadow: 0 4px 6px $boxshadow, 0 4px 6px $boxshadow;
+
+          padding: 20px;
+          padding-left: 50px;
+          box-sizing: border-box;
+          position: relative;
+          overflow: hidden;
+          min-height: 120px;
+
+          .views-field-body {
+            line-height: 1.5;
+            margin: 0;
+            max-width: 88%;
+          }
+          .views-field-field-from-unregisted-user {
+            margin-top: 10px;
+            display: block;
+            font-weight: 200;
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+  }
 }
