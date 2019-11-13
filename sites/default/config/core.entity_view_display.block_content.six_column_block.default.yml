@@ -1,0 +1,24 @@
+uuid: a5b0d813-6206-4bb6-ae1c-45f32132b417
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.six_column_block
+    - field.field.block_content.six_column_block.field_column_content
+  module:
+    - entity_reference_revisions
+id: block_content.six_column_block.default
+targetEntityType: block_content
+bundle: six_column_block
+mode: default
+content:
+  field_column_content:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

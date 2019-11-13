@@ -1,0 +1,8 @@
+uuid: 7b1bd53d-8d5e-4d29-b5ee-bf988f0c5482
+langcode: en
+status: true
+dependencies: {  }
+id: six_column_block
+label: 'Six column block'
+revision: 0
+description: ''
