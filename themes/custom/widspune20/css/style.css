@@ -9371,6 +9371,11 @@ h1.page-header {
   background-image: url(../images/about_icons/philosophy_7.png);
 }
 
+/* line 2, ../scss/component/pages/_media_coverage.scss */
+.view-media-clippings-list .media-coverage-list {
+  margin-bottom: 25px;
+}
+
 /* line 1, ../scss/component/regions/_page-banner.scss */
 .header-banner-wrapper {
   font-family: 'News Cycle';
