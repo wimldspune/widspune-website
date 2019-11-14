@@ -1,0 +1,15 @@
+uuid: f4eb5a71-6c36-4ceb-9309-d0f1efcd9543
+langcode: en
+status: true
+dependencies: {  }
+name: paper_image
+label: 'Paper Image (300×280)'
+effects:
+  1e787c65-b6ef-4306-bc38-55fc9f451b88:
+    uuid: 1e787c65-b6ef-4306-bc38-55fc9f451b88
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 300
+      height: 280
+      anchor: left-top
