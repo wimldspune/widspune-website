@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.media_coverage.body
     - field.field.node.media_coverage.field_paper_clippings
+    - field.field.node.media_coverage.field_year
     - image.style.thumbnail
     - node.type.media_coverage
   module:
@@ -38,6 +39,15 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
+    region: content
+  field_year:
+    weight: 26
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
     region: content
   path:
     type: path

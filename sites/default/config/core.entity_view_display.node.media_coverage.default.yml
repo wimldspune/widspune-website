@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.media_coverage.body
     - field.field.node.media_coverage.field_paper_clippings
+    - field.field.node.media_coverage.field_year
     - image.style.paper_image
     - node.type.media_coverage
   module:
@@ -36,6 +37,14 @@ content:
       colorbox_caption_custom: ''
     third_party_settings: {  }
     type: colorbox
+    region: content
+  field_year:
+    weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
     region: content
   links:
     weight: 100
