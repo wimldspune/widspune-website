@@ -1,0 +1,21 @@
+uuid: 340348fb-b8cc-4b46-8734-860ee43d4e0d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_published_on
+    - node.type.media_coverage
+  module:
+    - datetime
+id: node.media_coverage.field_published_on
+field_name: field_published_on
+entity_type: node
+bundle: media_coverage
+label: 'Published on'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

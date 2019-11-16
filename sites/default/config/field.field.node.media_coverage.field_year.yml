@@ -10,7 +10,7 @@ id: node.media_coverage.field_year
 field_name: field_year
 entity_type: node
 bundle: media_coverage
-label: Year
+label: 'Eevnt Year'
 description: ''
 required: false
 translatable: false

@@ -5,10 +5,12 @@ dependencies:
   config:
     - field.field.node.media_coverage.body
     - field.field.node.media_coverage.field_paper_clippings
+    - field.field.node.media_coverage.field_published_on
     - field.field.node.media_coverage.field_year
     - image.style.thumbnail
     - node.type.media_coverage
   module:
+    - datetime
     - image
     - path
     - text
@@ -39,6 +41,12 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
+    region: content
+  field_published_on:
+    weight: 27
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
     region: content
   field_year:
     weight: 26
