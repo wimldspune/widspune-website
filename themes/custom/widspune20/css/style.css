@@ -9219,26 +9219,25 @@ h1.page-header {
 /* line 251, ../scss/component/pages/_front-page.scss */
 .path-frontpage .view-testimonials-list .view-content .views_slideshow_cycle_slide .views-row {
   text-align: justify;
-  background: #00b140;
   color: #fff;
   position: relative;
   overflow: hidden;
   min-height: 120px;
 }
-/* line 259, ../scss/component/pages/_front-page.scss */
+/* line 258, ../scss/component/pages/_front-page.scss */
 .path-frontpage .view-testimonials-list .view-content .views_slideshow_cycle_slide .views-row .views-field-body {
   line-height: 1.5;
   margin: 0;
   max-width: 88%;
 }
-/* line 264, ../scss/component/pages/_front-page.scss */
+/* line 263, ../scss/component/pages/_front-page.scss */
 .path-frontpage .view-testimonials-list .view-content .views_slideshow_cycle_slide .views-row .views-field-field-from-unregisted-user {
   margin-top: 10px;
   display: block;
   font-weight: 200;
   opacity: 0.8;
 }
-/* line 273, ../scss/component/pages/_front-page.scss */
+/* line 272, ../scss/component/pages/_front-page.scss */
 .path-frontpage .view-testimonials-list .view-content:before {
   font-family: Georgia, serif;
   content: "“";
@@ -9249,7 +9248,7 @@ h1.page-header {
   color: rgba(238, 238, 238, 0.8);
   font-weight: normal;
 }
-/* line 283, ../scss/component/pages/_front-page.scss */
+/* line 282, ../scss/component/pages/_front-page.scss */
 .path-frontpage .view-testimonials-list .view-content:after {
   font-family: Georgia, serif;
   content: "”";
