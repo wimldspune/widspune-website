@@ -1,0 +1,23 @@
+uuid: 840b829c-edef-4676-9466-61c52a3ef04b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_show_on_slider
+    - node.type.testimonials
+id: node.testimonials.field_show_on_slider
+field_name: field_show_on_slider
+entity_type: node
+bundle: testimonials
+label: 'Show on slider'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

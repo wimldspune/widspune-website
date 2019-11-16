@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.testimonials.field_event_year
     - field.field.node.testimonials.field_from_registed_user
     - field.field.node.testimonials.field_from_unregisted_user
+    - field.field.node.testimonials.field_show_on_slider
     - node.type.testimonials
   module:
     - text
@@ -46,6 +47,16 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+    region: content
+  field_show_on_slider:
+    weight: 105
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
     region: content
   links:
     weight: 100
