@@ -240,37 +240,18 @@
     .view-content {
       margin: 20px;
       text-align: left;
+      background: $basetextcolor;
+      color: $lightcolor;
+      box-shadow: 0 4px 6px $boxshadow, 0 4px 6px $boxshadow;
+      box-sizing: border-box;
       .views_slideshow_cycle_slide {
-        .views-row:before {
-          font-family: Georgia, serif;
-          content: "“";
-          position: absolute;
-          top: -10px;
-          left: 10px;
-          font-size: 5em;
-          color: $quotecolor;
-          font-weight: normal;
-        }
-        .views-row:after {
-          font-family: Georgia, serif;
-          content: "”";
-          position: absolute;
-          bottom: -106px;
-          line-height: 100px;
-          right: -15px;
-          font-size: 25em;
-          color: $quotecolor;
-          font-weight: normal;
-        }
+        padding: 20px 50px;
+        font-weight: bold;
+        font-size: larger;
         .views-row {
           text-align: justify;
           background: $basetextcolor;
           color: $lightcolor;
-          box-shadow: 0 4px 6px $boxshadow, 0 4px 6px $boxshadow;
-
-          padding: 20px;
-          padding-left: 50px;
-          box-sizing: border-box;
           position: relative;
           overflow: hidden;
           min-height: 120px;
@@ -288,6 +269,27 @@
           }
         }
       }
+    }
+    .view-content:before {
+      font-family: Georgia, serif;
+      content: "“";
+      position: absolute;
+      top: -10px;
+      left: 20px;
+      font-size: 5em;
+      color: $quotecolor;
+      font-weight: normal;
+    }
+    .view-content:after {
+      font-family: Georgia, serif;
+      content: "”";
+      position: absolute;
+      bottom: -106px;
+      line-height: 100px;
+      right: 10px;
+      font-size: 25em;
+      color: $quotecolor;
+      font-weight: normal;
     }
   }
 }

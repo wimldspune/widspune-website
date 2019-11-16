@@ -9205,55 +9205,61 @@ h1.page-header {
 .path-frontpage .view-testimonials-list .view-content {
   margin: 20px;
   text-align: left;
+  background: #00b140;
+  color: #fff;
+  box-shadow: 0 4px 6px rgba(40, 40, 40, 0.5), 0 4px 6px rgba(40, 40, 40, 0.5);
+  box-sizing: border-box;
 }
-/* line 244, ../scss/component/pages/_front-page.scss */
-.path-frontpage .view-testimonials-list .view-content .views_slideshow_cycle_slide .views-row:before {
-  font-family: Georgia, serif;
-  content: "“";
-  position: absolute;
-  top: -10px;
-  left: 10px;
-  font-size: 5em;
-  color: rgba(238, 238, 238, 0.8);
-  font-weight: normal;
+/* line 247, ../scss/component/pages/_front-page.scss */
+.path-frontpage .view-testimonials-list .view-content .views_slideshow_cycle_slide {
+  padding: 20px 50px;
+  font-weight: bold;
+  font-size: larger;
 }
-/* line 254, ../scss/component/pages/_front-page.scss */
-.path-frontpage .view-testimonials-list .view-content .views_slideshow_cycle_slide .views-row:after {
-  font-family: Georgia, serif;
-  content: "”";
-  position: absolute;
-  bottom: -106px;
-  line-height: 100px;
-  right: -15px;
-  font-size: 25em;
-  color: rgba(238, 238, 238, 0.8);
-  font-weight: normal;
-}
-/* line 265, ../scss/component/pages/_front-page.scss */
+/* line 251, ../scss/component/pages/_front-page.scss */
 .path-frontpage .view-testimonials-list .view-content .views_slideshow_cycle_slide .views-row {
   text-align: justify;
   background: #00b140;
   color: #fff;
-  box-shadow: 0 4px 6px rgba(40, 40, 40, 0.5), 0 4px 6px rgba(40, 40, 40, 0.5);
-  padding: 20px;
-  padding-left: 50px;
-  box-sizing: border-box;
   position: relative;
   overflow: hidden;
   min-height: 120px;
 }
-/* line 278, ../scss/component/pages/_front-page.scss */
+/* line 259, ../scss/component/pages/_front-page.scss */
 .path-frontpage .view-testimonials-list .view-content .views_slideshow_cycle_slide .views-row .views-field-body {
   line-height: 1.5;
   margin: 0;
   max-width: 88%;
 }
-/* line 283, ../scss/component/pages/_front-page.scss */
+/* line 264, ../scss/component/pages/_front-page.scss */
 .path-frontpage .view-testimonials-list .view-content .views_slideshow_cycle_slide .views-row .views-field-field-from-unregisted-user {
   margin-top: 10px;
   display: block;
   font-weight: 200;
   opacity: 0.8;
+}
+/* line 273, ../scss/component/pages/_front-page.scss */
+.path-frontpage .view-testimonials-list .view-content:before {
+  font-family: Georgia, serif;
+  content: "“";
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  font-size: 5em;
+  color: rgba(238, 238, 238, 0.8);
+  font-weight: normal;
+}
+/* line 283, ../scss/component/pages/_front-page.scss */
+.path-frontpage .view-testimonials-list .view-content:after {
+  font-family: Georgia, serif;
+  content: "”";
+  position: absolute;
+  bottom: -106px;
+  line-height: 100px;
+  right: 10px;
+  font-size: 25em;
+  color: rgba(238, 238, 238, 0.8);
+  font-weight: normal;
 }
 
 /* line 1, ../scss/component/pages/_about-us-page.scss */

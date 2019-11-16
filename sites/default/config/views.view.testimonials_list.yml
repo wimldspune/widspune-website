@@ -64,7 +64,7 @@ display:
           slideshow_skin: default
           slideshow_type: views_slideshow_cycle
           views_slideshow_cycle:
-            effect: scrollLeft
+            effect: uncover
             transition_advanced: 1
             timeout: '5000'
             speed: '1000'
@@ -92,7 +92,7 @@ display:
             cleartypenobg: 0
             advanced_options_choices: '0'
             advanced_options_entry: ''
-            advanced_options: '{}'
+            advanced_options: '{"fit":"1"}'
           widgets:
             top:
               views_slideshow_slide_counter:
