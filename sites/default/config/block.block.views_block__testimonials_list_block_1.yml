@@ -1,6 +1,6 @@
 uuid: ba57959b-3595-455b-bc4b-7e50e290e1f8
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - views.view.testimonials_list
