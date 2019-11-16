@@ -2,17 +2,14 @@ uuid: 19e9a1ba-0bf0-40a9-aeaf-a5e16dacb7a0
 langcode: en
 status: false
 dependencies:
-  content:
-    - 'block_content:3_column_display_block:bb4fb2c5-647a-4fa0-abdd-636b5d41af48'
   module:
-    - block_content
     - system
   theme:
     - widspune20
 id: participate
 theme: widspune20
 region: content_bottom
-weight: -16
+weight: -5
 provider: null
 plugin: 'block_content:bb4fb2c5-647a-4fa0-abdd-636b5d41af48'
 settings:

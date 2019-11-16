@@ -12,7 +12,7 @@ dependencies:
 id: widspune20_globalwids2019
 theme: widspune20
 region: content_bottom
-weight: -5
+weight: -4
 provider: null
 plugin: 'block_content:2f161557-a9e0-4ebc-b694-8b11f3c98c1f'
 settings:

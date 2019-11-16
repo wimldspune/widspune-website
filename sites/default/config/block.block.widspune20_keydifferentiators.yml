@@ -12,7 +12,7 @@ dependencies:
 id: widspune20_keydifferentiators
 theme: widspune20
 region: content_bottom
-weight: -14
+weight: -15
 provider: null
 plugin: 'block_content:785fb895-af6a-4bdb-8327-9cd11083aef3'
 settings:

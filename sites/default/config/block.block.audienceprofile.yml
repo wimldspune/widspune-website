@@ -1,9 +1,9 @@
-uuid: 3bacb4ac-0dde-4d9f-b6f0-93ad30e76171
+uuid: a915e1f1-e346-4d35-98f3-7a45f36d46c3
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:3_column_display_block:ab4f2df7-b2ff-42f5-9d06-0d984809df35'
+    - 'block_content:3_column_display_block:41ed9df7-e564-42a9-871c-0f68845e3516'
   module:
     - block_content
     - system
@@ -12,11 +12,11 @@ dependencies:
 id: audienceprofile
 theme: widspune20
 region: content_bottom
-weight: -11
+weight: -12
 provider: null
-plugin: 'block_content:ab4f2df7-b2ff-42f5-9d06-0d984809df35'
+plugin: 'block_content:41ed9df7-e564-42a9-871c-0f68845e3516'
 settings:
-  id: 'block_content:ab4f2df7-b2ff-42f5-9d06-0d984809df35'
+  id: 'block_content:41ed9df7-e564-42a9-871c-0f68845e3516'
   label: 'Audience Profile'
   provider: block_content
   label_display: visible

@@ -1,6 +1,6 @@
 uuid: ba57959b-3595-455b-bc4b-7e50e290e1f8
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - views.view.testimonials_list
@@ -12,14 +12,14 @@ dependencies:
 id: views_block__testimonials_list_block_1
 theme: widspune20
 region: content_bottom
-weight: -4
+weight: -6
 provider: null
 plugin: 'views_block:testimonials_list-block_1'
 settings:
   id: 'views_block:testimonials_list-block_1'
   label: ''
   provider: views
-  label_display: visible
+  label_display: '0'
   views_label: ''
   items_per_page: none
 visibility:

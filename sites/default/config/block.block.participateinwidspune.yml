@@ -1,9 +1,9 @@
-uuid: 88dbbca3-2642-455f-a705-aa488ff7da56
+uuid: a1d4ac80-cc64-4770-b5cb-b1ab78477ef3
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:four_column_block:3ecbfe7d-fd97-4580-bfa3-6221f286ce73'
+    - 'block_content:four_column_block:db832741-a537-4fd8-9c93-19a0436a8657'
   module:
     - block_content
     - system
@@ -12,12 +12,12 @@ dependencies:
 id: participateinwidspune
 theme: widspune20
 region: content_bottom
-weight: -15
+weight: -16
 provider: null
-plugin: 'block_content:3ecbfe7d-fd97-4580-bfa3-6221f286ce73'
+plugin: 'block_content:db832741-a537-4fd8-9c93-19a0436a8657'
 settings:
-  id: 'block_content:3ecbfe7d-fd97-4580-bfa3-6221f286ce73'
-  label: Participate
+  id: 'block_content:db832741-a537-4fd8-9c93-19a0436a8657'
+  label: 'Participate in WiDS Pune'
   provider: block_content
   label_display: visible
   status: true
