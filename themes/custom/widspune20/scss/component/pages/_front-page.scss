@@ -1,8 +1,7 @@
 .path-frontpage {
+
   .main-container {
     .row {
-      //max-width: $default-max-width;
-      //margin: 0 auto;
       .view-frontpage {
         display: none;
         margin: 20px;
@@ -118,22 +117,28 @@
     }
   }
 
-  .view-sponsor-list {
-    max-width: $default-max-width;
-    margin: 0 auto;
-    .views-row {
-      //clear: both;
-      display: inline-block;
-      .views-field {
+  .block-views-blocksponsor-list-block-1 {
+    h2 {
+      color: $darktextcolor;
+      font-size: 34px;
+      text-align: center;
+    }
+    .view-sponsor-list {
+      max-width: $default-max-width;
+      margin: 0 auto;
+      .views-row {
         display: inline-block;
-        //float: left;
-        .field-content {
-          padding: 0 10px;
-          img {}
+        .views-field {
+          display: inline-block;
+          .field-content {
+            padding: 0 10px;
+            img {}
+          }
         }
       }
     }
   }
+
 
   #block-highlightsofourpastconferencein2019 {
     background-color: $basetextcolor;
@@ -141,6 +146,7 @@
     h2 {
       color: $lightcolor;
       font-size: 34px;
+      text-align: center;
     }
   }
 
@@ -233,62 +239,69 @@
   //  background-color: $basetextcolor;
   //  padding: 5px 0 20px;
   //}
-
-  .view-testimonials-list {
-    max-width: $default-max-width;
-    margin: 0 auto;
-    .view-content {
-      margin: 20px;
-      text-align: left;
-      background: $basetextcolor;
+  .block-views-blocktestimonials-list-block-1 {
+    background: $basetextcolor;
+    box-shadow: 0 4px 6px $boxshadow, 0 4px 6px $boxshadow;
+    box-sizing: border-box;
+    .view-testimonials-list {
+      max-width: $default-max-width;
+      margin: 0 auto;
       color: $lightcolor;
-      box-shadow: 0 4px 6px $boxshadow, 0 4px 6px $boxshadow;
-      box-sizing: border-box;
-      .views_slideshow_cycle_slide {
-        padding: 20px 50px;
-        font-weight: bold;
-        font-size: larger;
-        .views-row {
-          text-align: justify;
-          color: $lightcolor;
-          position: relative;
-          overflow: hidden;
-          min-height: 120px;
+      .view-content {
+        margin: 20px;
+        text-align: left;
+        .views_slideshow_cycle_slide {
+          padding: 20px 50px;
+          font-weight: bold;
+          font-size: larger;
+          .views-row {
+            text-align: justify;
+            color: $lightcolor;
+            position: relative;
+            overflow: hidden;
+            min-height: 120px;
 
-          .views-field-body {
-            line-height: 1.5;
-            margin: 0;
-            max-width: 88%;
-          }
-          .views-field-field-from-unregisted-user {
-            margin-top: 10px;
-            display: block;
-            font-weight: 200;
-            opacity: 0.8;
+            .views-field-body {
+              line-height: 1.5;
+              margin: 0;
+              max-width: 88%;
+            }
+            .views-field-field-from-unregisted-user {
+              margin-top: 10px;
+              display: block;
+              font-weight: 200;
+              opacity: 0.8;
+            }
           }
         }
       }
+      .view-content:before {
+        font-family: Georgia, serif;
+        content: "“";
+        position: absolute;
+        left: 20px;
+        font-size: 5em;
+        color: $quotecolor;
+        font-weight: normal;
+      }
+      .view-content:after {
+        font-family: Georgia, serif;
+        content: "”";
+        position: absolute;
+        line-height: 100px;
+        right: 10px;
+        font-size: 25em;
+        color: $quotecolor;
+        font-weight: normal;
+      }
     }
-    .view-content:before {
-      font-family: Georgia, serif;
-      content: "“";
-      position: absolute;
-      top: -10px;
-      left: 20px;
-      font-size: 5em;
-      color: $quotecolor;
-      font-weight: normal;
-    }
-    .view-content:after {
-      font-family: Georgia, serif;
-      content: "”";
-      position: absolute;
-      bottom: -106px;
-      line-height: 100px;
-      right: 10px;
-      font-size: 25em;
-      color: $quotecolor;
-      font-weight: normal;
+  }
+
+  .block-views-blockmedia-clippings-list-block-1 {
+    h2 {
+      font-size: 30px;
+      color: #3e3e3e;
+      text-align: center;
     }
   }
 }

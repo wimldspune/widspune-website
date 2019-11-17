@@ -1,10 +1,45 @@
 .block-four-column-para {
   max-width: $default-max-width;
-  margin: 0 auto;
+  margin: 0 auto 25px;
 
-  h2 {
-    color: $basetextcolor;
-    //font-size: 72px;
-    //text-align: left;
+  .field {
+    .field--item {
+      margin-bottom: 10px;
+      .paragraph {
+        height: 100%;
+        margin-bottom: 25px;
+        .field--name-field-title {
+          font-size: 20px;
+        }
+        .field--name-field-content-image img{
+          margin: 0 auto;
+        }
+        .field--name-field-second-title {
+          color: $basetextcolor;
+          font-size: 22px;
+          font-family: 'News Cycle';
+          font-style: normal;
+          font-weight: 700;
+          letter-spacing: 1px;
+          margin: 20px 0;
+        }
+        .field--name-field-description {
+          margin-bottom: 20px;
+          @media (min-width: $screen-lg-min) {
+            height: 75px;
+          }
+        }
+
+        .field--name-field-content-link {
+          max-height: 58px;
+          a {
+            background-color: $basetextcolor;
+            border: 1px solid $basetextcolor;
+            padding: 14px 30px;
+            color: $lightcolor;
+          }
+        }
+      }
+    }
   }
 }

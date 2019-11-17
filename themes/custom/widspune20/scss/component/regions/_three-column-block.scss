@@ -1,26 +1,14 @@
 .block--three-column-display {
   max-width: $default-max-width;
   margin: 0 auto;
-  h2.block-title {
-    color: $basetextcolor;
-    font-size: 72px;
-    text-align: left;
-  }
   .field {
-    //display: flex;
     justify-content: space-around;
     text-align: center;
     flex-wrap: wrap;
     .field--item {
-      //flex-basis: 23%;
       margin-bottom: 20px;
       .paragraph {
-        //display: flex;
-        //flex-direction: column;
         height: 100%;
-        .field {
-          //flex: 1;
-        }
         .field--name-field-title {
           font-size: 20px;
         }
@@ -52,7 +40,6 @@
             border: 1px solid $basetextcolor;
             padding: 14px 30px;
             color: $lightcolor;
-            //display: inline-table;
           }
         }
       }

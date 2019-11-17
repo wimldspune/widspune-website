@@ -2,7 +2,9 @@
   .media-coverage-list {
     margin-bottom: 25px;
     .views-field {
-      img {}
+      img {
+        margin: 0 auto;
+      }
     }
   }
 }
