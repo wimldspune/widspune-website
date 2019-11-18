@@ -8810,7 +8810,7 @@ h2.block-title {
 @media (min-width: 1200px) {
   /* line 30, ../scss/component/pages/_default-pages.scss */
   h2.block-title {
-    font-size: 70px;
+    font-size: 50px;
     text-align: left;
   }
 }
@@ -9221,11 +9221,9 @@ h2.block-title {
   color: rgba(238, 238, 238, 0.8);
   font-weight: normal;
 }
-/* line 301, ../scss/component/pages/_front-page.scss */
-.path-frontpage .block-views-blockmedia-clippings-list-block-1 h2 {
-  font-size: 30px;
-  color: #3e3e3e;
-  text-align: center;
+/* line 300, ../scss/component/pages/_front-page.scss */
+.path-frontpage .block-views-blockmedia-clippings-list-block-1 {
+  max-width: 1300px;
 }
 
 /* line 1, ../scss/component/pages/_about-us-page.scss */

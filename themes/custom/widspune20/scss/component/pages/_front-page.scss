@@ -298,10 +298,6 @@
   }
 
   .block-views-blockmedia-clippings-list-block-1 {
-    h2 {
-      font-size: 30px;
-      color: #3e3e3e;
-      text-align: center;
-    }
+    max-width: $default-max-width;
   }
 }
