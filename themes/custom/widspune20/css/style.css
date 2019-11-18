@@ -9365,8 +9365,14 @@ h2.block-title {
   background-image: url(../images/about_icons/philosophy_7.png);
 }
 
-/* line 101, ../scss/component/pages/_about-us-page.scss */
-.content_bottom h2.block-title {
+/* line 102, ../scss/component/pages/_about-us-page.scss */
+.content_bottom #block-widspune20-keydifferentiators h2.block-title {
+  color: #3e3e3e;
+  text-align: center;
+  font-size: 30px;
+}
+/* line 109, ../scss/component/pages/_about-us-page.scss */
+.content_bottom #block-widspune20-ouraudienceanddelegates h2.block-title {
   color: #3e3e3e;
   text-align: center;
   font-size: 30px;
