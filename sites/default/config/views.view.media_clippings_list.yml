@@ -280,7 +280,7 @@ display:
           1: AND
       use_more: true
       use_more_always: true
-      use_more_text: more
+      use_more_text: 'More coverage...'
       css_class: block-four-column-para
     cache_metadata:
       max-age: -1

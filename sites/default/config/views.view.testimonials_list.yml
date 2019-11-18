@@ -148,7 +148,7 @@ display:
           exclude: false
           alter:
             alter_text: false
-            text: ''
+            text: '{{ body }} </div>'
             make_link: false
             path: ''
             absolute: false
@@ -169,7 +169,7 @@ display:
             more_link: false
             more_link_text: ''
             more_link_path: ''
-            strip_tags: false
+            strip_tags: true
             trim: false
             preserve_tags: ''
             html: false
@@ -178,9 +178,9 @@ display:
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
+          element_wrapper_type: div
+          element_wrapper_class: quote
+          element_default_classes: false
           empty: ''
           hide_empty: false
           empty_zero: false
@@ -210,7 +210,7 @@ display:
           exclude: false
           alter:
             alter_text: false
-            text: ''
+            text: '- {{ field_from_unregisted_user }} '
             make_link: false
             path: ''
             absolute: false
@@ -231,7 +231,7 @@ display:
             more_link: false
             more_link_text: ''
             more_link_path: ''
-            strip_tags: false
+            strip_tags: true
             trim: false
             preserve_tags: ''
             html: false
@@ -240,9 +240,9 @@ display:
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
+          element_wrapper_type: span
+          element_wrapper_class: testimonial-author
+          element_default_classes: false
           empty: ''
           hide_empty: false
           empty_zero: false

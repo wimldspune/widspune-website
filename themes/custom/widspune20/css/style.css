@@ -8812,37 +8812,38 @@ h2.block-title {
   h2.block-title {
     font-size: 50px;
     text-align: left;
+    margin: 10px 0;
   }
 }
 
-/* line 40, ../scss/component/pages/_default-pages.scss */
+/* line 41, ../scss/component/pages/_default-pages.scss */
 .main-container {
   max-width: 1300px;
   margin: 30px auto 30px;
 }
-/* line 43, ../scss/component/pages/_default-pages.scss */
+/* line 44, ../scss/component/pages/_default-pages.scss */
 .main-container .row {
   margin: 0 20px;
 }
 
-/* line 48, ../scss/component/pages/_default-pages.scss */
+/* line 49, ../scss/component/pages/_default-pages.scss */
 .navbar {
   margin-bottom: 0;
   border: none;
   background-color: transparent;
   max-width: 1300px;
 }
-/* line 53, ../scss/component/pages/_default-pages.scss */
+/* line 54, ../scss/component/pages/_default-pages.scss */
 .navbar .navbar-collapse {
   width: 100%;
   padding: 0;
 }
-/* line 57, ../scss/component/pages/_default-pages.scss */
+/* line 58, ../scss/component/pages/_default-pages.scss */
 .navbar .navbar-collapse .region-navigation-collapsible nav {
   float: right;
   padding: 25px 0px;
 }
-/* line 62, ../scss/component/pages/_default-pages.scss */
+/* line 63, ../scss/component/pages/_default-pages.scss */
 .navbar .navbar-collapse .region-navigation-collapsible nav ul li a {
   font-family: 'Montserrat';
   font-style: normal;
@@ -8854,77 +8855,77 @@ h2.block-title {
   letter-spacing: 0.05em;
 }
 
-/* line 79, ../scss/component/pages/_default-pages.scss */
+/* line 80, ../scss/component/pages/_default-pages.scss */
 .footer {
   background-color: #eee;
   margin-top: 0;
 }
-/* line 82, ../scss/component/pages/_default-pages.scss */
+/* line 83, ../scss/component/pages/_default-pages.scss */
 .footer .footer_container {
   display: flex;
   max-width: 1300px;
   margin: 0 auto;
 }
-/* line 86, ../scss/component/pages/_default-pages.scss */
+/* line 87, ../scss/component/pages/_default-pages.scss */
 .footer .footer_container .footer-section.footer_center {
   flex: 2;
 }
-/* line 89, ../scss/component/pages/_default-pages.scss */
+/* line 90, ../scss/component/pages/_default-pages.scss */
 .footer .footer_container .footer-section {
   flex: 1;
   text-align: center;
   vertical-align: middle;
 }
-/* line 93, ../scss/component/pages/_default-pages.scss */
+/* line 94, ../scss/component/pages/_default-pages.scss */
 .footer .footer_container .footer-section h2 {
   font-size: 25px;
   padding: 0 0 10px;
 }
-/* line 98, ../scss/component/pages/_default-pages.scss */
+/* line 99, ../scss/component/pages/_default-pages.scss */
 .footer .footer_container .footer-section .field--name-body span {
   color: red;
 }
-/* line 104, ../scss/component/pages/_default-pages.scss */
+/* line 105, ../scss/component/pages/_default-pages.scss */
 .footer .footer_container .footer-section .field--type-image .field--item img {
   margin: 0 auto;
 }
-/* line 109, ../scss/component/pages/_default-pages.scss */
+/* line 110, ../scss/component/pages/_default-pages.scss */
 .footer .footer_container .footer-section nav {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
-/* line 113, ../scss/component/pages/_default-pages.scss */
+/* line 114, ../scss/component/pages/_default-pages.scss */
 .footer .footer_container .footer-section nav ul.navbar-nav {
   float: none;
 }
-/* line 115, ../scss/component/pages/_default-pages.scss */
+/* line 116, ../scss/component/pages/_default-pages.scss */
 .footer .footer_container .footer-section nav ul.navbar-nav li {
   float: none;
 }
-/* line 117, ../scss/component/pages/_default-pages.scss */
+/* line 118, ../scss/component/pages/_default-pages.scss */
 .footer .footer_container .footer-section nav ul.navbar-nav li a {
   padding: 8px 0;
 }
-/* line 123, ../scss/component/pages/_default-pages.scss */
+/* line 124, ../scss/component/pages/_default-pages.scss */
 .footer .footer_container .footer-section .block-social-media-links {
   margin-bottom: 20px;
 }
-/* line 127, ../scss/component/pages/_default-pages.scss */
+/* line 128, ../scss/component/pages/_default-pages.scss */
 .footer .footer_container .small_font {
   font-size: 14px;
 }
 
-/* line 134, ../scss/component/pages/_default-pages.scss */
+/* line 135, ../scss/component/pages/_default-pages.scss */
 .content_bottom .region-content-bottom {
   text-align: center;
 }
-/* line 137, ../scss/component/pages/_default-pages.scss */
+/* line 138, ../scss/component/pages/_default-pages.scss */
 .content_bottom .region-content-bottom .field--type-image .field--item {
   display: inline-block;
   padding: 0 20px;
 }
-/* line 140, ../scss/component/pages/_default-pages.scss */
+/* line 141, ../scss/component/pages/_default-pages.scss */
 .content_bottom .region-content-bottom .field--type-image .field--item img {
   margin: 0 auto;
 }
@@ -9156,30 +9157,31 @@ h2.block-title {
 .path-frontpage .extra_metrics_outer .delegates_from .img {
   background-image: url(../images/orginisers.png);
 }
-/* line 242, ../scss/component/pages/_front-page.scss */
+/* line 238, ../scss/component/pages/_front-page.scss */
 .path-frontpage .block-views-blocktestimonials-list-block-1 {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+/* line 241, ../scss/component/pages/_front-page.scss */
+.path-frontpage .block-views-blocktestimonials-list-block-1 .view-testimonials-list {
   background: #00b140;
   box-shadow: 0 4px 6px rgba(40, 40, 40, 0.5), 0 4px 6px rgba(40, 40, 40, 0.5);
   box-sizing: border-box;
-}
-/* line 246, ../scss/component/pages/_front-page.scss */
-.path-frontpage .block-views-blocktestimonials-list-block-1 .view-testimonials-list {
-  max-width: 1300px;
   margin: 0 auto;
   color: #fff;
 }
-/* line 250, ../scss/component/pages/_front-page.scss */
+/* line 248, ../scss/component/pages/_front-page.scss */
 .path-frontpage .block-views-blocktestimonials-list-block-1 .view-testimonials-list .view-content {
   margin: 20px;
   text-align: left;
 }
-/* line 253, ../scss/component/pages/_front-page.scss */
+/* line 251, ../scss/component/pages/_front-page.scss */
 .path-frontpage .block-views-blocktestimonials-list-block-1 .view-testimonials-list .view-content .views_slideshow_cycle_slide {
   padding: 20px 50px;
   font-weight: bold;
   font-size: larger;
 }
-/* line 257, ../scss/component/pages/_front-page.scss */
+/* line 255, ../scss/component/pages/_front-page.scss */
 .path-frontpage .block-views-blocktestimonials-list-block-1 .view-testimonials-list .view-content .views_slideshow_cycle_slide .views-row {
   text-align: justify;
   color: #fff;
@@ -9187,41 +9189,62 @@ h2.block-title {
   overflow: hidden;
   min-height: 120px;
 }
-/* line 264, ../scss/component/pages/_front-page.scss */
+/* line 262, ../scss/component/pages/_front-page.scss */
 .path-frontpage .block-views-blocktestimonials-list-block-1 .view-testimonials-list .view-content .views_slideshow_cycle_slide .views-row .views-field-body {
   line-height: 1.5;
   margin: 0;
   max-width: 88%;
 }
-/* line 269, ../scss/component/pages/_front-page.scss */
+/* line 267, ../scss/component/pages/_front-page.scss */
 .path-frontpage .block-views-blocktestimonials-list-block-1 .view-testimonials-list .view-content .views_slideshow_cycle_slide .views-row .views-field-field-from-unregisted-user {
   margin-top: 10px;
   display: block;
   font-weight: 200;
   opacity: 0.8;
 }
-/* line 278, ../scss/component/pages/_front-page.scss */
+/* line 276, ../scss/component/pages/_front-page.scss */
+.path-frontpage .block-views-blocktestimonials-list-block-1 .view-testimonials-list .view-content .quote div:before {
+  content: '"';
+}
+/* line 279, ../scss/component/pages/_front-page.scss */
+.path-frontpage .block-views-blocktestimonials-list-block-1 .view-testimonials-list .view-content .quote div:after {
+  content: '"';
+}
+/* line 283, ../scss/component/pages/_front-page.scss */
+.path-frontpage .block-views-blocktestimonials-list-block-1 .view-testimonials-list .view-content .testimonial-author {
+  float: right;
+}
+/* line 285, ../scss/component/pages/_front-page.scss */
+.path-frontpage .block-views-blocktestimonials-list-block-1 .view-testimonials-list .view-content .testimonial-author div:before {
+  content: '-';
+}
+/* line 290, ../scss/component/pages/_front-page.scss */
 .path-frontpage .block-views-blocktestimonials-list-block-1 .view-testimonials-list .view-content:before {
   font-family: Georgia, serif;
   content: "“";
   position: absolute;
-  left: 20px;
   font-size: 5em;
   color: rgba(238, 238, 238, 0.8);
   font-weight: normal;
 }
-/* line 287, ../scss/component/pages/_front-page.scss */
+/* line 299, ../scss/component/pages/_front-page.scss */
 .path-frontpage .block-views-blocktestimonials-list-block-1 .view-testimonials-list .view-content:after {
   font-family: Georgia, serif;
   content: "”";
   position: absolute;
   line-height: 100px;
-  right: 10px;
+  right: 5px;
   font-size: 25em;
   color: rgba(238, 238, 238, 0.8);
   font-weight: normal;
 }
-/* line 300, ../scss/component/pages/_front-page.scss */
+@media (min-width: 1200px) {
+  /* line 299, ../scss/component/pages/_front-page.scss */
+  .path-frontpage .block-views-blocktestimonials-list-block-1 .view-testimonials-list .view-content:after {
+    right: 185px;
+  }
+}
+/* line 315, ../scss/component/pages/_front-page.scss */
 .path-frontpage .block-views-blockmedia-clippings-list-block-1 {
   max-width: 1300px;
   margin: 0 auto;

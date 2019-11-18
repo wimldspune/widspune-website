@@ -17,10 +17,10 @@ provider: null
 plugin: 'views_block:testimonials_list-block_1'
 settings:
   id: 'views_block:testimonials_list-block_1'
-  label: ''
+  label: Testimonials
   provider: views
-  label_display: '0'
-  views_label: ''
+  label_display: visible
+  views_label: Testimonials
   items_per_page: none
 visibility:
   request_path:
