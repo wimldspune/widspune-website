@@ -9365,6 +9365,13 @@ h2.block-title {
   background-image: url(../images/about_icons/philosophy_7.png);
 }
 
+/* line 101, ../scss/component/pages/_about-us-page.scss */
+.content_bottom h2.block-title {
+  color: #3e3e3e;
+  text-align: center;
+  font-size: 30px;
+}
+
 /* line 2, ../scss/component/pages/_media_coverage.scss */
 .view-media-clippings-list .media-coverage-list {
   margin-bottom: 25px;
