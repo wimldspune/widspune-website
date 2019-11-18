@@ -1,3 +1,56 @@
 
 Please read core/INSTALL.txt for detailed installation instructions for your
 Drupal web site.
+
+This project is based on Lando for local setup and composer for managing the dependencies. The development methodology will follow the Gitflow (abridged) development workflow.
+
+1. Login to your github account.
+2. Go to the ``widspune-website`` Repository `https://github.com/wimldspune/widspune-website`
+3. Request access to organization that owns the project repo in GitLab (if needed).
+4. Fork the project repository in GitHub.
+5. Clone your forked repository. By default, Git names this "origin" on your local.
+    ```
+    $ git clone git@github.com:<account name>/widspune-website.git
+    ```
+
+6. To ensure that upstream changes to the parent repository may be tracked, add the upstream locally as well.
+    ```
+    $ git remote add upstream git@github.com:wimldspune/widspune-website.git
+    ```
+
+7. Setup Lando locally
+---
+# Setup local environment.
+
+1. After you have forked and cloned the project. Install Composer Dependencies. (Warning: this can take some time based on internet speeds.)
+   ```
+    $ lando composer install
+   ```
+
+2.  Start Lando
+    ```
+    $ lando start
+    ```
+
+3. Lando will generate the local urls to access the website after Lanod completes the start process.
+
+4. Install local site
+    ```
+    $ lando drush site-install standard --config-dir=../config/default
+    ```
+5. More frequently you will use
+    ``$ lando drush cim -y``
+
+
+6. Access the site and do necessary work at #LOCAL_DEV_URL by running the following commands.
+    ```
+    $ lando drush uli
+    ```
+
+7. Set up frontend build and theme.
+    ```
+    $ cd web/themes/custom/widspune20/
+    $ lando composer install
+    $ compass compile
+
+
