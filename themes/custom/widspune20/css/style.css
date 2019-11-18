@@ -9224,6 +9224,7 @@ h2.block-title {
 /* line 300, ../scss/component/pages/_front-page.scss */
 .path-frontpage .block-views-blockmedia-clippings-list-block-1 {
   max-width: 1300px;
+  margin: 0 auto;
 }
 
 /* line 1, ../scss/component/pages/_about-us-page.scss */
