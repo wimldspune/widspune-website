@@ -9085,58 +9085,57 @@ h2.block-title {
 /* line 146, ../scss/component/pages/_front-page.scss */
 .path-frontpage #block-highlightsofourpastconferencein2019 h2 {
   color: #fff;
-  font-size: 34px;
   text-align: center;
 }
-/* line 155, ../scss/component/pages/_front-page.scss */
+/* line 154, ../scss/component/pages/_front-page.scss */
 .path-frontpage .metrics-wrapper .metrics-content .metrics_info {
   padding-top: 30px;
 }
-/* line 157, ../scss/component/pages/_front-page.scss */
+/* line 156, ../scss/component/pages/_front-page.scss */
 .path-frontpage .metrics-wrapper .metrics-content .metrics_info .metrics {
   display: inline-block;
   padding: 0 35px;
   vertical-align: top;
 }
-/* line 163, ../scss/component/pages/_front-page.scss */
+/* line 162, ../scss/component/pages/_front-page.scss */
 .path-frontpage .metrics-wrapper .metrics-content .metrics_info .metrics .img {
   width: 72px;
   display: block;
   height: 67px;
   margin: 0 auto;
 }
-/* line 175, ../scss/component/pages/_front-page.scss */
+/* line 174, ../scss/component/pages/_front-page.scss */
 .path-frontpage .metrics-wrapper .metrics-content .metrics_info .knowledge_sharing_info .img {
   background: url(../images/knowledge_sharing.png) no-repeat;
 }
-/* line 180, ../scss/component/pages/_front-page.scss */
+/* line 179, ../scss/component/pages/_front-page.scss */
 .path-frontpage .metrics-wrapper .metrics-content .metrics_info .speakers_info .img {
   background: url(../images/speakers.png) no-repeat;
 }
-/* line 185, ../scss/component/pages/_front-page.scss */
+/* line 184, ../scss/component/pages/_front-page.scss */
 .path-frontpage .metrics-wrapper .metrics-content .metrics_info .audience_info .img {
   background: url(../images/audience.png) no-repeat;
 }
-/* line 190, ../scss/component/pages/_front-page.scss */
+/* line 189, ../scss/component/pages/_front-page.scss */
 .path-frontpage .metrics-wrapper .metrics-content .metrics_info .partners_info .img {
   background: url(../images/partners.png) no-repeat;
 }
-/* line 195, ../scss/component/pages/_front-page.scss */
+/* line 194, ../scss/component/pages/_front-page.scss */
 .path-frontpage .metrics-wrapper .metrics-content .metrics_info .volunteers_info .img {
   background: url(../images/volunteers.png) no-repeat;
 }
-/* line 200, ../scss/component/pages/_front-page.scss */
+/* line 199, ../scss/component/pages/_front-page.scss */
 .path-frontpage .metrics-wrapper .metrics-content .metrics_info .sectors_info .img {
   background: url(../images/sectors.png) no-repeat;
 }
-/* line 209, ../scss/component/pages/_front-page.scss */
+/* line 208, ../scss/component/pages/_front-page.scss */
 .path-frontpage .extra_metrics_outer .metrics_info {
   display: inline-block;
   max-width: 150px;
   vertical-align: top;
   margin: 0 30px;
 }
-/* line 214, ../scss/component/pages/_front-page.scss */
+/* line 213, ../scss/component/pages/_front-page.scss */
 .path-frontpage .extra_metrics_outer .metrics_info .img {
   width: 72px;
   display: block;
@@ -9145,24 +9144,24 @@ h2.block-title {
   font-size: 0;
   margin: 0 auto;
 }
-/* line 222, ../scss/component/pages/_front-page.scss */
+/* line 221, ../scss/component/pages/_front-page.scss */
 .path-frontpage .extra_metrics_outer .metrics_info .title {
   color: #00b140;
 }
-/* line 227, ../scss/component/pages/_front-page.scss */
+/* line 226, ../scss/component/pages/_front-page.scss */
 .path-frontpage .extra_metrics_outer .media_coverage .img {
   background-image: url(../images/media_coverage.png);
 }
-/* line 232, ../scss/component/pages/_front-page.scss */
+/* line 231, ../scss/component/pages/_front-page.scss */
 .path-frontpage .extra_metrics_outer .delegates_from .img {
   background-image: url(../images/orginisers.png);
 }
-/* line 238, ../scss/component/pages/_front-page.scss */
+/* line 237, ../scss/component/pages/_front-page.scss */
 .path-frontpage .block-views-blocktestimonials-list-block-1 {
   max-width: 1300px;
   margin: 0 auto;
 }
-/* line 241, ../scss/component/pages/_front-page.scss */
+/* line 240, ../scss/component/pages/_front-page.scss */
 .path-frontpage .block-views-blocktestimonials-list-block-1 .view-testimonials-list {
   background: #00b140;
   box-shadow: 0 4px 6px rgba(40, 40, 40, 0.5), 0 4px 6px rgba(40, 40, 40, 0.5);
@@ -9170,18 +9169,18 @@ h2.block-title {
   margin: 0 auto;
   color: #fff;
 }
-/* line 248, ../scss/component/pages/_front-page.scss */
+/* line 247, ../scss/component/pages/_front-page.scss */
 .path-frontpage .block-views-blocktestimonials-list-block-1 .view-testimonials-list .view-content {
   margin: 20px;
   text-align: left;
 }
-/* line 251, ../scss/component/pages/_front-page.scss */
+/* line 250, ../scss/component/pages/_front-page.scss */
 .path-frontpage .block-views-blocktestimonials-list-block-1 .view-testimonials-list .view-content .views_slideshow_cycle_slide {
   padding: 20px 50px;
   font-weight: bold;
   font-size: larger;
 }
-/* line 255, ../scss/component/pages/_front-page.scss */
+/* line 254, ../scss/component/pages/_front-page.scss */
 .path-frontpage .block-views-blocktestimonials-list-block-1 .view-testimonials-list .view-content .views_slideshow_cycle_slide .views-row {
   text-align: justify;
   color: #fff;
@@ -9189,36 +9188,36 @@ h2.block-title {
   overflow: hidden;
   min-height: 120px;
 }
-/* line 262, ../scss/component/pages/_front-page.scss */
+/* line 261, ../scss/component/pages/_front-page.scss */
 .path-frontpage .block-views-blocktestimonials-list-block-1 .view-testimonials-list .view-content .views_slideshow_cycle_slide .views-row .views-field-body {
   line-height: 1.5;
   margin: 0;
   max-width: 88%;
 }
-/* line 267, ../scss/component/pages/_front-page.scss */
+/* line 266, ../scss/component/pages/_front-page.scss */
 .path-frontpage .block-views-blocktestimonials-list-block-1 .view-testimonials-list .view-content .views_slideshow_cycle_slide .views-row .views-field-field-from-unregisted-user {
   margin-top: 10px;
   display: block;
   font-weight: 200;
   opacity: 0.8;
 }
-/* line 276, ../scss/component/pages/_front-page.scss */
+/* line 275, ../scss/component/pages/_front-page.scss */
 .path-frontpage .block-views-blocktestimonials-list-block-1 .view-testimonials-list .view-content .quote div:before {
   content: '"';
 }
-/* line 279, ../scss/component/pages/_front-page.scss */
+/* line 278, ../scss/component/pages/_front-page.scss */
 .path-frontpage .block-views-blocktestimonials-list-block-1 .view-testimonials-list .view-content .quote div:after {
   content: '"';
 }
-/* line 283, ../scss/component/pages/_front-page.scss */
+/* line 282, ../scss/component/pages/_front-page.scss */
 .path-frontpage .block-views-blocktestimonials-list-block-1 .view-testimonials-list .view-content .testimonial-author {
   float: right;
 }
-/* line 285, ../scss/component/pages/_front-page.scss */
+/* line 284, ../scss/component/pages/_front-page.scss */
 .path-frontpage .block-views-blocktestimonials-list-block-1 .view-testimonials-list .view-content .testimonial-author div:before {
   content: '-';
 }
-/* line 290, ../scss/component/pages/_front-page.scss */
+/* line 289, ../scss/component/pages/_front-page.scss */
 .path-frontpage .block-views-blocktestimonials-list-block-1 .view-testimonials-list .view-content:before {
   font-family: Georgia, serif;
   content: "“";
@@ -9227,7 +9226,7 @@ h2.block-title {
   color: rgba(238, 238, 238, 0.8);
   font-weight: normal;
 }
-/* line 299, ../scss/component/pages/_front-page.scss */
+/* line 298, ../scss/component/pages/_front-page.scss */
 .path-frontpage .block-views-blocktestimonials-list-block-1 .view-testimonials-list .view-content:after {
   font-family: Georgia, serif;
   content: "”";
@@ -9239,12 +9238,12 @@ h2.block-title {
   font-weight: normal;
 }
 @media (min-width: 1200px) {
-  /* line 299, ../scss/component/pages/_front-page.scss */
+  /* line 298, ../scss/component/pages/_front-page.scss */
   .path-frontpage .block-views-blocktestimonials-list-block-1 .view-testimonials-list .view-content:after {
     right: 185px;
   }
 }
-/* line 315, ../scss/component/pages/_front-page.scss */
+/* line 314, ../scss/component/pages/_front-page.scss */
 .path-frontpage .block-views-blockmedia-clippings-list-block-1 {
   max-width: 1300px;
   margin: 0 auto;
