@@ -12,7 +12,7 @@ dependencies:
 id: mainconferencemetrics
 theme: widspune20
 region: content_bottom
-weight: -11
+weight: -12
 provider: null
 plugin: 'block_content:85309bfe-52f2-4b08-9b64-aaa43f290b47'
 settings:

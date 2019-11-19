@@ -112,5 +112,24 @@
       font-size: 30px;
     }
   }
+}
 
+.wids-vision {
+  .col-half-offset{
+    margin-left: 4.166666667%
+  }
+  img {
+    width: 72px;
+    height: 67px;
+  }
+  h2 {
+    text-align: center;
+    padding: 20px 0;
+  }
+  h3 {
+    font-family: 'Actor';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.75;
+  }
 }

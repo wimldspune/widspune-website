@@ -8929,6 +8929,34 @@ h2.block-title {
 .content_bottom .region-content-bottom .field--type-image .field--item img {
   margin: 0 auto;
 }
+/* line 147, ../scss/component/pages/_default-pages.scss */
+.content_bottom #block-sectors {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+/* line 150, ../scss/component/pages/_default-pages.scss */
+.content_bottom #block-sectors h2.block-title {
+  color: #3e3e3e;
+  text-align: center;
+  font-size: 30px;
+}
+/* line 158, ../scss/component/pages/_default-pages.scss */
+.content_bottom #block-wids-audience-profile-2 h2.block-title {
+  color: #3e3e3e;
+  text-align: center;
+  font-size: 30px;
+}
+/* line 163, ../scss/component/pages/_default-pages.scss */
+.content_bottom #block-wids-audience-profile-2 img {
+  width: 70px;
+  height: auto;
+  margin: 0 auto;
+}
+/* line 171, ../scss/component/pages/_default-pages.scss */
+.content_bottom #block-wids-audience-profile-2 .field--name-field-column-content .paragraph--view-mode--six-column-display .field {
+  text-align: center;
+  margin: 20px 0;
+}
 
 /* line 5, ../scss/component/pages/_front-page.scss */
 .path-frontpage .main-container .row .view-frontpage {
@@ -9375,6 +9403,28 @@ h2.block-title {
   color: #3e3e3e;
   text-align: center;
   font-size: 30px;
+}
+
+/* line 118, ../scss/component/pages/_about-us-page.scss */
+.wids-vision .col-half-offset {
+  margin-left: 4.16667%;
+}
+/* line 121, ../scss/component/pages/_about-us-page.scss */
+.wids-vision img {
+  width: 72px;
+  height: 67px;
+}
+/* line 125, ../scss/component/pages/_about-us-page.scss */
+.wids-vision h2 {
+  text-align: center;
+  padding: 20px 0;
+}
+/* line 129, ../scss/component/pages/_about-us-page.scss */
+.wids-vision h3 {
+  font-family: 'Actor';
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.75;
 }
 
 /* line 2, ../scss/component/pages/_media_coverage.scss */

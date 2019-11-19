@@ -12,7 +12,7 @@ dependencies:
 id: preconferenceeventsmetrics
 theme: widspune20
 region: content_bottom
-weight: -10
+weight: -11
 provider: null
 plugin: 'block_content:334f0aa6-6cee-4fc9-9050-42c27907930d'
 settings:

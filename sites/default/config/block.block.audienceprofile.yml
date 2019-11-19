@@ -12,7 +12,7 @@ dependencies:
 id: audienceprofile
 theme: widspune20
 region: content_bottom
-weight: -12
+weight: -6
 provider: null
 plugin: 'block_content:41ed9df7-e564-42a9-871c-0f68845e3516'
 settings:

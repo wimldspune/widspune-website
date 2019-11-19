@@ -12,7 +12,7 @@ dependencies:
 id: participateinwidspune
 theme: widspune20
 region: content_bottom
-weight: -16
+weight: -18
 provider: null
 plugin: 'block_content:db832741-a537-4fd8-9c93-19a0436a8657'
 settings:
