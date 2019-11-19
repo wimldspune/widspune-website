@@ -1,6 +1,6 @@
 uuid: b3231eab-431b-4809-9aa4-8b7ea7c8ae9a
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - system.menu.main
@@ -13,7 +13,7 @@ _core:
 id: widspune20_main_menu
 theme: widspune20
 region: navigation_collapsible
-weight: -4
+weight: -18
 provider: null
 plugin: 'system_menu_block:main'
 settings:

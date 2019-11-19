@@ -10,8 +10,8 @@ _core:
   default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
 id: widspune20_branding
 theme: widspune20
-region: navigation_collapsible
-weight: -6
+region: navigation
+weight: -16
 provider: null
 plugin: system_branding_block
 settings:

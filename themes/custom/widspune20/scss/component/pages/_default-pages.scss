@@ -51,14 +51,38 @@ h2.block-title {
   border: none;
   background-color: transparent;
   max-width: $default-max-width;
-  .navbar-collapse {
+  .navbar-header {
     width: 100%;
     padding: 0;
-    .region-navigation-collapsible {
+    .region-navigation {
       .block-superfish {
-        //float: right;
+        float: right;
         padding: 25px 0px;
-        ul {
+        width: auto;
+        @media (max-width: $screen-sm-min) {
+          float: none;
+          margin-left: 20px;
+        }
+        .sf-accordion-toggle {
+          a:before {
+            content: "\f0c9";
+          }
+          a {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            display: inline-block;
+            font: normal normal normal 14px/1 FontAwesome;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            padding: 8px 12px;
+            font-size: 20px;
+            span {
+              display: none;
+            }
+          }
+        }
+         ul {
           li {
             a {
               font-family: 'Montserrat';
