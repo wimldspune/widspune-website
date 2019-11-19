@@ -8839,12 +8839,11 @@ h2.block-title {
   padding: 0;
 }
 /* line 58, ../scss/component/pages/_default-pages.scss */
-.navbar .navbar-collapse .region-navigation-collapsible nav {
-  float: right;
+.navbar .navbar-collapse .region-navigation-collapsible .block-superfish {
   padding: 25px 0px;
 }
 /* line 63, ../scss/component/pages/_default-pages.scss */
-.navbar .navbar-collapse .region-navigation-collapsible nav ul li a {
+.navbar .navbar-collapse .region-navigation-collapsible .block-superfish ul li a {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
@@ -8853,106 +8852,112 @@ h2.block-title {
   text-transform: uppercase;
   line-height: 1;
   letter-spacing: 0.05em;
+  color: #3e3e3e;
+}
+/* line 73, ../scss/component/pages/_default-pages.scss */
+.navbar .navbar-collapse .region-navigation-collapsible .block-superfish ul li a .sf-sub-indicator {
+  font-size: 9px;
+  width: 8px;
 }
 
-/* line 80, ../scss/component/pages/_default-pages.scss */
+/* line 85, ../scss/component/pages/_default-pages.scss */
 .footer {
   background-color: #eee;
   margin-top: 0;
 }
-/* line 83, ../scss/component/pages/_default-pages.scss */
+/* line 88, ../scss/component/pages/_default-pages.scss */
 .footer .footer_container {
   display: flex;
   max-width: 1300px;
   margin: 0 auto;
 }
-/* line 87, ../scss/component/pages/_default-pages.scss */
+/* line 92, ../scss/component/pages/_default-pages.scss */
 .footer .footer_container .footer-section.footer_center {
   flex: 2;
 }
-/* line 90, ../scss/component/pages/_default-pages.scss */
+/* line 95, ../scss/component/pages/_default-pages.scss */
 .footer .footer_container .footer-section {
   flex: 1;
   text-align: center;
   vertical-align: middle;
 }
-/* line 94, ../scss/component/pages/_default-pages.scss */
+/* line 99, ../scss/component/pages/_default-pages.scss */
 .footer .footer_container .footer-section h2 {
   font-size: 25px;
   padding: 0 0 10px;
 }
-/* line 99, ../scss/component/pages/_default-pages.scss */
+/* line 104, ../scss/component/pages/_default-pages.scss */
 .footer .footer_container .footer-section .field--name-body span {
   color: red;
 }
-/* line 105, ../scss/component/pages/_default-pages.scss */
+/* line 110, ../scss/component/pages/_default-pages.scss */
 .footer .footer_container .footer-section .field--type-image .field--item img {
   margin: 0 auto;
 }
-/* line 110, ../scss/component/pages/_default-pages.scss */
+/* line 115, ../scss/component/pages/_default-pages.scss */
 .footer .footer_container .footer-section nav {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
-/* line 114, ../scss/component/pages/_default-pages.scss */
+/* line 119, ../scss/component/pages/_default-pages.scss */
 .footer .footer_container .footer-section nav ul.navbar-nav {
   float: none;
 }
-/* line 116, ../scss/component/pages/_default-pages.scss */
+/* line 121, ../scss/component/pages/_default-pages.scss */
 .footer .footer_container .footer-section nav ul.navbar-nav li {
   float: none;
 }
-/* line 118, ../scss/component/pages/_default-pages.scss */
+/* line 123, ../scss/component/pages/_default-pages.scss */
 .footer .footer_container .footer-section nav ul.navbar-nav li a {
   padding: 8px 0;
 }
-/* line 124, ../scss/component/pages/_default-pages.scss */
+/* line 129, ../scss/component/pages/_default-pages.scss */
 .footer .footer_container .footer-section .block-social-media-links {
   margin-bottom: 20px;
 }
-/* line 128, ../scss/component/pages/_default-pages.scss */
+/* line 133, ../scss/component/pages/_default-pages.scss */
 .footer .footer_container .small_font {
   font-size: 14px;
 }
 
-/* line 135, ../scss/component/pages/_default-pages.scss */
+/* line 140, ../scss/component/pages/_default-pages.scss */
 .content_bottom .region-content-bottom {
   text-align: center;
 }
-/* line 138, ../scss/component/pages/_default-pages.scss */
+/* line 143, ../scss/component/pages/_default-pages.scss */
 .content_bottom .region-content-bottom .field--type-image .field--item {
   display: inline-block;
   padding: 0 20px;
 }
-/* line 141, ../scss/component/pages/_default-pages.scss */
+/* line 146, ../scss/component/pages/_default-pages.scss */
 .content_bottom .region-content-bottom .field--type-image .field--item img {
   margin: 0 auto;
 }
-/* line 147, ../scss/component/pages/_default-pages.scss */
+/* line 152, ../scss/component/pages/_default-pages.scss */
 .content_bottom #block-sectors {
   max-width: 1300px;
   margin: 0 auto;
 }
-/* line 150, ../scss/component/pages/_default-pages.scss */
+/* line 155, ../scss/component/pages/_default-pages.scss */
 .content_bottom #block-sectors h2.block-title {
   color: #3e3e3e;
   text-align: center;
   font-size: 30px;
 }
-/* line 158, ../scss/component/pages/_default-pages.scss */
+/* line 163, ../scss/component/pages/_default-pages.scss */
 .content_bottom #block-wids-audience-profile-2 h2.block-title {
   color: #3e3e3e;
   text-align: center;
   font-size: 30px;
 }
-/* line 163, ../scss/component/pages/_default-pages.scss */
+/* line 168, ../scss/component/pages/_default-pages.scss */
 .content_bottom #block-wids-audience-profile-2 img {
   width: 70px;
   height: auto;
   margin: 0 auto;
 }
-/* line 171, ../scss/component/pages/_default-pages.scss */
+/* line 176, ../scss/component/pages/_default-pages.scss */
 .content_bottom #block-wids-audience-profile-2 .field--name-field-column-content .paragraph--view-mode--six-column-display .field {
   text-align: center;
   margin: 20px 0;

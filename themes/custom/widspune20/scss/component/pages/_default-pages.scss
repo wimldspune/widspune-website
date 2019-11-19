@@ -55,8 +55,8 @@ h2.block-title {
     width: 100%;
     padding: 0;
     .region-navigation-collapsible {
-      nav {
-        float: right;
+      .block-superfish {
+        //float: right;
         padding: 25px 0px;
         ul {
           li {
@@ -69,6 +69,11 @@ h2.block-title {
               text-transform: uppercase;
               line-height: 1;
               letter-spacing: 0.05em;
+              color: $darktextcolor;
+              .sf-sub-indicator {
+                font-size: 9px;
+                width: 8px;
+              }
             }
           }
         }
