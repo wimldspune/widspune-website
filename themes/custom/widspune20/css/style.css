@@ -9239,14 +9239,15 @@ h2.block-title {
 .path-frontpage .block-views-blocktestimonials-list-block-1 .view-testimonials-list .view-content {
   margin: 20px;
   text-align: left;
+  position: relative;
 }
-/* line 251, ../scss/component/pages/_front-page.scss */
+/* line 252, ../scss/component/pages/_front-page.scss */
 .path-frontpage .block-views-blocktestimonials-list-block-1 .view-testimonials-list .view-content .views_slideshow_cycle_slide {
   padding: 20px 50px;
   font-weight: bold;
   font-size: larger;
 }
-/* line 255, ../scss/component/pages/_front-page.scss */
+/* line 256, ../scss/component/pages/_front-page.scss */
 .path-frontpage .block-views-blocktestimonials-list-block-1 .view-testimonials-list .view-content .views_slideshow_cycle_slide .views-row {
   text-align: justify;
   color: #fff;
@@ -9255,38 +9256,38 @@ h2.block-title {
   min-height: 120px;
   max-width: 92%;
 }
-/* line 262, ../scss/component/pages/_front-page.scss */
+/* line 263, ../scss/component/pages/_front-page.scss */
 .path-frontpage .block-views-blocktestimonials-list-block-1 .view-testimonials-list .view-content .views_slideshow_cycle_slide .views-row .views-field-body {
   line-height: 1.5;
   margin: 0;
   max-width: 88%;
 }
-/* line 267, ../scss/component/pages/_front-page.scss */
+/* line 268, ../scss/component/pages/_front-page.scss */
 .path-frontpage .block-views-blocktestimonials-list-block-1 .view-testimonials-list .view-content .views_slideshow_cycle_slide .views-row .views-field-field-from-unregisted-user {
   margin-top: 10px;
   display: block;
   font-weight: 200;
   opacity: 0.8;
 }
-/* line 276, ../scss/component/pages/_front-page.scss */
+/* line 277, ../scss/component/pages/_front-page.scss */
 .path-frontpage .block-views-blocktestimonials-list-block-1 .view-testimonials-list .view-content .quote div:before {
-  content: '"';
+  content: open-quote;
   font-family: cursive;
 }
-/* line 280, ../scss/component/pages/_front-page.scss */
+/* line 281, ../scss/component/pages/_front-page.scss */
 .path-frontpage .block-views-blocktestimonials-list-block-1 .view-testimonials-list .view-content .quote div:after {
-  content: '"';
+  content: close-quote;
   font-family: cursive;
 }
-/* line 285, ../scss/component/pages/_front-page.scss */
+/* line 286, ../scss/component/pages/_front-page.scss */
 .path-frontpage .block-views-blocktestimonials-list-block-1 .view-testimonials-list .view-content .testimonial-author {
   float: right;
 }
-/* line 287, ../scss/component/pages/_front-page.scss */
+/* line 288, ../scss/component/pages/_front-page.scss */
 .path-frontpage .block-views-blocktestimonials-list-block-1 .view-testimonials-list .view-content .testimonial-author div:before {
   content: '-';
 }
-/* line 292, ../scss/component/pages/_front-page.scss */
+/* line 293, ../scss/component/pages/_front-page.scss */
 .path-frontpage .block-views-blocktestimonials-list-block-1 .view-testimonials-list .view-content:before {
   font-family: Georgia, serif;
   content: "“";
@@ -9295,7 +9296,7 @@ h2.block-title {
   color: rgba(238, 238, 238, 0.8);
   font-weight: normal;
 }
-/* line 301, ../scss/component/pages/_front-page.scss */
+/* line 302, ../scss/component/pages/_front-page.scss */
 .path-frontpage .block-views-blocktestimonials-list-block-1 .view-testimonials-list .view-content:after {
   font-family: Georgia, serif;
   content: "”";
@@ -9306,7 +9307,7 @@ h2.block-title {
   color: rgba(238, 238, 238, 0.8);
   font-weight: normal;
 }
-/* line 317, ../scss/component/pages/_front-page.scss */
+/* line 318, ../scss/component/pages/_front-page.scss */
 .path-frontpage .block-views-blockmedia-clippings-list-block-1 {
   max-width: 1300px;
   margin: 0 auto;

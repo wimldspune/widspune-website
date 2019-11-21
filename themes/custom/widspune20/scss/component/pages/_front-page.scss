@@ -248,6 +248,7 @@
       .view-content {
         margin: 20px;
         text-align: left;
+        position: relative;
         .views_slideshow_cycle_slide {
           padding: 20px 50px;
           font-weight: bold;
@@ -274,11 +275,11 @@
         }
         .quote {
           div:before {
-            content: '"';
+            content: open-quote;
             font-family: cursive;
           }
           div:after {
-            content: '"';
+            content: close-quote;
             font-family: cursive;
           }
         }
