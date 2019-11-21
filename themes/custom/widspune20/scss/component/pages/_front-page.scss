@@ -257,7 +257,7 @@
             position: relative;
             overflow: hidden;
             min-height: 120px;
-
+            max-width: 92%;
             .views-field-body {
               line-height: 1.5;
               margin: 0;
@@ -274,9 +274,11 @@
         .quote {
           div:before {
             content: '"';
+            font-family: cursive;
           }
           div:after {
             content: '"';
+            font-family: cursive;
           }
         }
         .testimonial-author {
@@ -305,7 +307,7 @@
         color: $quotecolor;
         font-weight: normal;
         @media (min-width: $screen-lg-min) {
-          right: 185px;
+          //right: 185px;
         }
       }
     }
