@@ -1,0 +1,26 @@
+.view-testimonials-list {
+  .view-content {
+    .views-row {
+      border-bottom: 1px solid $footercolor ;
+      padding: 20px 0;
+      margin: 20px 0;
+      .quote {}
+      .quote {
+        div:before {
+          content: open-quote;
+          font-family: cursive;
+        }
+        div:after {
+          content: close-quote;
+          font-family: cursive;
+        }
+      }
+      .testimonial-author {
+        text-align: right;
+        div:before {
+          content: '-';
+        }
+      }
+    }
+  }
+}

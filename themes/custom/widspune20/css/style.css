@@ -9249,6 +9249,7 @@ h2.block-title {
 }
 /* line 256, ../scss/component/pages/_front-page.scss */
 .path-frontpage .block-views-blocktestimonials-list-block-1 .view-testimonials-list .view-content .views_slideshow_cycle_slide .views-row {
+  border: none;
   text-align: justify;
   color: #fff;
   position: relative;
@@ -9256,38 +9257,38 @@ h2.block-title {
   min-height: 120px;
   max-width: 92%;
 }
-/* line 263, ../scss/component/pages/_front-page.scss */
+/* line 264, ../scss/component/pages/_front-page.scss */
 .path-frontpage .block-views-blocktestimonials-list-block-1 .view-testimonials-list .view-content .views_slideshow_cycle_slide .views-row .views-field-body {
   line-height: 1.5;
   margin: 0;
   max-width: 88%;
 }
-/* line 268, ../scss/component/pages/_front-page.scss */
+/* line 269, ../scss/component/pages/_front-page.scss */
 .path-frontpage .block-views-blocktestimonials-list-block-1 .view-testimonials-list .view-content .views_slideshow_cycle_slide .views-row .views-field-field-from-unregisted-user {
   margin-top: 10px;
   display: block;
   font-weight: 200;
   opacity: 0.8;
 }
-/* line 277, ../scss/component/pages/_front-page.scss */
+/* line 278, ../scss/component/pages/_front-page.scss */
 .path-frontpage .block-views-blocktestimonials-list-block-1 .view-testimonials-list .view-content .quote div:before {
   content: open-quote;
   font-family: cursive;
 }
-/* line 281, ../scss/component/pages/_front-page.scss */
+/* line 282, ../scss/component/pages/_front-page.scss */
 .path-frontpage .block-views-blocktestimonials-list-block-1 .view-testimonials-list .view-content .quote div:after {
   content: close-quote;
   font-family: cursive;
 }
-/* line 286, ../scss/component/pages/_front-page.scss */
+/* line 287, ../scss/component/pages/_front-page.scss */
 .path-frontpage .block-views-blocktestimonials-list-block-1 .view-testimonials-list .view-content .testimonial-author {
   float: right;
 }
-/* line 288, ../scss/component/pages/_front-page.scss */
+/* line 289, ../scss/component/pages/_front-page.scss */
 .path-frontpage .block-views-blocktestimonials-list-block-1 .view-testimonials-list .view-content .testimonial-author div:before {
   content: '-';
 }
-/* line 293, ../scss/component/pages/_front-page.scss */
+/* line 294, ../scss/component/pages/_front-page.scss */
 .path-frontpage .block-views-blocktestimonials-list-block-1 .view-testimonials-list .view-content:before {
   font-family: Georgia, serif;
   content: "“";
@@ -9296,7 +9297,7 @@ h2.block-title {
   color: rgba(238, 238, 238, 0.8);
   font-weight: normal;
 }
-/* line 302, ../scss/component/pages/_front-page.scss */
+/* line 303, ../scss/component/pages/_front-page.scss */
 .path-frontpage .block-views-blocktestimonials-list-block-1 .view-testimonials-list .view-content:after {
   font-family: Georgia, serif;
   content: "”";
@@ -9307,7 +9308,7 @@ h2.block-title {
   color: rgba(238, 238, 238, 0.8);
   font-weight: normal;
 }
-/* line 318, ../scss/component/pages/_front-page.scss */
+/* line 319, ../scss/component/pages/_front-page.scss */
 .path-frontpage .block-views-blockmedia-clippings-list-block-1 {
   max-width: 1300px;
   margin: 0 auto;
@@ -9470,6 +9471,31 @@ h2.block-title {
 /* line 5, ../scss/component/pages/_media_coverage.scss */
 .view-media-clippings-list .media-coverage-list .views-field img {
   margin: 0 auto;
+}
+
+/* line 3, ../scss/component/pages/_testimonials_page.scss */
+.view-testimonials-list .view-content .views-row {
+  border-bottom: 1px solid #eee;
+  padding: 20px 0;
+  margin: 20px 0;
+}
+/* line 9, ../scss/component/pages/_testimonials_page.scss */
+.view-testimonials-list .view-content .views-row .quote div:before {
+  content: open-quote;
+  font-family: cursive;
+}
+/* line 13, ../scss/component/pages/_testimonials_page.scss */
+.view-testimonials-list .view-content .views-row .quote div:after {
+  content: close-quote;
+  font-family: cursive;
+}
+/* line 18, ../scss/component/pages/_testimonials_page.scss */
+.view-testimonials-list .view-content .views-row .testimonial-author {
+  text-align: right;
+}
+/* line 20, ../scss/component/pages/_testimonials_page.scss */
+.view-testimonials-list .view-content .views-row .testimonial-author div:before {
+  content: '-';
 }
 
 /* line 1, ../scss/component/regions/_page-banner.scss */
