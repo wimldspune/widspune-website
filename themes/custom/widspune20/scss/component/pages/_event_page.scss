@@ -34,7 +34,7 @@
     margin: 0 auto;
     h2.heading {
       margin: 30px 0;
-      color: #00b140;
+      color: $basetextcolor;
       font-size: 30px;
       text-align: center;
     }
@@ -49,8 +49,8 @@
     }
   }
   .event_speakers {
-    background: #efefef;
-    padding: 20px 0;
+    background: $event-speakers-back;
+    padding: 30px 0;
     clear: both;
     .row {
       max-width: $default-max-width;
@@ -73,6 +73,12 @@
       padding: 20px ;
       .location_outer {
         border-right: 1px solid $light-border;
+        padding: 25px 0;
+        .field {
+          font-weight: 600;
+          font-family: 'Poppins', sans-serif;
+          line-height: 1.5;
+        }
         .icon {
           font-size: 0;
           width: 70px;
@@ -86,20 +92,23 @@
         .location_icon {
           background-image: url(../images/location-icon.png);
         }
-        .logos {
-          width: 130px;
-          margin: 25px 20px 10px 0px;
-          display: inline-block;
-          float: left;
-          box-shadow: 0 0 6px $logo-boxshadow;
-          height: 70px;
+        .event-logos {
+          margin-top: 25px ;
+          .logos {
+            width: 130px;
+            margin: 25px 20px 10px 0px;
+            display: inline-block;
+            float: left;
+            box-shadow: 0 0 6px $logo-boxshadow;
+            height: 70px;
+          }
         }
       }
       .agenda-section {
         .field--label {
-          margin: 30px 0;
           color: $basetextcolor;
           font-size: 30px;
+          padding-left: 25px;
         }
         .field--item {
           ul {
@@ -118,7 +127,7 @@
               border-color: transparent;
               border-style: solid;
               border-width: 6px 0 6px 6px;
-              border-left-color: #00b140;
+              border-left-color: $basetextcolor;
               margin-top: 5px;
               margin-left: -15px;
             }

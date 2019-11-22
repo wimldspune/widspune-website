@@ -9555,7 +9555,7 @@ h2.block-title {
 /* line 51, ../scss/component/pages/_event_page.scss */
 .page-container .event_speakers {
   background: #efefef;
-  padding: 20px 0;
+  padding: 30px 0;
   clear: both;
 }
 /* line 55, ../scss/component/pages/_event_page.scss */
@@ -9578,8 +9578,15 @@ h2.block-title {
 /* line 74, ../scss/component/pages/_event_page.scss */
 .page-container .other_information .row .location_outer {
   border-right: 1px solid #ccc;
+  padding: 25px 0;
 }
-/* line 76, ../scss/component/pages/_event_page.scss */
+/* line 77, ../scss/component/pages/_event_page.scss */
+.page-container .other_information .row .location_outer .field {
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+}
+/* line 82, ../scss/component/pages/_event_page.scss */
 .page-container .other_information .row .location_outer .icon {
   font-size: 0;
   width: 70px;
@@ -9587,16 +9594,20 @@ h2.block-title {
   display: block;
   background-size: cover;
 }
-/* line 83, ../scss/component/pages/_event_page.scss */
+/* line 89, ../scss/component/pages/_event_page.scss */
 .page-container .other_information .row .location_outer .event_date {
   background-image: url(../images/dateandtime-icon1.png);
 }
-/* line 86, ../scss/component/pages/_event_page.scss */
+/* line 92, ../scss/component/pages/_event_page.scss */
 .page-container .other_information .row .location_outer .location_icon {
   background-image: url(../images/location-icon.png);
 }
-/* line 89, ../scss/component/pages/_event_page.scss */
-.page-container .other_information .row .location_outer .logos {
+/* line 95, ../scss/component/pages/_event_page.scss */
+.page-container .other_information .row .location_outer .event-logos {
+  margin-top: 25px;
+}
+/* line 97, ../scss/component/pages/_event_page.scss */
+.page-container .other_information .row .location_outer .event-logos .logos {
   width: 130px;
   margin: 25px 20px 10px 0px;
   display: inline-block;
@@ -9604,23 +9615,23 @@ h2.block-title {
   box-shadow: 0 0 6px #cac5c5;
   height: 70px;
 }
-/* line 99, ../scss/component/pages/_event_page.scss */
+/* line 108, ../scss/component/pages/_event_page.scss */
 .page-container .other_information .row .agenda-section .field--label {
-  margin: 30px 0;
   color: #00b140;
   font-size: 30px;
+  padding-left: 25px;
 }
-/* line 105, ../scss/component/pages/_event_page.scss */
+/* line 114, ../scss/component/pages/_event_page.scss */
 .page-container .other_information .row .agenda-section .field--item ul {
   list-style-type: none !important;
 }
-/* line 107, ../scss/component/pages/_event_page.scss */
+/* line 116, ../scss/component/pages/_event_page.scss */
 .page-container .other_information .row .agenda-section .field--item ul li {
   margin: 15px 0 15px 10px;
   position: relative;
   line-height: 1.5;
 }
-/* line 112, ../scss/component/pages/_event_page.scss */
+/* line 121, ../scss/component/pages/_event_page.scss */
 .page-container .other_information .row .agenda-section .field--item ul li:before {
   display: block;
   content: " ";
