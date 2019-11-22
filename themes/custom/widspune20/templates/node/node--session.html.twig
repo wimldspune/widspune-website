@@ -99,5 +99,46 @@
         {%endfor%}
       </div>
     </div>
+
+    <div class="event_speakers">
+      {% if node.field_speakers %}
+        {% for speaker in node.field_speakers %}
+          <div class="row">
+            <div class="col-sm-4 text-center founder-info ">
+              <img src="{{ file_url(speaker.entity.user_picture.entity.uri.value) }}">
+              <h4>{{ speaker.entity.field_address.given_name }} {{ speaker.entity.field_address.family_name }}</h4>
+              <p>{{ speaker.entity.field_designation.value }}</p>
+            </div>
+            <div class="col-sm-8">
+              {{ speaker.entity.field_user_remark.value }}
+            </div>
+          </div>
+        {% endfor %}
+      {% endif %}
+    </div>
+    <div class="other_information">
+      <div class="row">
+        <div class="col-sm-5 location_outer">
+          <div class="col-sm-6">
+            <span class="icon event_date">img</span>
+            {{ content.field_date }}
+          </div>
+          <div class="col-sm-6">
+            <span class="icon location_icon">img</span>
+            {{ content.field_date }}
+          </div>
+          <div class="col-sm-12 event-logos">
+            {% if node.field_speakers %}
+              {% for sponser in node.field_session_sponsor %}
+                <img src="{{ file_url(sponser.entity.field_logo.entity.uri.value) }}" class="img-responsive logos" />
+              {% endfor %}
+            {% endif %}
+          </div>
+        </div>
+        <div class="col-sm-7 agenda-section">
+          {{ content.field_agenda }}
+        </div>
+      </div>
+    </div>
   </section>
 </article>
