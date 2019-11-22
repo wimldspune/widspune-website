@@ -8818,7 +8818,6 @@ h2.block-title {
 
 /* line 41, ../scss/component/pages/_default-pages.scss */
 .main-container {
-  max-width: 1300px;
   margin: 30px auto 30px;
 }
 /* line 44, ../scss/component/pages/_default-pages.scss */
@@ -9496,6 +9495,42 @@ h2.block-title {
 /* line 20, ../scss/component/pages/_testimonials_page.scss */
 .view-testimonials-list .view-content .views-row .testimonial-author div:before {
   content: '-';
+}
+
+/* line 2, ../scss/component/pages/_event_page.scss */
+.page-container .green-bg {
+  background: #00b140;
+  padding-bottom: 20px;
+}
+/* line 5, ../scss/component/pages/_event_page.scss */
+.page-container .green-bg .header-content {
+  max-width: 1300px;
+  margin: 0px auto;
+  padding: 10px 20px;
+  text-align: center;
+  color: #fff;
+}
+/* line 11, ../scss/component/pages/_event_page.scss */
+.page-container .green-bg .header-content h2 {
+  color: #fff;
+  font-size: 36px;
+  margin: 30px 0;
+}
+/* line 19, ../scss/component/pages/_event_page.scss */
+.page-container .photo-gallery h2.heading {
+  margin: 30px 0;
+  color: #00b140;
+  font-size: 30px;
+  text-align: center;
+}
+/* line 26, ../scss/component/pages/_event_page.scss */
+.page-container .photo-gallery .field--items .field--item {
+  margin: 15px 0;
+}
+/* line 28, ../scss/component/pages/_event_page.scss */
+.page-container .photo-gallery .field--items .field--item img {
+  box-shadow: 0px 0px 8px 0px #484545;
+  border: 1px solid #fff;
 }
 
 /* line 1, ../scss/component/regions/_page-banner.scss */

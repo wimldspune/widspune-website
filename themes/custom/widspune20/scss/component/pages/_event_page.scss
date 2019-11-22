@@ -1,0 +1,35 @@
+.page-container {
+  .green-bg {
+    background: $basetextcolor;
+    padding-bottom: 20px;
+    .header-content {
+      max-width: $default-max-width;
+      margin: 0px auto;
+      padding: 10px 20px;
+      text-align: center;
+      color: $lightcolor;
+      h2 {
+        color: $lightcolor;
+        font-size: 36px;
+        margin: 30px 0;
+      }
+    }
+  }
+  .photo-gallery {
+    h2.heading {
+      margin: 30px 0;
+      color: #00b140;
+      font-size: 30px;
+      text-align: center;
+    }
+    .field--items {
+      .field--item {
+        margin: 15px 0;
+        img {
+          box-shadow: 0px 0px 8px 0px $gallery-boxshadow;
+          border: 1px solid $lightcolor;
+        }
+      }
+    }
+  }
+}
