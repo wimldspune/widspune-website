@@ -1,0 +1,9 @@
+uuid: e3d170f2-c680-458f-9643-7061110b9ce1
+langcode: en
+status: true
+dependencies: {  }
+id: session_venue
+label: 'Session venue'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

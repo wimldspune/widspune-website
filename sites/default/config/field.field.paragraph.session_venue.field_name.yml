@@ -1,0 +1,19 @@
+uuid: c5429e7b-5aa9-4b81-a459-da02c9ae4e94
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_name
+    - paragraphs.paragraphs_type.session_venue
+id: paragraph.session_venue.field_name
+field_name: field_name
+entity_type: paragraph
+bundle: session_venue
+label: Name
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

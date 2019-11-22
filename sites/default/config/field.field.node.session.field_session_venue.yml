@@ -1,0 +1,34 @@
+uuid: 9a6033c5-1bb9-479b-abb9-797b6b6fb8cf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_session_venue
+    - node.type.session
+    - paragraphs.paragraphs_type.session_venue
+  module:
+    - entity_reference_revisions
+id: node.session.field_session_venue
+field_name: field_session_venue
+entity_type: node
+bundle: session
+label: 'Session venue'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      session_venue: session_venue
+    target_bundles_drag_drop:
+      3_column_display:
+        weight: 3
+        enabled: false
+      session_venue:
+        enabled: true
+        weight: 4
+field_type: entity_reference_revisions

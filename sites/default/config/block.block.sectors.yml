@@ -17,7 +17,7 @@ provider: null
 plugin: 'block_content:7bc1406a-d6f9-4a23-8691-84f4620cad46'
 settings:
   id: 'block_content:7bc1406a-d6f9-4a23-8691-84f4620cad46'
-  label: Sector
+  label: 'Sectors Covered '
   provider: block_content
   label_display: visible
   status: true

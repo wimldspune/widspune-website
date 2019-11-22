@@ -6,6 +6,7 @@ dependencies:
     - field.storage.node.body
     - field.storage.node.field_from_unregisted_user
     - node.type.testimonials
+    - system.menu.main
   module:
     - node
     - text
@@ -64,7 +65,7 @@ display:
           slideshow_skin: default
           slideshow_type: views_slideshow_cycle
           views_slideshow_cycle:
-            effect: uncover
+            effect: scrollLeft
             transition_advanced: 1
             timeout: '5000'
             speed: '1000'
@@ -95,10 +96,6 @@ display:
             advanced_options: '{"fit":"1"}'
           widgets:
             top:
-              views_slideshow_slide_counter:
-                enable: false
-                weight: '1'
-                hide_on_single_slide: '0'
               views_slideshow_controls:
                 enable: false
                 weight: '1'
@@ -114,11 +111,11 @@ display:
                     body: 0
                     field_from_unregisted_user: 0
                   views_slideshow_pager_fields_hover: 0
+              views_slideshow_slide_counter:
+                enable: false
+                weight: '1'
+                hide_on_single_slide: '0'
             bottom:
-              views_slideshow_slide_counter:
-                enable: false
-                weight: '1'
-                hide_on_single_slide: '0'
               views_slideshow_controls:
                 enable: false
                 weight: '1'
@@ -134,6 +131,10 @@ display:
                     body: 0
                     field_from_unregisted_user: 0
                   views_slideshow_pager_fields_hover: 0
+              views_slideshow_slide_counter:
+                enable: false
+                weight: '1'
+                hide_on_single_slide: '0'
       row:
         type: fields
       fields:
@@ -358,7 +359,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          order: ASC
+          order: DESC
           exposed: false
           expose:
             label: ''
@@ -390,11 +391,139 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
+      use_more: true
+      defaults:
+        use_more: false
+        use_more_always: false
+        use_more_text: false
+      use_more_always: true
+      use_more_text: more...
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_from_unregisted_user'
+  page_1:
+    display_plugin: page
+    id: page_1
+    display_title: Page
+    position: 2
+    display_options:
+      display_extenders: {  }
+      style:
+        type: default
+        options:
+          grouping: {  }
+          row_class: testimonial-outer
+          default_row_class: true
+      defaults:
+        style: false
+        row: false
+        pager: false
+        filters: false
+        filter_groups: false
+      row:
+        type: fields
+        options: {  }
+      path: testimonials/2019
+      menu:
+        type: normal
+        title: Testimonials
+        description: ''
+        expanded: false
+        parent: 'menu_link_content:f87b05b8-d019-4957-81cf-e69e326dd1b7'
+        weight: 0
+        context: '0'
+        menu_name: main
+        enabled: true
+      pager:
+        type: full
+        options:
+          items_per_page: 15
+          offset: 0
+          id: 0
+          total_pages: null
+          tags:
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+          quantity: 9
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
+          value:
+            testimonials: testimonials
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url.query_args
         - 'user.node_grants:view'
         - user.permissions
       tags:

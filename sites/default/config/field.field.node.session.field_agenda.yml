@@ -1,0 +1,21 @@
+uuid: a3a93c7b-8b5e-4294-8b7d-9da38a8c3dbc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_agenda
+    - node.type.session
+  module:
+    - text
+id: node.session.field_agenda
+field_name: field_agenda
+entity_type: node
+bundle: session
+label: Agenda
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

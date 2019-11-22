@@ -4,15 +4,23 @@ status: true
 dependencies:
   config:
     - field.field.node.session.body
+    - field.field.node.session.field_agenda
+    - field.field.node.session.field_blog
     - field.field.node.session.field_date
     - field.field.node.session.field_event_year
+    - field.field.node.session.field_footer_text
+    - field.field.node.session.field_photo_gallery
     - field.field.node.session.field_prerequisite
+    - field.field.node.session.field_session_sponsor
+    - field.field.node.session.field_session_venue
     - field.field.node.session.field_speakers
     - field.field.node.session.field_venue
     - node.type.session
   module:
     - address
     - datetime_range
+    - entity_reference_revisions
+    - image
     - text
     - user
 id: node.session.default
@@ -26,6 +34,21 @@ content:
     weight: 101
     settings: {  }
     third_party_settings: {  }
+    region: content
+  field_agenda:
+    weight: 110
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_blog:
+    weight: 109
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
     region: content
   field_date:
     weight: 103
@@ -45,12 +68,45 @@ content:
     third_party_settings: {  }
     type: entity_reference_label
     region: content
+  field_footer_text:
+    weight: 112
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_photo_gallery:
+    weight: 108
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
   field_prerequisite:
     weight: 105
     label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
+    region: content
+  field_session_sponsor:
+    weight: 113
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_session_venue:
+    type: entity_reference_revisions_entity_view
+    weight: 111
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
     region: content
   field_speakers:
     weight: 107

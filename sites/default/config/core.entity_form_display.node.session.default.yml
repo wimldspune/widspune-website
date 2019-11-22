@@ -4,15 +4,23 @@ status: true
 dependencies:
   config:
     - field.field.node.session.body
+    - field.field.node.session.field_agenda
+    - field.field.node.session.field_blog
     - field.field.node.session.field_date
     - field.field.node.session.field_event_year
+    - field.field.node.session.field_footer_text
+    - field.field.node.session.field_photo_gallery
     - field.field.node.session.field_prerequisite
+    - field.field.node.session.field_session_sponsor
+    - field.field.node.session.field_session_venue
     - field.field.node.session.field_speakers
     - field.field.node.session.field_venue
+    - image.style.thumbnail
     - node.type.session
   module:
-    - address
     - datetime_range
+    - image
+    - paragraphs
     - path
     - text
 id: node.session.default
@@ -35,6 +43,23 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_agenda:
+    weight: 14
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_blog:
+    weight: 12
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
   field_date:
     weight: 9
     settings: {  }
@@ -50,16 +75,32 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
-  field_prerequisite:
-    weight: 11
+  field_footer_text:
+    weight: 16
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
     type: text_textarea
     region: content
-  field_speakers:
-    weight: 26
+  field_photo_gallery:
+    weight: 11
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_prerequisite:
+    weight: 10
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_session_sponsor:
+    weight: 17
     settings:
       match_operator: CONTAINS
       size: 60
@@ -67,11 +108,26 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
-  field_venue:
-    weight: 10
-    settings: {  }
+  field_session_venue:
+    type: entity_reference_paragraphs
+    weight: 15
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
     third_party_settings: {  }
-    type: address_default
+    region: content
+  field_speakers:
+    weight: 13
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
     region: content
   path:
     type: path
@@ -117,4 +173,5 @@ content:
       placeholder: ''
     region: content
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_venue: true

@@ -1,0 +1,32 @@
+uuid: 057eb892-8ad7-4477-8bdf-cdfb6b1ecad2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.session_venue.field_name
+    - field.field.paragraph.session_venue.field_venue_address
+    - paragraphs.paragraphs_type.session_venue
+id: paragraph.session_venue.default
+targetEntityType: paragraph
+bundle: session_venue
+mode: default
+content:
+  field_name:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_venue_address:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

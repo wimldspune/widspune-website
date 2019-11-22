@@ -1,0 +1,38 @@
+uuid: a64d6c07-a029-4f88-863f-0b6618c1c862
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_photo_gallery
+    - node.type.session
+  module:
+    - image
+id: node.session.field_photo_gallery
+field_name: field_photo_gallery
+entity_type: node
+bundle: session
+label: 'Photo Gallery'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: 'event/[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image
