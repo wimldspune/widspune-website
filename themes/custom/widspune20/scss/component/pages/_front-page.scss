@@ -205,6 +205,7 @@
   }
 
   .extra_metrics_outer {
+    margin-bottom: 30px;
     .metrics_info {
       display: inline-block;
       max-width: 150px;
@@ -247,17 +248,19 @@
       .view-content {
         margin: 20px;
         text-align: left;
+        position: relative;
         .views_slideshow_cycle_slide {
           padding: 20px 50px;
           font-weight: bold;
           font-size: larger;
           .views-row {
+            border: none;
             text-align: justify;
             color: $lightcolor;
             position: relative;
             overflow: hidden;
             min-height: 120px;
-
+            max-width: 92%;
             .views-field-body {
               line-height: 1.5;
               margin: 0;
@@ -273,10 +276,12 @@
         }
         .quote {
           div:before {
-            content: '"';
+            content: open-quote;
+            font-family: cursive;
           }
           div:after {
-            content: '"';
+            content: close-quote;
+            font-family: cursive;
           }
         }
         .testimonial-author {
@@ -305,7 +310,7 @@
         color: $quotecolor;
         font-weight: normal;
         @media (min-width: $screen-lg-min) {
-          right: 185px;
+          //right: 185px;
         }
       }
     }
