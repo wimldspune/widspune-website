@@ -8787,28 +8787,35 @@ h1, h2, h3, h4, h5 {
 h2 {
   font-size: 30px;
   color: #3e3e3e;
+  padding: 10px 0;
+}
+@media (min-width: 1200px) {
+  /* line 15, ../scss/component/pages/_default-pages.scss */
+  h2 {
+    padding: 20px 0;
+  }
 }
 
-/* line 20, ../scss/component/pages/_default-pages.scss */
+/* line 24, ../scss/component/pages/_default-pages.scss */
 a, a:hover, a:focus, a:active {
   color: #00b140;
   text-decoration: none;
 }
 
-/* line 25, ../scss/component/pages/_default-pages.scss */
+/* line 29, ../scss/component/pages/_default-pages.scss */
 h1.page-header {
   color: #00b140;
   font-size: 50px;
 }
 
-/* line 30, ../scss/component/pages/_default-pages.scss */
+/* line 34, ../scss/component/pages/_default-pages.scss */
 h2.block-title {
   color: #00b140;
   font-size: 30px;
   text-align: center;
 }
 @media (min-width: 1200px) {
-  /* line 30, ../scss/component/pages/_default-pages.scss */
+  /* line 34, ../scss/component/pages/_default-pages.scss */
   h2.block-title {
     font-size: 50px;
     text-align: left;
@@ -8816,45 +8823,45 @@ h2.block-title {
   }
 }
 
-/* line 41, ../scss/component/pages/_default-pages.scss */
+/* line 45, ../scss/component/pages/_default-pages.scss */
 .main-container {
   margin: 30px auto 30px;
 }
-/* line 44, ../scss/component/pages/_default-pages.scss */
+/* line 48, ../scss/component/pages/_default-pages.scss */
 .main-container .row {
   margin: 0 20px;
 }
 
-/* line 49, ../scss/component/pages/_default-pages.scss */
+/* line 53, ../scss/component/pages/_default-pages.scss */
 .navbar {
   margin-bottom: 0;
   border: none;
   background-color: transparent;
   max-width: 1300px;
 }
-/* line 54, ../scss/component/pages/_default-pages.scss */
+/* line 58, ../scss/component/pages/_default-pages.scss */
 .navbar .navbar-header {
   width: 100%;
   padding: 0;
 }
-/* line 58, ../scss/component/pages/_default-pages.scss */
+/* line 62, ../scss/component/pages/_default-pages.scss */
 .navbar .navbar-header .region-navigation .block-superfish {
   float: right;
   padding: 25px 0px;
   width: auto;
 }
 @media (max-width: 768px) {
-  /* line 58, ../scss/component/pages/_default-pages.scss */
+  /* line 62, ../scss/component/pages/_default-pages.scss */
   .navbar .navbar-header .region-navigation .block-superfish {
     float: none;
     margin-left: 20px;
   }
 }
-/* line 67, ../scss/component/pages/_default-pages.scss */
+/* line 71, ../scss/component/pages/_default-pages.scss */
 .navbar .navbar-header .region-navigation .block-superfish .sf-accordion-toggle a:before {
   content: "\f0c9";
 }
-/* line 70, ../scss/component/pages/_default-pages.scss */
+/* line 74, ../scss/component/pages/_default-pages.scss */
 .navbar .navbar-header .region-navigation .block-superfish .sf-accordion-toggle a {
   border: 1px solid #ddd;
   border-radius: 4px;
@@ -8866,11 +8873,11 @@ h2.block-title {
   padding: 8px 12px;
   font-size: 20px;
 }
-/* line 80, ../scss/component/pages/_default-pages.scss */
+/* line 84, ../scss/component/pages/_default-pages.scss */
 .navbar .navbar-header .region-navigation .block-superfish .sf-accordion-toggle a span {
   display: none;
 }
-/* line 87, ../scss/component/pages/_default-pages.scss */
+/* line 91, ../scss/component/pages/_default-pages.scss */
 .navbar .navbar-header .region-navigation .block-superfish ul li a {
   font-family: 'Montserrat';
   font-style: normal;
@@ -8882,110 +8889,110 @@ h2.block-title {
   letter-spacing: 0.05em;
   color: #3e3e3e;
 }
-/* line 97, ../scss/component/pages/_default-pages.scss */
+/* line 101, ../scss/component/pages/_default-pages.scss */
 .navbar .navbar-header .region-navigation .block-superfish ul li a .sf-sub-indicator {
   font-size: 9px;
   width: 8px;
 }
 
-/* line 109, ../scss/component/pages/_default-pages.scss */
+/* line 113, ../scss/component/pages/_default-pages.scss */
 .footer {
   background-color: #eee;
   margin-top: 0;
 }
-/* line 112, ../scss/component/pages/_default-pages.scss */
+/* line 116, ../scss/component/pages/_default-pages.scss */
 .footer .footer_container {
   display: flex;
   max-width: 1300px;
   margin: 0 auto;
 }
-/* line 116, ../scss/component/pages/_default-pages.scss */
+/* line 120, ../scss/component/pages/_default-pages.scss */
 .footer .footer_container .footer-section.footer_center {
   flex: 2;
 }
-/* line 119, ../scss/component/pages/_default-pages.scss */
+/* line 123, ../scss/component/pages/_default-pages.scss */
 .footer .footer_container .footer-section {
   flex: 1;
   text-align: center;
   vertical-align: middle;
 }
-/* line 123, ../scss/component/pages/_default-pages.scss */
+/* line 127, ../scss/component/pages/_default-pages.scss */
 .footer .footer_container .footer-section h2 {
   font-size: 25px;
   padding: 0 0 10px;
 }
-/* line 128, ../scss/component/pages/_default-pages.scss */
+/* line 132, ../scss/component/pages/_default-pages.scss */
 .footer .footer_container .footer-section .field--name-body span {
   color: red;
 }
-/* line 134, ../scss/component/pages/_default-pages.scss */
+/* line 138, ../scss/component/pages/_default-pages.scss */
 .footer .footer_container .footer-section .field--type-image .field--item img {
   margin: 0 auto;
 }
-/* line 139, ../scss/component/pages/_default-pages.scss */
+/* line 143, ../scss/component/pages/_default-pages.scss */
 .footer .footer_container .footer-section nav {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
-/* line 143, ../scss/component/pages/_default-pages.scss */
+/* line 147, ../scss/component/pages/_default-pages.scss */
 .footer .footer_container .footer-section nav ul.navbar-nav {
   float: none;
 }
-/* line 145, ../scss/component/pages/_default-pages.scss */
+/* line 149, ../scss/component/pages/_default-pages.scss */
 .footer .footer_container .footer-section nav ul.navbar-nav li {
   float: none;
 }
-/* line 147, ../scss/component/pages/_default-pages.scss */
+/* line 151, ../scss/component/pages/_default-pages.scss */
 .footer .footer_container .footer-section nav ul.navbar-nav li a {
   padding: 8px 0;
 }
-/* line 153, ../scss/component/pages/_default-pages.scss */
+/* line 157, ../scss/component/pages/_default-pages.scss */
 .footer .footer_container .footer-section .block-social-media-links {
   margin-bottom: 20px;
 }
-/* line 157, ../scss/component/pages/_default-pages.scss */
+/* line 161, ../scss/component/pages/_default-pages.scss */
 .footer .footer_container .small_font {
   font-size: 14px;
 }
 
-/* line 164, ../scss/component/pages/_default-pages.scss */
+/* line 168, ../scss/component/pages/_default-pages.scss */
 .content_bottom .region-content-bottom {
   text-align: center;
 }
-/* line 167, ../scss/component/pages/_default-pages.scss */
+/* line 171, ../scss/component/pages/_default-pages.scss */
 .content_bottom .region-content-bottom .field--type-image .field--item {
   display: inline-block;
   padding: 0 20px;
 }
-/* line 170, ../scss/component/pages/_default-pages.scss */
+/* line 174, ../scss/component/pages/_default-pages.scss */
 .content_bottom .region-content-bottom .field--type-image .field--item img {
   margin: 0 auto;
 }
-/* line 176, ../scss/component/pages/_default-pages.scss */
+/* line 180, ../scss/component/pages/_default-pages.scss */
 .content_bottom #block-sectors {
   max-width: 1300px;
   margin: 0 auto;
 }
-/* line 179, ../scss/component/pages/_default-pages.scss */
+/* line 183, ../scss/component/pages/_default-pages.scss */
 .content_bottom #block-sectors h2.block-title {
   color: #3e3e3e;
   text-align: center;
   font-size: 30px;
 }
-/* line 187, ../scss/component/pages/_default-pages.scss */
+/* line 191, ../scss/component/pages/_default-pages.scss */
 .content_bottom #block-wids-audience-profile-2 h2.block-title {
   color: #3e3e3e;
   text-align: center;
   font-size: 30px;
 }
-/* line 192, ../scss/component/pages/_default-pages.scss */
+/* line 196, ../scss/component/pages/_default-pages.scss */
 .content_bottom #block-wids-audience-profile-2 img {
   width: 70px;
   height: auto;
   margin: 0 auto;
 }
-/* line 200, ../scss/component/pages/_default-pages.scss */
+/* line 203, ../scss/component/pages/_default-pages.scss */
 .content_bottom #block-wids-audience-profile-2 .field--name-field-column-content .paragraph--view-mode--six-column-display .field {
   text-align: center;
   margin: 20px 0;
@@ -9375,17 +9382,18 @@ h2.block-title {
 /* line 54, ../scss/component/pages/_about-us-page.scss */
 .vision_philosophy_outer .widspune_philosophy h2 {
   text-align: center;
+  padding: 20px 0;
 }
-/* line 57, ../scss/component/pages/_about-us-page.scss */
+/* line 58, ../scss/component/pages/_about-us-page.scss */
 .vision_philosophy_outer .widspune_philosophy .philosophy_info {
   clear: both;
 }
-/* line 59, ../scss/component/pages/_about-us-page.scss */
+/* line 60, ../scss/component/pages/_about-us-page.scss */
 .vision_philosophy_outer .widspune_philosophy .philosophy_info div {
   display: inline-block;
   vertical-align: middle;
 }
-/* line 63, ../scss/component/pages/_about-us-page.scss */
+/* line 64, ../scss/component/pages/_about-us-page.scss */
 .vision_philosophy_outer .widspune_philosophy .philosophy_info .philosophy_img {
   width: 70px;
   height: 70px;
@@ -9393,69 +9401,69 @@ h2.block-title {
   font-size: 0;
   margin: 10px 0;
 }
-/* line 70, ../scss/component/pages/_about-us-page.scss */
+/* line 71, ../scss/component/pages/_about-us-page.scss */
 .vision_philosophy_outer .widspune_philosophy .philosophy_info .philosophy_text {
   padding: 25px;
   font-size: 20px;
   color: #00b140;
 }
-/* line 75, ../scss/component/pages/_about-us-page.scss */
+/* line 76, ../scss/component/pages/_about-us-page.scss */
 .vision_philosophy_outer .widspune_philosophy .philosophy_info .img1 {
   background-image: url(../images/about_icons/philosophy_1.png);
 }
-/* line 78, ../scss/component/pages/_about-us-page.scss */
+/* line 79, ../scss/component/pages/_about-us-page.scss */
 .vision_philosophy_outer .widspune_philosophy .philosophy_info .img2 {
   background-image: url(../images/about_icons/philosophy_2.png);
 }
-/* line 81, ../scss/component/pages/_about-us-page.scss */
+/* line 82, ../scss/component/pages/_about-us-page.scss */
 .vision_philosophy_outer .widspune_philosophy .philosophy_info .img3 {
   background-image: url(../images/about_icons/philosophy_3.png);
 }
-/* line 84, ../scss/component/pages/_about-us-page.scss */
+/* line 85, ../scss/component/pages/_about-us-page.scss */
 .vision_philosophy_outer .widspune_philosophy .philosophy_info .img4 {
   background-image: url(../images/about_icons/philosophy_4.png);
 }
-/* line 87, ../scss/component/pages/_about-us-page.scss */
+/* line 88, ../scss/component/pages/_about-us-page.scss */
 .vision_philosophy_outer .widspune_philosophy .philosophy_info .img5 {
   background-image: url(../images/about_icons/philosophy_5.png);
 }
-/* line 90, ../scss/component/pages/_about-us-page.scss */
+/* line 91, ../scss/component/pages/_about-us-page.scss */
 .vision_philosophy_outer .widspune_philosophy .philosophy_info .img6 {
   background-image: url(../images/about_icons/philosophy_6.png);
 }
-/* line 93, ../scss/component/pages/_about-us-page.scss */
+/* line 94, ../scss/component/pages/_about-us-page.scss */
 .vision_philosophy_outer .widspune_philosophy .philosophy_info .img7 {
   background-image: url(../images/about_icons/philosophy_7.png);
 }
 
-/* line 102, ../scss/component/pages/_about-us-page.scss */
+/* line 103, ../scss/component/pages/_about-us-page.scss */
 .content_bottom #block-widspune20-keydifferentiators h2.block-title {
   color: #3e3e3e;
   text-align: center;
   font-size: 30px;
 }
-/* line 109, ../scss/component/pages/_about-us-page.scss */
+/* line 110, ../scss/component/pages/_about-us-page.scss */
 .content_bottom #block-widspune20-ouraudienceanddelegates h2.block-title {
   color: #3e3e3e;
   text-align: center;
   font-size: 30px;
 }
 
-/* line 118, ../scss/component/pages/_about-us-page.scss */
+/* line 119, ../scss/component/pages/_about-us-page.scss */
 .wids-vision .col-half-offset {
   margin-left: 4.16667%;
 }
-/* line 121, ../scss/component/pages/_about-us-page.scss */
+/* line 122, ../scss/component/pages/_about-us-page.scss */
 .wids-vision img {
   width: 72px;
   height: 67px;
 }
-/* line 125, ../scss/component/pages/_about-us-page.scss */
+/* line 126, ../scss/component/pages/_about-us-page.scss */
 .wids-vision h2 {
   text-align: center;
   padding: 20px 0;
 }
-/* line 129, ../scss/component/pages/_about-us-page.scss */
+/* line 130, ../scss/component/pages/_about-us-page.scss */
 .wids-vision h3 {
   font-family: 'Actor';
   font-size: 16px;
