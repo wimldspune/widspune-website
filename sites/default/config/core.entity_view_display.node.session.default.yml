@@ -9,21 +9,21 @@ dependencies:
     - field.field.node.session.field_date
     - field.field.node.session.field_event_year
     - field.field.node.session.field_footer_text
+    - field.field.node.session.field_highlight_video
     - field.field.node.session.field_photo_gallery
     - field.field.node.session.field_prerequisite
     - field.field.node.session.field_session_sponsor
     - field.field.node.session.field_session_venue
     - field.field.node.session.field_speakers
     - field.field.node.session.field_venue
-    - image.style.large
     - node.type.session
   module:
-    - address
-    - colorbox
     - datetime_range
     - entity_reference_revisions
+    - responsive_image
     - text
     - user
+    - video_embed_field
 id: node.session.default
 targetEntityType: node
 bundle: session
@@ -32,27 +32,28 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 101
+    weight: 1
     settings: {  }
     third_party_settings: {  }
     region: content
   field_agenda:
-    weight: 110
+    weight: 9
     label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_blog:
-    weight: 109
+    weight: 8
     label: hidden
     settings:
-      link: true
+      view_mode: session_detail_page
+      link: false
     third_party_settings: {  }
-    type: entity_reference_label
+    type: entity_reference_entity_view
     region: content
   field_date:
-    weight: 103
+    weight: 2
     label: hidden
     settings:
       separator: '-'
@@ -62,7 +63,7 @@ content:
     type: daterange_default
     region: content
   field_event_year:
-    weight: 106
+    weight: 4
     label: hidden
     settings:
       link: true
@@ -70,35 +71,41 @@ content:
     type: entity_reference_label
     region: content
   field_footer_text:
-    weight: 112
+    weight: 11
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
+  field_highlight_video:
+    weight: 7
+    label: visually_hidden
+    settings:
+      responsive: true
+      width: 854
+      height: 480
+      autoplay: false
+    third_party_settings: {  }
+    type: video_embed_field_video
+    region: content
   field_photo_gallery:
-    weight: 108
+    weight: 6
     label: hidden
     settings:
-      colorbox_node_style: large
-      colorbox_node_style_first: ''
-      colorbox_image_style: ''
-      colorbox_gallery: post
-      colorbox_gallery_custom: ''
-      colorbox_caption: auto
-      colorbox_caption_custom: ''
+      responsive_image_style: ''
+      image_link: ''
     third_party_settings: {  }
-    type: colorbox
+    type: responsive_image
     region: content
   field_prerequisite:
-    weight: 105
+    weight: 3
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_session_sponsor:
-    weight: 113
+    weight: 12
     label: hidden
     settings:
       link: true
@@ -107,7 +114,7 @@ content:
     region: content
   field_session_venue:
     type: entity_reference_revisions_entity_view
-    weight: 111
+    weight: 10
     label: hidden
     settings:
       view_mode: default
@@ -115,23 +122,17 @@ content:
     third_party_settings: {  }
     region: content
   field_speakers:
-    weight: 107
+    weight: 5
     label: hidden
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
     region: content
-  field_venue:
-    weight: 104
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: address_default
-    region: content
   links:
-    weight: 100
+    weight: 0
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_venue: true

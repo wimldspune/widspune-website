@@ -1,6 +1,6 @@
 uuid: 606ca773-03ca-4350-bb18-2f8c4fe0e1a2
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - system
@@ -10,8 +10,8 @@ _core:
   default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
 id: widspune20_breadcrumbs
 theme: widspune20
-region: navigation
-weight: -17
+region: content_top
+weight: -18
 provider: null
 plugin: system_breadcrumb_block
 settings:

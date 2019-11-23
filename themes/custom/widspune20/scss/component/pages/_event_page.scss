@@ -48,6 +48,18 @@
       }
     }
   }
+  .middle-section {
+    max-width: $default-max-width;
+    margin:10px auto;
+    .heading{
+      margin: 30px 0;
+      color: #00b140;
+      font-size:30px
+    }
+  }
+  .spacing{
+    margin-bottom:40px
+  }
   .event-speakers {
     background: $event-speakers-back;
     padding: 30px 0;

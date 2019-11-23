@@ -1,0 +1,25 @@
+uuid: 005daee5-7b01-4b2d-ad5d-c293c7cd135c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_highlight_video
+    - node.type.session
+  module:
+    - video_embed_field
+id: node.session.field_highlight_video
+field_name: field_highlight_video
+entity_type: node
+bundle: session
+label: 'Highlight Video'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_providers:
+    youtube: youtube
+    youtube_playlist: youtube_playlist
+    vimeo: '0'
+field_type: video_embed_field

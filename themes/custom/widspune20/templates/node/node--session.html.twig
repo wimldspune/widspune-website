@@ -100,6 +100,23 @@
       </div>
     </div>
 
+    <!-- blog section -->
+    <div class="middle-section spacing" >
+      <div class="row">
+        <div class="col-sm-8">
+          <h3 class="heading">Experience the session through our film!</h3>
+          {%if content.field_highlight_video %}
+            {{ content.field_highlight_video }}
+          {%endif%}
+        </div>
+        <div class="col-sm-4">
+          <h3 class="heading">Blogs!</h3>
+          {{ content.field_blog }}
+        </div>
+      </div>
+    </div>
+    <!--  -->
+
     <div class="event-speakers">
       {% if node.field_speakers %}
         {% for key,speaker in node.field_speakers %}
@@ -130,7 +147,7 @@
             {{ content.field_session_venue }}
           </div>
           <div class="col-sm-12 event-logos">
-            {% if node.field_speakers %}
+            {% if node.field_session_sponsor %}
               {% for sponser in node.field_session_sponsor %}
                 <img src="{{ file_url(sponser.entity.field_logo.entity.uri.value) }}" class="img-responsive logos" />
               {% endfor %}

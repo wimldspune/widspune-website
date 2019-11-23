@@ -1,0 +1,10 @@
+uuid: c3b91622-f3d1-4b86-8cc2-5a3aeb8808d4
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.session_detail_page
+label: 'Session Detail Page'
+targetEntityType: node
+cache: true

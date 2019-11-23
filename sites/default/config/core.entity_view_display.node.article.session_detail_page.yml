@@ -1,0 +1,44 @@
+uuid: 8e1a2635-84b6-4ced-b025-2785b9f87d69
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.session_detail_page
+    - field.field.node.article.body
+    - field.field.node.article.comment
+    - field.field.node.article.field_image
+    - field.field.node.article.field_tags
+    - image.style.thumbnail
+    - node.type.article
+  module:
+    - image
+    - text
+    - user
+_core:
+  default_config_hash: ChmU3AVqDKU32A_fyChG0W9dTRKmVBR58B6OClCLvZI
+id: node.article.session_detail_page
+targetEntityType: node
+bundle: article
+mode: session_detail_page
+content:
+  body:
+    type: text_summary_or_trimmed
+    weight: 1
+    region: content
+    settings:
+      trim_length: 400
+    third_party_settings: {  }
+    label: hidden
+  field_image:
+    type: image
+    weight: 0
+    region: content
+    settings:
+      image_style: thumbnail
+      image_link: ''
+    third_party_settings: {  }
+    label: hidden
+hidden:
+  comment: true
+  field_tags: true
+  links: true
