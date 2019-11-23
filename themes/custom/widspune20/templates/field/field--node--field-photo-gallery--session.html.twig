@@ -1,0 +1,25 @@
+{%
+  set classes = [
+  'field',
+  'field--items',
+  'field--name-' ~ field_name|clean_class,
+  'field--type-' ~ field_type|clean_class,
+  'field--label-' ~ label_display,
+]
+%}
+{%
+  set field_classes = [
+  'field--item',
+  'col-md-4',
+  'col-sm-6'
+]
+%}
+
+<div{{ attributes.addClass(classes) }}>
+  {% for item in items %}
+    <div{{ item.attributes.addClass(field_classes)
+    }}>{{ item
+      .content
+      }}</div>
+  {% endfor %}
+</div>

@@ -91,13 +91,7 @@
     </div>
     <div class="photo-gallery field--type-image">
       <h2 class="heading">As they say, every picture has a story to tell!</h2>
-      <div class="field--items">
-        {% for i in 0..content.field_photo_gallery|length %}
-          {%if content.field_photo_gallery[i]['#item'].entity.uri.value != "" and content.field_photo_gallery[i]['#item'].entity.uri.value is not empty %}
-            <div class="field--item {{ (i == 0) ? 'active' : '' }} col-md-4" style="">{{ content.field_photo_gallery[i]}}</div>
-          {%endif%}
-        {%endfor%}
-      </div>
+      {{ content.field_photo_gallery }}
     </div>
 
     <!-- blog section -->
