@@ -54,11 +54,11 @@
     clear: both;
     .border-bottom {
       border-bottom: 1px solid $speakers-border;
-      padding: 20px 0;
     }
     .row {
       max-width: $default-max-width;
       margin: 0 auto;
+      padding: 20px 0;
        .founder-info {
         img {
           max-width: 160px;

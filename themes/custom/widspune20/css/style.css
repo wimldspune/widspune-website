@@ -9569,12 +9569,12 @@ h2.block-title {
 /* line 55, ../scss/component/pages/_event_page.scss */
 .page-container .event-speakers .border-bottom {
   border-bottom: 1px solid #cecece;
-  padding: 20px 0;
 }
-/* line 59, ../scss/component/pages/_event_page.scss */
+/* line 58, ../scss/component/pages/_event_page.scss */
 .page-container .event-speakers .row {
   max-width: 1300px;
   margin: 0 auto;
+  padding: 20px 0;
 }
 /* line 63, ../scss/component/pages/_event_page.scss */
 .page-container .event-speakers .row .founder-info img {
