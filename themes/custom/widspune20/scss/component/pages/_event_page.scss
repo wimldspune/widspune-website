@@ -52,10 +52,14 @@
     background: $event-speakers-back;
     padding: 30px 0;
     clear: both;
+    .border-bottom {
+      border-bottom: 1px solid $speakers-border;
+      padding: 20px 0;
+    }
     .row {
       max-width: $default-max-width;
       margin: 0 auto;
-      .founder-info {
+       .founder-info {
         img {
           max-width: 160px;
           margin: 0 auto;
@@ -95,12 +99,13 @@
           margin: 0 auto;
         }
         .event-logos {
-          margin-top: 25px ;
+          margin-top: 25px;
+          text-align: center;
           .logos {
             width: 130px;
             margin: 25px 20px 10px 0px;
             display: inline-block;
-            float: left;
+            //float: left;
             box-shadow: 0 0 6px $logo-boxshadow;
             height: 70px;
           }

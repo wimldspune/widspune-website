@@ -102,9 +102,9 @@
 
     <div class="event-speakers">
       {% if node.field_speakers %}
-        {% for speaker in node.field_speakers %}
-          <div class="row">
-            <div class="col-sm-3 text-center founder-info ">
+        {% for key,speaker in node.field_speakers %}
+          <div class="row {{ (node.field_speakers|length > (key+1)) ? 'border-bottom' : '' }} ">
+            <div class="col-sm-3 text-center founder-info">
               {%if speaker.entity.user_picture.entity.uri.value != "" %}
                 <img src="{{ file_url(speaker.entity.user_picture.entity.uri.value) }}">
               {%endif%}
