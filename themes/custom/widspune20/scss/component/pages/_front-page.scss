@@ -1,7 +1,9 @@
 .path-frontpage {
-
   .main-container {
+    max-width: $default-max-width;
+    margin: 30px auto 30px;
     .row {
+      margin: 0 20px;
       .view-frontpage {
         display: none;
         margin: 20px;
