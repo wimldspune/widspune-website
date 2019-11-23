@@ -9561,41 +9561,41 @@ h2.block-title {
   border: 1px solid #fff;
 }
 /* line 51, ../scss/component/pages/_event_page.scss */
-.page-container .event_speakers {
+.page-container .event-speakers {
   background: #efefef;
   padding: 30px 0;
   clear: both;
 }
 /* line 55, ../scss/component/pages/_event_page.scss */
-.page-container .event_speakers .row {
+.page-container .event-speakers .row {
   max-width: 1300px;
   margin: 0 auto;
 }
 /* line 59, ../scss/component/pages/_event_page.scss */
-.page-container .event_speakers .row .founder-info img {
+.page-container .event-speakers .row .founder-info img {
   max-width: 160px;
   margin: 0 auto;
   border-radius: 6px;
 }
 /* line 70, ../scss/component/pages/_event_page.scss */
-.page-container .other_information .row {
+.page-container .other-information .row {
   max-width: 1300px;
   margin: 20px auto;
   padding: 20px;
 }
 /* line 74, ../scss/component/pages/_event_page.scss */
-.page-container .other_information .row .location_outer {
+.page-container .other-information .row .location-outer {
   border-right: 1px solid #ccc;
   padding: 25px 0;
 }
 /* line 77, ../scss/component/pages/_event_page.scss */
-.page-container .other_information .row .location_outer .field {
+.page-container .other-information .row .location-outer .field {
   font-weight: 600;
   font-family: 'Poppins', sans-serif;
   line-height: 1.5;
 }
 /* line 82, ../scss/component/pages/_event_page.scss */
-.page-container .other_information .row .location_outer .icon {
+.page-container .other-information .row .location-outer .icon {
   font-size: 0;
   width: 70px;
   height: 67px;
@@ -9603,19 +9603,21 @@ h2.block-title {
   background-size: cover;
 }
 /* line 89, ../scss/component/pages/_event_page.scss */
-.page-container .other_information .row .location_outer .event_date {
+.page-container .other-information .row .location-outer .event-date {
   background-image: url(../images/dateandtime-icon1.png);
+  margin: 0 auto;
 }
-/* line 92, ../scss/component/pages/_event_page.scss */
-.page-container .other_information .row .location_outer .location_icon {
+/* line 93, ../scss/component/pages/_event_page.scss */
+.page-container .other-information .row .location-outer .location-icon {
   background-image: url(../images/location-icon.png);
-}
-/* line 95, ../scss/component/pages/_event_page.scss */
-.page-container .other_information .row .location_outer .event-logos {
-  margin-top: 25px;
+  margin: 0 auto;
 }
 /* line 97, ../scss/component/pages/_event_page.scss */
-.page-container .other_information .row .location_outer .event-logos .logos {
+.page-container .other-information .row .location-outer .event-logos {
+  margin-top: 25px;
+}
+/* line 99, ../scss/component/pages/_event_page.scss */
+.page-container .other-information .row .location-outer .event-logos .logos {
   width: 130px;
   margin: 25px 20px 10px 0px;
   display: inline-block;
@@ -9623,24 +9625,24 @@ h2.block-title {
   box-shadow: 0 0 6px #cac5c5;
   height: 70px;
 }
-/* line 108, ../scss/component/pages/_event_page.scss */
-.page-container .other_information .row .agenda-section .field--label {
+/* line 110, ../scss/component/pages/_event_page.scss */
+.page-container .other-information .row .agenda-section .field--label {
   color: #00b140;
   font-size: 30px;
   padding-left: 25px;
 }
-/* line 114, ../scss/component/pages/_event_page.scss */
-.page-container .other_information .row .agenda-section .field--item ul {
+/* line 116, ../scss/component/pages/_event_page.scss */
+.page-container .other-information .row .agenda-section .field--item ul {
   list-style-type: none !important;
 }
-/* line 116, ../scss/component/pages/_event_page.scss */
-.page-container .other_information .row .agenda-section .field--item ul li {
+/* line 118, ../scss/component/pages/_event_page.scss */
+.page-container .other-information .row .agenda-section .field--item ul li {
   margin: 15px 0 15px 10px;
   position: relative;
   line-height: 1.5;
 }
-/* line 121, ../scss/component/pages/_event_page.scss */
-.page-container .other_information .row .agenda-section .field--item ul li:before {
+/* line 123, ../scss/component/pages/_event_page.scss */
+.page-container .other-information .row .agenda-section .field--item ul li:before {
   display: block;
   content: " ";
   float: left;

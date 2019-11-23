@@ -48,7 +48,7 @@
       }
     }
   }
-  .event_speakers {
+  .event-speakers {
     background: $event-speakers-back;
     padding: 30px 0;
     clear: both;
@@ -66,12 +66,12 @@
       }
     }
   }
-  .other_information {
+  .other-information {
     .row {
       max-width: $default-max-width;
       margin: 20px auto;
       padding: 20px ;
-      .location_outer {
+      .location-outer {
         border-right: 1px solid $light-border;
         padding: 25px 0;
         .field {
@@ -86,11 +86,13 @@
           display: block;
           background-size: cover;
         }
-        .event_date {
+        .event-date {
           background-image: url(../images/dateandtime-icon1.png);
+          margin: 0 auto;
         }
-        .location_icon {
+        .location-icon {
           background-image: url(../images/location-icon.png);
+          margin: 0 auto;
         }
         .event-logos {
           margin-top: 25px ;
