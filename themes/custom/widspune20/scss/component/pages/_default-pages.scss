@@ -209,5 +209,37 @@ h2.block-title {
   }
 }
 
+// Styles for sponsor page
+.path-sponsors {
+  .main-container {
+    h1.page-title {
+      margin: 10px 0 30px;
+    }
+    .row {
+      text-align: center;
+      .view-sponsor-list {
+        max-width: $default-max-width;
+        margin: 0 auto;
+        .view-content {
+          h3 {
+            margin: 25px 0px;
+          }
+          .views-row {
+            display: inline-block;
+            margin: 10px 0;
+            .views-field {
+              display: inline-block;
+              .field-content {
+                padding: 0 10px;
+                img {}
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 
 

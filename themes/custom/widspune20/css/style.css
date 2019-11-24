@@ -8998,6 +8998,37 @@ h2.block-title {
   margin: 20px 0;
 }
 
+/* line 215, ../scss/component/pages/_default-pages.scss */
+.path-sponsors .main-container h1.page-title {
+  margin: 10px 0 30px;
+}
+/* line 218, ../scss/component/pages/_default-pages.scss */
+.path-sponsors .main-container .row {
+  text-align: center;
+}
+/* line 220, ../scss/component/pages/_default-pages.scss */
+.path-sponsors .main-container .row .view-sponsor-list {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+/* line 224, ../scss/component/pages/_default-pages.scss */
+.path-sponsors .main-container .row .view-sponsor-list .view-content h3 {
+  margin: 25px 0px;
+}
+/* line 227, ../scss/component/pages/_default-pages.scss */
+.path-sponsors .main-container .row .view-sponsor-list .view-content .views-row {
+  display: inline-block;
+  margin: 10px 0;
+}
+/* line 230, ../scss/component/pages/_default-pages.scss */
+.path-sponsors .main-container .row .view-sponsor-list .view-content .views-row .views-field {
+  display: inline-block;
+}
+/* line 232, ../scss/component/pages/_default-pages.scss */
+.path-sponsors .main-container .row .view-sponsor-list .view-content .views-row .views-field .field-content {
+  padding: 0 10px;
+}
+
 /* line 2, ../scss/component/pages/_front-page.scss */
 .path-frontpage .main-container {
   max-width: 1300px;
