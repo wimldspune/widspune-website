@@ -36,12 +36,12 @@
         .field--label {
           color: $basetextcolor;
           font-size: 30px;
-          padding-left: 25px;
           font-weight: normal;
         }
         .field--item {
           ul {
             list-style-type: none !important;
+            padding-left: 10px;
             li {
               margin: 15px 0 15px 10px;
               position: relative;

@@ -9590,12 +9590,12 @@ h2.block-title {
 .page-container .header-content-outer .header-content .agenda-section .field--label {
   color: #00b140;
   font-size: 30px;
-  padding-left: 25px;
   font-weight: normal;
 }
-/* line 43, ../scss/component/pages/_event_page.scss */
+/* line 42, ../scss/component/pages/_event_page.scss */
 .page-container .header-content-outer .header-content .agenda-section .field--item ul {
   list-style-type: none !important;
+  padding-left: 10px;
 }
 /* line 45, ../scss/component/pages/_event_page.scss */
 .page-container .header-content-outer .header-content .agenda-section .field--item ul li {
@@ -9769,6 +9769,53 @@ h2.block-title {
   width: 100%;
   padding: 0;
   float: none;
+}
+
+/* line 1, ../scss/component/pages/_speakers_page.scss */
+.view-id-speakers_list {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+/* line 6, ../scss/component/pages/_speakers_page.scss */
+.view-id-speakers_list .view-content .views-row .views-field {
+  border: 1px solid #ccc;
+  margin: 15px 0;
+  box-shadow: 3px 3px 6px #ccc;
+}
+/* line 10, ../scss/component/pages/_speakers_page.scss */
+.view-id-speakers_list .view-content .views-row .views-field .volunteers-info {
+  padding: 15px;
+  text-align: center;
+}
+/* line 13, ../scss/component/pages/_speakers_page.scss */
+.view-id-speakers_list .view-content .views-row .views-field .volunteers-info .caption {
+  display: inline-table;
+}
+/* line 16, ../scss/component/pages/_speakers_page.scss */
+.view-id-speakers_list .view-content .views-row .views-field .volunteers-info .image {
+  background-image: url(../images/empty-speaker-frame.png);
+  background-size: cover;
+  height: 266px;
+}
+/* line 20, ../scss/component/pages/_speakers_page.scss */
+.view-id-speakers_list .view-content .views-row .views-field .volunteers-info .image img {
+  height: auto;
+  text-align: center;
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  width: 90px;
+  transform: translate(-50%, -50%);
+}
+/* line 30, ../scss/component/pages/_speakers_page.scss */
+.view-id-speakers_list .view-content .views-row .views-field .volunteers-info a.ln-link {
+  font-size: 14px;
+  margin: 5px 0 15px;
+  border: 1px solid #337ab7;
+  padding: 4px 10px;
+  background: #337ab7;
+  border-radius: 3px;
+  color: #fff;
 }
 
 /* line 1, ../scss/component/regions/_page-banner.scss */
