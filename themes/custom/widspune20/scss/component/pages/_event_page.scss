@@ -1,34 +1,141 @@
 .page-node-type-session {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  h1, h2, h3, h4 {
+    color: $basetextcolor;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+  }
+  p {
+    line-height: 1.5;
+  }
+  .fs14 {
+    font-size: 14px;
+  }
+  h2.page-main-title {
+    text-align: center;
+  }
   .main-container {
     margin: 0;
     padding: 0;
-    .row {
-      margin: 0;
-      .col-sm-12 {
-        margin: 0;
-        padding: 0;
-      }
-    }
+    .row {}
   }
 }
 
 .page-container {
-  .green-bg {
-    background: $basetextcolor;
-    padding-bottom: 20px;
+  .header-content-outer {
+    background: $event-speakers-back;
+    clear: both;
     .header-content {
       max-width: $default-max-width;
       margin: 0px auto;
-      padding: 10px 20px;
-      text-align: center;
-      color: $lightcolor;
-      h1 {
+      h2 {}
+      .agenda-section {
+        .field--label {
+          color: $basetextcolor;
+          font-size: 30px;
+          padding-left: 25px;
+          font-weight: normal;
+        }
+        .field--item {
+          ul {
+            list-style-type: none !important;
+            li {
+              margin: 15px 0 15px 10px;
+              position: relative;
+              line-height: 1.5;
+            }
+            li:before {
+              display: block;
+              content: " ";
+              float: left;
+              width: 0;
+              height: 0;
+              border-color: transparent;
+              border-style: solid;
+              border-width: 6px 0 6px 6px;
+              border-left-color: $basetextcolor;
+              margin-top: 5px;
+              margin-left: -15px;
+            }
+          }
+        }
+      }
+      .green-patch {
+        background: $basetextcolor;
+        padding-bottom: 24px;
+      }
+      .event-speakers {
+        clear: both;
+        .box-shadow {
+          margin: 20px 0;
+          border-radius: 6px;
+        }
+        .row {
+          color: $lightcolor;
+          .founder-info {
+            img {
+              max-width: 160px;
+              margin: 0 auto;
+              border-radius: 6px;
+            }
+          }
+          .founder-txt {
+            margin-top: 10%;
+            h4 {
+              font-size: 22px;
+              color: $lightcolor;
+            }
+            p {
+              margin-bottom: 5px;
+            }
+          }
+          .border-bottom {
+            border-bottom: 1px dotted $lightcolor;
+            padding-bottom: 20px;
+          }
+          .speaker_intro {
+            margin-top: 15px;
+          }
+        }
+      }
+      .location-outer {
         color: $lightcolor;
-        font-size: 36px;
-        margin: 30px 0;
+        .icon {
+          font-size: 0;
+          width: 50px;
+          height: 48px;
+          display: inline-block;
+          background-size: cover;
+        }
+        .event-date {
+          background-image: url(../images/dateandtime-icon1.png);
+          margin: 0 auto;
+        }
+        .location-icon {
+          background-image: url(../images/location-icon.png);
+          margin: 0 auto;
+        }
+        .field--name-field-date {
+          display: inline-block;
+        }
+      }
+    }
+    .event-logos {
+      text-align: right;
+      .logos {
+        width: 135px;
+        margin: 25px 20px 10px 0px;
+        display: inline-block;
+        box-shadow: 0 0 6px $logo-boxshadow;
+        height: 70px;
+        background: $lightcolor;
       }
     }
   }
+
   .photo-gallery {
     max-width: $default-max-width;
     margin: 0 auto;
@@ -60,98 +167,34 @@
   .spacing{
     margin-bottom:40px
   }
-  .event-speakers {
-    background: $event-speakers-back;
-    padding: 30px 0;
-    clear: both;
-    .border-bottom {
-      border-bottom: 1px solid $speakers-border;
-    }
-    .row {
-      max-width: $default-max-width;
-      margin: 0 auto;
-      padding: 20px 0;
-       .founder-info {
-        img {
-          max-width: 160px;
-          margin: 0 auto;
-          border-radius: 6px;
-        }
-        h4 {}
-        p {}
-      }
-    }
-  }
+
   .other-information {
     .row {
       max-width: $default-max-width;
       margin: 20px auto;
       padding: 20px ;
-      .location-outer {
-        border-right: 1px solid $light-border;
-        padding: 25px 0;
-        .field {
-          font-weight: 600;
-          font-family: 'Poppins', sans-serif;
-          line-height: 1.5;
-        }
-        .icon {
-          font-size: 0;
-          width: 70px;
-          height: 67px;
-          display: block;
-          background-size: cover;
-        }
-        .event-date {
-          background-image: url(../images/dateandtime-icon1.png);
-          margin: 0 auto;
-        }
-        .location-icon {
-          background-image: url(../images/location-icon.png);
-          margin: 0 auto;
-        }
-        .event-logos {
-          margin-top: 25px;
-          text-align: center;
-          .logos {
-            width: 130px;
-            margin: 25px 20px 10px 0px;
-            display: inline-block;
-            //float: left;
-            box-shadow: 0 0 6px $logo-boxshadow;
-            height: 70px;
-          }
+    }
+  }
+  .blog_outer {
+    .field--item {
+      width: 33%;
+      padding: 0 15px;
+      float: left;
+      article {
+        box-shadow: 2px 2px 6px $light-border;
+        padding: 15px;
+      }
+      h3 {
+        font-size: 22px;
+        color: $darktextcolor;
+        a, a:hover, a:active {
+          color: $darktextcolor;
         }
       }
-      .agenda-section {
-        .field--label {
-          color: $basetextcolor;
-          font-size: 30px;
-          padding-left: 25px;
-        }
-        .field--item {
-          ul {
-            list-style-type: none !important;
-            li {
-              margin: 15px 0 15px 10px;
-              position: relative;
-              line-height: 1.5;
-            }
-            li:before {
-              display: block;
-              content: " ";
-              float: left;
-              width: 0;
-              height: 0;
-              border-color: transparent;
-              border-style: solid;
-              border-width: 6px 0 6px 6px;
-              border-left-color: $basetextcolor;
-              margin-top: 5px;
-              margin-left: -15px;
-            }
-          }
-        }
+      .field--name-body {
+        width: 100%;
+        padding: 0;
+        float: none;
       }
     }
   }
