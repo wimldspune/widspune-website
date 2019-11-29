@@ -9,6 +9,7 @@ dependencies:
     - field.field.user.user.field_education
     - field.field.user.user.field_exp_ds
     - field.field.user.user.field_gender
+    - field.field.user.user.field_linkedin_profile
     - field.field.user.user.field_member_of
     - field.field.user.user.field_mobile_number
     - field.field.user.user.field_promotion_source
@@ -23,6 +24,8 @@ dependencies:
     - address
     - datetime
     - image
+    - link
+    - path
     - user
 _core:
   default_config_hash: K-1rBM8mTIkFp9RqOC2tMRUukOQ1xbRCfSKK8dEddnA
@@ -82,6 +85,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: options_select
+    region: content
+  field_linkedin_profile:
+    weight: 31
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
     region: content
   field_member_of:
     weight: 11
@@ -147,6 +158,12 @@ content:
     region: content
   language:
     weight: 14
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
     region: content
     settings: {  }
     third_party_settings: {  }

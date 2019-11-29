@@ -9,6 +9,7 @@ dependencies:
     - field.field.user.user.field_education
     - field.field.user.user.field_exp_ds
     - field.field.user.user.field_gender
+    - field.field.user.user.field_linkedin_profile
     - field.field.user.user.field_member_of
     - field.field.user.user.field_mobile_number
     - field.field.user.user.field_promotion_source
@@ -23,6 +24,7 @@ dependencies:
     - address
     - datetime
     - image
+    - link
     - options
     - user
 _core:
@@ -78,6 +80,18 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: list_default
+    region: content
+  field_linkedin_profile:
+    weight: 20
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
     region: content
   field_member_of:
     weight: 14
