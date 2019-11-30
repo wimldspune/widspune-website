@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.user.user.field_address
+    - field.field.user.user.field_bio
     - field.field.user.user.field_designation
     - field.field.user.user.field_dob
     - field.field.user.user.field_education
@@ -21,11 +22,11 @@ dependencies:
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
-    - address
     - datetime
     - image
     - link
     - path
+    - text
     - user
 _core:
   default_config_hash: K-1rBM8mTIkFp9RqOC2tMRUukOQ1xbRCfSKK8dEddnA
@@ -40,31 +41,19 @@ content:
     settings: {  }
     third_party_settings: {  }
   contact:
-    weight: 15
+    weight: 14
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_address:
-    weight: 1
-    settings: {  }
-    third_party_settings: {  }
-    type: address_default
-    region: content
-  field_designation:
-    weight: 8
+  field_bio:
+    weight: 20
     settings:
-      size: 60
+      rows: 5
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
+    type: text_textarea
     region: content
-  field_dob:
-    weight: 2
-    settings: {  }
-    third_party_settings: {  }
-    type: datetime_default
-    region: content
-  field_education:
+  field_designation:
     weight: 7
     settings:
       size: 60
@@ -72,8 +61,22 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
+  field_dob:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_education:
+    weight: 6
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   field_exp_ds:
-    weight: 10
+    weight: 9
     settings:
       size: 60
       placeholder: ''
@@ -81,13 +84,13 @@ content:
     type: string_textfield
     region: content
   field_gender:
-    weight: 3
+    weight: 2
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_linkedin_profile:
-    weight: 31
+    weight: 19
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -95,13 +98,13 @@ content:
     type: link_default
     region: content
   field_member_of:
-    weight: 11
+    weight: 10
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_mobile_number:
-    weight: 4
+    weight: 3
     settings:
       size: 60
       placeholder: ''
@@ -109,7 +112,7 @@ content:
     type: string_textfield
     region: content
   field_promotion_source:
-    weight: 17
+    weight: 16
     settings:
       match_operator: CONTAINS
       size: 60
@@ -118,7 +121,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_total_exp:
-    weight: 9
+    weight: 8
     settings:
       size: 60
       placeholder: ''
@@ -126,7 +129,7 @@ content:
     type: string_textfield
     region: content
   field_user_phone_type:
-    weight: 18
+    weight: 17
     settings:
       match_operator: CONTAINS
       size: 60
@@ -135,7 +138,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_user_remark:
-    weight: 12
+    weight: 11
     settings:
       rows: 5
       placeholder: ''
@@ -143,13 +146,13 @@ content:
     type: string_textarea
     region: content
   field_volunteer_nature:
-    weight: 13
+    weight: 12
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_whatsapp_number:
-    weight: 5
+    weight: 4
     settings:
       size: 60
       placeholder: ''
@@ -157,18 +160,18 @@ content:
     type: string_textfield
     region: content
   language:
-    weight: 14
+    weight: 13
     region: content
     settings: {  }
     third_party_settings: {  }
   path:
     type: path
-    weight: 30
+    weight: 18
     region: content
     settings: {  }
     third_party_settings: {  }
   timezone:
-    weight: 16
+    weight: 15
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -178,6 +181,7 @@ content:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
-    weight: 6
+    weight: 5
     region: content
-hidden: {  }
+hidden:
+  field_address: true

@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.user.user.field_address
+    - field.field.user.user.field_bio
     - field.field.user.user.field_designation
     - field.field.user.user.field_dob
     - field.field.user.user.field_education
@@ -26,6 +27,7 @@ dependencies:
     - image
     - link
     - options
+    - text
     - user
 _core:
   default_config_hash: V51QPCKkgNREKtSmB9Iu2wmAMEpktVpnzklWaZV8UYo
@@ -40,6 +42,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: address_default
+    region: content
+  field_bio:
+    weight: 21
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
     region: content
   field_designation:
     weight: 11
