@@ -1,0 +1,9 @@
+uuid: b1d53e57-6d92-4dca-8cd9-363e64c60b1c
+langcode: en
+status: true
+dependencies: {  }
+id: organiser
+label: Organiser
+weight: 4
+is_admin: null
+permissions: {  }
