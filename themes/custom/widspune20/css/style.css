@@ -9029,6 +9029,12 @@ h2.block-title {
   padding: 0 10px;
 }
 
+/* line 244, ../scss/component/pages/_default-pages.scss */
+.box-shadow {
+  margin: 20px 0;
+  border-radius: 6px;
+}
+
 /* line 2, ../scss/component/pages/_front-page.scss */
 .path-frontpage .main-container {
   max-width: 1300px;
@@ -9816,6 +9822,28 @@ h2.block-title {
   background: #337ab7;
   border-radius: 3px;
   color: #fff;
+}
+
+/* videos page css */
+/* line 2, ../scss/component/pages/_video_gallary_ct.scss */
+.video-info {
+  border: 1px solid #ccc;
+  box-shadow: 0 0 6px #ccc;
+}
+
+/* line 6, ../scss/component/pages/_video_gallary_ct.scss */
+.video-info p {
+  margin: 0;
+  font-size: 14px;
+  padding: 0 5px 5px;
+  font-weight: 500;
+}
+
+/* line 12, ../scss/component/pages/_video_gallary_ct.scss */
+.other-filed {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding: 4px;
 }
 
 /* line 1, ../scss/component/regions/_page-banner.scss */

@@ -1,0 +1,37 @@
+{%
+  set classes = [
+  'field',
+  'field--items',
+  'field--name-' ~ field_name|clean_class,
+  'field--type-' ~ field_type|clean_class,
+  'field--label-' ~ label_display,
+  'container'
+]
+%}
+{%
+  set field_classes = [
+  'field--item',
+  'col-lg-3',
+  'col-md-4',
+  'col-sm-4',
+  'box-shadow',
+]
+%}
+
+{%
+  set field_classes = [
+  'field--item',
+  'box-shadow',
+  'col-xs-4',
+]
+%}
+
+<div{{ attributes.addClass(classes) }}>
+  {% for item in items %}
+    <div{{ item.attributes.addClass(field_classes)}}>
+      <div class="video-info">
+        {{ item.content }}
+      </div>
+    </div>
+  {% endfor %}
+</div>

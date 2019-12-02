@@ -18,15 +18,12 @@ content:
     weight: 0
     label: visually_hidden
     settings:
-      image_style: ''
-      link_image_to: provider
       responsive: true
       width: 854
       height: 480
-      modal_max_width: 854
       autoplay: false
     third_party_settings: {  }
-    type: video_embed_field_colorbox
+    type: video_embed_field_video
     region: content
 hidden:
   field_event_year: true
