@@ -31,3 +31,4 @@ hidden:
   field_event_year: true
   field_from_registed_user: true
   field_from_unregisted_user: true
+  field_show_on_slider: true

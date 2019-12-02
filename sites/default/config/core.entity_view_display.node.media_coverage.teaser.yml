@@ -29,4 +29,5 @@ content:
     region: content
 hidden:
   field_paper_clippings: true
+  field_published_on: true
   field_year: true

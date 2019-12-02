@@ -27,4 +27,8 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-hidden: {  }
+hidden:
+  field_company_url: true
+  field_logo: true
+  field_sponsor_type: true
+  field_year_of_sponsoship: true

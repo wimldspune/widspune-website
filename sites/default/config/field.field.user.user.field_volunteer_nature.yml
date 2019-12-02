@@ -13,7 +13,7 @@ entity_type: user
 bundle: user
 label: 'Do you want to Volunteer or contribute in any way for this community?'
 description: ' If Yes, specify your interests and what you would like to contribute too?'
-required: true
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
