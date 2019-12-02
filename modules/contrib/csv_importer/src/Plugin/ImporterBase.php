@@ -71,7 +71,12 @@ abstract class ImporterBase extends PluginBase implements ImporterInterface {
           if ($content && isset($csv_fields[$key])) {
             $content = Unicode::convertToUtf8($content, mb_detect_encoding($content));
             $fields = explode('|', $csv_fields[$key]);
-
+            // Pipe delimited values.
+            $multifields = explode('|', $content);
+            if (count($multifields) > 1) {
+              $content = $multifields;
+            }
+            
             if ($fields[0] == 'translation') {
               if (count($fields) > 3) {
                 $return['translations'][$index][$fields[3]][$fields[1]][$fields[2]] = $content;
