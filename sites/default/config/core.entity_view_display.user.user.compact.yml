@@ -26,4 +26,20 @@ content:
     third_party_settings: {  }
     label: hidden
 hidden:
+  field_address: true
+  field_bio: true
+  field_designation: true
+  field_dob: true
+  field_education: true
+  field_exp_ds: true
+  field_gender: true
+  field_linkedin_profile: true
+  field_member_of: true
+  field_mobile_number: true
+  field_promotion_source: true
+  field_total_exp: true
+  field_user_phone_type: true
+  field_user_remark: true
+  field_volunteer_nature: true
+  field_whatsapp_number: true
   member_for: true

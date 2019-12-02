@@ -1,0 +1,30 @@
+uuid: 942d761b-7670-4a1b-ba45-381c7e5f565b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_participation_year
+    - taxonomy.vocabulary.event_year
+  module:
+    - user
+id: user.user.field_participation_year
+field_name: field_participation_year
+entity_type: user
+bundle: user
+label: 'Participation year'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      event_year: event_year
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
