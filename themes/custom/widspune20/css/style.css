@@ -9824,23 +9824,25 @@ h2.block-title {
   color: #fff;
 }
 
-/* videos page css */
 /* line 2, ../scss/component/pages/_video_gallary_ct.scss */
-.video-info {
+.video-gallery .page-header {
+  text-align: center;
+  margin: 0px 0 20px;
+}
+/* line 7, ../scss/component/pages/_video_gallary_ct.scss */
+.video-gallery .video-info {
   border: 1px solid #ccc;
   box-shadow: 0 0 6px #ccc;
 }
-
-/* line 6, ../scss/component/pages/_video_gallary_ct.scss */
-.video-info p {
+/* line 10, ../scss/component/pages/_video_gallary_ct.scss */
+.video-gallery .video-info p {
   margin: 0;
   font-size: 14px;
   padding: 0 5px 5px;
   font-weight: 500;
 }
-
-/* line 12, ../scss/component/pages/_video_gallary_ct.scss */
-.other-filed {
+/* line 17, ../scss/component/pages/_video_gallary_ct.scss */
+.video-gallery .other-filed {
   border: none;
   border-bottom: 1px solid #ccc;
   padding: 4px;
@@ -10003,4 +10005,35 @@ h2.block-title {
   width: 70px;
   height: auto;
   margin: 0 auto;
+}
+
+/* line 6, ../scss/component/overrides/_pagination.scss */
+.pagination > li > a,
+.pagination > li > span {
+  color: #00b140;
+  text-decoration: none;
+  background-color: #fff;
+}
+/* line 16, ../scss/component/overrides/_pagination.scss */
+.pagination > .active > a, .pagination > .active > a:hover, .pagination > .active > a:focus,
+.pagination > .active > span,
+.pagination > .active > span:hover,
+.pagination > .active > span:focus {
+  z-index: 3;
+  color: #fff;
+  cursor: default;
+  background-color: #00b140;
+  border-color: #00b140;
+}
+/* line 28, ../scss/component/overrides/_pagination.scss */
+.pagination > .disabled > span,
+.pagination > .disabled > span:hover,
+.pagination > .disabled > span:focus,
+.pagination > .disabled > a,
+.pagination > .disabled > a:hover,
+.pagination > .disabled > a:focus {
+  color: #777777;
+  cursor: not-allowed;
+  background-color: #fff;
+  border-color: #ddd;
 }

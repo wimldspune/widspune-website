@@ -1,0 +1,40 @@
+//
+// Pagination (multiple pages)
+// --------------------------------------------------
+.pagination {
+  > li {
+    > a,
+    > span {
+      color: $basetextcolor;
+      text-decoration: none;
+      background-color: $pagination-bg;
+    }
+  }
+
+  > .active > a,
+  > .active > span {
+    &,
+    &:hover,
+    &:focus {
+      z-index: 3;
+      color: $pagination-active-color;
+      cursor: default;
+      background-color: $basetextcolor;
+      border-color: $basetextcolor;
+    }
+  }
+
+  > .disabled {
+    > span,
+    > span:hover,
+    > span:focus,
+    > a,
+    > a:hover,
+    > a:focus {
+      color: $pagination-disabled-color;
+      cursor: $cursor-disabled;
+      background-color: $pagination-disabled-bg;
+      border-color: $pagination-disabled-border;
+    }
+  }
+}

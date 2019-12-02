@@ -199,7 +199,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: '<h1 class = ''page-title'' data-align="center">Videos</h1>'
+            value: '<h1 class = ''page-header'' >Videos</h1>'
             format: full_html
           plugin_id: text
       footer: {  }
@@ -207,7 +207,7 @@ display:
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
-      css_class: container
+      css_class: 'container video-gallery'
     cache_metadata:
       max-age: -1
       contexts:
