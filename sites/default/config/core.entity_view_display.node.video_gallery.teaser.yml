@@ -1,0 +1,22 @@
+uuid: f61fdf36-c15b-4f51-8cf3-6f0553322e49
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.video_gallery.field_highlight_video
+    - node.type.video_gallery
+  module:
+    - user
+id: node.video_gallery.teaser
+targetEntityType: node
+bundle: video_gallery
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_highlight_video: true
