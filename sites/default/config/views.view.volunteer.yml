@@ -1,4 +1,4 @@
-uuid: 2eeb0903-89d2-4bce-87c5-d558bce43041
+uuid: c31fcff1-42f3-4ecd-ae73-abb99c3318cf
 langcode: en
 status: true
 dependencies:
@@ -8,13 +8,13 @@ dependencies:
     - field.storage.user.user_picture
     - image.style.user_profile
     - taxonomy.vocabulary.event_year
-    - user.role.speaker
+    - user.role.volunteer
   module:
     - image
     - link
     - user
-id: speakers_list
-label: Speakers
+id: volunteer
+label: Volunteer
 module: views
 description: 'Lists all the speakers'
 tag: ''
@@ -358,7 +358,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"volunteers-info\">\r\n\t <div class=\"image-speaker\">\r\n\t\t{{ user_picture }}\r\n\t </div>\t\r\n\t<div class=\"caption\"> \r\n\t\t {{ name }}\r\n\t\t {{ field_designation }} \r\n\t\t {{ field_linkedin_profile }} \r\n\t</div>\r\n</div>"
+            text: "<div class=\"volunteers-info\">\r\n\t <div class=\"image-volunteer\">\r\n\t\t{{ user_picture }}\r\n\t </div>\t\r\n\t<div class=\"caption\"> \r\n\t\t {{ name }}\r\n\t\t {{ field_designation }} \r\n\t\t {{ field_linkedin_profile }} \r\n\t</div>\r\n</div>"
             make_link: false
             path: ''
             absolute: false
@@ -417,7 +417,7 @@ display:
           admin_label: ''
           operator: or
           value:
-            speaker: speaker
+            volunteer: volunteer
           group: 1
           exposed: false
           expose:
@@ -450,7 +450,7 @@ display:
           entity_field: roles
           plugin_id: user_roles
       sorts: {  }
-      title: Speakers
+      title: Volunteer
       header: {  }
       footer: {  }
       empty: {  }
@@ -517,7 +517,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: speakers
+      path: volunteer
     cache_metadata:
       max-age: -1
       contexts:

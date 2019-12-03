@@ -1,4 +1,18 @@
-.view-id-speakers_list {
+@mixin image-background {
+  background-size: cover;
+  height: 266px;
+  img {
+    height: auto;
+    text-align: center;
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    width: 90px;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.wids-user-list {
   max-width: $default-max-width;
   margin: 0 auto;
   .view-content {
@@ -13,19 +27,15 @@
           .caption {
             display: inline-table;
           }
-          .image {
+
+          .image-volunteer {
+            background-image: url(../images/empty-volunteer-frame.png);
+            @include image-background;
+          }
+
+          .image-speaker {
             background-image: url(../images/empty-speaker-frame.png);
-            background-size: cover;
-            height: 266px;
-            img {
-              height: auto;
-              text-align: center;
-              position: absolute;
-              top: 46%;
-              left: 50%;
-              width: 90px;
-              transform: translate(-50%, -50%);
-            }
+            @include image-background;
           }
           a.ln-link {
             font-size: 14px;
