@@ -10037,3 +10037,8 @@ h2.block-title {
   background-color: #fff;
   border-color: #ddd;
 }
+
+/* line 42, ../scss/component/overrides/_pagination.scss */
+.pager-nav {
+  clear: both;
+}

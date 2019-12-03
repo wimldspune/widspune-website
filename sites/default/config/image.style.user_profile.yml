@@ -1,0 +1,14 @@
+uuid: 12f9bf39-9abe-46c1-9adc-c311d3139bf5
+langcode: en
+status: true
+dependencies: {  }
+name: user_profile
+label: 'User Profile (Resize 80x95)'
+effects:
+  925ace54-43ac-4d3a-9bd9-47ec40ddb1ff:
+    uuid: 925ace54-43ac-4d3a-9bd9-47ec40ddb1ff
+    id: image_resize
+    weight: 2
+    data:
+      width: 80
+      height: 95
