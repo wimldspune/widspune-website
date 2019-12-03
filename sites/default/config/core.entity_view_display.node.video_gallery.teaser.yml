@@ -4,7 +4,8 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.video_gallery.field_highlight_video
+    - field.field.node.video_gallery.field_event_year
+    - field.field.node.video_gallery.field_video
     - node.type.video_gallery
   module:
     - user
@@ -19,4 +20,5 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
-  field_highlight_video: true
+  field_event_year: true
+  field_video: true

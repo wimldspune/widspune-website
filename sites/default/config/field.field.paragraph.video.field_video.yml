@@ -1,20 +1,20 @@
-uuid: 0d79a3b6-a6bd-4591-914c-6bfca260f31a
+uuid: 9d55afa9-db55-436f-a1a1-671552fab92a
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_highlight_video
-    - node.type.video_gallery
+    - field.storage.paragraph.field_video
+    - paragraphs.paragraphs_type.video
   module:
     - video_embed_field
-id: node.video_gallery.field_highlight_video
-field_name: field_highlight_video
-entity_type: node
-bundle: video_gallery
+id: paragraph.video.field_video
+field_name: field_video
+entity_type: paragraph
+bundle: video
 label: Video
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:

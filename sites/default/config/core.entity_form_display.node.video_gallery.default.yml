@@ -4,11 +4,11 @@ status: true
 dependencies:
   config:
     - field.field.node.video_gallery.field_event_year
-    - field.field.node.video_gallery.field_highlight_video
+    - field.field.node.video_gallery.field_video
     - node.type.video_gallery
   module:
+    - paragraphs
     - path
-    - video_embed_field
 id: node.video_gallery.default
 targetEntityType: node
 bundle: video_gallery
@@ -29,11 +29,17 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
-  field_highlight_video:
-    weight: 122
-    settings: {  }
+  field_video:
+    type: entity_reference_paragraphs
+    weight: 124
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
     third_party_settings: {  }
-    type: video_embed_field_textfield
     region: content
   path:
     type: path

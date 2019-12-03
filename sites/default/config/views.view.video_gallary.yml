@@ -1,14 +1,14 @@
 uuid: 40e498be-794f-44cc-af8c-abad427d362f
 langcode: en
-status: true
+status: false
 dependencies:
   config:
-    - field.storage.node.field_highlight_video
+    - field.storage.node.field_video
     - node.type.video_gallery
   module:
+    - entity_reference_revisions
     - node
     - user
-    - video_embed_field
 id: video_gallary
 label: 'Video Gallary'
 module: views
@@ -52,7 +52,7 @@ display:
       pager:
         type: full
         options:
-          items_per_page: 12
+          items_per_page: 9
           offset: 0
           id: 0
           total_pages: null
@@ -84,10 +84,10 @@ display:
           separator: ''
           hide_empty: false
       fields:
-        field_highlight_video:
-          id: field_highlight_video
-          table: node__field_highlight_video
-          field: field_highlight_video
+        field_video:
+          id: field_video
+          table: node__field_video
+          field: field_video
           relationship: none
           group_type: group
           admin_label: ''
@@ -125,21 +125,18 @@ display:
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
-          element_wrapper_type: div
-          element_wrapper_class: 'col-xs-4 box-shadow'
+          element_wrapper_type: ''
+          element_wrapper_class: ''
           element_default_classes: true
           empty: ''
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          click_sort_column: value
-          type: video_embed_field_video
+          click_sort_column: target_id
+          type: entity_reference_revisions_entity_view
           settings:
-            autoplay: false
-            responsive: true
-            width: 854
-            height: 480
-          group_column: value
+            view_mode: default
+          group_column: ''
           group_columns: {  }
           group_rows: false
           delta_limit: 0
@@ -217,7 +214,7 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.field_highlight_video'
+        - 'config:field.storage.node.field_video'
   page_1:
     display_plugin: page
     id: page_1
@@ -235,4 +232,4 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.field_highlight_video'
+        - 'config:field.storage.node.field_video'

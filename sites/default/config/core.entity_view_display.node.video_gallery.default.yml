@@ -4,26 +4,24 @@ status: true
 dependencies:
   config:
     - field.field.node.video_gallery.field_event_year
-    - field.field.node.video_gallery.field_highlight_video
+    - field.field.node.video_gallery.field_video
     - node.type.video_gallery
   module:
+    - entity_reference_revisions
     - user
-    - video_embed_field
 id: node.video_gallery.default
 targetEntityType: node
 bundle: video_gallery
 mode: default
 content:
-  field_highlight_video:
-    weight: 0
-    label: visually_hidden
+  field_video:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    label: above
     settings:
-      responsive: true
-      width: 854
-      height: 480
-      autoplay: false
+      view_mode: default
+      link: ''
     third_party_settings: {  }
-    type: video_embed_field_video
     region: content
 hidden:
   field_event_year: true
