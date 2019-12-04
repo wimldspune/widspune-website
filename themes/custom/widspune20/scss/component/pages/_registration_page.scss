@@ -2,6 +2,28 @@
   max-width: $default-max-width;
   margin: 0 auto 30px;
 }
+.tabs {
+  ul.nav-tabs {
+    border-bottom: 4px solid $basetextcolor;
+    li {
+      a {
+        background: $tab-background;
+        margin: 0 10px 0 0;
+        padding: 12px 35px;
+        font-size: 16px;
+        font-weight: 600;
+        color: $lightcolor;
+      }
+    }
+    li.active {
+      a {
+        background-color: $basetextcolor!important;
+        border: 1px solid $basetextcolor!important;
+        color: $lightcolor !important;
+      }
+    }
+  }
+}
 .user-login-form, .user-pass {
   max-width: $user_forms_width;
   margin: 30px auto 50px;
