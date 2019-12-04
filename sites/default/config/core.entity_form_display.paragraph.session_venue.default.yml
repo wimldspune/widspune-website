@@ -6,6 +6,13 @@ dependencies:
     - field.field.paragraph.session_venue.field_name
     - field.field.paragraph.session_venue.field_venue_address
     - paragraphs.paragraphs_type.session_venue
+  module:
+    - field_layout
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 id: paragraph.session_venue.default
 targetEntityType: paragraph
 bundle: session_venue

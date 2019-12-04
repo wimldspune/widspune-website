@@ -20,11 +20,17 @@ dependencies:
     - node.type.session
   module:
     - datetime_range
+    - field_layout
     - image
+    - layout_discovery
     - paragraphs
     - path
     - text
     - video_embed_field
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 id: node.session.default
 targetEntityType: node
 bundle: session

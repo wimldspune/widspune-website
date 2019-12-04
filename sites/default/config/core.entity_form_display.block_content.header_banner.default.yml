@@ -9,8 +9,14 @@ dependencies:
     - field.field.block_content.header_banner.field_banner_title
     - image.style.thumbnail
   module:
+    - field_layout
     - image
+    - layout_discovery
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 id: block_content.header_banner.default
 targetEntityType: block_content
 bundle: header_banner

@@ -7,8 +7,14 @@ dependencies:
     - field.field.node.video_gallery.field_video
     - node.type.video_gallery
   module:
+    - field_layout
+    - layout_discovery
     - paragraphs
     - path
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 id: node.video_gallery.default
 targetEntityType: node
 bundle: video_gallery

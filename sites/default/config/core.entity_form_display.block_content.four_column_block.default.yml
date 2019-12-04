@@ -6,7 +6,13 @@ dependencies:
     - block_content.type.four_column_block
     - field.field.block_content.four_column_block.field_cards
   module:
+    - field_layout
+    - layout_discovery
     - paragraphs
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 id: block_content.four_column_block.default
 targetEntityType: block_content
 bundle: four_column_block

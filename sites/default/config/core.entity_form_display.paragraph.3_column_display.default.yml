@@ -11,9 +11,15 @@ dependencies:
     - image.style.thumbnail
     - paragraphs.paragraphs_type.3_column_display
   module:
+    - field_layout
     - image
+    - layout_discovery
     - link
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 id: paragraph.3_column_display.default
 targetEntityType: paragraph
 bundle: 3_column_display
