@@ -1,4 +1,26 @@
+.path-user .main-container {
+  max-width: $default-max-width;
+  margin: 0 auto 30px;
+}
+.user-login-form, .user-pass {
+  max-width: $user_forms_width;
+  margin: 30px auto 50px;
+  padding: 15px 30px 30px;
+  box-shadow: 0 0 6px $light-border;
+  .form-actions {
+    .button {
+      border-radius: 2px;
+      padding: 8px 15px;
+      border: 2px solid $basetextcolor;
+      background: $basetextcolor;
+      color: $lightcolor;
+      width: 100%;
+      font-size: 16px;
+    }
+  }
+}
 .user-register-form {
+  margin-top: 20px;
   .bs-region--top {
     .form-wrapper {
       float: left;
@@ -21,6 +43,27 @@
       min-height: 1px;
       padding-right: 15px;
       padding-left: 15px;
+    }
+  }
+  .bs-region--middle {
+    margin-bottom: 20px;
+  }
+  .bs-region--bottom {
+    margin-top: 20px;
+  }
+  .field--name-field-participation-year {
+    legend {
+      border: none;
+      font-size: 20px;
+      padding: 5px 15px;
+      background: $basetextcolor;
+      color: $lightcolor;
+    }
+  }
+  .form-actions {
+    padding: 0 30px;
+    .button {
+      font-size: 16px;
     }
   }
 }
