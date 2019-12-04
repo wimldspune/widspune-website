@@ -1,0 +1,26 @@
+.user-register-form {
+  .bs-region--top {
+    .form-wrapper {
+      float: left;
+      width: 67%;
+      .form-item-mail, .form-item-name {
+        width: 49%;
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        float: left;
+      }
+      .form-item-name  {
+        padding-left: 15px;
+        width: 51%;
+      }
+    }
+    .field--name-field-dob {
+      width: 33%;
+      position: relative;
+      min-height: 1px;
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  }
+}

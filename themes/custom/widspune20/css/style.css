@@ -9864,6 +9864,33 @@ h2.block-title {
   padding: 4px;
 }
 
+/* line 3, ../scss/component/pages/_registration_page.scss */
+.user-register-form .bs-region--top .form-wrapper {
+  float: left;
+  width: 67%;
+}
+/* line 6, ../scss/component/pages/_registration_page.scss */
+.user-register-form .bs-region--top .form-wrapper .form-item-mail, .user-register-form .bs-region--top .form-wrapper .form-item-name {
+  width: 49%;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  float: left;
+}
+/* line 13, ../scss/component/pages/_registration_page.scss */
+.user-register-form .bs-region--top .form-wrapper .form-item-name {
+  padding-left: 15px;
+  width: 51%;
+}
+/* line 18, ../scss/component/pages/_registration_page.scss */
+.user-register-form .bs-region--top .field--name-field-dob {
+  width: 33%;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
 /* line 1, ../scss/component/regions/_page-banner.scss */
 .header-banner-wrapper {
   font-family: 'News Cycle';
