@@ -9946,21 +9946,58 @@ h2.block-title {
 .user-register-form .bs-region--bottom {
   margin-top: 20px;
 }
-/* line 77, ../scss/component/pages/_registration_page.scss */
-.user-register-form .field--name-field-participation-year legend {
+
+/* line 80, ../scss/component/pages/_registration_page.scss */
+.user-register-form .field--name-field-participation-year legend, .user-form .field--name-field-participation-year legend {
   border: none;
   font-size: 20px;
   padding: 5px 15px;
   background: #00b140;
   color: #fff;
 }
-/* line 85, ../scss/component/pages/_registration_page.scss */
-.user-register-form .form-actions {
+/* line 88, ../scss/component/pages/_registration_page.scss */
+.user-register-form .form-actions, .user-form .form-actions {
   padding: 0 30px;
 }
-/* line 87, ../scss/component/pages/_registration_page.scss */
-.user-register-form .form-actions .button {
+/* line 90, ../scss/component/pages/_registration_page.scss */
+.user-register-form .form-actions .button, .user-form .form-actions .button {
   font-size: 16px;
+}
+
+/* line 97, ../scss/component/pages/_registration_page.scss */
+.user-form {
+  margin-top: 20px;
+}
+/* line 101, ../scss/component/pages/_registration_page.scss */
+.user-form .bs-region--top .form-wrapper > .form-item {
+  width: 67%;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  float: left;
+  margin-bottom: 0;
+}
+/* line 109, ../scss/component/pages/_registration_page.scss */
+.user-form .bs-region--top .form-wrapper .form-type-email {
+  width: 33%;
+  margin-bottom: 36px;
+  padding-right: 0;
+}
+
+/* line 121, ../scss/component/pages/_registration_page.scss */
+.user-login-form .form-item label:before, .user-pass .form-item label:before {
+  font: normal normal normal 14px/1 FontAwesome;
+  margin-right: 8px;
+  font-size: 18px;
+  color: #00b140;
+}
+/* line 129, ../scss/component/pages/_registration_page.scss */
+.user-login-form .form-item-name label:before, .user-pass .form-item-name label:before {
+  content: "\f007";
+}
+/* line 134, ../scss/component/pages/_registration_page.scss */
+.user-login-form .form-item-pass label:before, .user-pass .form-item-pass label:before {
+  content: "\f13e";
 }
 
 /* line 1, ../scss/component/regions/_page-banner.scss */
