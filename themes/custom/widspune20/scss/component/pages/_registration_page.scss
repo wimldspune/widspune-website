@@ -2,6 +2,28 @@
   max-width: $default-max-width;
   margin: 0 auto 30px;
 }
+.tabs {
+  ul.nav-tabs {
+    border-bottom: 4px solid $basetextcolor;
+    li {
+      a {
+        background: $tab-background;
+        margin: 0 10px 0 0;
+        padding: 12px 35px;
+        font-size: 16px;
+        font-weight: 600;
+        color: $lightcolor;
+      }
+    }
+    li.active {
+      a {
+        background-color: $basetextcolor!important;
+        border: 1px solid $basetextcolor!important;
+        color: $lightcolor !important;
+      }
+    }
+  }
+}
 .user-login-form, .user-pass {
   max-width: $user_forms_width;
   margin: 30px auto 50px;
@@ -51,6 +73,9 @@
   .bs-region--bottom {
     margin-top: 20px;
   }
+}
+
+.user-register-form, .user-form {
   .field--name-field-participation-year {
     legend {
       border: none;
@@ -64,6 +89,50 @@
     padding: 0 30px;
     .button {
       font-size: 16px;
+    }
+  }
+}
+
+
+.user-form {
+  margin-top: 20px;
+  .bs-region--top {
+    .form-wrapper {
+      > .form-item {
+        width: 67%;
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        float: left;
+        margin-bottom: 0;
+      }
+      .form-type-email {
+        width: 33%;
+        margin-bottom: 36px;
+        padding-right: 0;
+      }
+    }
+  }
+}
+
+.user-login-form, .user-pass {
+  .form-item {
+    label {}
+    label:before {
+      font: normal normal normal 14px/1 FontAwesome;
+      margin-right: 8px;
+      font-size: 18px;
+      color: $basetextcolor;
+    }
+  }
+  .form-item-name {
+    label:before {
+      content: "\f007";
+    }
+  }
+  .form-item-pass {
+    label:before {
+      content: "\f13e";
     }
   }
 }

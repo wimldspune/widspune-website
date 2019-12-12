@@ -9870,14 +9870,34 @@ h2.block-title {
   margin: 0 auto 30px;
 }
 
-/* line 5, ../scss/component/pages/_registration_page.scss */
+/* line 6, ../scss/component/pages/_registration_page.scss */
+.tabs ul.nav-tabs {
+  border-bottom: 4px solid #00b140;
+}
+/* line 9, ../scss/component/pages/_registration_page.scss */
+.tabs ul.nav-tabs li a {
+  background: #5a5a5a;
+  margin: 0 10px 0 0;
+  padding: 12px 35px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+}
+/* line 19, ../scss/component/pages/_registration_page.scss */
+.tabs ul.nav-tabs li.active a {
+  background-color: #00b140 !important;
+  border: 1px solid #00b140 !important;
+  color: #fff !important;
+}
+
+/* line 27, ../scss/component/pages/_registration_page.scss */
 .user-login-form, .user-pass {
   max-width: 400px;
   margin: 30px auto 50px;
   padding: 15px 30px 30px;
   box-shadow: 0 0 6px #ccc;
 }
-/* line 11, ../scss/component/pages/_registration_page.scss */
+/* line 33, ../scss/component/pages/_registration_page.scss */
 .user-login-form .form-actions .button, .user-pass .form-actions .button {
   border-radius: 2px;
   padding: 8px 15px;
@@ -9888,16 +9908,16 @@ h2.block-title {
   font-size: 16px;
 }
 
-/* line 22, ../scss/component/pages/_registration_page.scss */
+/* line 44, ../scss/component/pages/_registration_page.scss */
 .user-register-form {
   margin-top: 20px;
 }
-/* line 25, ../scss/component/pages/_registration_page.scss */
+/* line 47, ../scss/component/pages/_registration_page.scss */
 .user-register-form .bs-region--top .form-wrapper {
   float: left;
   width: 67%;
 }
-/* line 28, ../scss/component/pages/_registration_page.scss */
+/* line 50, ../scss/component/pages/_registration_page.scss */
 .user-register-form .bs-region--top .form-wrapper .form-item-mail, .user-register-form .bs-region--top .form-wrapper .form-item-name {
   width: 49%;
   position: relative;
@@ -9905,12 +9925,12 @@ h2.block-title {
   padding-right: 15px;
   float: left;
 }
-/* line 35, ../scss/component/pages/_registration_page.scss */
+/* line 57, ../scss/component/pages/_registration_page.scss */
 .user-register-form .bs-region--top .form-wrapper .form-item-name {
   padding-left: 15px;
   width: 51%;
 }
-/* line 40, ../scss/component/pages/_registration_page.scss */
+/* line 62, ../scss/component/pages/_registration_page.scss */
 .user-register-form .bs-region--top .field--name-field-dob {
   width: 33%;
   position: relative;
@@ -9918,29 +9938,66 @@ h2.block-title {
   padding-right: 15px;
   padding-left: 15px;
 }
-/* line 48, ../scss/component/pages/_registration_page.scss */
+/* line 70, ../scss/component/pages/_registration_page.scss */
 .user-register-form .bs-region--middle {
   margin-bottom: 20px;
 }
-/* line 51, ../scss/component/pages/_registration_page.scss */
+/* line 73, ../scss/component/pages/_registration_page.scss */
 .user-register-form .bs-region--bottom {
   margin-top: 20px;
 }
-/* line 55, ../scss/component/pages/_registration_page.scss */
-.user-register-form .field--name-field-participation-year legend {
+
+/* line 80, ../scss/component/pages/_registration_page.scss */
+.user-register-form .field--name-field-participation-year legend, .user-form .field--name-field-participation-year legend {
   border: none;
   font-size: 20px;
   padding: 5px 15px;
   background: #00b140;
   color: #fff;
 }
-/* line 63, ../scss/component/pages/_registration_page.scss */
-.user-register-form .form-actions {
+/* line 88, ../scss/component/pages/_registration_page.scss */
+.user-register-form .form-actions, .user-form .form-actions {
   padding: 0 30px;
 }
-/* line 65, ../scss/component/pages/_registration_page.scss */
-.user-register-form .form-actions .button {
+/* line 90, ../scss/component/pages/_registration_page.scss */
+.user-register-form .form-actions .button, .user-form .form-actions .button {
   font-size: 16px;
+}
+
+/* line 97, ../scss/component/pages/_registration_page.scss */
+.user-form {
+  margin-top: 20px;
+}
+/* line 101, ../scss/component/pages/_registration_page.scss */
+.user-form .bs-region--top .form-wrapper > .form-item {
+  width: 67%;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  float: left;
+  margin-bottom: 0;
+}
+/* line 109, ../scss/component/pages/_registration_page.scss */
+.user-form .bs-region--top .form-wrapper .form-type-email {
+  width: 33%;
+  margin-bottom: 36px;
+  padding-right: 0;
+}
+
+/* line 121, ../scss/component/pages/_registration_page.scss */
+.user-login-form .form-item label:before, .user-pass .form-item label:before {
+  font: normal normal normal 14px/1 FontAwesome;
+  margin-right: 8px;
+  font-size: 18px;
+  color: #00b140;
+}
+/* line 129, ../scss/component/pages/_registration_page.scss */
+.user-login-form .form-item-name label:before, .user-pass .form-item-name label:before {
+  content: "\f007";
+}
+/* line 134, ../scss/component/pages/_registration_page.scss */
+.user-login-form .form-item-pass label:before, .user-pass .form-item-pass label:before {
+  content: "\f13e";
 }
 
 /* line 1, ../scss/component/regions/_page-banner.scss */
