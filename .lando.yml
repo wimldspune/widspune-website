@@ -4,10 +4,16 @@ config:
   framework: drupal8
   site: wids-pune
   id: c9066957-0617-4aac-b7ba-ec0d78b6cd5c
+  php: 7.3
+  conf:
+    php: .lando/php/php.ini
 proxy:
   mailhog:
     - mail.wids-pune.lndo.site
 services:
+  helper:
+    type: php
+    via: cli
   mailhog:
     type: mailhog
     hogfrom:
