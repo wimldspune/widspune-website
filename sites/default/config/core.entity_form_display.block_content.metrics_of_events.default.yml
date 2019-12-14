@@ -11,13 +11,6 @@ dependencies:
     - field.field.block_content.metrics_of_events.field_sectors
     - field.field.block_content.metrics_of_events.field_speakers
     - field.field.block_content.metrics_of_events.field_volunteers
-  module:
-    - field_layout
-    - layout_discovery
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
 id: block_content.metrics_of_events.default
 targetEntityType: block_content
 bundle: metrics_of_events

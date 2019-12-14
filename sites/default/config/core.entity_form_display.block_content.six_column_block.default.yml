@@ -6,13 +6,7 @@ dependencies:
     - block_content.type.six_column_block
     - field.field.block_content.six_column_block.field_column_content
   module:
-    - field_layout
-    - layout_discovery
     - paragraphs
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
 id: block_content.six_column_block.default
 targetEntityType: block_content
 bundle: six_column_block

@@ -4,6 +4,23 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.user.compact
+    - field.field.user.user.field_address
+    - field.field.user.user.field_bio
+    - field.field.user.user.field_designation
+    - field.field.user.user.field_dob
+    - field.field.user.user.field_education
+    - field.field.user.user.field_exp_ds
+    - field.field.user.user.field_gender
+    - field.field.user.user.field_linkedin_profile
+    - field.field.user.user.field_member_of
+    - field.field.user.user.field_mobile_number
+    - field.field.user.user.field_participation_year
+    - field.field.user.user.field_promotion_source
+    - field.field.user.user.field_total_exp
+    - field.field.user.user.field_user_phone_type
+    - field.field.user.user.field_user_remark
+    - field.field.user.user.field_volunteer_nature
+    - field.field.user.user.field_whatsapp_number
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:

@@ -10,14 +10,8 @@ dependencies:
     - field.field.node.testimonials.field_show_on_slider
     - node.type.testimonials
   module:
-    - field_layout
-    - layout_discovery
     - path
     - text
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
 id: node.testimonials.default
 targetEntityType: node
 bundle: testimonials
