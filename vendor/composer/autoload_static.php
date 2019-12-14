@@ -136,7 +136,6 @@ class ComposerStaticInitDrupal8
             'Drupal\\Component\\Assertion\\' => 27,
             'Drupal\\Component\\Annotation\\' => 28,
             'Drupal\\Component\\' => 17,
-            'Doctrine\\Persistence\\' => 21,
             'Doctrine\\Instantiator\\' => 22,
             'Doctrine\\Common\\Lexer\\' => 22,
             'Doctrine\\Common\\Inflector\\' => 26,
@@ -461,10 +460,6 @@ class ComposerStaticInitDrupal8
         'Drupal\\Component\\' => 
         array (
             0 => __DIR__ . '/../..' . '/core/lib/Drupal/Component',
-        ),
-        'Doctrine\\Persistence\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/doctrine/persistence/lib/Doctrine/Persistence',
         ),
         'Doctrine\\Instantiator\\' => 
         array (

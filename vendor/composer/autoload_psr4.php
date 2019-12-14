@@ -80,7 +80,6 @@ return array(
     'Drupal\\Component\\Assertion\\' => array($baseDir . '/core/lib/Drupal/Component/Assertion'),
     'Drupal\\Component\\Annotation\\' => array($baseDir . '/core/lib/Drupal/Component/Annotation'),
     'Drupal\\Component\\' => array($baseDir . '/core/lib/Drupal/Component'),
-    'Doctrine\\Persistence\\' => array($vendorDir . '/doctrine/persistence/lib/Doctrine/Persistence'),
     'Doctrine\\Instantiator\\' => array($vendorDir . '/doctrine/instantiator/src/Doctrine/Instantiator'),
     'Doctrine\\Common\\Lexer\\' => array($vendorDir . '/doctrine/lexer/lib/Doctrine/Common/Lexer'),
     'Doctrine\\Common\\Inflector\\' => array($vendorDir . '/doctrine/inflector/lib/Doctrine/Common/Inflector'),
