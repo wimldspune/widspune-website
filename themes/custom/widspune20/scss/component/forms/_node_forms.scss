@@ -1,0 +1,102 @@
+.node-form {
+  font-family: 'Poppins';
+  max-width: $default-max-width;
+  margin: 0 auto;
+  .form-wrapper {
+    .form-item {
+      .form-control {
+        padding-left: 15px;
+        margin-top: 5px;
+        border: none;
+        border-bottom: 1px solid $basetextcolor;
+        border-radius: 3px;
+        box-shadow: none;
+        height: 50px;
+      }
+      label {
+        font-weight: 500;
+        color: $formlable;
+        font-size: 15px;
+        display: initial;
+      }
+      .form-textarea-wrapper {
+        .cke {
+          border: 1px solid $basetextcolor;
+          .cke_inner {
+            .cke_top {
+              background: none;
+              border-color: $basetextcolor;
+            }
+            .cke_bottom {
+              display: none;
+            }
+            .cke_reset_all {}
+          }
+        }
+      }
+      .form-checkbox {
+        margin-top: 8px;
+      }
+      .input-group {
+        .input-group-addon {
+          background: none;
+          border: none;
+          border-bottom: 1px solid $basetextcolor;
+        }
+      }
+      .select-wrapper {
+        select {
+          height: 40px;
+          margin-top: 0;
+          border: 1px solid $basetextcolor;
+        }
+      }
+      .panel-heading, table thead tr {
+        border-bottom: 1px solid transparent;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        color: $lightcolor;
+        padding: 10px;
+        margin-bottom: 15px;
+        background: $basetextcolor;
+        .panel-title {
+          padding: 0;
+          margin: 0;
+        }
+      }
+      .panel-body {}
+      button {
+        background-color: $basetextcolor;
+        border-color: $basetextcolor;
+        font-size: 16px;
+      }
+      .filter-wrapper {
+        height: auto;
+        border-color: $basetextcolor;
+      }
+      table {
+        th {
+          font-weight: normal;
+        }
+        tr {
+          background: none;
+          td {
+            border: none;
+          }
+        }
+      }
+      .table-responsive {
+        button {
+          font-size: 13px;
+          background: none;
+          border: none;
+        }
+      }
+    }
+    .panel-default {
+      border: none;
+    }
+  }
+}
+
+

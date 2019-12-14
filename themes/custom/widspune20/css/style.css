@@ -10000,6 +10000,107 @@ h2.block-title {
   content: "\f13e";
 }
 
+/* line 1, ../scss/component/forms/_node_forms.scss */
+.node-form {
+  font-family: 'Poppins';
+  max-width: 1300px;
+  margin: 0 auto;
+}
+/* line 7, ../scss/component/forms/_node_forms.scss */
+.node-form .form-wrapper .form-item .form-control {
+  padding-left: 15px;
+  margin-top: 5px;
+  border: none;
+  border-bottom: 1px solid #00b140;
+  border-radius: 3px;
+  box-shadow: none;
+  height: 50px;
+}
+/* line 16, ../scss/component/forms/_node_forms.scss */
+.node-form .form-wrapper .form-item label {
+  font-weight: 500;
+  color: #5a5959;
+  font-size: 15px;
+  display: initial;
+}
+/* line 23, ../scss/component/forms/_node_forms.scss */
+.node-form .form-wrapper .form-item .form-textarea-wrapper .cke {
+  border: 1px solid #00b140;
+}
+/* line 26, ../scss/component/forms/_node_forms.scss */
+.node-form .form-wrapper .form-item .form-textarea-wrapper .cke .cke_inner .cke_top {
+  background: none;
+  border-color: #00b140;
+}
+/* line 30, ../scss/component/forms/_node_forms.scss */
+.node-form .form-wrapper .form-item .form-textarea-wrapper .cke .cke_inner .cke_bottom {
+  display: none;
+}
+/* line 37, ../scss/component/forms/_node_forms.scss */
+.node-form .form-wrapper .form-item .form-checkbox {
+  margin-top: 8px;
+}
+/* line 41, ../scss/component/forms/_node_forms.scss */
+.node-form .form-wrapper .form-item .input-group .input-group-addon {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #00b140;
+}
+/* line 48, ../scss/component/forms/_node_forms.scss */
+.node-form .form-wrapper .form-item .select-wrapper select {
+  height: 40px;
+  margin-top: 0;
+  border: 1px solid #00b140;
+}
+/* line 54, ../scss/component/forms/_node_forms.scss */
+.node-form .form-wrapper .form-item .panel-heading, .node-form .form-wrapper .form-item table thead tr {
+  border-bottom: 1px solid transparent;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  color: #fff;
+  padding: 10px;
+  margin-bottom: 15px;
+  background: #00b140;
+}
+/* line 62, ../scss/component/forms/_node_forms.scss */
+.node-form .form-wrapper .form-item .panel-heading .panel-title, .node-form .form-wrapper .form-item table thead tr .panel-title {
+  padding: 0;
+  margin: 0;
+}
+/* line 68, ../scss/component/forms/_node_forms.scss */
+.node-form .form-wrapper .form-item button {
+  background-color: #00b140;
+  border-color: #00b140;
+  font-size: 16px;
+}
+/* line 73, ../scss/component/forms/_node_forms.scss */
+.node-form .form-wrapper .form-item .filter-wrapper {
+  height: auto;
+  border-color: #00b140;
+}
+/* line 78, ../scss/component/forms/_node_forms.scss */
+.node-form .form-wrapper .form-item table th {
+  font-weight: normal;
+}
+/* line 81, ../scss/component/forms/_node_forms.scss */
+.node-form .form-wrapper .form-item table tr {
+  background: none;
+}
+/* line 83, ../scss/component/forms/_node_forms.scss */
+.node-form .form-wrapper .form-item table tr td {
+  border: none;
+}
+/* line 89, ../scss/component/forms/_node_forms.scss */
+.node-form .form-wrapper .form-item .table-responsive button {
+  font-size: 13px;
+  background: none;
+  border: none;
+}
+/* line 96, ../scss/component/forms/_node_forms.scss */
+.node-form .form-wrapper .panel-default {
+  border: none;
+}
+
 /* line 1, ../scss/component/regions/_page-banner.scss */
 .header-banner-wrapper {
   font-family: 'News Cycle';
