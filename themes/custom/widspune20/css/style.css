@@ -8832,36 +8832,79 @@ h2.block-title {
   margin: 0 20px;
 }
 
-/* line 53, ../scss/component/pages/_default-pages.scss */
+/* line 54, ../scss/component/pages/_default-pages.scss */
+.region-content form {
+  max-width: 550px;
+  margin: 20px auto 0;
+  padding: 20px;
+  border: 1px solid #00b140;
+}
+
+/* line 62, ../scss/component/pages/_default-pages.scss */
 .navbar {
   margin-bottom: 0;
   border: none;
   background-color: transparent;
   max-width: 1300px;
 }
-/* line 58, ../scss/component/pages/_default-pages.scss */
+/* line 67, ../scss/component/pages/_default-pages.scss */
 .navbar .navbar-header {
   width: 100%;
   padding: 0;
 }
-/* line 62, ../scss/component/pages/_default-pages.scss */
+/* line 71, ../scss/component/pages/_default-pages.scss */
+.navbar .navbar-header .region-navigation nav {
+  float: right;
+  padding: 25px 0;
+}
+@media (max-width: 768px) {
+  /* line 71, ../scss/component/pages/_default-pages.scss */
+  .navbar .navbar-header .region-navigation nav {
+    padding: 0;
+  }
+  /* line 74, ../scss/component/pages/_default-pages.scss */
+  .navbar .navbar-header .region-navigation nav ul {
+    margin: 0;
+  }
+  /* line 76, ../scss/component/pages/_default-pages.scss */
+  .navbar .navbar-header .region-navigation nav ul li {
+    display: inline-block !important;
+  }
+  /* line 78, ../scss/component/pages/_default-pages.scss */
+  .navbar .navbar-header .region-navigation nav ul li a {
+    padding: 10px 15px !important;
+  }
+}
+/* line 88, ../scss/component/pages/_default-pages.scss */
+.navbar .navbar-header .region-navigation nav ul li a {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  padding: 15px 20px;
+  font-size: 13px;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  color: #3e3e3e;
+}
+/* line 102, ../scss/component/pages/_default-pages.scss */
 .navbar .navbar-header .region-navigation .block-superfish {
   float: right;
   padding: 25px 0px;
   width: auto;
 }
 @media (max-width: 768px) {
-  /* line 62, ../scss/component/pages/_default-pages.scss */
+  /* line 102, ../scss/component/pages/_default-pages.scss */
   .navbar .navbar-header .region-navigation .block-superfish {
     float: none;
     margin-left: 20px;
   }
 }
-/* line 71, ../scss/component/pages/_default-pages.scss */
+/* line 111, ../scss/component/pages/_default-pages.scss */
 .navbar .navbar-header .region-navigation .block-superfish .sf-accordion-toggle a:before {
   content: "\f0c9";
 }
-/* line 74, ../scss/component/pages/_default-pages.scss */
+/* line 114, ../scss/component/pages/_default-pages.scss */
 .navbar .navbar-header .region-navigation .block-superfish .sf-accordion-toggle a {
   border: 1px solid #ddd;
   border-radius: 4px;
@@ -8873,11 +8916,11 @@ h2.block-title {
   padding: 8px 12px;
   font-size: 20px;
 }
-/* line 84, ../scss/component/pages/_default-pages.scss */
+/* line 124, ../scss/component/pages/_default-pages.scss */
 .navbar .navbar-header .region-navigation .block-superfish .sf-accordion-toggle a span {
   display: none;
 }
-/* line 91, ../scss/component/pages/_default-pages.scss */
+/* line 131, ../scss/component/pages/_default-pages.scss */
 .navbar .navbar-header .region-navigation .block-superfish ul li a {
   font-family: 'Montserrat';
   font-style: normal;
@@ -8889,147 +8932,147 @@ h2.block-title {
   letter-spacing: 0.05em;
   color: #3e3e3e;
 }
-/* line 101, ../scss/component/pages/_default-pages.scss */
+/* line 141, ../scss/component/pages/_default-pages.scss */
 .navbar .navbar-header .region-navigation .block-superfish ul li a .sf-sub-indicator {
   font-size: 9px;
   width: 8px;
 }
 
-/* line 113, ../scss/component/pages/_default-pages.scss */
+/* line 153, ../scss/component/pages/_default-pages.scss */
 .footer {
   background-color: #eee;
   margin-top: 0;
 }
-/* line 116, ../scss/component/pages/_default-pages.scss */
+/* line 156, ../scss/component/pages/_default-pages.scss */
 .footer .footer_container {
   display: flex;
   max-width: 1300px;
   margin: 0 auto;
 }
-/* line 120, ../scss/component/pages/_default-pages.scss */
+/* line 160, ../scss/component/pages/_default-pages.scss */
 .footer .footer_container .footer-section.footer_center {
   flex: 2;
 }
-/* line 123, ../scss/component/pages/_default-pages.scss */
+/* line 163, ../scss/component/pages/_default-pages.scss */
 .footer .footer_container .footer-section {
   flex: 1;
   text-align: center;
   vertical-align: middle;
 }
-/* line 127, ../scss/component/pages/_default-pages.scss */
+/* line 167, ../scss/component/pages/_default-pages.scss */
 .footer .footer_container .footer-section h2 {
   font-size: 25px;
   padding: 0 0 10px;
 }
-/* line 132, ../scss/component/pages/_default-pages.scss */
+/* line 172, ../scss/component/pages/_default-pages.scss */
 .footer .footer_container .footer-section .field--name-body span {
   color: red;
 }
-/* line 138, ../scss/component/pages/_default-pages.scss */
+/* line 178, ../scss/component/pages/_default-pages.scss */
 .footer .footer_container .footer-section .field--type-image .field--item img {
   margin: 0 auto;
 }
-/* line 143, ../scss/component/pages/_default-pages.scss */
+/* line 183, ../scss/component/pages/_default-pages.scss */
 .footer .footer_container .footer-section nav {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
-/* line 147, ../scss/component/pages/_default-pages.scss */
+/* line 187, ../scss/component/pages/_default-pages.scss */
 .footer .footer_container .footer-section nav ul.navbar-nav {
   float: none;
 }
-/* line 149, ../scss/component/pages/_default-pages.scss */
+/* line 189, ../scss/component/pages/_default-pages.scss */
 .footer .footer_container .footer-section nav ul.navbar-nav li {
   float: none;
 }
-/* line 151, ../scss/component/pages/_default-pages.scss */
+/* line 191, ../scss/component/pages/_default-pages.scss */
 .footer .footer_container .footer-section nav ul.navbar-nav li a {
   padding: 8px 0;
 }
-/* line 157, ../scss/component/pages/_default-pages.scss */
+/* line 197, ../scss/component/pages/_default-pages.scss */
 .footer .footer_container .footer-section .block-social-media-links {
   margin-bottom: 20px;
 }
-/* line 161, ../scss/component/pages/_default-pages.scss */
+/* line 201, ../scss/component/pages/_default-pages.scss */
 .footer .footer_container .small_font {
   font-size: 14px;
 }
 
-/* line 168, ../scss/component/pages/_default-pages.scss */
+/* line 208, ../scss/component/pages/_default-pages.scss */
 .content_bottom .region-content-bottom {
   text-align: center;
 }
-/* line 171, ../scss/component/pages/_default-pages.scss */
+/* line 211, ../scss/component/pages/_default-pages.scss */
 .content_bottom .region-content-bottom .field--type-image .field--item {
   display: inline-block;
   padding: 0 20px;
 }
-/* line 174, ../scss/component/pages/_default-pages.scss */
+/* line 214, ../scss/component/pages/_default-pages.scss */
 .content_bottom .region-content-bottom .field--type-image .field--item img {
   margin: 0 auto;
 }
-/* line 180, ../scss/component/pages/_default-pages.scss */
+/* line 220, ../scss/component/pages/_default-pages.scss */
 .content_bottom #block-sectors {
   max-width: 1300px;
   margin: 0 auto;
 }
-/* line 183, ../scss/component/pages/_default-pages.scss */
+/* line 223, ../scss/component/pages/_default-pages.scss */
 .content_bottom #block-sectors h2.block-title {
   color: #3e3e3e;
   text-align: center;
   font-size: 30px;
 }
-/* line 191, ../scss/component/pages/_default-pages.scss */
+/* line 231, ../scss/component/pages/_default-pages.scss */
 .content_bottom #block-wids-audience-profile-2 h2.block-title {
   color: #3e3e3e;
   text-align: center;
   font-size: 30px;
 }
-/* line 196, ../scss/component/pages/_default-pages.scss */
+/* line 236, ../scss/component/pages/_default-pages.scss */
 .content_bottom #block-wids-audience-profile-2 img {
   width: 70px;
   height: auto;
   margin: 0 auto;
 }
-/* line 203, ../scss/component/pages/_default-pages.scss */
+/* line 243, ../scss/component/pages/_default-pages.scss */
 .content_bottom #block-wids-audience-profile-2 .field--name-field-column-content .paragraph--view-mode--six-column-display .field {
   text-align: center;
   margin: 20px 0;
 }
 
-/* line 215, ../scss/component/pages/_default-pages.scss */
+/* line 255, ../scss/component/pages/_default-pages.scss */
 .path-sponsors .main-container h1.page-title {
   margin: 10px 0 30px;
 }
-/* line 218, ../scss/component/pages/_default-pages.scss */
+/* line 258, ../scss/component/pages/_default-pages.scss */
 .path-sponsors .main-container .row {
   text-align: center;
 }
-/* line 220, ../scss/component/pages/_default-pages.scss */
+/* line 260, ../scss/component/pages/_default-pages.scss */
 .path-sponsors .main-container .row .view-sponsor-list {
   max-width: 1300px;
   margin: 0 auto;
 }
-/* line 224, ../scss/component/pages/_default-pages.scss */
+/* line 264, ../scss/component/pages/_default-pages.scss */
 .path-sponsors .main-container .row .view-sponsor-list .view-content h3 {
   margin: 25px 0px;
 }
-/* line 227, ../scss/component/pages/_default-pages.scss */
+/* line 267, ../scss/component/pages/_default-pages.scss */
 .path-sponsors .main-container .row .view-sponsor-list .view-content .views-row {
   display: inline-block;
   margin: 10px 0;
 }
-/* line 230, ../scss/component/pages/_default-pages.scss */
+/* line 270, ../scss/component/pages/_default-pages.scss */
 .path-sponsors .main-container .row .view-sponsor-list .view-content .views-row .views-field {
   display: inline-block;
 }
-/* line 232, ../scss/component/pages/_default-pages.scss */
+/* line 272, ../scss/component/pages/_default-pages.scss */
 .path-sponsors .main-container .row .view-sponsor-list .view-content .views-row .views-field .field-content {
   padding: 0 10px;
 }
 
-/* line 244, ../scss/component/pages/_default-pages.scss */
+/* line 284, ../scss/component/pages/_default-pages.scss */
 .box-shadow {
   margin: 20px 0;
   border-radius: 6px;
@@ -9890,116 +9933,6 @@ h2.block-title {
   color: #fff !important;
 }
 
-/* line 27, ../scss/component/pages/_registration_page.scss */
-.user-login-form, .user-pass {
-  max-width: 400px;
-  margin: 30px auto 50px;
-  padding: 15px 30px 30px;
-  box-shadow: 0 0 6px #ccc;
-}
-/* line 33, ../scss/component/pages/_registration_page.scss */
-.user-login-form .form-actions .button, .user-pass .form-actions .button {
-  border-radius: 2px;
-  padding: 8px 15px;
-  border: 2px solid #00b140;
-  background: #00b140;
-  color: #fff;
-  width: 100%;
-  font-size: 16px;
-}
-
-/* line 44, ../scss/component/pages/_registration_page.scss */
-.user-register-form {
-  margin-top: 20px;
-}
-/* line 47, ../scss/component/pages/_registration_page.scss */
-.user-register-form .bs-region--top .form-wrapper {
-  float: left;
-  width: 67%;
-}
-/* line 50, ../scss/component/pages/_registration_page.scss */
-.user-register-form .bs-region--top .form-wrapper .form-item-mail, .user-register-form .bs-region--top .form-wrapper .form-item-name {
-  width: 49%;
-  position: relative;
-  min-height: 1px;
-  padding-right: 15px;
-  float: left;
-}
-/* line 57, ../scss/component/pages/_registration_page.scss */
-.user-register-form .bs-region--top .form-wrapper .form-item-name {
-  padding-left: 15px;
-  width: 51%;
-}
-/* line 62, ../scss/component/pages/_registration_page.scss */
-.user-register-form .bs-region--top .field--name-field-dob {
-  width: 33%;
-  position: relative;
-  min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-/* line 70, ../scss/component/pages/_registration_page.scss */
-.user-register-form .bs-region--middle {
-  margin-bottom: 20px;
-}
-/* line 73, ../scss/component/pages/_registration_page.scss */
-.user-register-form .bs-region--bottom {
-  margin-top: 20px;
-}
-
-/* line 80, ../scss/component/pages/_registration_page.scss */
-.user-register-form .field--name-field-participation-year legend, .user-form .field--name-field-participation-year legend {
-  border: none;
-  font-size: 20px;
-  padding: 5px 15px;
-  background: #00b140;
-  color: #fff;
-}
-/* line 88, ../scss/component/pages/_registration_page.scss */
-.user-register-form .form-actions, .user-form .form-actions {
-  padding: 0 30px;
-}
-/* line 90, ../scss/component/pages/_registration_page.scss */
-.user-register-form .form-actions .button, .user-form .form-actions .button {
-  font-size: 16px;
-}
-
-/* line 97, ../scss/component/pages/_registration_page.scss */
-.user-form {
-  margin-top: 20px;
-}
-/* line 101, ../scss/component/pages/_registration_page.scss */
-.user-form .bs-region--top .form-wrapper > .form-item {
-  width: 67%;
-  position: relative;
-  min-height: 1px;
-  padding-right: 15px;
-  float: left;
-  margin-bottom: 0;
-}
-/* line 109, ../scss/component/pages/_registration_page.scss */
-.user-form .bs-region--top .form-wrapper .form-type-email {
-  width: 33%;
-  margin-bottom: 36px;
-  padding-right: 0;
-}
-
-/* line 121, ../scss/component/pages/_registration_page.scss */
-.user-login-form .form-item label:before, .user-pass .form-item label:before {
-  font: normal normal normal 14px/1 FontAwesome;
-  margin-right: 8px;
-  font-size: 18px;
-  color: #00b140;
-}
-/* line 129, ../scss/component/pages/_registration_page.scss */
-.user-login-form .form-item-name label:before, .user-pass .form-item-name label:before {
-  content: "\f007";
-}
-/* line 134, ../scss/component/pages/_registration_page.scss */
-.user-login-form .form-item-pass label:before, .user-pass .form-item-pass label:before {
-  content: "\f13e";
-}
-
 /* line 1, ../scss/component/forms/_node_forms.scss */
 .node-form {
   font-family: 'Poppins';
@@ -10099,6 +10032,116 @@ h2.block-title {
 /* line 96, ../scss/component/forms/_node_forms.scss */
 .node-form .form-wrapper .panel-default {
   border: none;
+}
+
+/* line 1, ../scss/component/forms/_user_forms.scss */
+.user-login-form, .user-pass {
+  max-width: 400px;
+  margin: 30px auto 50px;
+  padding: 15px 30px 30px;
+  box-shadow: 0 0 6px #ccc;
+}
+/* line 7, ../scss/component/forms/_user_forms.scss */
+.user-login-form .form-actions .button, .user-pass .form-actions .button {
+  border-radius: 2px;
+  padding: 8px 15px;
+  border: 2px solid #00b140;
+  background: #00b140;
+  color: #fff;
+  width: 100%;
+  font-size: 16px;
+}
+
+/* line 18, ../scss/component/forms/_user_forms.scss */
+.user-register-form {
+  margin-top: 20px;
+}
+/* line 21, ../scss/component/forms/_user_forms.scss */
+.user-register-form .bs-region--top .form-wrapper {
+  float: left;
+  width: 67%;
+}
+/* line 24, ../scss/component/forms/_user_forms.scss */
+.user-register-form .bs-region--top .form-wrapper .form-item-mail, .user-register-form .bs-region--top .form-wrapper .form-item-name {
+  width: 49%;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  float: left;
+}
+/* line 31, ../scss/component/forms/_user_forms.scss */
+.user-register-form .bs-region--top .form-wrapper .form-item-name {
+  padding-left: 15px;
+  width: 51%;
+}
+/* line 36, ../scss/component/forms/_user_forms.scss */
+.user-register-form .bs-region--top .field--name-field-dob {
+  width: 33%;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+/* line 44, ../scss/component/forms/_user_forms.scss */
+.user-register-form .bs-region--middle {
+  margin-bottom: 20px;
+}
+/* line 47, ../scss/component/forms/_user_forms.scss */
+.user-register-form .bs-region--bottom {
+  margin-top: 20px;
+}
+
+/* line 54, ../scss/component/forms/_user_forms.scss */
+.user-register-form .field--name-field-participation-year legend, .user-form .field--name-field-participation-year legend {
+  border: none;
+  font-size: 20px;
+  padding: 5px 15px;
+  background: #00b140;
+  color: #fff;
+}
+/* line 62, ../scss/component/forms/_user_forms.scss */
+.user-register-form .form-actions, .user-form .form-actions {
+  padding: 0 30px;
+}
+/* line 64, ../scss/component/forms/_user_forms.scss */
+.user-register-form .form-actions .button, .user-form .form-actions .button {
+  font-size: 16px;
+}
+
+/* line 70, ../scss/component/forms/_user_forms.scss */
+.user-form {
+  margin-top: 20px;
+}
+/* line 74, ../scss/component/forms/_user_forms.scss */
+.user-form .bs-region--top .form-wrapper > .form-item {
+  width: 67%;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  float: left;
+  margin-bottom: 0;
+}
+/* line 82, ../scss/component/forms/_user_forms.scss */
+.user-form .bs-region--top .form-wrapper .form-type-email {
+  width: 33%;
+  margin-bottom: 36px;
+  padding-right: 0;
+}
+
+/* line 94, ../scss/component/forms/_user_forms.scss */
+.user-login-form .form-item label:before, .user-pass .form-item label:before {
+  font: normal normal normal 14px/1 FontAwesome;
+  margin-right: 8px;
+  font-size: 18px;
+  color: #00b140;
+}
+/* line 102, ../scss/component/forms/_user_forms.scss */
+.user-login-form .form-item-name label:before, .user-pass .form-item-name label:before {
+  content: "\f007";
+}
+/* line 107, ../scss/component/forms/_user_forms.scss */
+.user-login-form .form-item-pass label:before, .user-pass .form-item-pass label:before {
+  content: "\f13e";
 }
 
 /* line 1, ../scss/component/regions/_page-banner.scss */

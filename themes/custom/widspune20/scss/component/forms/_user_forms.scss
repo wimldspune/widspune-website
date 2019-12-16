@@ -1,0 +1,111 @@
+.user-login-form, .user-pass {
+  max-width: $user_forms_width;
+  margin: 30px auto 50px;
+  padding: 15px 30px 30px;
+  box-shadow: 0 0 6px $light-border;
+  .form-actions {
+    .button {
+      border-radius: 2px;
+      padding: 8px 15px;
+      border: 2px solid $basetextcolor;
+      background: $basetextcolor;
+      color: $lightcolor;
+      width: 100%;
+      font-size: 16px;
+    }
+  }
+}
+.user-register-form {
+  margin-top: 20px;
+  .bs-region--top {
+    .form-wrapper {
+      float: left;
+      width: 67%;
+      .form-item-mail, .form-item-name {
+        width: 49%;
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        float: left;
+      }
+      .form-item-name  {
+        padding-left: 15px;
+        width: 51%;
+      }
+    }
+    .field--name-field-dob {
+      width: 33%;
+      position: relative;
+      min-height: 1px;
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  }
+  .bs-region--middle {
+    margin-bottom: 20px;
+  }
+  .bs-region--bottom {
+    margin-top: 20px;
+  }
+}
+
+.user-register-form, .user-form {
+  .field--name-field-participation-year {
+    legend {
+      border: none;
+      font-size: 20px;
+      padding: 5px 15px;
+      background: $basetextcolor;
+      color: $lightcolor;
+    }
+  }
+  .form-actions {
+    padding: 0 30px;
+    .button {
+      font-size: 16px;
+    }
+  }
+}
+
+.user-form {
+  margin-top: 20px;
+  .bs-region--top {
+    .form-wrapper {
+      > .form-item {
+        width: 67%;
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        float: left;
+        margin-bottom: 0;
+      }
+      .form-type-email {
+        width: 33%;
+        margin-bottom: 36px;
+        padding-right: 0;
+      }
+    }
+  }
+}
+
+.user-login-form, .user-pass {
+  .form-item {
+    label {}
+    label:before {
+      font: normal normal normal 14px/1 FontAwesome;
+      margin-right: 8px;
+      font-size: 18px;
+      color: $basetextcolor;
+    }
+  }
+  .form-item-name {
+    label:before {
+      content: "\f007";
+    }
+  }
+  .form-item-pass {
+    label:before {
+      content: "\f13e";
+    }
+  }
+}
