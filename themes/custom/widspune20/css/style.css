@@ -8838,44 +8838,45 @@ h2.block-title {
   margin: 20px auto 0;
   padding: 20px;
   border: 1px solid #00b140;
+  box-shadow: 0 0 6px #ccc;
 }
 
-/* line 62, ../scss/component/pages/_default-pages.scss */
+/* line 63, ../scss/component/pages/_default-pages.scss */
 .navbar {
   margin-bottom: 0;
   border: none;
   background-color: transparent;
   max-width: 1300px;
 }
-/* line 67, ../scss/component/pages/_default-pages.scss */
+/* line 68, ../scss/component/pages/_default-pages.scss */
 .navbar .navbar-header {
   width: 100%;
   padding: 0;
 }
-/* line 71, ../scss/component/pages/_default-pages.scss */
+/* line 72, ../scss/component/pages/_default-pages.scss */
 .navbar .navbar-header .region-navigation nav {
   float: right;
   padding: 25px 0;
 }
 @media (max-width: 768px) {
-  /* line 71, ../scss/component/pages/_default-pages.scss */
+  /* line 72, ../scss/component/pages/_default-pages.scss */
   .navbar .navbar-header .region-navigation nav {
     padding: 0;
   }
-  /* line 74, ../scss/component/pages/_default-pages.scss */
+  /* line 75, ../scss/component/pages/_default-pages.scss */
   .navbar .navbar-header .region-navigation nav ul {
     margin: 0;
   }
-  /* line 76, ../scss/component/pages/_default-pages.scss */
+  /* line 77, ../scss/component/pages/_default-pages.scss */
   .navbar .navbar-header .region-navigation nav ul li {
     display: inline-block !important;
   }
-  /* line 78, ../scss/component/pages/_default-pages.scss */
+  /* line 79, ../scss/component/pages/_default-pages.scss */
   .navbar .navbar-header .region-navigation nav ul li a {
     padding: 10px 15px !important;
   }
 }
-/* line 88, ../scss/component/pages/_default-pages.scss */
+/* line 89, ../scss/component/pages/_default-pages.scss */
 .navbar .navbar-header .region-navigation nav ul li a {
   font-family: 'Montserrat';
   font-style: normal;
@@ -8887,24 +8888,24 @@ h2.block-title {
   letter-spacing: 0.05em;
   color: #3e3e3e;
 }
-/* line 102, ../scss/component/pages/_default-pages.scss */
+/* line 103, ../scss/component/pages/_default-pages.scss */
 .navbar .navbar-header .region-navigation .block-superfish {
   float: right;
   padding: 25px 0px;
   width: auto;
 }
 @media (max-width: 768px) {
-  /* line 102, ../scss/component/pages/_default-pages.scss */
+  /* line 103, ../scss/component/pages/_default-pages.scss */
   .navbar .navbar-header .region-navigation .block-superfish {
     float: none;
     margin-left: 20px;
   }
 }
-/* line 111, ../scss/component/pages/_default-pages.scss */
+/* line 112, ../scss/component/pages/_default-pages.scss */
 .navbar .navbar-header .region-navigation .block-superfish .sf-accordion-toggle a:before {
   content: "\f0c9";
 }
-/* line 114, ../scss/component/pages/_default-pages.scss */
+/* line 115, ../scss/component/pages/_default-pages.scss */
 .navbar .navbar-header .region-navigation .block-superfish .sf-accordion-toggle a {
   border: 1px solid #ddd;
   border-radius: 4px;
@@ -8916,11 +8917,11 @@ h2.block-title {
   padding: 8px 12px;
   font-size: 20px;
 }
-/* line 124, ../scss/component/pages/_default-pages.scss */
+/* line 125, ../scss/component/pages/_default-pages.scss */
 .navbar .navbar-header .region-navigation .block-superfish .sf-accordion-toggle a span {
   display: none;
 }
-/* line 131, ../scss/component/pages/_default-pages.scss */
+/* line 132, ../scss/component/pages/_default-pages.scss */
 .navbar .navbar-header .region-navigation .block-superfish ul li a {
   font-family: 'Montserrat';
   font-style: normal;
@@ -8932,147 +8933,147 @@ h2.block-title {
   letter-spacing: 0.05em;
   color: #3e3e3e;
 }
-/* line 141, ../scss/component/pages/_default-pages.scss */
+/* line 142, ../scss/component/pages/_default-pages.scss */
 .navbar .navbar-header .region-navigation .block-superfish ul li a .sf-sub-indicator {
   font-size: 9px;
   width: 8px;
 }
 
-/* line 153, ../scss/component/pages/_default-pages.scss */
+/* line 154, ../scss/component/pages/_default-pages.scss */
 .footer {
   background-color: #eee;
   margin-top: 0;
 }
-/* line 156, ../scss/component/pages/_default-pages.scss */
+/* line 157, ../scss/component/pages/_default-pages.scss */
 .footer .footer_container {
   display: flex;
   max-width: 1300px;
   margin: 0 auto;
 }
-/* line 160, ../scss/component/pages/_default-pages.scss */
+/* line 161, ../scss/component/pages/_default-pages.scss */
 .footer .footer_container .footer-section.footer_center {
   flex: 2;
 }
-/* line 163, ../scss/component/pages/_default-pages.scss */
+/* line 164, ../scss/component/pages/_default-pages.scss */
 .footer .footer_container .footer-section {
   flex: 1;
   text-align: center;
   vertical-align: middle;
 }
-/* line 167, ../scss/component/pages/_default-pages.scss */
+/* line 168, ../scss/component/pages/_default-pages.scss */
 .footer .footer_container .footer-section h2 {
   font-size: 25px;
   padding: 0 0 10px;
 }
-/* line 172, ../scss/component/pages/_default-pages.scss */
+/* line 173, ../scss/component/pages/_default-pages.scss */
 .footer .footer_container .footer-section .field--name-body span {
   color: red;
 }
-/* line 178, ../scss/component/pages/_default-pages.scss */
+/* line 179, ../scss/component/pages/_default-pages.scss */
 .footer .footer_container .footer-section .field--type-image .field--item img {
   margin: 0 auto;
 }
-/* line 183, ../scss/component/pages/_default-pages.scss */
+/* line 184, ../scss/component/pages/_default-pages.scss */
 .footer .footer_container .footer-section nav {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
-/* line 187, ../scss/component/pages/_default-pages.scss */
+/* line 188, ../scss/component/pages/_default-pages.scss */
 .footer .footer_container .footer-section nav ul.navbar-nav {
   float: none;
 }
-/* line 189, ../scss/component/pages/_default-pages.scss */
+/* line 190, ../scss/component/pages/_default-pages.scss */
 .footer .footer_container .footer-section nav ul.navbar-nav li {
   float: none;
 }
-/* line 191, ../scss/component/pages/_default-pages.scss */
+/* line 192, ../scss/component/pages/_default-pages.scss */
 .footer .footer_container .footer-section nav ul.navbar-nav li a {
   padding: 8px 0;
 }
-/* line 197, ../scss/component/pages/_default-pages.scss */
+/* line 198, ../scss/component/pages/_default-pages.scss */
 .footer .footer_container .footer-section .block-social-media-links {
   margin-bottom: 20px;
 }
-/* line 201, ../scss/component/pages/_default-pages.scss */
+/* line 202, ../scss/component/pages/_default-pages.scss */
 .footer .footer_container .small_font {
   font-size: 14px;
 }
 
-/* line 208, ../scss/component/pages/_default-pages.scss */
+/* line 209, ../scss/component/pages/_default-pages.scss */
 .content_bottom .region-content-bottom {
   text-align: center;
 }
-/* line 211, ../scss/component/pages/_default-pages.scss */
+/* line 212, ../scss/component/pages/_default-pages.scss */
 .content_bottom .region-content-bottom .field--type-image .field--item {
   display: inline-block;
   padding: 0 20px;
 }
-/* line 214, ../scss/component/pages/_default-pages.scss */
+/* line 215, ../scss/component/pages/_default-pages.scss */
 .content_bottom .region-content-bottom .field--type-image .field--item img {
   margin: 0 auto;
 }
-/* line 220, ../scss/component/pages/_default-pages.scss */
+/* line 221, ../scss/component/pages/_default-pages.scss */
 .content_bottom #block-sectors {
   max-width: 1300px;
   margin: 0 auto;
 }
-/* line 223, ../scss/component/pages/_default-pages.scss */
+/* line 224, ../scss/component/pages/_default-pages.scss */
 .content_bottom #block-sectors h2.block-title {
   color: #3e3e3e;
   text-align: center;
   font-size: 30px;
 }
-/* line 231, ../scss/component/pages/_default-pages.scss */
+/* line 232, ../scss/component/pages/_default-pages.scss */
 .content_bottom #block-wids-audience-profile-2 h2.block-title {
   color: #3e3e3e;
   text-align: center;
   font-size: 30px;
 }
-/* line 236, ../scss/component/pages/_default-pages.scss */
+/* line 237, ../scss/component/pages/_default-pages.scss */
 .content_bottom #block-wids-audience-profile-2 img {
   width: 70px;
   height: auto;
   margin: 0 auto;
 }
-/* line 243, ../scss/component/pages/_default-pages.scss */
+/* line 244, ../scss/component/pages/_default-pages.scss */
 .content_bottom #block-wids-audience-profile-2 .field--name-field-column-content .paragraph--view-mode--six-column-display .field {
   text-align: center;
   margin: 20px 0;
 }
 
-/* line 255, ../scss/component/pages/_default-pages.scss */
+/* line 256, ../scss/component/pages/_default-pages.scss */
 .path-sponsors .main-container h1.page-title {
   margin: 10px 0 30px;
 }
-/* line 258, ../scss/component/pages/_default-pages.scss */
+/* line 259, ../scss/component/pages/_default-pages.scss */
 .path-sponsors .main-container .row {
   text-align: center;
 }
-/* line 260, ../scss/component/pages/_default-pages.scss */
+/* line 261, ../scss/component/pages/_default-pages.scss */
 .path-sponsors .main-container .row .view-sponsor-list {
   max-width: 1300px;
   margin: 0 auto;
 }
-/* line 264, ../scss/component/pages/_default-pages.scss */
+/* line 265, ../scss/component/pages/_default-pages.scss */
 .path-sponsors .main-container .row .view-sponsor-list .view-content h3 {
   margin: 25px 0px;
 }
-/* line 267, ../scss/component/pages/_default-pages.scss */
+/* line 268, ../scss/component/pages/_default-pages.scss */
 .path-sponsors .main-container .row .view-sponsor-list .view-content .views-row {
   display: inline-block;
   margin: 10px 0;
 }
-/* line 270, ../scss/component/pages/_default-pages.scss */
+/* line 271, ../scss/component/pages/_default-pages.scss */
 .path-sponsors .main-container .row .view-sponsor-list .view-content .views-row .views-field {
   display: inline-block;
 }
-/* line 272, ../scss/component/pages/_default-pages.scss */
+/* line 273, ../scss/component/pages/_default-pages.scss */
 .path-sponsors .main-container .row .view-sponsor-list .view-content .views-row .views-field .field-content {
   padding: 0 10px;
 }
 
-/* line 284, ../scss/component/pages/_default-pages.scss */
+/* line 285, ../scss/component/pages/_default-pages.scss */
 .box-shadow {
   margin: 20px 0;
   border-radius: 6px;
