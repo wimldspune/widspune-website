@@ -12,6 +12,6 @@
 #
 parameters:
   twig.config:
-    debug: false
-    auto_reload: null
-    cache: true
+    debug: true
+    auto_reload: true
+    cache: false

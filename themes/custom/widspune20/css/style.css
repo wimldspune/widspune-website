@@ -9079,6 +9079,29 @@ h2.block-title {
   border-radius: 6px;
 }
 
+/* line 300, ../scss/component/pages/_default-pages.scss */
+ul#superfish-account li {
+  background-color: #00b140;
+  border-color: #00b140;
+  text-shadow: 1px 1px 0 rgba(40, 40, 40, 0.5);
+}
+/* line 294, ../scss/component/pages/_default-pages.scss */
+ul#superfish-account li a {
+  color: #fff;
+}
+
+/* line 306, ../scss/component/pages/_default-pages.scss */
+ul#superfish-user-login li {
+  background-color: #00b140;
+  border-color: #00b140;
+  text-shadow: 1px 1px 0 rgba(40, 40, 40, 0.5);
+  border-radius: 5px;
+}
+/* line 294, ../scss/component/pages/_default-pages.scss */
+ul#superfish-user-login li a {
+  color: #fff;
+}
+
 /* line 2, ../scss/component/pages/_front-page.scss */
 .path-frontpage .main-container {
   max-width: 1300px;

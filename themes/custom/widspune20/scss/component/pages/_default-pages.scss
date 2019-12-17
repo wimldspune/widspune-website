@@ -287,4 +287,25 @@ h2.block-title {
   border-radius: 6px;
 }
 
+@mixin superfish-user-account-blocks {
+  background-color: $basetextcolor;
+  border-color: $basetextcolor;
+  text-shadow: 1px 1px 0 $boxshadow;
+  a {
+    color: $lightcolor;
+  }
+}
+
+ul#superfish-account {
+  li {
+    @include superfish-user-account-blocks;
+  }
+}
+
+ul#superfish-user-login {
+  li {
+    @include superfish-user-account-blocks;
+    border-radius: 5px;
+  }
+}
 
