@@ -1,0 +1,15 @@
+uuid: 5dfda15a-b777-43c4-bd9a-242adf8ed753
+langcode: en
+status: true
+dependencies: {  }
+name: session_logo
+label: 'Session logo'
+effects:
+  aea07c24-3a6b-447c-ba5e-0404b38551a0:
+    uuid: aea07c24-3a6b-447c-ba5e-0404b38551a0
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 150
+      height: 90
+      anchor: center-center
