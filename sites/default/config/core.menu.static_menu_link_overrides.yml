@@ -11,11 +11,5 @@ definitions:
     parent: ''
     expanded: false
     enabled: true
-  user__logout:
-    weight: -50
-    parent: user.page
-    menu_name: account
-    enabled: true
-    expanded: false
 _core:
   default_config_hash: o4bYR9ZupWb3AsOIizTUG4g-nu1mdJqA59UB7QT-ifQ

@@ -5,10 +5,6 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.testimonials.body
-    - field.field.node.testimonials.field_event_year
-    - field.field.node.testimonials.field_from_registed_user
-    - field.field.node.testimonials.field_from_unregisted_user
-    - field.field.node.testimonials.field_show_on_slider
     - node.type.testimonials
   module:
     - text

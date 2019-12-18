@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.sponsor.field_logo
     - field.field.node.sponsor.field_sponsor_type
     - field.field.node.sponsor.field_year_of_sponsoship
+    - image.style.session_logo
     - node.type.sponsor
   module:
     - image
@@ -42,7 +43,7 @@ content:
     weight: 102
     label: above
     settings:
-      image_style: ''
+      image_style: session_logo
       image_link: ''
     third_party_settings: {  }
     type: image
@@ -65,7 +66,7 @@ content:
     region: content
   links:
     weight: 100
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden: {  }

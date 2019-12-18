@@ -11,7 +11,7 @@ dependencies:
 id: mainnavigation_2
 theme: widspune20
 region: navigation
-weight: -16
+weight: -15
 provider: null
 plugin: 'superfish:main'
 settings:
@@ -23,7 +23,7 @@ settings:
   depth: '0'
   expand_all_items: false
   menu_type: horizontal
-  style: none
+  style: white
   arrow: 1
   shadow: 1
   speed: fast

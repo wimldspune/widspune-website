@@ -6,6 +6,7 @@ dependencies:
     - field.storage.node.field_company_url
     - field.storage.node.field_logo
     - field.storage.node.field_sponsor_type
+    - image.style.session_logo
     - node.type.sponsor
     - taxonomy.vocabulary.event_year
     - taxonomy.vocabulary.sponsor_type
@@ -626,7 +627,7 @@ display:
           click_sort_column: target_id
           type: image
           settings:
-            image_style: ''
+            image_style: session_logo
             image_link: ''
           group_column: ''
           group_columns: {  }
@@ -852,6 +853,21 @@ display:
           expose:
             label: ''
           plugin_id: standard
+        created:
+          id: created
+          table: node_field_data
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          granularity: second
+          entity_type: node
+          entity_field: created
+          plugin_id: date
       arguments:
         term_node_tid_depth:
           id: term_node_tid_depth
