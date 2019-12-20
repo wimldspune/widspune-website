@@ -22,11 +22,12 @@ class SponsorUsForm extends FormBase {
    * {@inheritdoc}
    */
   public function buildForm(array $form, FormStateInterface $form_state) {
-    $content = '
-          <h1 class="text-center page-header">Become a Sponsor</h1>
+    $content = '<h1 class="text-center page-header">Become a Sponsor</h1>
           <div = class= "form-description">
-            The Women in Data Science (WiDS) initiative aims to inspire and educate data scientists worldwide, regardless of gender, and support women in the field.
-          </div>';
+            <p>The Women in Data Science (WiDS) initiative aims to inspire and educate data scientists worldwide, regardless of gender, and support women in the field.</p>
+            <span class="form-required">Required Fields </span>
+          </div>
+          <hr />';
     $form['message'] = [
       '#type' => 'markup',
       '#markup' => $content,
@@ -37,6 +38,7 @@ class SponsorUsForm extends FormBase {
       '#type' => 'textfield',
       '#title' => $this->t('Sponsoring Organisation'),
       '#required' => TRUE,
+      '#placeholder' => $this->t('e.g. WiDS Pune'),
     ];
 
     // Organisation Mailing Address
@@ -44,6 +46,7 @@ class SponsorUsForm extends FormBase {
       '#type' => 'textfield',
       '#title' => $this->t('Organisation Mailing Address'),
       '#required' => TRUE,
+      '#placeholder' => $this->t('e.g. contact@domain.tld'),
     ];
 
     // Name of Representative
@@ -51,6 +54,7 @@ class SponsorUsForm extends FormBase {
       '#type' => 'textfield',
       '#title' => $this->t('Name of Representative'),
       '#required' => TRUE,
+      '#placeholder' => $this->t('eg. John Doe'),
     ];
 
     // Representative E-mail
@@ -58,6 +62,7 @@ class SponsorUsForm extends FormBase {
       '#type' => 'textfield',
       '#title' => $this->t('Representative E-mail'),
       '#required' => TRUE,
+      '#placeholder' => $this->t('e.g. contact@domain.tld'),
     ];
 
     // Representative Phone No.
@@ -65,6 +70,7 @@ class SponsorUsForm extends FormBase {
       '#type' => 'textfield',
       '#title' => $this->t('Representative Phone No.'),
       '#required' => TRUE,
+      '#placeholder' => $this->t('e.g. 9890989898'),
     ];
 
     //

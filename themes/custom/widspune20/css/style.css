@@ -9111,6 +9111,15 @@ ul#superfish-user-login li a:hover, ul#superfish-user-login li a:focus {
   text-shadow: 1px 1px 0 rgba(40, 40, 40, 0.5);
 }
 
+/* line 320, ../scss/component/pages/_default-pages.scss */
+.widspune-sponsor-us h1 {
+  margin: 10px;
+}
+/* line 323, ../scss/component/pages/_default-pages.scss */
+.widspune-sponsor-us .form-description {
+  text-align: justify-all;
+}
+
 /* line 2, ../scss/component/pages/_front-page.scss */
 .path-frontpage .main-container {
   max-width: 1300px;
