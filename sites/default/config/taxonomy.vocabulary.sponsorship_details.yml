@@ -4,5 +4,5 @@ status: true
 dependencies: {  }
 name: 'Sponsorship details'
 vid: sponsorship_details
-description: ''
+description: 'Options for Sponsorship details'
 weight: 0

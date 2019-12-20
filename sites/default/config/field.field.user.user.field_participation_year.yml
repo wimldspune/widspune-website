@@ -5,6 +5,8 @@ dependencies:
   config:
     - field.storage.user.field_participation_year
     - taxonomy.vocabulary.event_year
+  content:
+    - 'taxonomy_term:event_year:bf73aee1-ecf5-4be6-bc4d-bfba46430784'
   module:
     - user
 id: user.user.field_participation_year
@@ -15,7 +17,9 @@ label: 'Participation year'
 description: ''
 required: false
 translatable: false
-default_value: {  }
+default_value:
+  -
+    target_uuid: bf73aee1-ecf5-4be6-bc4d-bfba46430784
 default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'

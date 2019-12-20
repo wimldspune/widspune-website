@@ -1,0 +1,20 @@
+uuid: 46bbb067-2e49-4fec-b3c7-8e39e0a15655
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_promotion_types
+field_name: field_promotion_types
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

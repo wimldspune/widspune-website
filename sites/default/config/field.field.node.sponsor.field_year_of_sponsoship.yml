@@ -6,6 +6,8 @@ dependencies:
     - field.storage.node.field_year_of_sponsoship
     - node.type.sponsor
     - taxonomy.vocabulary.event_year
+  content:
+    - 'taxonomy_term:event_year:bf73aee1-ecf5-4be6-bc4d-bfba46430784'
 id: node.sponsor.field_year_of_sponsoship
 field_name: field_year_of_sponsoship
 entity_type: node
@@ -14,7 +16,9 @@ label: 'Year of Sponsorship'
 description: ''
 required: false
 translatable: false
-default_value: {  }
+default_value:
+  -
+    target_uuid: bf73aee1-ecf5-4be6-bc4d-bfba46430784
 default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'

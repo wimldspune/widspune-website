@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.sponsor.field_logo
     - field.field.node.sponsor.field_name_of_representative
     - field.field.node.sponsor.field_organisation_email_address
+    - field.field.node.sponsor.field_promotion_types
     - field.field.node.sponsor.field_representative_email
     - field.field.node.sponsor.field_representative_phone_numbe
     - field.field.node.sponsor.field_sponsor_type
@@ -71,6 +72,15 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: email_default
+    region: content
+  field_promotion_types:
+    weight: 31
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
     region: content
   field_representative_email:
     weight: 28

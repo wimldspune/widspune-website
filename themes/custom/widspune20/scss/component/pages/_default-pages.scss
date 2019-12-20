@@ -316,3 +316,28 @@ ul#superfish-user-login {
   }
 }
 
+.widspune-sponsor-us {
+  h1 {
+    margin: 10px;
+  }
+  .form-description {
+    text-align: justify-all;
+  }
+  .form-actions {
+    text-align: center;
+    .form-submit {
+      border: 2px solid #00b140;
+      border-radius: 2px;
+      padding: 8px 15px;
+      border: 2px solid #00b140;
+      background: #00b140;
+      color: #fff;
+      &:hover {
+        color: #00b140;
+        transition: 0.5s ease-in-out;
+        background: #fff;
+      }
+    }
+  }
+}
+
