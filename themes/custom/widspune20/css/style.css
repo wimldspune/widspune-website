@@ -9119,6 +9119,25 @@ ul#superfish-user-login li a:hover, ul#superfish-user-login li a:focus {
 .widspune-sponsor-us .form-description {
   text-align: justify-all;
 }
+/* line 326, ../scss/component/pages/_default-pages.scss */
+.widspune-sponsor-us .form-actions {
+  text-align: center;
+}
+/* line 328, ../scss/component/pages/_default-pages.scss */
+.widspune-sponsor-us .form-actions .form-submit {
+  border: 2px solid #00b140;
+  border-radius: 2px;
+  padding: 8px 15px;
+  border: 2px solid #00b140;
+  background: #00b140;
+  color: #fff;
+}
+/* line 335, ../scss/component/pages/_default-pages.scss */
+.widspune-sponsor-us .form-actions .form-submit:hover {
+  color: #00b140;
+  transition: 0.5s ease-in-out;
+  background: #fff;
+}
 
 /* line 2, ../scss/component/pages/_front-page.scss */
 .path-frontpage .main-container {
