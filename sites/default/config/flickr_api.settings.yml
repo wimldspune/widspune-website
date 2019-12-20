@@ -1,0 +1,7 @@
+api_key: 860e1f3a06ed3d35a5a8bc9eab7c182f
+api_secret: 5c3a646a2efb5b71
+host_uri: 'http://flickr.com'
+api_uri: 'https://api.flickr.com/services/rest/'
+api_cache_maximum_age: '86400'
+_core:
+  default_config_hash: sRSBfeiRynxXW-XL2-lF0udlFEkAt4dUhIl1ihk0ak4

@@ -1955,6 +1955,140 @@
         }
     },
     {
+        "name": "drupal/flickr",
+        "version": "1.0.0-alpha2",
+        "version_normalized": "1.0.0.0-alpha2",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/flickr.git",
+            "reference": "8.x-1.0-alpha2"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/flickr-8.x-1.0-alpha2.zip",
+            "reference": "8.x-1.0-alpha2",
+            "shasum": "7a9b704b498bc87319a191af565c6fdc08bfc4a5"
+        },
+        "require": {
+            "drupal/core": "~8.0",
+            "drupal/flickr_api": "^1.1"
+        },
+        "require-dev": {
+            "drupal/colorbox": "*"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.0-alpha2",
+                "datestamp": "1521504784",
+                "security-coverage": {
+                    "status": "not-covered",
+                    "message": "Alpha releases are not covered by Drupal security advisories."
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "BarisW",
+                "homepage": "https://www.drupal.org/user/107229"
+            },
+            {
+                "name": "KarenS",
+                "homepage": "https://www.drupal.org/user/45874"
+            },
+            {
+                "name": "andrewlevine",
+                "homepage": "https://www.drupal.org/user/49940"
+            },
+            {
+                "name": "dakku",
+                "homepage": "https://www.drupal.org/user/97634"
+            },
+            {
+                "name": "drewish",
+                "homepage": "https://www.drupal.org/user/34869"
+            },
+            {
+                "name": "ksenzee",
+                "homepage": "https://www.drupal.org/user/139855"
+            },
+            {
+                "name": "lolandese",
+                "homepage": "https://www.drupal.org/user/210402"
+            },
+            {
+                "name": "sumitmadan",
+                "homepage": "https://www.drupal.org/user/1538790"
+            },
+            {
+                "name": "wnoronha",
+                "homepage": "https://www.drupal.org/user/7344"
+            }
+        ],
+        "description": "Flickr Integration for Drupal",
+        "homepage": "https://www.drupal.org/project/flickr",
+        "support": {
+            "source": "https://git.drupalcode.org/project/flickr"
+        }
+    },
+    {
+        "name": "drupal/flickr_api",
+        "version": "1.3.0",
+        "version_normalized": "1.3.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/flickr_api.git",
+            "reference": "8.x-1.3"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/flickr_api-8.x-1.3.zip",
+            "reference": "8.x-1.3",
+            "shasum": "bdad4ebadb7cb89bd9c5d03aef9a1f9a977c4834"
+        },
+        "require": {
+            "drupal/core": "~8.0"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.3",
+                "datestamp": "1559740985",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "dakku",
+                "homepage": "https://www.drupal.org/user/97634"
+            }
+        ],
+        "description": "Flickr API and Drupal integration.",
+        "homepage": "https://www.drupal.org/project/flickr_api",
+        "support": {
+            "source": "https://git.drupalcode.org/project/flickr_api"
+        }
+    },
+    {
         "name": "drupal/fontyourface",
         "version": "3.2.0",
         "version_normalized": "3.2.0.0",
