@@ -1,7 +1,8 @@
 widspune.sponser_us:
-  path: '/become/sponsor'
+  path: '/become/{type}'
   defaults:
     _title: 'Become a Sponsor'
     _form: 'Drupal\widspune\Form\SponsorUsForm'
+    type: 'sponsor'
   requirements:
     _permission: 'access wids become sponsor'

@@ -1,0 +1,29 @@
+uuid: 04995c33-8c50-4029-9c6f-87ebcdeb140c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_promotion_types
+    - node.type.sponsor
+    - taxonomy.vocabulary.promotion_types
+id: node.sponsor.field_promotion_types
+field_name: field_promotion_types
+entity_type: node
+bundle: sponsor
+label: 'Promotion Types'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      promotion_types: promotion_types
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

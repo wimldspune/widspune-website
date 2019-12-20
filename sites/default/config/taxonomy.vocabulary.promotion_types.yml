@@ -1,0 +1,8 @@
+uuid: 1e47dd1d-0b58-470a-993e-7a5ada924ca5
+langcode: en
+status: true
+dependencies: {  }
+name: 'Promotion Types'
+vid: promotion_types
+description: 'Promotion Types for community partners.'
+weight: 0

@@ -5,6 +5,7 @@ namespace Drupal\widspune\Form;
 use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\taxonomy\Entity\Term;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 /**
  * Provides a WiDS Pune Core form.
@@ -21,23 +22,40 @@ class SponsorUsForm extends FormBase {
   /**
    * {@inheritdoc}
    */
-  public function buildForm(array $form, FormStateInterface $form_state) {
-    $content = '<h1 class="text-center page-header">Become a Sponsor</h1>
-          <div = class= "form-description">
+  public function buildForm(array $form, FormStateInterface $form_state, $type = NULL) {
+
+    if (empty($type) || !in_array($type, ['sponsor', 'community-partner'])) {
+      throw new NotFoundHttpException();
+    }
+
+    $form_title = '<h1 class="text-center page-header">';
+    if($type == 'sponsor') {
+      $form_title .= 'Become a Sponsor';
+    }
+    else {
+      $form_title .= 'Become a Community-Partner';
+    }
+    $form_title .= '</h1>';
+
+    $content = $form_title;
+    $content .= '<div = class= "form-description">
             <p>The Women in Data Science (WiDS) initiative aims to inspire and educate data scientists worldwide, regardless of gender, and support women in the field.</p>
             <span class="form-required">Required Fields </span>
           </div>
           <hr />';
+
     $form['message'] = [
       '#type' => 'markup',
       '#markup' => $content,
     ];
 
+    $required = TRUE;
+
     // Sponsoring Organisation
     $form['title'] = [
       '#type' => 'textfield',
       '#title' => $this->t('Sponsoring Organisation'),
-      '#required' => TRUE,
+      '#required' => $required,
       '#placeholder' => $this->t('e.g. WiDS Pune'),
     ];
 
@@ -45,7 +63,7 @@ class SponsorUsForm extends FormBase {
     $form['org_email'] = [
       '#type' => 'textfield',
       '#title' => $this->t('Organisation Mailing Address'),
-      '#required' => TRUE,
+      '#required' => $required,
       '#placeholder' => $this->t('e.g. contact@domain.tld'),
     ];
 
@@ -53,7 +71,7 @@ class SponsorUsForm extends FormBase {
     $form['rep_name'] = [
       '#type' => 'textfield',
       '#title' => $this->t('Name of Representative'),
-      '#required' => TRUE,
+      '#required' => $required,
       '#placeholder' => $this->t('eg. John Doe'),
     ];
 
@@ -61,7 +79,7 @@ class SponsorUsForm extends FormBase {
     $form['rep_email'] = [
       '#type' => 'textfield',
       '#title' => $this->t('Representative E-mail'),
-      '#required' => TRUE,
+      '#required' => $required,
       '#placeholder' => $this->t('e.g. contact@domain.tld'),
     ];
 
@@ -69,13 +87,18 @@ class SponsorUsForm extends FormBase {
     $form['rep_phone'] = [
       '#type' => 'textfield',
       '#title' => $this->t('Representative Phone No.'),
-      '#required' => TRUE,
+      '#required' => $required,
       '#placeholder' => $this->t('e.g. 9890989898'),
     ];
 
-    //
+    $vid = 'promotion_types';
+    $field_title = 'Would you promote our event amongst your community members through';
+    if ($type == 'sponsor') {
+      $vid = 'sponsorship_details';
+      $field_title = 'In what form would you like to Sponsor';
+    }
     $query = \Drupal::entityQuery('taxonomy_term');
-    $query->condition('vid',  'sponsorship_details');
+    $query->condition('vid',  $vid);
     $tids = $query->execute();
     $terms = Term::loadMultiple($tids);
     foreach ($terms as $term) {
@@ -83,13 +106,17 @@ class SponsorUsForm extends FormBase {
     }
 
     // In what form would you like to Sponsor
-    $form['type'] = [
+    $form['categories'] = [
       '#type' => 'checkboxes',
-      '#title' => $this->t('In what form would you like to Sponsor'),
-      '#required' => TRUE,
+      '#title' => $this->t('@title', ['@title' => $field_title]),
+      '#required' => $required,
       '#options' => $term_data,
     ];
 
+    $form['type'] = [
+      '#type' => 'hidden',
+      '#value' => $type,
+    ];
 
     $form['actions'] = [
       '#type' => 'actions',
@@ -118,7 +145,7 @@ class SponsorUsForm extends FormBase {
       $form_state->setErrorByName('rep_email', t('The email address %mail is not valid.', ['%mail' => $rep_email]));
     }
     $rep_phone = $form_state->getValue('rep_phone');
-    if ($rep_phone !== '' && !is_integer($rep_phone)) {
+    if ($rep_phone !== '' && !is_numeric($rep_phone)) {
       $form_state->setErrorByName('rep_phone', t('The phone number %phone is not valid.', ['%phone' => $rep_phone]));
     }
   }
@@ -134,14 +161,23 @@ class SponsorUsForm extends FormBase {
     $sponsor['field_name_of_representative'] = $values->getValue('rep_name');
     $sponsor['field_representative_email'] = $values->getValue('rep_email');
     $sponsor['field_representative_phone_numbe'] = $values->getValue('rep_phone');
-    $sponsor['field_sponsorship_details'] = $values->getValue('type');
     $sponsor['status'] = 0;
+
+    $categories = $values->getValue('categories');
+    $categories = array_filter($categories);
+
+    $type =  $values->getValue('type');
+    if ($type == 'sponsor') {
+      $sponsor['field_sponsorship_details'] = $categories;
+    }
+    else {
+      $sponsor['field_promotion_types'] = $categories;
+    }
 
     $entity = \Drupal::entityTypeManager()->getStorage('node')->create($sponsor);
     $status = $entity->save();
     if ($status == SAVED_NEW) {
       $this->messenger()->addStatus($this->t('Thank you for your interest. Someone will be contacting you shortly.'));
-
     }
   }
 
