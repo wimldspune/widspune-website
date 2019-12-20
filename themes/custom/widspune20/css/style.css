@@ -9899,26 +9899,19 @@ ul#superfish-user-login li a:hover, ul#superfish-user-login li a:focus {
   height: auto;
   text-align: center;
   position: absolute;
-  top: 46%;
+  top: 40%;
   left: 50%;
   width: 90px;
   margin: 0 auto;
   transform: translate(-50%, -50%);
 }
-@media (max-width: 768px) {
-  /* line 38, ../scss/component/pages/_speakers_page.scss */
-  .wids-user-list .view-content .views-row .views-field .volunteers-info .image-volunteer img {
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
-}
-/* line 54, ../scss/component/pages/_speakers_page.scss */
+/* line 50, ../scss/component/pages/_speakers_page.scss */
 .wids-user-list .view-content .views-row .views-field .volunteers-info .image-speaker {
   background-image: url(../images/empty-speaker-frame.png);
   background-size: cover;
   height: 245px;
 }
-/* line 58, ../scss/component/pages/_speakers_page.scss */
+/* line 54, ../scss/component/pages/_speakers_page.scss */
 .wids-user-list .view-content .views-row .views-field .volunteers-info .image-speaker img {
   height: auto;
   text-align: center;
@@ -9930,13 +9923,13 @@ ul#superfish-user-login li a:hover, ul#superfish-user-login li a:focus {
   transform: translate(-50%, -45%);
 }
 @media (max-width: 768px) {
-  /* line 58, ../scss/component/pages/_speakers_page.scss */
+  /* line 54, ../scss/component/pages/_speakers_page.scss */
   .wids-user-list .view-content .views-row .views-field .volunteers-info .image-speaker img {
     top: 40%;
     transform: translate(-50%, -50%);
   }
 }
-/* line 73, ../scss/component/pages/_speakers_page.scss */
+/* line 69, ../scss/component/pages/_speakers_page.scss */
 .wids-user-list .view-content .views-row .views-field .volunteers-info a.ln-link {
   font-size: 14px;
   margin: 5px 0 15px;
