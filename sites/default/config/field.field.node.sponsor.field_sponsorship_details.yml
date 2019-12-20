@@ -1,18 +1,18 @@
-uuid: d12ecd2d-c60c-49dd-ba8e-c3dfc21b4f08
+uuid: 1dca9ee6-3616-4523-84c5-144f4a272452
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_year_of_sponsoship
+    - field.storage.node.field_sponsorship_details
     - node.type.sponsor
-    - taxonomy.vocabulary.event_year
-id: node.sponsor.field_year_of_sponsoship
-field_name: field_year_of_sponsoship
+    - taxonomy.vocabulary.sponsorship_details
+id: node.sponsor.field_sponsorship_details
+field_name: field_sponsorship_details
 entity_type: node
 bundle: sponsor
-label: 'Year of Sponsorship'
+label: 'Sponsorship details'
 description: ''
-required: false
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''
@@ -20,7 +20,7 @@ settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      event_year: event_year
+      sponsorship_details: sponsorship_details
     sort:
       field: name
       direction: asc

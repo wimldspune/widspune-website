@@ -1,0 +1,8 @@
+uuid: 37e6f5f4-2568-462c-9abe-90adc07a4c6c
+langcode: en
+status: true
+dependencies: {  }
+name: 'Sponsorship details'
+vid: sponsorship_details
+description: ''
+weight: 0
