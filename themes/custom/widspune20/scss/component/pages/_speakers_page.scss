@@ -1,15 +1,5 @@
 @mixin image-background {
-  background-size: cover;
-  height: 266px;
-  img {
-    height: auto;
-    text-align: center;
-    position: absolute;
-    top: 46%;
-    left: 50%;
-    width: 90px;
-    transform: translate(-50%, -50%);
-  }
+
 }
 
 .wids-user-list {
@@ -26,16 +16,59 @@
           text-align: center;
           .caption {
             display: inline-table;
+            p {
+              font-size:15px;
+              margin:0;
+              font-weight:500;
+            }
+            span{
+              display: block;
+              font-size: 13px;
+              margin:2px 0;
+              width:100%;
+              height:60px;
+              overflow:scroll;
+            }
           }
 
           .image-volunteer {
             background-image: url(../images/empty-volunteer-frame.png);
-            @include image-background;
+            background-size: cover;
+            height: 266px;
+            img {
+              height: auto;
+              text-align: center;
+              position: absolute;
+              top: 46%;
+              left: 50%;
+              width: 90px;
+              margin:0 auto;
+              transform: translate(-50%, -50%);
+              @media (max-width: $screen-sm-min) {
+                top: 50%;
+                transform: translate(-50%, -50%);
+              }
+            }
           }
 
           .image-speaker {
             background-image: url(../images/empty-speaker-frame.png);
-            @include image-background;
+            background-size: cover;
+            height: 245px;
+            img {
+              height: auto;
+              text-align: center;
+              position: absolute;
+              top: 41%;
+              left: 50%;
+              width: 90px;
+              margin:0 auto;
+              transform: translate(-50%, -45%);
+              @media (max-width: $screen-sm-min) {
+                top: 40%;
+                transform: translate(-50%, -50%);
+              }
+            }
           }
           a.ln-link {
             font-size: 14px;
