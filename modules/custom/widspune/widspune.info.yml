@@ -1,5 +1,6 @@
-name: "WiDS Pune Homepage"
-description: "Homepage controller."
-type: "module"
-core: "8.x"
-package: "Widspune"
+name: WiDS Pune Core
+type: module
+description: Core functionality for WiDS Pune
+package: Custom
+core: 8.x
+core_version_requirement: ^8 || ^9
