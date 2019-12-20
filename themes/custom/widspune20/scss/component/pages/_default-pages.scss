@@ -293,6 +293,7 @@ h2.block-title {
   color: $lightcolor;
   &:hover,
   &:focus {
+    background-color: #6CBE6F;
     text-shadow: 1px 1px 0 $boxshadow;
   }
 }
@@ -302,6 +303,7 @@ ul#superfish-account {
     a {
       @include superfish-user-account-link;
     }
+    padding-right: 1px;
   }
 }
 
@@ -309,8 +311,8 @@ ul#superfish-user-login {
   li {
     a {
       @include superfish-user-account-link;
-      border-radius: 5px;
     }
+    padding-right: 1px;
   }
 }
 

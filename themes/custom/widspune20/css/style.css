@@ -9080,6 +9080,10 @@ h2.block-title {
 }
 
 /* line 302, ../scss/component/pages/_default-pages.scss */
+ul#superfish-account li {
+  padding-right: 1px;
+}
+/* line 303, ../scss/component/pages/_default-pages.scss */
 ul#superfish-account li a {
   background-color: #00b140;
   border-color: #00b140;
@@ -9087,18 +9091,23 @@ ul#superfish-account li a {
 }
 /* line 294, ../scss/component/pages/_default-pages.scss */
 ul#superfish-account li a:hover, ul#superfish-account li a:focus {
+  background-color: #6CBE6F;
   text-shadow: 1px 1px 0 rgba(40, 40, 40, 0.5);
 }
 
-/* line 310, ../scss/component/pages/_default-pages.scss */
+/* line 311, ../scss/component/pages/_default-pages.scss */
+ul#superfish-user-login li {
+  padding-right: 1px;
+}
+/* line 312, ../scss/component/pages/_default-pages.scss */
 ul#superfish-user-login li a {
   background-color: #00b140;
   border-color: #00b140;
   color: #fff;
-  border-radius: 5px;
 }
 /* line 294, ../scss/component/pages/_default-pages.scss */
 ul#superfish-user-login li a:hover, ul#superfish-user-login li a:focus {
+  background-color: #6CBE6F;
   text-shadow: 1px 1px 0 rgba(40, 40, 40, 0.5);
 }
 
