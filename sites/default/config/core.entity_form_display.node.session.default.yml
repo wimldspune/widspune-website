@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.session.field_blog
     - field.field.node.session.field_date
     - field.field.node.session.field_event_year
+    - field.field.node.session.field_flickr_photo_gallary
     - field.field.node.session.field_footer_text
     - field.field.node.session.field_highlight_video
     - field.field.node.session.field_photo_gallery
@@ -16,11 +17,9 @@ dependencies:
     - field.field.node.session.field_session_venue
     - field.field.node.session.field_speakers
     - field.field.node.session.field_venue
-    - image.style.thumbnail
     - node.type.session
   module:
     - datetime_range
-    - image
     - paragraphs
     - path
     - text
@@ -77,6 +76,14 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
+  field_flickr_photo_gallary:
+    weight: 11
+    settings:
+      rows: 2
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
   field_footer_text:
     weight: 17
     settings:
@@ -90,14 +97,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: video_embed_field_textfield
-    region: content
-  field_photo_gallery:
-    weight: 11
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
-    third_party_settings: {  }
-    type: image_image
     region: content
   field_prerequisite:
     weight: 10
@@ -182,4 +181,5 @@ content:
     region: content
     third_party_settings: {  }
 hidden:
+  field_photo_gallery: true
   field_venue: true

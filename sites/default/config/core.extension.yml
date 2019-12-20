@@ -29,6 +29,7 @@ module:
   filter: 0
   flickr: 0
   flickr_api: 0
+  flickr_colorbox: 0
   flickr_filter: 0
   help: 0
   history: 0

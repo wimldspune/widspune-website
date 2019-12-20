@@ -9817,64 +9817,57 @@ ul#superfish-user-login li a:hover, ul#superfish-user-login li a:focus {
   max-width: 1300px;
   margin: 0 auto;
 }
-/* line 142, ../scss/component/pages/_event_page.scss */
-.page-container .photo-gallery h2.heading {
-  margin: 30px 0;
-  color: #00b140;
-  font-size: 30px;
-  text-align: center;
-}
-/* line 149, ../scss/component/pages/_event_page.scss */
+/* line 143, ../scss/component/pages/_event_page.scss */
 .page-container .photo-gallery .field--items .field--item {
   margin: 15px 0;
 }
-/* line 151, ../scss/component/pages/_event_page.scss */
+/* line 145, ../scss/component/pages/_event_page.scss */
 .page-container .photo-gallery .field--items .field--item img {
   box-shadow: 0px 0px 8px 0px #484545;
   border: 1px solid #fff;
 }
-/* line 158, ../scss/component/pages/_event_page.scss */
+/* line 152, ../scss/component/pages/_event_page.scss */
 .page-container .middle-section {
   max-width: 1300px;
   margin: 10px auto;
 }
-/* line 161, ../scss/component/pages/_event_page.scss */
+/* line 155, ../scss/component/pages/_event_page.scss */
 .page-container .middle-section .heading {
   margin: 30px 0;
   color: #00b140;
   font-size: 30px;
 }
-/* line 167, ../scss/component/pages/_event_page.scss */
+/* line 161, ../scss/component/pages/_event_page.scss */
 .page-container .spacing {
   margin-bottom: 40px;
 }
-/* line 172, ../scss/component/pages/_event_page.scss */
+/* line 166, ../scss/component/pages/_event_page.scss */
 .page-container .other-information .row {
   max-width: 1300px;
   margin: 20px auto;
   padding: 20px;
 }
-/* line 179, ../scss/component/pages/_event_page.scss */
+/* line 173, ../scss/component/pages/_event_page.scss */
 .page-container .blog_outer .field--item {
   width: 33%;
   padding: 0 15px;
   float: left;
 }
-/* line 183, ../scss/component/pages/_event_page.scss */
+/* line 177, ../scss/component/pages/_event_page.scss */
 .page-container .blog_outer .field--item article {
   box-shadow: 2px 2px 6px #ccc;
   padding: 15px;
 }
-/* line 187, ../scss/component/pages/_event_page.scss */
+/* line 181, ../scss/component/pages/_event_page.scss */
 .page-container .blog_outer .field--item h3 {
   font-size: 22px;
   color: #3e3e3e;
 }
-/* line 190, ../scss/component/pages/_event_page.scss */
+/* line 184, ../scss/component/pages/_event_page.scss */
 .page-container .blog_outer .field--item h3 a, .page-container .blog_outer .field--item h3 a:hover, .page-container .blog_outer .field--item h3 a:active {
   color: #3e3e3e;
 }
-/* line 194, ../scss/component/pages/_event_page.scss */
+/* line 188, ../scss/component/pages/_event_page.scss */
 .page-container .blog_outer .field--item .field--name-body {
   width: 100%;
   padding: 0;

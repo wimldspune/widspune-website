@@ -1,0 +1,19 @@
+uuid: ea7f739b-70fb-4d1d-9174-5a9a04fbc0cd
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_flickr_photo_gallary
+field_name: field_flickr_photo_gallary
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

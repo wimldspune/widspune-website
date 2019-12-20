@@ -1,0 +1,21 @@
+uuid: abd0ba85-235a-4a53-952a-fb9cb0602791
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_flickr_photo_gallary
+    - node.type.session
+  module:
+    - text
+id: node.session.field_flickr_photo_gallary
+field_name: field_flickr_photo_gallary
+entity_type: node
+bundle: session
+label: 'Photo Gallary'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

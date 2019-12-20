@@ -1,0 +1,21 @@
+{%
+  set field_classes = [
+  'flickr-photo',
+  style_name,
+  'field--item',
+  'col-md-4',
+  'col-sm-4',
+  'box-shadow',
+]
+%}
+{% if photo %}
+  <div{{attributes.addClass(field_classes)}} style="max-width: {{ width }}px;">
+    <a href = '{{ photo_image_large }}'  class="colorbox" {% if parent %} data-colorbox-gallery="flickr-{{ parent }}" {% endif %}>
+      {{ photo }}
+    </a>
+
+    {% if caption %}
+      {{ caption_data }}
+    {% endif %}
+  </div>
+{% endif %}
