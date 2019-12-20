@@ -12,7 +12,7 @@ dependencies:
 id: widspune20_aboutus
 theme: widspune20
 region: content
-weight: -10
+weight: -16
 provider: null
 plugin: 'block_content:349fff0e-920c-406a-ad49-616d72984670'
 settings:

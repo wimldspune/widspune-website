@@ -1,0 +1,25 @@
+uuid: b54c3fb1-b937-4b95-8a99-6c1f3735ec35
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - widspune20
+id: pagetitle
+theme: widspune20
+region: content
+weight: -15
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title Custom'
+  provider: core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: /widspune/sponser-us
+    negate: false
+    context_mapping: {  }
