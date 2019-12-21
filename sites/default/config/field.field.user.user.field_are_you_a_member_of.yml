@@ -1,0 +1,30 @@
+uuid: a47d8463-d9b6-4301-a91c-2f37d35ee450
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_are_you_a_member_of
+    - taxonomy.vocabulary.are_you_a_member_of
+  module:
+    - user
+id: user.user.field_are_you_a_member_of
+field_name: field_are_you_a_member_of
+entity_type: user
+bundle: user
+label: 'Are you a member of'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      are_you_a_member_of: are_you_a_member_of
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

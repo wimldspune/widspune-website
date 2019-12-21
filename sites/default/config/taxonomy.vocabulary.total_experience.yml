@@ -1,0 +1,8 @@
+uuid: 667f24f0-3760-4a06-b0f7-f7802d039254
+langcode: en
+status: true
+dependencies: {  }
+name: 'Total Experience'
+vid: total_experience
+description: 'Total Experience'
+weight: 0

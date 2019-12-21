@@ -1,8 +1,9 @@
-uuid: fc5a1e46-abb3-4ad9-9e8a-6061ca64c046
+uuid: 338d443e-e302-4ee0-96cc-85833e06b227
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_form_mode.user.register
     - field.field.user.user.field_address
     - field.field.user.user.field_age
     - field.field.user.user.field_are_you_a_member_of
@@ -32,17 +33,16 @@ dependencies:
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
-    - datetime
     - image
     - link
     - text
     - user
 _core:
   default_config_hash: K-1rBM8mTIkFp9RqOC2tMRUukOQ1xbRCfSKK8dEddnA
-id: user.user.default
+id: user.user.register
 targetEntityType: user
 bundle: user
-mode: default
+mode: register
 content:
   account:
     weight: 1
@@ -50,25 +50,25 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_age:
-    weight: 23
+    type: entity_reference_autocomplete
+    weight: 6
+    region: content
     settings:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: entity_reference_autocomplete
-    region: content
   field_are_you_a_member_of:
-    weight: 26
+    type: entity_reference_autocomplete
+    weight: 12
+    region: content
     settings:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: entity_reference_autocomplete
-    region: content
   field_bio:
-    weight: 7
+    weight: 17
     settings:
       rows: 5
       placeholder: ''
@@ -76,29 +76,15 @@ content:
     type: text_textarea
     region: content
   field_com_org_uni:
-    weight: 22
+    type: entity_reference_autocomplete
+    weight: 7
+    region: content
     settings:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: entity_reference_autocomplete
-    region: content
   field_designation:
-    weight: 9
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
-  field_dob:
-    weight: 2
-    settings: {  }
-    third_party_settings: {  }
-    type: datetime_default
-    region: content
-  field_education:
     weight: 8
     settings:
       size: 60
@@ -106,8 +92,8 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
-  field_exp_ds:
-    weight: 11
+  field_education:
+    weight: 5
     settings:
       size: 60
       placeholder: ''
@@ -115,44 +101,38 @@ content:
     type: string_textfield
     region: content
   field_exp_in_data_science:
-    weight: 25
+    type: entity_reference_autocomplete
+    weight: 10
+    region: content
     settings:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: entity_reference_autocomplete
-    region: content
   field_full_name:
+    type: string_textfield
     weight: 0
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_gender:
-    weight: 3
+    weight: 4
     settings: {  }
     third_party_settings: {  }
-    type: options_select
+    type: options_buttons
     region: content
   field_linkedin_profile:
-    weight: 17
+    weight: 15
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
     type: link_default
     region: content
-  field_member_of:
-    weight: 12
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
-    region: content
   field_mobile_number:
-    weight: 4
+    weight: 2
     settings:
       size: 60
       placeholder: ''
@@ -161,47 +141,32 @@ content:
     region: content
   field_photo_with_frame:
     type: image_image
-    weight: 20
+    weight: 18
     region: content
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
   field_promotion_source:
-    weight: 15
+    weight: 11
     settings:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete
-    region: content
-  field_speaker_order:
-    type: number
-    weight: 18
-    region: content
-    settings:
-      placeholder: ''
-    third_party_settings: {  }
-  field_total_exp:
-    weight: 10
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
     region: content
   field_total_experience:
-    weight: 24
+    type: entity_reference_autocomplete
+    weight: 9
+    region: content
     settings:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: entity_reference_autocomplete
-    region: content
   field_user_phone_type:
-    weight: 16
+    weight: 14
     settings:
       match_operator: CONTAINS
       size: 60
@@ -210,28 +175,15 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_user_remark:
-    weight: 13
+    weight: 16
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
     type: string_textarea
     region: content
-  field_volunteer_nature:
-    weight: 14
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
-    region: content
-  field_volunteer_order:
-    type: number
-    weight: 19
-    region: content
-    settings:
-      placeholder: ''
-    third_party_settings: {  }
   field_whatsapp_number:
-    weight: 5
+    weight: 3
     settings:
       size: 60
       placeholder: ''
@@ -244,12 +196,19 @@ content:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
-    weight: 6
+    weight: 13
     region: content
 hidden:
   contact: true
   field_address: true
+  field_dob: true
+  field_exp_ds: true
+  field_member_of: true
   field_participation_year: true
+  field_speaker_order: true
+  field_total_exp: true
+  field_volunteer_nature: true
+  field_volunteer_order: true
   language: true
   path: true
   timezone: true

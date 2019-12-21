@@ -1,0 +1,30 @@
+uuid: b5eda22a-232f-4c77-842a-9115e7bd3d76
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_total_experience
+    - taxonomy.vocabulary.total_experience
+  module:
+    - user
+id: user.user.field_total_experience
+field_name: field_total_experience
+entity_type: user
+bundle: user
+label: 'Total Experience'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      total_experience: total_experience
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

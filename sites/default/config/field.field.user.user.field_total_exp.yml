@@ -10,7 +10,7 @@ id: user.user.field_total_exp
 field_name: field_total_exp
 entity_type: user
 bundle: user
-label: 'Total Experience'
+label: 'Total Experience Text (Deprecated)'
 description: ''
 required: false
 translatable: false

@@ -1,0 +1,20 @@
+uuid: 5178ce38-a2b8-4cc7-ad33-fe18bf4904e3
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+    - user
+id: user.field_exp_in_data_science
+field_name: field_exp_in_data_science
+entity_type: user
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

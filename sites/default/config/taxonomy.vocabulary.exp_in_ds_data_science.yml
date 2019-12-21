@@ -1,0 +1,8 @@
+uuid: 18fe4da0-baa3-4af6-b597-ea60f427718f
+langcode: en
+status: true
+dependencies: {  }
+name: 'Experience in DS (Data Science)'
+vid: exp_in_ds_data_science
+description: 'Experience in DS (Data Science)'
+weight: 0

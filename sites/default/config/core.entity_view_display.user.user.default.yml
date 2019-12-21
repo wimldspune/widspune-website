@@ -4,11 +4,16 @@ status: true
 dependencies:
   config:
     - field.field.user.user.field_address
+    - field.field.user.user.field_age
+    - field.field.user.user.field_are_you_a_member_of
     - field.field.user.user.field_bio
+    - field.field.user.user.field_com_org_uni
     - field.field.user.user.field_designation
     - field.field.user.user.field_dob
     - field.field.user.user.field_education
     - field.field.user.user.field_exp_ds
+    - field.field.user.user.field_exp_in_data_science
+    - field.field.user.user.field_full_name
     - field.field.user.user.field_gender
     - field.field.user.user.field_linkedin_profile
     - field.field.user.user.field_member_of
@@ -18,6 +23,7 @@ dependencies:
     - field.field.user.user.field_promotion_source
     - field.field.user.user.field_speaker_order
     - field.field.user.user.field_total_exp
+    - field.field.user.user.field_total_experience
     - field.field.user.user.field_user_phone_type
     - field.field.user.user.field_user_remark
     - field.field.user.user.field_volunteer_nature
@@ -47,12 +53,36 @@ content:
     third_party_settings: {  }
     type: address_default
     region: content
+  field_age:
+    weight: 29
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_are_you_a_member_of:
+    weight: 32
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
   field_bio:
     weight: 21
     label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
+    region: content
+  field_com_org_uni:
+    weight: 28
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
     region: content
   field_designation:
     weight: 11
@@ -81,6 +111,22 @@ content:
     region: content
   field_exp_ds:
     weight: 13
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_exp_in_data_science:
+    weight: 31
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_full_name:
+    weight: 26
     label: above
     settings:
       link_to_entity: false
@@ -162,6 +208,14 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+    region: content
+  field_total_experience:
+    weight: 30
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
     region: content
   field_user_phone_type:
     weight: 19

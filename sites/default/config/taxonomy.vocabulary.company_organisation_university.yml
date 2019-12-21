@@ -1,0 +1,8 @@
+uuid: 6be5256e-64c5-4274-ada2-72471f6309ac
+langcode: en
+status: true
+dependencies: {  }
+name: 'Company / Organisation / University'
+vid: company_organisation_university
+description: 'Company / Organisation / University'
+weight: 0

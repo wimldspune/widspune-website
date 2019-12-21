@@ -1,0 +1,30 @@
+uuid: 3032ea93-24d4-4f0d-9f27-966bdc4dd024
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_age
+    - taxonomy.vocabulary.age_groups
+  module:
+    - user
+id: user.user.field_age
+field_name: field_age
+entity_type: user
+bundle: user
+label: Age
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      age_groups: age_groups
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

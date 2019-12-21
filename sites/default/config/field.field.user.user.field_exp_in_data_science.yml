@@ -1,0 +1,30 @@
+uuid: 92df58d2-0d17-41fc-aa96-65fbed416c16
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_exp_in_data_science
+    - taxonomy.vocabulary.exp_in_ds_data_science
+  module:
+    - user
+id: user.user.field_exp_in_data_science
+field_name: field_exp_in_data_science
+entity_type: user
+bundle: user
+label: 'Experience in DS (Data Science)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      exp_in_ds_data_science: exp_in_ds_data_science
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

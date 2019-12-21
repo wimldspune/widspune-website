@@ -1,0 +1,20 @@
+uuid: d54cebdd-103b-478c-bf4b-27206a76f981
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+    - user
+id: user.field_are_you_a_member_of
+field_name: field_are_you_a_member_of
+entity_type: user
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
