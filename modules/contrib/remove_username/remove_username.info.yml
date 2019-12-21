@@ -1,0 +1,12 @@
+name: Remove username field
+description: Elimitates username and copies email into the username field.
+package: User
+type: module
+# version: 1.0
+# core: 8.x
+
+# Information added by Drupal.org packaging script on 2018-08-02
+version: '8.x-1.0'
+core: '8.x'
+project: 'remove_username'
+datestamp: 1533214389
