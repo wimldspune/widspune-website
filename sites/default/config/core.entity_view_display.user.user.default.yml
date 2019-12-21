@@ -14,11 +14,14 @@ dependencies:
     - field.field.user.user.field_member_of
     - field.field.user.user.field_mobile_number
     - field.field.user.user.field_participation_year
+    - field.field.user.user.field_photo_with_frame
     - field.field.user.user.field_promotion_source
+    - field.field.user.user.field_speaker_order
     - field.field.user.user.field_total_exp
     - field.field.user.user.field_user_phone_type
     - field.field.user.user.field_user_remark
     - field.field.user.user.field_volunteer_nature
+    - field.field.user.user.field_volunteer_order
     - field.field.user.user.field_whatsapp_number
     - field.field.user.user.user_picture
     - image.style.thumbnail
@@ -126,6 +129,15 @@ content:
     third_party_settings: {  }
     type: entity_reference_label
     region: content
+  field_photo_with_frame:
+    weight: 23
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
   field_promotion_source:
     weight: 18
     label: above
@@ -133,6 +145,15 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
+    region: content
+  field_speaker_order:
+    weight: 24
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
     region: content
   field_total_exp:
     weight: 12
@@ -163,6 +184,15 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: list_default
+    region: content
+  field_volunteer_order:
+    weight: 25
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
     region: content
   field_whatsapp_number:
     weight: 7

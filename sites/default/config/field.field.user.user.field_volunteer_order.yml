@@ -1,0 +1,24 @@
+uuid: ac323917-909c-47d3-b01d-32fdbc9ae51a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_volunteer_order
+  module:
+    - user
+id: user.user.field_volunteer_order
+field_name: field_volunteer_order
+entity_type: user
+bundle: user
+label: 'Volunteer Order'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

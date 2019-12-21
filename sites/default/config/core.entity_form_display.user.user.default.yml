@@ -14,11 +14,14 @@ dependencies:
     - field.field.user.user.field_member_of
     - field.field.user.user.field_mobile_number
     - field.field.user.user.field_participation_year
+    - field.field.user.user.field_photo_with_frame
     - field.field.user.user.field_promotion_source
+    - field.field.user.user.field_speaker_order
     - field.field.user.user.field_total_exp
     - field.field.user.user.field_user_phone_type
     - field.field.user.user.field_user_remark
     - field.field.user.user.field_volunteer_nature
+    - field.field.user.user.field_volunteer_order
     - field.field.user.user.field_whatsapp_number
     - field.field.user.user.user_picture
     - image.style.thumbnail
@@ -106,6 +109,14 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
+  field_photo_with_frame:
+    weight: 17
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
   field_promotion_source:
     weight: 14
     settings:
@@ -114,6 +125,13 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete
+    region: content
+  field_speaker_order:
+    weight: 18
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
     region: content
   field_total_exp:
     weight: 9
@@ -145,6 +163,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: options_select
+    region: content
+  field_volunteer_order:
+    weight: 19
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
     region: content
   field_whatsapp_number:
     weight: 4

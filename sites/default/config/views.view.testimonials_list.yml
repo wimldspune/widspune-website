@@ -437,7 +437,7 @@ display:
         description: ''
         expanded: false
         parent: 'menu_link_content:f87b05b8-d019-4957-81cf-e69e326dd1b7'
-        weight: -46
+        weight: -48
         context: '0'
         menu_name: main
         enabled: true

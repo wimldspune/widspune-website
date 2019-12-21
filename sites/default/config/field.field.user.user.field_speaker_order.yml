@@ -1,0 +1,24 @@
+uuid: 1181f431-4a7d-4f3b-869b-9e212df5dcc8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_speaker_order
+  module:
+    - user
+id: user.user.field_speaker_order
+field_name: field_speaker_order
+entity_type: user
+bundle: user
+label: 'Speaker Order'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer
