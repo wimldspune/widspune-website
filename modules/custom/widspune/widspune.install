@@ -15,13 +15,35 @@ function widspune_update_8001(&$sandbox) {
   $query->condition('field_photo_with_frame', NULL, 'IS NULL');
   $query->condition('roles', 'volunteer');
   $query->sort('uid');
-  $pl_item_ids = $query->execute();
+  $uids = $query->execute();
 
-  $users = $user_storage->loadMultiple($pl_item_ids);
+  $users = $user_storage->loadMultiple($uids);
 
   foreach ($users as $user) {
     $user->set('status', 0);
     $user->save();
   }
+}
 
+/**
+ * Implements hook_update_N().
+ *
+ * Blocked users without frame image.
+ */
+function widspune_update_8002() {
+  $user_storage = \Drupal::entityTypeManager()->getStorage('user');
+
+  $query = $user_storage->getQuery();
+  $query->condition('field_full_name', NULL, 'IS NULL');
+  $query->condition('uid', [0,1], 'NOT IN');
+  $query->sort('uid');
+  $query->pager('5');
+  $uids = $query->execute();
+
+  $users = $user_storage->loadMultiple($uids);
+  /** @var \Drupal\user\UserInterface $user */
+  foreach ($users as $user) {
+    $user->set('field_full_name', $user->getDisplayName());
+    $user->save();
+  }
 }

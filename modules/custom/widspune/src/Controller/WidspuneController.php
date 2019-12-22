@@ -14,22 +14,24 @@ class WidspuneController extends ControllerBase {
    */
   public function build() {
 
-//    $entity_type_manager = \Drupal::service('entity_type.manager');
-//    $user_storage = $entity_type_manager->getStorage('user');
-//
-//    $query = $user_storage->getQuery();
+    $user_storage = \Drupal::entityTypeManager()->getStorage('user');
+
+    $query = $user_storage->getQuery();
 //    $query->condition('status', 1);
-//    $query->condition('field_photo_with_frame', NULL, 'IS NULL');
-//    $query->condition('roles', 'volunteer');
-//    $query->sort('uid');
-//    $pl_item_ids = $query->execute();
-//
-//    $users = $user_storage->loadMultiple($pl_item_ids);
-//
-//    foreach ($users as $user) {
-//      $user->set('status', 0);
-//      $user->save();
-//    }
+    $query->condition('field_full_name', NULL, 'IS NULL');
+    $query->condition('uid', [0,1], 'NOT IN');
+    $query->sort('uid');
+    $query->pager('5');
+    $pl_item_ids = $query->execute();
+    dsm(count($pl_item_ids));
+    dsm(($pl_item_ids));
+
+    $users = $user_storage->loadMultiple($pl_item_ids);
+    /** @var \Drupal\user\UserInterface $user */
+    foreach ($users as $user) {
+      $user->set('field_full_name', $user->getDisplayName());
+      $user->save();
+    }
 
     $build['content'] = [
       '#type' => 'item',
