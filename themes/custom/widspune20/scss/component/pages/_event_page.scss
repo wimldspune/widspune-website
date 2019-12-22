@@ -22,6 +22,10 @@
     padding: 0;
     .row {}
   }
+  .heading {
+    text-align: center;
+    margin: 15px 0;
+  }
 }
 
 .page-container {
@@ -152,17 +156,16 @@
   .middle-section {
     max-width: $default-max-width;
     margin:10px auto;
-    .heading{
-      margin: 30px 0;
-      color: #00b140;
-      font-size:30px
-    }
-    .wids-videos {
-      .field--items {
-        .offset-md-3 {
-          margin-left: 33.33333%;
-        }
-      }
+    //.heading{
+    //  margin: 30px 0;
+    //  color: #00b140;
+    //  font-size:30px;
+    //}
+  }
+
+  @media (min-width: $screen-lg-min) {
+    .wids-one-vid {
+      padding:0 20%;
     }
   }
   .spacing{
@@ -201,7 +204,3 @@
   }
 }
 
-
-.field--item.box-shadow.col-md-6.offset-md-3 {
-  margin-left: 33%;
-}

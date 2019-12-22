@@ -8,13 +8,11 @@
 ]
 %}
 
-{%
-  set col = [
-    'col-sm-12',
-  ]
-%}
-{% if items|length < 1 %}
-  {% set col = ['col-sm-6'] %}
+{% set col = 'wids-one-vid' %}
+{% set custom_style = "" %}
+{% if items|length > 1 %}
+  {% set col = 'col-sm-6' %}
+  {% set custom_style = '' %}
 {% endif %}
 
 {%
@@ -26,7 +24,7 @@
 
 <div{{ attributes.addClass(classes) }}>
   {% for item in items %}
-    <div{{ item.attributes.addClass(field_classes, col)}}>
+    <div{{ item.attributes.addClass(field_classes, col).setAttribute('style', custom_style) }}>
       <div class="video-info">
         {{ item.content }}
       </div>
