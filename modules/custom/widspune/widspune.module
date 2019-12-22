@@ -21,11 +21,13 @@ function widspune_form_user_form_alter(&$form, FormStateInterface $form_state, $
   $form['field_photo_with_frame']['#access'] = FALSE;
   $form['field_speaker_order']['#access'] = FALSE;
   $form['field_volunteer_order']['#access'] = FALSE;
+  $form['field_participation_year']['#access'] = FALSE;
 
   if ($user->id() == 1 || !empty($result)) {
     $form['field_bio']['#access'] = TRUE;
     $form['field_photo_with_frame']['#access'] = TRUE;
     $form['field_speaker_order']['#access'] = TRUE;
     $form['field_volunteer_order']['#access'] = TRUE;
+    $form['field_participation_year']['#access'] = TRUE;
   }
 }

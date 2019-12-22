@@ -124,6 +124,15 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
+  field_participation_year:
+    type: entity_reference_autocomplete
+    weight: 17
+    region: content
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   field_photo_with_frame:
     type: image_image
     weight: 14
@@ -132,11 +141,25 @@ content:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
+  field_speaker_order:
+    type: number
+    weight: 15
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
   field_total_experience:
     type: options_buttons
     weight: 9
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_volunteer_order:
+    type: number
+    weight: 16
+    region: content
+    settings:
+      placeholder: ''
     third_party_settings: {  }
   field_whatsapp_number:
     weight: 3
@@ -161,14 +184,11 @@ hidden:
   field_dob: true
   field_exp_ds: true
   field_member_of: true
-  field_participation_year: true
   field_promotion_source: true
-  field_speaker_order: true
   field_total_exp: true
   field_user_phone_type: true
   field_user_remark: true
   field_volunteer_nature: true
-  field_volunteer_order: true
   language: true
   path: true
   timezone: true
