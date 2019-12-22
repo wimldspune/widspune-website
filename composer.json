@@ -25,7 +25,9 @@
         "drupal/csv_importer": "^1.5",
         "drupal/bootstrap_layouts": "^5.1",
         "drupal/flickr": "^1.0@alpha",
-        "drupal/remove_username": "^1.0"
+        "drupal/remove_username": "^1.0",
+        "drupal/page_manager": "^4.0@beta",
+        "drupal/menu_link_attributes": "^1.0"
     },
     "replace": {
         "drupal/core": "^8"
