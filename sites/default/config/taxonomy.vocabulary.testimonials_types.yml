@@ -1,0 +1,8 @@
+uuid: 4dd47c1a-6115-4c02-9c76-9ff93a9700fc
+langcode: en
+status: true
+dependencies: {  }
+name: 'Testimonials Types'
+vid: testimonials_types
+description: ''
+weight: 0

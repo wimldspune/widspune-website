@@ -496,19 +496,7 @@ display:
           entity_type: user
           entity_field: roles
           plugin_id: user_roles
-      sorts:
-        field_volunteer_order_value:
-          id: field_volunteer_order_value
-          table: user__field_volunteer_order
-          field: field_volunteer_order_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          order: ASC
-          exposed: false
-          expose:
-            label: ''
-          plugin_id: standard
+      sorts: {  }
       title: Volunteer
       header: {  }
       footer: {  }

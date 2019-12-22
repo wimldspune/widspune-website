@@ -1,16 +1,16 @@
-uuid: 1dca9ee6-3616-4523-84c5-144f4a272452
+uuid: 332bd167-eb69-4c4a-83eb-dac62ca04553
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_sponsorship_details
-    - node.type.sponsor
-    - taxonomy.vocabulary.sponsorship_details
-id: node.sponsor.field_sponsorship_details
-field_name: field_sponsorship_details
+    - field.storage.node.field_testimonials_categoty
+    - node.type.testimonials
+    - taxonomy.vocabulary.testimonials_types
+id: node.testimonials.field_testimonials_categoty
+field_name: field_testimonials_categoty
 entity_type: node
-bundle: sponsor
-label: 'Sponsorship details'
+bundle: testimonials
+label: 'Testimonials categoty'
 description: ''
 required: false
 translatable: false
@@ -20,7 +20,7 @@ settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      sponsorship_details: sponsorship_details
+      testimonials_types: testimonials_types
     sort:
       field: name
       direction: asc
