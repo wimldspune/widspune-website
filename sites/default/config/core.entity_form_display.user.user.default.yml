@@ -50,7 +50,7 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_age:
-    weight: 23
+    weight: 22
     settings:
       match_operator: CONTAINS
       size: 60
@@ -59,7 +59,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_are_you_a_member_of:
-    weight: 26
+    weight: 25
     settings:
       match_operator: CONTAINS
       size: 60
@@ -76,7 +76,7 @@ content:
     type: text_textarea
     region: content
   field_com_org_uni:
-    weight: 22
+    weight: 21
     settings:
       match_operator: CONTAINS
       size: 60
@@ -115,7 +115,7 @@ content:
     type: string_textfield
     region: content
   field_exp_in_data_science:
-    weight: 25
+    weight: 24
     settings:
       match_operator: CONTAINS
       size: 60
@@ -159,6 +159,15 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
+  field_participation_year:
+    type: entity_reference_autocomplete
+    weight: 26
+    region: content
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   field_photo_with_frame:
     type: image_image
     weight: 20
@@ -192,7 +201,7 @@ content:
     type: string_textfield
     region: content
   field_total_experience:
-    weight: 24
+    weight: 23
     settings:
       match_operator: CONTAINS
       size: 60
@@ -249,7 +258,6 @@ content:
 hidden:
   contact: true
   field_address: true
-  field_participation_year: true
   language: true
   path: true
   timezone: true
