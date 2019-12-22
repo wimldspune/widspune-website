@@ -11,7 +11,7 @@ id: node.session.field_flickr_photo_gallary
 field_name: field_flickr_photo_gallary
 entity_type: node
 bundle: session
-label: 'Photo Gallary'
+label: 'Flickr Photo Gallery'
 description: ''
 required: false
 translatable: false

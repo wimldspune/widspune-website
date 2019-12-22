@@ -17,10 +17,12 @@ dependencies:
     - field.field.node.session.field_session_venue
     - field.field.node.session.field_speakers
     - field.field.node.session.field_venue
+    - image.style.four_column_image_style
     - node.type.session
   module:
     - datetime_range
     - entity_reference_revisions
+    - image
     - text
     - user
     - video_embed_field
@@ -95,6 +97,15 @@ content:
     third_party_settings: {  }
     type: video_embed_field_video
     region: content
+  field_photo_gallery:
+    type: image
+    weight: 13
+    region: content
+    label: above
+    settings:
+      image_style: four_column_image_style
+      image_link: ''
+    third_party_settings: {  }
   field_prerequisite:
     weight: 3
     label: hidden
@@ -133,5 +144,4 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
-  field_photo_gallery: true
   field_venue: true

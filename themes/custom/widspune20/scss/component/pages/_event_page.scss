@@ -157,6 +157,13 @@
       color: #00b140;
       font-size:30px
     }
+    .wids-videos {
+      .field--items {
+        .offset-md-3 {
+          margin-left: 33.33333%;
+        }
+      }
+    }
   }
   .spacing{
     margin-bottom:40px
@@ -192,4 +199,9 @@
       }
     }
   }
+}
+
+
+.field--item.box-shadow.col-md-6.offset-md-3 {
+  margin-left: 33%;
 }

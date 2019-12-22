@@ -1,0 +1,35 @@
+{%
+  set classes = [
+  'field',
+  'field--items',
+  'field--name-' ~ field_name|clean_class,
+  'field--type-' ~ field_type|clean_class,
+  'field--label-' ~ label_display,
+]
+%}
+
+{%
+  set col = [
+    'col-sm-6',
+  ]
+%}
+{% if items|length < 1 %}
+  {% set col = ['col-sm-6'] %}
+{% endif %}
+
+{%
+  set field_classes = [
+  'field--item',
+  'box-shadow',
+]
+%}
+
+<div{{ attributes.addClass(classes) }}>
+  {% for item in items %}
+    <div{{ item.attributes.addClass(field_classes, col)}}>
+      <div class="video-info">
+        {{ item.content }}
+      </div>
+    </div>
+  {% endfor %}
+</div>

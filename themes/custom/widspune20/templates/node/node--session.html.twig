@@ -81,84 +81,79 @@
   <section class="page-container">
     <h2 class="page-main-title"> {{ label }} </h2>
 
-    <div class="photo-gallery field--type-image">
-      {{ content.field_flickr_photo_gallary }}
-    </div>
+    {%if content.field_highlight_video %}
+      <div class="photo-gallery field--type-image">
+        <h3 class="heading">As they say, every picture has a story to tell!</h3>
+        {{ content.field_photo_gallery }}
+      </div>
+    {%endif%}
 
     <!-- blog section -->
     <div class="middle-section spacing" >
-      <div class="row">
+      <div class="row spacing wids-videos">
         <div class="col-sm-12">
-          <h3 class="heading">Experience the session through our film!</h3>
-          {%if content.field_highlight_video %}
-            {{ content.field_highlight_video }}
-          {%endif%}
-        </div>
-        <div class="row spacing">
-          <div class="col-sm-12">
-            <h4 class="heading">Learn more about High Impact Presentations through our informative blogs!</h4>
-          </div>
-          <div class="blog_outer">
-            {{ content.field_blog }}
-          </div>
+          <h4 class="heading">Experience the session through our film!</h4>
+            {%if content.field_highlight_video %}
+              {{ content.field_highlight_video }}
+            {%endif%}
         </div>
       </div>
     </div>
     <!--  -->
 
-    <div class="header-content-outer">
-      <div class="header-content">
-        <div class="col-md-6">
-          <h2 class="page-title"> {{ label }} </h2>
-          <div class="session-synopsis text-align-justify">
-            {{ content.body }}
-          </div>
-          <div class="agenda-section">
-            {{ content.field_agenda }}
-          </div>
-        </div>
-        <div class="col-md-6 green-patch">
-          <div class="event-speakers">
-            {% if node.field_speakers %}
-              {% for key,speaker in node.field_speakers %}
-                <div class="row box-shadow {{ (node.field_speakers|length > (key+1)) ? 'border-bottom' : '' }} ">
-                  <div class="col-sm-4 text-center founder-info">
-                    {%if speaker.entity.user_picture.entity.uri.value != "" %}
-                      <img src="{{ file_url(speaker.entity.user_picture.entity.uri.value) }}">
-                    {%endif%}
-                  </div>
-                  <div class="col-sm-8 founder-txt fs14">
-                    <h4>{{ speaker.entity.field_address.given_name }} {{ speaker.entity.field_address.family_name }}</h4>
-                    <p>{{ speaker.entity.field_designation.value }}</p>
-                  </div>
-                  <div class="col-sm-12">
-                    <div class="speaker_intro border-bottom clr-white fs14">
-                      {{ speaker.entity.field_user_remark.value }}
-                    </div>
-                  </div>
-                </div>
-              {% endfor %}
-            {% endif %}
-          </div>
-          <div class="location-outer">
-            <div class="col-sm-6 text-center">
-              <span class="icon event-date">img</span>
-              {{ content.field_date }}
-            </div>
-            <div class="col-sm-6 text-center">
-              <span class="icon location-icon">img</span>
-              {{ content.field_session_venue }}
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-12 event-logos">
-          {% if node.field_session_sponsor %}
-            {% for sponser in node.field_session_sponsor %}
-              <img src="{{ file_url(sponser.entity.field_logo.entity.uri.value) }}" class="img-responsive logos" />
-            {% endfor %}
-          {% endif %}
-        </div>
-      </div>
-    </div>
+{#    <div class="header-content-outer">#}
+{#      <div class="header-content">#}
+{#        <div class="col-md-6">#}
+{#          <h2 class="page-title"> {{ label }} </h2>#}
+{#          <div class="session-synopsis text-align-justify">#}
+{#            {{ content.body }}#}
+{#          </div>#}
+{#          <div class="agenda-section">#}
+{#            {{ content.field_agenda }}#}
+{#          </div>#}
+{#        </div>#}
+{#        <div class="col-md-6 green-patch">#}
+{#          <div class="event-speakers">#}
+{#            {% if node.field_speakers %}#}
+{#              {% for key,speaker in node.field_speakers %}#}
+{#                <div class="row box-shadow {{ (node.field_speakers|length > (key+1)) ? 'border-bottom' : '' }} ">#}
+{#                  <div class="col-sm-4 text-center founder-info">#}
+{#                    {%if speaker.entity.user_picture.entity.uri.value != "" %}#}
+{#                      <img src="{{ file_url(speaker.entity.user_picture.entity.uri.value) }}">#}
+{#                    {%endif%}#}
+{#                  </div>#}
+{#                  <div class="col-sm-8 founder-txt fs14">#}
+{#                    <h4>{{ speaker.entity.field_address.given_name }} {{ speaker.entity.field_address.family_name }}</h4>#}
+{#                    <p>{{ speaker.entity.field_designation.value }}</p>#}
+{#                  </div>#}
+{#                  <div class="col-sm-12">#}
+{#                    <div class="speaker_intro border-bottom clr-white fs14">#}
+{#                      {{ speaker.entity.field_user_remark.value }}#}
+{#                    </div>#}
+{#                  </div>#}
+{#                </div>#}
+{#              {% endfor %}#}
+{#            {% endif %}#}
+{#          </div>#}
+{#          <div class="location-outer">#}
+{#            <div class="col-sm-6 text-center">#}
+{#              <span class="icon event-date">img</span>#}
+{#              {{ content.field_date }}#}
+{#            </div>#}
+{#            <div class="col-sm-6 text-center">#}
+{#              <span class="icon location-icon">img</span>#}
+{#              {{ content.field_session_venue }}#}
+{#            </div>#}
+{#          </div>#}
+{#        </div>#}
+{#        <div class="col-sm-12 event-logos">#}
+{#          {% if node.field_session_sponsor %}#}
+{#            {% for sponser in node.field_session_sponsor %}#}
+{#              <img src="{{ file_url(sponser.entity.field_logo.entity.uri.value) }}" class="img-responsive logos" />#}
+{#            {% endfor %}#}
+{#          {% endif %}#}
+{#        </div>#}
+{#      </div>#}
+{#    </div>#}
   </section>
 </article>

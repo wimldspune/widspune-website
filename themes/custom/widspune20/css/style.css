@@ -9837,41 +9837,50 @@ ul#superfish-user-login li a:hover, ul#superfish-user-login li a:focus {
   color: #00b140;
   font-size: 30px;
 }
-/* line 161, ../scss/component/pages/_event_page.scss */
+/* line 162, ../scss/component/pages/_event_page.scss */
+.page-container .middle-section .wids-videos .field--items .offset-md-3 {
+  margin-left: 33.33333%;
+}
+/* line 168, ../scss/component/pages/_event_page.scss */
 .page-container .spacing {
   margin-bottom: 40px;
 }
-/* line 166, ../scss/component/pages/_event_page.scss */
+/* line 173, ../scss/component/pages/_event_page.scss */
 .page-container .other-information .row {
   max-width: 1300px;
   margin: 20px auto;
   padding: 20px;
 }
-/* line 173, ../scss/component/pages/_event_page.scss */
+/* line 180, ../scss/component/pages/_event_page.scss */
 .page-container .blog_outer .field--item {
   width: 33%;
   padding: 0 15px;
   float: left;
 }
-/* line 177, ../scss/component/pages/_event_page.scss */
+/* line 184, ../scss/component/pages/_event_page.scss */
 .page-container .blog_outer .field--item article {
   box-shadow: 2px 2px 6px #ccc;
   padding: 15px;
 }
-/* line 181, ../scss/component/pages/_event_page.scss */
+/* line 188, ../scss/component/pages/_event_page.scss */
 .page-container .blog_outer .field--item h3 {
   font-size: 22px;
   color: #3e3e3e;
 }
-/* line 184, ../scss/component/pages/_event_page.scss */
+/* line 191, ../scss/component/pages/_event_page.scss */
 .page-container .blog_outer .field--item h3 a, .page-container .blog_outer .field--item h3 a:hover, .page-container .blog_outer .field--item h3 a:active {
   color: #3e3e3e;
 }
-/* line 188, ../scss/component/pages/_event_page.scss */
+/* line 195, ../scss/component/pages/_event_page.scss */
 .page-container .blog_outer .field--item .field--name-body {
   width: 100%;
   padding: 0;
   float: none;
+}
+
+/* line 205, ../scss/component/pages/_event_page.scss */
+.field--item.box-shadow.col-md-6.offset-md-3 {
+  margin-left: 33%;
 }
 
 /* line 5, ../scss/component/pages/_speakers_page.scss */
