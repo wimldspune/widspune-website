@@ -9905,13 +9905,17 @@ ul#superfish-user-login li a:hover, ul#superfish-user-login li a:focus {
   margin: 0;
   font-weight: 500;
 }
-/* line 34, ../scss/component/pages/_speakers_page.scss */
+/* line 24, ../scss/component/pages/_speakers_page.scss */
+.wids-user-list .view-content .views-row .views-field .volunteers-info .caption span {
+  font-size: 12px;
+}
+/* line 29, ../scss/component/pages/_speakers_page.scss */
 .wids-user-list .view-content .views-row .views-field .volunteers-info .image-volunteer {
   background-image: url(../images/empty-volunteer-frame.png);
   background-size: cover;
   height: 266px;
 }
-/* line 38, ../scss/component/pages/_speakers_page.scss */
+/* line 33, ../scss/component/pages/_speakers_page.scss */
 .wids-user-list .view-content .views-row .views-field .volunteers-info .image-volunteer img {
   height: auto;
   text-align: center;
@@ -9922,13 +9926,13 @@ ul#superfish-user-login li a:hover, ul#superfish-user-login li a:focus {
   margin: 0 auto;
   transform: translate(-50%, -50%);
 }
-/* line 50, ../scss/component/pages/_speakers_page.scss */
+/* line 45, ../scss/component/pages/_speakers_page.scss */
 .wids-user-list .view-content .views-row .views-field .volunteers-info .image-speaker {
   background-image: url(../images/empty-speaker-frame.png);
   background-size: cover;
   height: 245px;
 }
-/* line 54, ../scss/component/pages/_speakers_page.scss */
+/* line 49, ../scss/component/pages/_speakers_page.scss */
 .wids-user-list .view-content .views-row .views-field .volunteers-info .image-speaker img {
   height: auto;
   text-align: center;
@@ -9940,13 +9944,13 @@ ul#superfish-user-login li a:hover, ul#superfish-user-login li a:focus {
   transform: translate(-50%, -45%);
 }
 @media (max-width: 768px) {
-  /* line 54, ../scss/component/pages/_speakers_page.scss */
+  /* line 49, ../scss/component/pages/_speakers_page.scss */
   .wids-user-list .view-content .views-row .views-field .volunteers-info .image-speaker img {
     top: 40%;
     transform: translate(-50%, -50%);
   }
 }
-/* line 69, ../scss/component/pages/_speakers_page.scss */
+/* line 64, ../scss/component/pages/_speakers_page.scss */
 .wids-user-list .view-content .views-row .views-field .volunteers-info a.ln-link {
   font-size: 14px;
   margin: 5px 0 15px;
