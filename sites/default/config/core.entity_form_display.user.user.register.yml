@@ -55,14 +55,8 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_are_you_a_member_of:
-    type: options_buttons
-    weight: 11
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   field_bio:
-    weight: 14
+    weight: 13
     settings:
       rows: 5
       placeholder: ''
@@ -115,7 +109,7 @@ content:
     type: options_buttons
     region: content
   field_linkedin_profile:
-    weight: 13
+    weight: 12
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -132,7 +126,7 @@ content:
     region: content
   field_photo_with_frame:
     type: image_image
-    weight: 15
+    weight: 14
     region: content
     settings:
       progress_indicator: throbber
@@ -158,11 +152,12 @@ content:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
-    weight: 12
+    weight: 11
     region: content
 hidden:
   contact: true
   field_address: true
+  field_are_you_a_member_of: true
   field_dob: true
   field_exp_ds: true
   field_member_of: true

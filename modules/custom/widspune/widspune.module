@@ -4,7 +4,24 @@
  * @file
  * Primary module hooks for WiDS Pune Core module.
  *
- * @DCG
- * This file is no longer required in Drupal 8.
- * @see https://www.drupal.org/node/2217931
  */
+
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function widspune_form_user_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  $user = \Drupal::currentUser();
+  $check_against = ['administrator1', 'editor2'];
+  $roles = $user->getRoles();
+  $result = array_intersect($check_against, $roles);
+
+  $form['field_bio']['#access'] = FALSE;
+  $form['field_photo_with_frame']['#access'] = FALSE;
+
+  if ($user->id() == 1 || !empty($result)) {
+    $form['field_bio']['#access'] = TRUE;
+    $form['field_photo_with_frame']['#access'] = TRUE;
+  }
+}
