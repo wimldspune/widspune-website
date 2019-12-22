@@ -13,7 +13,7 @@ use Drupal\Core\Form\FormStateInterface;
  */
 function widspune_form_user_form_alter(&$form, FormStateInterface $form_state, $form_id) {
   $user = \Drupal::currentUser();
-  $check_against = ['administrator1', 'editor2'];
+  $check_against = ['administrator', 'editor'];
   $roles = $user->getRoles();
   $result = array_intersect($check_against, $roles);
 
