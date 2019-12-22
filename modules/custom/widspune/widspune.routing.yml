@@ -6,3 +6,11 @@ widspune.sponser_us:
     type: 'sponsor'
   requirements:
     _permission: 'access wids become sponsor'
+
+widspune.test:
+  path: '/admin/widspune'
+  defaults:
+    _title: 'Test'
+    _controller: '\Drupal\widspune\Controller\WidspuneController::build'
+  requirements:
+    _permission: 'access content'
