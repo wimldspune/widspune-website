@@ -8781,41 +8781,42 @@ h1, h2, h3, h4, h5 {
   font-style: normal;
   font-weight: 700;
   letter-spacing: 1px;
+  clear: both;
 }
 
-/* line 15, ../scss/component/pages/_default-pages.scss */
+/* line 16, ../scss/component/pages/_default-pages.scss */
 h2 {
   font-size: 30px;
   color: #3e3e3e;
   padding: 10px 0;
 }
 @media (min-width: 1200px) {
-  /* line 15, ../scss/component/pages/_default-pages.scss */
+  /* line 16, ../scss/component/pages/_default-pages.scss */
   h2 {
     padding: 20px 0;
   }
 }
 
-/* line 24, ../scss/component/pages/_default-pages.scss */
+/* line 25, ../scss/component/pages/_default-pages.scss */
 a, a:hover, a:focus, a:active {
   color: #00b140;
   text-decoration: none;
 }
 
-/* line 29, ../scss/component/pages/_default-pages.scss */
+/* line 30, ../scss/component/pages/_default-pages.scss */
 h1.page-header {
   color: #00b140;
   font-size: 50px;
 }
 
-/* line 34, ../scss/component/pages/_default-pages.scss */
+/* line 35, ../scss/component/pages/_default-pages.scss */
 h2.block-title {
   color: #00b140;
   font-size: 30px;
   text-align: center;
 }
 @media (min-width: 1200px) {
-  /* line 34, ../scss/component/pages/_default-pages.scss */
+  /* line 35, ../scss/component/pages/_default-pages.scss */
   h2.block-title {
     font-size: 50px;
     text-align: left;
@@ -8823,16 +8824,16 @@ h2.block-title {
   }
 }
 
-/* line 45, ../scss/component/pages/_default-pages.scss */
+/* line 46, ../scss/component/pages/_default-pages.scss */
 .main-container {
   margin: 30px auto 30px;
 }
-/* line 48, ../scss/component/pages/_default-pages.scss */
+/* line 49, ../scss/component/pages/_default-pages.scss */
 .main-container .row {
   margin: 0 20px;
 }
 
-/* line 54, ../scss/component/pages/_default-pages.scss */
+/* line 55, ../scss/component/pages/_default-pages.scss */
 .region-content form {
   max-width: 550px;
   margin: 20px auto 0;
@@ -8841,42 +8842,42 @@ h2.block-title {
   box-shadow: 0 0 6px #ccc;
 }
 
-/* line 63, ../scss/component/pages/_default-pages.scss */
+/* line 64, ../scss/component/pages/_default-pages.scss */
 .navbar {
   margin-bottom: 0;
   border: none;
   background-color: transparent;
   max-width: 1300px;
 }
-/* line 68, ../scss/component/pages/_default-pages.scss */
+/* line 69, ../scss/component/pages/_default-pages.scss */
 .navbar .navbar-header {
   width: 100%;
   padding: 0;
 }
-/* line 72, ../scss/component/pages/_default-pages.scss */
+/* line 73, ../scss/component/pages/_default-pages.scss */
 .navbar .navbar-header .region-navigation nav {
   float: right;
   padding: 25px 0;
 }
 @media (max-width: 768px) {
-  /* line 72, ../scss/component/pages/_default-pages.scss */
+  /* line 73, ../scss/component/pages/_default-pages.scss */
   .navbar .navbar-header .region-navigation nav {
     padding: 0;
   }
-  /* line 75, ../scss/component/pages/_default-pages.scss */
+  /* line 76, ../scss/component/pages/_default-pages.scss */
   .navbar .navbar-header .region-navigation nav ul {
     margin: 0;
   }
-  /* line 77, ../scss/component/pages/_default-pages.scss */
+  /* line 78, ../scss/component/pages/_default-pages.scss */
   .navbar .navbar-header .region-navigation nav ul li {
     display: inline-block !important;
   }
-  /* line 79, ../scss/component/pages/_default-pages.scss */
+  /* line 80, ../scss/component/pages/_default-pages.scss */
   .navbar .navbar-header .region-navigation nav ul li a {
     padding: 10px 15px !important;
   }
 }
-/* line 89, ../scss/component/pages/_default-pages.scss */
+/* line 90, ../scss/component/pages/_default-pages.scss */
 .navbar .navbar-header .region-navigation nav ul li a {
   font-family: 'Montserrat';
   font-style: normal;
@@ -8888,24 +8889,24 @@ h2.block-title {
   letter-spacing: 0.05em;
   color: #3e3e3e;
 }
-/* line 103, ../scss/component/pages/_default-pages.scss */
+/* line 104, ../scss/component/pages/_default-pages.scss */
 .navbar .navbar-header .region-navigation .block-superfish {
   float: right;
   padding: 25px 0px;
   width: auto;
 }
 @media (max-width: 768px) {
-  /* line 103, ../scss/component/pages/_default-pages.scss */
+  /* line 104, ../scss/component/pages/_default-pages.scss */
   .navbar .navbar-header .region-navigation .block-superfish {
     float: none;
     margin-left: 20px;
   }
 }
-/* line 112, ../scss/component/pages/_default-pages.scss */
+/* line 113, ../scss/component/pages/_default-pages.scss */
 .navbar .navbar-header .region-navigation .block-superfish .sf-accordion-toggle a:before {
   content: "\f0c9";
 }
-/* line 115, ../scss/component/pages/_default-pages.scss */
+/* line 116, ../scss/component/pages/_default-pages.scss */
 .navbar .navbar-header .region-navigation .block-superfish .sf-accordion-toggle a {
   border: 1px solid #ddd;
   border-radius: 4px;
@@ -8917,11 +8918,11 @@ h2.block-title {
   padding: 8px 12px;
   font-size: 20px;
 }
-/* line 125, ../scss/component/pages/_default-pages.scss */
+/* line 126, ../scss/component/pages/_default-pages.scss */
 .navbar .navbar-header .region-navigation .block-superfish .sf-accordion-toggle a span {
   display: none;
 }
-/* line 132, ../scss/component/pages/_default-pages.scss */
+/* line 133, ../scss/component/pages/_default-pages.scss */
 .navbar .navbar-header .region-navigation .block-superfish ul li a {
   font-family: 'Montserrat';
   font-style: normal;
@@ -8933,197 +8934,197 @@ h2.block-title {
   letter-spacing: 0.05em;
   color: #3e3e3e;
 }
-/* line 142, ../scss/component/pages/_default-pages.scss */
+/* line 143, ../scss/component/pages/_default-pages.scss */
 .navbar .navbar-header .region-navigation .block-superfish ul li a .sf-sub-indicator {
   font-size: 9px;
   width: 8px;
 }
 
-/* line 154, ../scss/component/pages/_default-pages.scss */
+/* line 155, ../scss/component/pages/_default-pages.scss */
 .footer {
   background-color: #eee;
   margin-top: 0;
 }
-/* line 157, ../scss/component/pages/_default-pages.scss */
+/* line 158, ../scss/component/pages/_default-pages.scss */
 .footer .footer_container {
   display: flex;
   max-width: 1300px;
   margin: 0 auto;
 }
-/* line 161, ../scss/component/pages/_default-pages.scss */
+/* line 162, ../scss/component/pages/_default-pages.scss */
 .footer .footer_container .footer-section.footer_center {
   flex: 2;
 }
-/* line 164, ../scss/component/pages/_default-pages.scss */
+/* line 165, ../scss/component/pages/_default-pages.scss */
 .footer .footer_container .footer-section {
   flex: 1;
   text-align: center;
   vertical-align: middle;
 }
-/* line 168, ../scss/component/pages/_default-pages.scss */
+/* line 169, ../scss/component/pages/_default-pages.scss */
 .footer .footer_container .footer-section h2 {
   font-size: 25px;
   padding: 0 0 10px;
 }
-/* line 173, ../scss/component/pages/_default-pages.scss */
+/* line 174, ../scss/component/pages/_default-pages.scss */
 .footer .footer_container .footer-section .field--name-body span {
   color: red;
 }
-/* line 179, ../scss/component/pages/_default-pages.scss */
+/* line 180, ../scss/component/pages/_default-pages.scss */
 .footer .footer_container .footer-section .field--type-image .field--item img {
   margin: 0 auto;
 }
-/* line 184, ../scss/component/pages/_default-pages.scss */
+/* line 185, ../scss/component/pages/_default-pages.scss */
 .footer .footer_container .footer-section nav {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
-/* line 188, ../scss/component/pages/_default-pages.scss */
+/* line 189, ../scss/component/pages/_default-pages.scss */
 .footer .footer_container .footer-section nav ul.navbar-nav {
   float: none;
 }
-/* line 190, ../scss/component/pages/_default-pages.scss */
+/* line 191, ../scss/component/pages/_default-pages.scss */
 .footer .footer_container .footer-section nav ul.navbar-nav li {
   float: none;
 }
-/* line 192, ../scss/component/pages/_default-pages.scss */
+/* line 193, ../scss/component/pages/_default-pages.scss */
 .footer .footer_container .footer-section nav ul.navbar-nav li a {
   padding: 8px 0;
 }
-/* line 198, ../scss/component/pages/_default-pages.scss */
+/* line 199, ../scss/component/pages/_default-pages.scss */
 .footer .footer_container .footer-section .block-social-media-links {
   margin-bottom: 20px;
 }
-/* line 202, ../scss/component/pages/_default-pages.scss */
+/* line 203, ../scss/component/pages/_default-pages.scss */
 .footer .footer_container .small_font {
   font-size: 14px;
 }
 
-/* line 209, ../scss/component/pages/_default-pages.scss */
+/* line 210, ../scss/component/pages/_default-pages.scss */
 .content_bottom .region-content-bottom {
   text-align: center;
 }
-/* line 212, ../scss/component/pages/_default-pages.scss */
+/* line 213, ../scss/component/pages/_default-pages.scss */
 .content_bottom .region-content-bottom .field--type-image .field--item {
   display: inline-block;
   padding: 0 20px;
 }
-/* line 215, ../scss/component/pages/_default-pages.scss */
+/* line 216, ../scss/component/pages/_default-pages.scss */
 .content_bottom .region-content-bottom .field--type-image .field--item img {
   margin: 0 auto;
 }
-/* line 221, ../scss/component/pages/_default-pages.scss */
+/* line 222, ../scss/component/pages/_default-pages.scss */
 .content_bottom #block-sectors {
   max-width: 1300px;
   margin: 0 auto;
 }
-/* line 224, ../scss/component/pages/_default-pages.scss */
+/* line 225, ../scss/component/pages/_default-pages.scss */
 .content_bottom #block-sectors h2.block-title {
   color: #3e3e3e;
   text-align: center;
   font-size: 30px;
 }
-/* line 232, ../scss/component/pages/_default-pages.scss */
+/* line 233, ../scss/component/pages/_default-pages.scss */
 .content_bottom #block-wids-audience-profile-2 h2.block-title {
   color: #3e3e3e;
   text-align: center;
   font-size: 30px;
 }
-/* line 237, ../scss/component/pages/_default-pages.scss */
+/* line 238, ../scss/component/pages/_default-pages.scss */
 .content_bottom #block-wids-audience-profile-2 img {
   width: 70px;
   height: auto;
   margin: 0 auto;
 }
-/* line 244, ../scss/component/pages/_default-pages.scss */
+/* line 245, ../scss/component/pages/_default-pages.scss */
 .content_bottom #block-wids-audience-profile-2 .field--name-field-column-content .paragraph--view-mode--six-column-display .field {
   text-align: center;
   margin: 20px 0;
 }
 
-/* line 256, ../scss/component/pages/_default-pages.scss */
+/* line 257, ../scss/component/pages/_default-pages.scss */
 .path-sponsors .main-container h1.page-title {
   margin: 10px 0 30px;
 }
-/* line 259, ../scss/component/pages/_default-pages.scss */
+/* line 260, ../scss/component/pages/_default-pages.scss */
 .path-sponsors .main-container .row {
   text-align: center;
 }
-/* line 261, ../scss/component/pages/_default-pages.scss */
+/* line 262, ../scss/component/pages/_default-pages.scss */
 .path-sponsors .main-container .row .view-sponsor-list {
   max-width: 1300px;
   margin: 0 auto;
 }
-/* line 265, ../scss/component/pages/_default-pages.scss */
+/* line 266, ../scss/component/pages/_default-pages.scss */
 .path-sponsors .main-container .row .view-sponsor-list .view-content h3 {
   margin: 25px 0px;
 }
-/* line 268, ../scss/component/pages/_default-pages.scss */
+/* line 269, ../scss/component/pages/_default-pages.scss */
 .path-sponsors .main-container .row .view-sponsor-list .view-content .views-row {
   display: inline-block;
   margin: 10px 0;
 }
-/* line 271, ../scss/component/pages/_default-pages.scss */
+/* line 272, ../scss/component/pages/_default-pages.scss */
 .path-sponsors .main-container .row .view-sponsor-list .view-content .views-row .views-field {
   display: inline-block;
 }
-/* line 273, ../scss/component/pages/_default-pages.scss */
+/* line 274, ../scss/component/pages/_default-pages.scss */
 .path-sponsors .main-container .row .view-sponsor-list .view-content .views-row .views-field .field-content {
   padding: 0 10px;
 }
 
-/* line 285, ../scss/component/pages/_default-pages.scss */
+/* line 286, ../scss/component/pages/_default-pages.scss */
 .box-shadow {
   margin: 20px 0;
   border-radius: 6px;
 }
 
-/* line 302, ../scss/component/pages/_default-pages.scss */
+/* line 303, ../scss/component/pages/_default-pages.scss */
 ul#superfish-account li {
   padding-right: 1px;
 }
-/* line 303, ../scss/component/pages/_default-pages.scss */
+/* line 304, ../scss/component/pages/_default-pages.scss */
 ul#superfish-account li a {
   background-color: #00b140;
   border-color: #00b140;
   color: #fff;
 }
-/* line 294, ../scss/component/pages/_default-pages.scss */
+/* line 295, ../scss/component/pages/_default-pages.scss */
 ul#superfish-account li a:hover, ul#superfish-account li a:focus {
   background-color: #6CBE6F;
   text-shadow: 1px 1px 0 rgba(40, 40, 40, 0.5);
 }
 
-/* line 311, ../scss/component/pages/_default-pages.scss */
+/* line 312, ../scss/component/pages/_default-pages.scss */
 ul#superfish-user-login li {
   padding-right: 1px;
 }
-/* line 312, ../scss/component/pages/_default-pages.scss */
+/* line 313, ../scss/component/pages/_default-pages.scss */
 ul#superfish-user-login li a {
   background-color: #00b140;
   border-color: #00b140;
   color: #fff;
 }
-/* line 294, ../scss/component/pages/_default-pages.scss */
+/* line 295, ../scss/component/pages/_default-pages.scss */
 ul#superfish-user-login li a:hover, ul#superfish-user-login li a:focus {
   background-color: #6CBE6F;
   text-shadow: 1px 1px 0 rgba(40, 40, 40, 0.5);
 }
 
-/* line 320, ../scss/component/pages/_default-pages.scss */
+/* line 321, ../scss/component/pages/_default-pages.scss */
 .widspune-sponsor-us h1 {
   margin: 10px;
 }
-/* line 323, ../scss/component/pages/_default-pages.scss */
+/* line 324, ../scss/component/pages/_default-pages.scss */
 .widspune-sponsor-us .form-description {
   text-align: justify-all;
 }
-/* line 326, ../scss/component/pages/_default-pages.scss */
+/* line 327, ../scss/component/pages/_default-pages.scss */
 .widspune-sponsor-us .form-actions {
   text-align: center;
 }
-/* line 328, ../scss/component/pages/_default-pages.scss */
+/* line 329, ../scss/component/pages/_default-pages.scss */
 .widspune-sponsor-us .form-actions .form-submit {
   border: 2px solid #00b140;
   border-radius: 2px;
@@ -9132,7 +9133,7 @@ ul#superfish-user-login li a:hover, ul#superfish-user-login li a:focus {
   background: #00b140;
   color: #fff;
 }
-/* line 335, ../scss/component/pages/_default-pages.scss */
+/* line 336, ../scss/component/pages/_default-pages.scss */
 .widspune-sponsor-us .form-actions .form-submit:hover {
   color: #00b140;
   transition: 0.5s ease-in-out;

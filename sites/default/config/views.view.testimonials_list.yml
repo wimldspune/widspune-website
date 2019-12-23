@@ -427,6 +427,7 @@ display:
         pager: false
         filters: false
         filter_groups: false
+        arguments: false
       row:
         type: fields
         options: {  }
@@ -437,7 +438,7 @@ display:
         description: ''
         expanded: false
         parent: 'menu_link_content:f87b05b8-d019-4957-81cf-e69e326dd1b7'
-        weight: -48
+        weight: -46
         context: '0'
         menu_name: main
         enabled: true
@@ -501,11 +502,52 @@ display:
         operator: AND
         groups:
           1: AND
+      arguments:
+        field_testimonials_categoty_target_id:
+          id: field_testimonials_categoty_target_id
+          table: node__field_testimonials_categoty
+          field: field_testimonials_categoty_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          default_action: ignore
+          exception:
+            value: all
+            title_enable: false
+            title: All
+          title_enable: false
+          title: ''
+          default_argument_type: fixed
+          default_argument_options:
+            argument: ''
+          default_argument_skip_url: false
+          summary_options:
+            base_path: ''
+            count: true
+            items_per_page: 25
+            override: false
+          summary:
+            sort_order: asc
+            number_of_records: 0
+            format: default_summary
+          specify_validation: true
+          validate:
+            type: taxonomy_term_name_into_id
+            fail: 'not found'
+          validate_options:
+            operation: view
+            bundles: {  }
+            access: false
+            transform: false
+          break_phrase: false
+          not: false
+          plugin_id: numeric
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url
         - 'user.node_grants:view'
         - user.permissions
       tags:

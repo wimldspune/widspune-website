@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.paragraph.video.field_video
     - field.field.paragraph.video.field_video_description
+    - field.field.paragraph.video.field_video_type
     - paragraphs.paragraphs_type.video
   module:
     - video_embed_field
@@ -31,4 +32,5 @@ content:
     third_party_settings: {  }
     type: basic_string
     region: content
-hidden: {  }
+hidden:
+  field_video_type: true

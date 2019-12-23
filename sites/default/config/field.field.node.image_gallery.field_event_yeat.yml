@@ -1,0 +1,29 @@
+uuid: c54d6cfe-aa3f-4f01-bb6c-2ad426b62092
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_yeat
+    - node.type.image_gallery
+    - taxonomy.vocabulary.event_year
+id: node.image_gallery.field_event_yeat
+field_name: field_event_yeat
+entity_type: node
+bundle: image_gallery
+label: 'Event Year'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      event_year: event_year
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

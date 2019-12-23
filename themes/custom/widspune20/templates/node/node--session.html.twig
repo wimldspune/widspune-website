@@ -97,14 +97,15 @@
 
     <!-- blog section -->
     <div class="middle-section spacing" >
+      {%if content.field_highlight_video %}
       <div class="row spacing wids-videos">
         <div class="col-sm-12">
           <h3 class="heading">Experience the session through our film!</h3>
-          {%if content.field_highlight_video %}
+
               {{ content.field_highlight_video }}
-            {%endif%}
         </div>
       </div>
+      {%endif%}
     </div>
     <!--  -->
 

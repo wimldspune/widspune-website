@@ -1,0 +1,15 @@
+uuid: e954f1fe-fd3e-4dab-bcc4-e6d41fd0114f
+langcode: en
+status: true
+dependencies: {  }
+name: speaker_400x400
+label: 'Speaker 400x400'
+effects:
+  4cc80200-a4ce-40bb-a575-30636a0e5d5f:
+    uuid: 4cc80200-a4ce-40bb-a575-30636a0e5d5f
+    id: image_scale
+    weight: 1
+    data:
+      width: 400
+      height: 400
+      upscale: true
