@@ -342,3 +342,20 @@ ul#superfish-user-login {
   }
 }
 
+.homepage-signup .btn {
+  background-color: $basetextcolor;
+  border-color: $basetextcolor;
+  color: $lightcolor;
+  font-style: normal;
+  font-weight: 700;
+  padding: 15px 20px;
+  font-size: 20px;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  &:hover,
+  &:focus {
+    //background-color: #6CBE6F;
+    text-shadow: 1px 1px 0 $boxshadow;
+  }
+}

@@ -9140,6 +9140,24 @@ ul#superfish-user-login li a:hover, ul#superfish-user-login li a:focus {
   background: #fff;
 }
 
+/* line 345, ../scss/component/pages/_default-pages.scss */
+.homepage-signup .btn {
+  background-color: #00b140;
+  border-color: #00b140;
+  color: #fff;
+  font-style: normal;
+  font-weight: 700;
+  padding: 15px 20px;
+  font-size: 20px;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: 0.05em;
+}
+/* line 356, ../scss/component/pages/_default-pages.scss */
+.homepage-signup .btn:hover, .homepage-signup .btn:focus {
+  text-shadow: 1px 1px 0 rgba(40, 40, 40, 0.5);
+}
+
 /* line 2, ../scss/component/pages/_front-page.scss */
 .path-frontpage .main-container {
   max-width: 1300px;
