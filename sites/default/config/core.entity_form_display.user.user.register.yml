@@ -21,6 +21,7 @@ dependencies:
     - field.field.user.user.field_mobile_number
     - field.field.user.user.field_participation_year
     - field.field.user.user.field_photo_with_frame
+    - field.field.user.user.field_pin_code
     - field.field.user.user.field_promotion_source
     - field.field.user.user.field_speaker_order
     - field.field.user.user.field_total_exp
@@ -140,6 +141,14 @@ content:
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_pin_code:
+    type: string_textfield
+    weight: 18
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   field_speaker_order:
     type: number

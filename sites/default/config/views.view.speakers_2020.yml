@@ -1,4 +1,4 @@
-uuid: 2eeb0903-89d2-4bce-87c5-d558bce43041
+uuid: 9520163d-a183-4cad-b729-82d2d90e0f9e
 langcode: en
 status: true
 dependencies:
@@ -14,14 +14,14 @@ dependencies:
     - taxonomy.vocabulary.event_year
     - user.role.speaker
   content:
-    - 'taxonomy_term:event_year:87e10f76-5cd0-4d28-af7f-7d99e3131bc1'
+    - 'taxonomy_term:event_year:bf73aee1-ecf5-4be6-bc4d-bfba46430784'
   module:
     - image
     - link
     - taxonomy
     - user
-id: speakers_list
-label: Speakers
+id: speakers_2020
+label: 'Speakers 2020'
 module: views
 description: 'Lists all the speakers'
 tag: ''
@@ -537,7 +537,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"volunteers-info\">\r\n\t <div class=\"image-speaker-new\">\r\n\t\t{{ field_photo_with_frame }}\r\n\t </div>\t\r\n\t<div class=\"caption\"> \r\n\t\t <p>{{ field_full_name }}</p>\r\n\t\t <span>{{ field_designation }} - {{ field_com_org_uni }}</span>\r\n\t\t {{ field_linkedin_profile }} \r\n\t</div>\r\n</div>"
+            text: "<div class=\"volunteers-info\">\r\n\t<div class=\"caption\"> \r\n\t\t <p>{{ field_full_name }}</p>\r\n\t\t <span>{{ field_designation }} - {{ field_com_org_uni }}</span>\r\n\t\t {{ field_linkedin_profile }} \r\n\t</div>\r\n</div>"
             make_link: false
             path: ''
             absolute: false
@@ -637,7 +637,7 @@ display:
           admin_label: ''
           operator: or
           value:
-            - 42
+            - 43
           group: 1
           exposed: false
           expose:
@@ -713,7 +713,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: speakers/2019
+      path: speakers/2020
     cache_metadata:
       max-age: -1
       contexts:
