@@ -31,3 +31,12 @@ function widspune_form_user_form_alter(&$form, FormStateInterface $form_state, $
     $form['field_participation_year']['#access'] = TRUE;
   }
 }
+
+/**
+ * Implements hook_local_tasks_alter().
+ */
+function widspune_local_tasks_alter(&$local_tasks) {
+  $local_tasks['user.register']['title'] = 'Sign Up';
+  $local_tasks['user.login']['title'] = 'Sign In';
+  $local_tasks['user.pass']['title'] = 'Forgotten password?';
+}
