@@ -9898,43 +9898,43 @@ ul#superfish-user-login li a:hover, ul#superfish-user-login li a:focus {
   float: none;
 }
 
-/* line 5, ../scss/component/pages/_speakers_page.scss */
+/* line 3, ../scss/component/pages/_speakers_page.scss */
 .wids-user-list {
   max-width: 1300px;
   margin: 0 auto;
 }
-/* line 10, ../scss/component/pages/_speakers_page.scss */
+/* line 8, ../scss/component/pages/_speakers_page.scss */
 .wids-user-list .view-content .views-row .views-field {
   border: 1px solid #ccc;
   margin: 15px 0;
   box-shadow: 3px 3px 6px #ccc;
 }
-/* line 14, ../scss/component/pages/_speakers_page.scss */
+/* line 12, ../scss/component/pages/_speakers_page.scss */
 .wids-user-list .view-content .views-row .views-field .volunteers-info {
   padding: 15px;
   text-align: center;
 }
-/* line 17, ../scss/component/pages/_speakers_page.scss */
+/* line 15, ../scss/component/pages/_speakers_page.scss */
 .wids-user-list .view-content .views-row .views-field .volunteers-info .caption {
   display: inline-table;
 }
-/* line 19, ../scss/component/pages/_speakers_page.scss */
+/* line 17, ../scss/component/pages/_speakers_page.scss */
 .wids-user-list .view-content .views-row .views-field .volunteers-info .caption p {
   font-size: 15px;
   margin: 0;
   font-weight: 500;
 }
-/* line 24, ../scss/component/pages/_speakers_page.scss */
+/* line 22, ../scss/component/pages/_speakers_page.scss */
 .wids-user-list .view-content .views-row .views-field .volunteers-info .caption span {
   font-size: 12px;
 }
-/* line 29, ../scss/component/pages/_speakers_page.scss */
+/* line 27, ../scss/component/pages/_speakers_page.scss */
 .wids-user-list .view-content .views-row .views-field .volunteers-info .image-volunteer {
   background-image: url(../images/empty-volunteer-frame.png);
   background-size: cover;
   height: 266px;
 }
-/* line 33, ../scss/component/pages/_speakers_page.scss */
+/* line 31, ../scss/component/pages/_speakers_page.scss */
 .wids-user-list .view-content .views-row .views-field .volunteers-info .image-volunteer img {
   height: auto;
   text-align: center;
@@ -9945,13 +9945,13 @@ ul#superfish-user-login li a:hover, ul#superfish-user-login li a:focus {
   margin: 0 auto;
   transform: translate(-50%, -50%);
 }
-/* line 45, ../scss/component/pages/_speakers_page.scss */
+/* line 43, ../scss/component/pages/_speakers_page.scss */
 .wids-user-list .view-content .views-row .views-field .volunteers-info .image-speaker {
   background-image: url(../images/empty-speaker-frame.png);
   background-size: cover;
   height: 245px;
 }
-/* line 49, ../scss/component/pages/_speakers_page.scss */
+/* line 47, ../scss/component/pages/_speakers_page.scss */
 .wids-user-list .view-content .views-row .views-field .volunteers-info .image-speaker img {
   height: auto;
   text-align: center;
@@ -9963,13 +9963,13 @@ ul#superfish-user-login li a:hover, ul#superfish-user-login li a:focus {
   transform: translate(-50%, -45%);
 }
 @media (max-width: 768px) {
-  /* line 49, ../scss/component/pages/_speakers_page.scss */
+  /* line 47, ../scss/component/pages/_speakers_page.scss */
   .wids-user-list .view-content .views-row .views-field .volunteers-info .image-speaker img {
     top: 40%;
     transform: translate(-50%, -50%);
   }
 }
-/* line 64, ../scss/component/pages/_speakers_page.scss */
+/* line 62, ../scss/component/pages/_speakers_page.scss */
 .wids-user-list .view-content .views-row .views-field .volunteers-info a.ln-link {
   font-size: 14px;
   margin: 5px 0 15px;
@@ -10028,6 +10028,43 @@ ul#superfish-user-login li a:hover, ul#superfish-user-login li a:focus {
   background-color: #00b140 !important;
   border: 1px solid #00b140 !important;
   color: #fff !important;
+}
+
+/* line 1, ../scss/component/pages/_wids20_users.scss */
+.wids20-user-list {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+/* line 4, ../scss/component/pages/_wids20_users.scss */
+.wids20-user-list .volunteers-info {
+  border: 3px solid #ccc;
+  margin: 15px 10px;
+  box-shadow: 3px 3px 6px #ccc;
+  border-radius: 8px;
+}
+/* line 9, ../scss/component/pages/_wids20_users.scss */
+.wids20-user-list .volunteers-info .user-caption {
+  text-align: center;
+}
+/* line 11, ../scss/component/pages/_wids20_users.scss */
+.wids20-user-list .volunteers-info .user-caption a {
+  display: inline-block;
+  font-size: 18px;
+  color: #337ab7;
+  text-decoration: underline;
+}
+/* line 20, ../scss/component/pages/_wids20_users.scss */
+.wids20-user-list .volunteers-info .user-caption .speakers-img img {
+  width: 150px;
+  margin: 6px auto;
+  height: 150px;
+  object-fit: cover;
+}
+/* line 27, ../scss/component/pages/_wids20_users.scss */
+.wids20-user-list .volunteers-info .user-caption span {
+  display: block;
+  font-size: 13px;
+  margin: 2px 0;
 }
 
 /* line 1, ../scss/component/forms/_node_forms.scss */

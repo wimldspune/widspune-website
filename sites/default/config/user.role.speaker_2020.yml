@@ -1,0 +1,9 @@
+uuid: afe777ec-63db-4326-8d3b-40f92eea17d4
+langcode: en
+status: true
+dependencies: {  }
+id: speaker_2020
+label: 'Speaker 2020'
+weight: 7
+is_admin: null
+permissions: {  }

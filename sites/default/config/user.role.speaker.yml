@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 id: speaker
-label: Speaker
+label: 'Speaker 2019'
 weight: 6
 is_admin: null
 permissions: {  }

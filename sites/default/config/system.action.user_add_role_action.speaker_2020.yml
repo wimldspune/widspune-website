@@ -1,0 +1,14 @@
+uuid: 2149b511-16a4-4529-b498-faffe5c10676
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.speaker_2020
+  module:
+    - user
+id: user_add_role_action.speaker_2020
+label: 'Add the Speaker 2020 role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: speaker_2020

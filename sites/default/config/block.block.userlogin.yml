@@ -12,7 +12,7 @@ dependencies:
 id: userlogin
 theme: widspune20
 region: navigation
-weight: -18
+weight: -17
 provider: null
 plugin: 'superfish:user-login'
 settings:

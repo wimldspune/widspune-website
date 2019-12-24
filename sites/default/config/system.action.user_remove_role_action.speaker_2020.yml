@@ -1,0 +1,14 @@
+uuid: b5428b50-190a-4069-83b5-7c991d0f699f
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.speaker_2020
+  module:
+    - user
+id: user_remove_role_action.speaker_2020
+label: 'Remove the Speaker 2020 role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: speaker_2020
