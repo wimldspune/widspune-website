@@ -12,7 +12,7 @@ dependencies:
 id: useraccountmenu
 theme: widspune20
 region: navigation
-weight: -18
+weight: -20
 provider: null
 plugin: 'superfish:account'
 settings:
