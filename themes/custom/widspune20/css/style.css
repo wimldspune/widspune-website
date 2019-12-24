@@ -8884,7 +8884,7 @@ h2.block-title {
   font-weight: 700;
   padding: 15px 20px;
   font-size: 13px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   line-height: 1;
   letter-spacing: 0.05em;
   color: #3e3e3e;
@@ -8929,7 +8929,7 @@ h2.block-title {
   font-weight: 700;
   padding: 15px 20px;
   font-size: 13px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   line-height: 1;
   letter-spacing: 0.05em;
   color: #3e3e3e;

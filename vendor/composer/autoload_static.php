@@ -91,6 +91,8 @@ class ComposerStaticInitDrupal8
         'M' => 
         array (
             'Masterminds\\' => 12,
+            'Mailchimp\\http\\' => 15,
+            'Mailchimp\\' => 10,
         ),
         'J' => 
         array (
@@ -329,6 +331,14 @@ class ComposerStaticInitDrupal8
         array (
             0 => __DIR__ . '/..' . '/masterminds/html5/src',
         ),
+        'Mailchimp\\http\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/thinkshout/mailchimp-api-php/src/http',
+        ),
+        'Mailchimp\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/thinkshout/mailchimp-api-php/src',
+        ),
         'JsonSchema\\' => 
         array (
             0 => __DIR__ . '/..' . '/justinrainbow/json-schema/src/JsonSchema',
@@ -551,6 +561,13 @@ class ComposerStaticInitDrupal8
             'Stack' => 
             array (
                 0 => __DIR__ . '/..' . '/stack/builder/src',
+            ),
+        ),
+        'M' => 
+        array (
+            'Mailchimp' => 
+            array (
+                0 => __DIR__ . '/../..' . '/modules/contrib/mailchimp/src',
             ),
         ),
         'E' => 
