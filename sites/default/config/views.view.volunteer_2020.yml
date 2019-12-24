@@ -1,4 +1,4 @@
-uuid: 9520163d-a183-4cad-b729-82d2d90e0f9e
+uuid: e361cbf4-0710-4324-a8fe-aff7fb96e824
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ dependencies:
     - field.storage.user.field_linkedin_profile
     - field.storage.user.user_picture
     - taxonomy.vocabulary.event_year
-    - user.role.speaker_2020
+    - user.role.volunteer_2020
   content:
     - 'taxonomy_term:event_year:bf73aee1-ecf5-4be6-bc4d-bfba46430784'
   module:
@@ -17,10 +17,10 @@ dependencies:
     - link
     - taxonomy
     - user
-id: speakers_2020
-label: 'Speakers 2020'
+id: volunteer_2020
+label: 'Volunteer 2020'
 module: views
-description: 'Lists all the speakers'
+description: 'Lists all the Volunteer'
 tag: '2020'
 base_table: users_field_data
 base_field: uid
@@ -464,7 +464,7 @@ display:
           admin_label: ''
           operator: or
           value:
-            speaker_2020: speaker_2020
+            volunteer_2020: volunteer_2020
           group: 1
           exposed: false
           expose:
@@ -540,20 +540,8 @@ display:
           hierarchy: false
           error_message: true
           plugin_id: taxonomy_index_tid
-      sorts:
-        field_speaker_order_value:
-          id: field_speaker_order_value
-          table: user__field_speaker_order
-          field: field_speaker_order_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          order: ASC
-          exposed: false
-          expose:
-            label: ''
-          plugin_id: standard
-      title: Speakers
+      sorts: {  }
+      title: Volunteer
       header:
         area:
           id: area
@@ -565,7 +553,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: '<h1 class = ''page-header'' >Speakers</h1>'
+            value: '<h1 class = ''page-header'' > Organizers and Volunteers</h1>'
             format: full_html
           plugin_id: text
       footer: {  }
@@ -593,7 +581,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: speakers/2020
+      path: volunteer/2020
     cache_metadata:
       max-age: -1
       contexts:
