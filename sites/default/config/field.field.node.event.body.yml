@@ -1,16 +1,16 @@
-uuid: 9161d376-305b-4bcf-8cc5-9872633eac6e
+uuid: 7e66b1bd-dd3e-4df8-9c66-cea1d4d4535b
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.body
-    - node.type.tech_talks
+    - node.type.event
   module:
     - text
-id: node.tech_talks.body
+id: node.event.body
 field_name: body
 entity_type: node
-bundle: tech_talks
+bundle: event
 label: Body
 description: ''
 required: false

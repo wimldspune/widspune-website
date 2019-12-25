@@ -1,17 +1,17 @@
-uuid: 9557829b-fbe7-4cd0-a8c7-8bbdb80b49dc
+uuid: 7a980651-c486-49e9-ae14-a31c9bd2da8f
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.image_gallery.body
-    - node.type.image_gallery
+    - field.field.node.event.body
+    - node.type.event
   module:
     - text
     - user
-id: node.image_gallery.teaser
+id: node.event.teaser
 targetEntityType: node
-bundle: image_gallery
+bundle: event
 mode: teaser
 content:
   body:

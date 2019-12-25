@@ -1,19 +1,19 @@
-uuid: 856877df-0784-4aeb-8c70-44da90423398
+uuid: 5b4af041-c4c7-4b2e-8a1a-1bae7cc45e18
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_tech_talk_event_year
+    - field.storage.node.field_event_yeat
     - node.type.tech_talks
     - taxonomy.vocabulary.event_year
-id: node.tech_talks.field_tech_talk_event_year
-field_name: field_tech_talk_event_year
+id: node.tech_talks.field_event_yeat
+field_name: field_event_yeat
 entity_type: node
 bundle: tech_talks
-label: 'Event year'
+label: 'Event Year'
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

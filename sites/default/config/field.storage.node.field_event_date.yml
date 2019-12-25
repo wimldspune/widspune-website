@@ -1,17 +1,17 @@
-uuid: 7777dc3d-c9aa-4d9f-af9c-162e4cb87d79
+uuid: 44c860a0-0095-482e-a202-9a47dffb3982
 langcode: en
 status: true
 dependencies:
   module:
+    - datetime
     - node
-    - taxonomy
-id: node.field_tech_talk_event_year
-field_name: field_tech_talk_event_year
+id: node.field_event_date
+field_name: field_event_date
 entity_type: node
-type: entity_reference
+type: datetime
 settings:
-  target_type: taxonomy_term
-module: core
+  datetime_type: date
+module: datetime
 locked: false
 cardinality: 1
 translatable: true

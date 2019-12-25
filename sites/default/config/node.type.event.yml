@@ -1,4 +1,4 @@
-uuid: e2fd31de-9ce9-43b3-8393-93ced13b3ad9
+uuid: 8d951864-8f62-4538-ba7d-31f661a36e5f
 langcode: en
 status: true
 dependencies:
@@ -9,10 +9,10 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
-name: 'Tech Talks'
-type: tech_talks
+name: Event
+type: event
 description: ''
 help: ''
 new_revision: true
 preview_mode: 1
-display_submitted: true
+display_submitted: false

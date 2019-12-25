@@ -1,25 +1,27 @@
-uuid: d1792df0-b0d8-41db-91e5-09259ba1eafc
+uuid: d73d15e9-45fc-4d4e-bd18-dbb90d38bfc1
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.tech_talks.body
-    - field.field.node.tech_talks.field_event_yeat
-    - field.field.node.tech_talks.field_icon
-    - image.style.thumbnail
-    - node.type.tech_talks
+    - field.field.node.event.body
+    - field.field.node.event.field_event_date
+    - field.field.node.event.field_event_year
+    - field.field.node.event.field_venue_address_link
+    - field.field.node.event.field_venue_name
+    - node.type.event
   module:
-    - image
+    - datetime
+    - link
     - path
     - text
-id: node.tech_talks.default
+id: node.event.default
 targetEntityType: node
-bundle: tech_talks
+bundle: event
 mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 9
+    weight: 11
     settings:
       rows: 9
       summary_rows: 3
@@ -28,12 +30,18 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 4
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_event_yeat:
-    weight: 1
+  field_event_date:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_event_year:
+    weight: 3
     settings:
       match_operator: CONTAINS
       size: 60
@@ -41,17 +49,25 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
-  field_icon:
-    weight: 2
+  field_venue_address_link:
+    weight: 4
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+      placeholder_url: ''
+      placeholder_title: ''
     third_party_settings: {  }
-    type: image_image
+    type: link_default
+    region: content
+  field_venue_name:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
     region: content
   path:
     type: path
-    weight: 7
+    weight: 9
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -59,21 +75,21 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 5
+    weight: 7
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 8
+    weight: 10
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 6
+    weight: 8
     region: content
     third_party_settings: {  }
   title:
@@ -86,7 +102,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 3
+    weight: 5
     settings:
       match_operator: CONTAINS
       size: 60

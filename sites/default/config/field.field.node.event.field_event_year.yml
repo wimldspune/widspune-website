@@ -1,0 +1,29 @@
+uuid: 9da722f3-4c1e-478a-a0a3-c217a4a2c32a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_year
+    - node.type.event
+    - taxonomy.vocabulary.event_year
+id: node.event.field_event_year
+field_name: field_event_year
+entity_type: node
+bundle: event
+label: 'Event year'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      event_year: event_year
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
