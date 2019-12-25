@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.event.body
     - field.field.node.event.field_event_date
+    - field.field.node.event.field_event_time
     - field.field.node.event.field_event_year
     - field.field.node.event.field_venue_address_link
     - field.field.node.event.field_venue_name
@@ -13,6 +14,7 @@ dependencies:
     - datetime
     - link
     - text
+    - time_field
     - user
 id: node.event.default
 targetEntityType: node
@@ -34,6 +36,15 @@ content:
       timezone_override: ''
     third_party_settings: {  }
     type: datetime_default
+    region: content
+  field_event_time:
+    weight: 107
+    label: above
+    settings:
+      time_format: 'h:i a'
+      timerange_format: 'start ~ end'
+    third_party_settings: {  }
+    type: time_range_formatter
     region: content
   field_event_year:
     weight: 102

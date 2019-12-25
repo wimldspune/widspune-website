@@ -29,7 +29,8 @@
         "drupal/page_manager": "^4.0@beta",
         "drupal/menu_link_attributes": "^1.0",
         "drupal/smtp": "^1.0@beta",
-        "drupal/mailchimp": "^1.11"
+        "drupal/mailchimp": "^1.11",
+        "drupal/time_field": "^1.13"
     },
     "replace": {
         "drupal/core": "^8"

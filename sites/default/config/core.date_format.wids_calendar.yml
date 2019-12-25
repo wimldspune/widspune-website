@@ -1,0 +1,8 @@
+uuid: ee4494f0-a936-45cb-bf53-9b6fe04d8e4e
+langcode: en
+status: true
+dependencies: {  }
+id: wids_calendar
+label: 'WiDS Calendar'
+locked: false
+pattern: 'jS M Y'
