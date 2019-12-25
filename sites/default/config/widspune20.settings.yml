@@ -4,7 +4,7 @@ schemas:
 favicon:
   mimetype: image/vnd.microsoft.icon
   path: ''
-  url: 'https://dev-wids-pune.pantheonsite.io/themes/custom/widspune20/favicon.ico'
+  url: 'http://wids.p/themes/custom/widspune20/favicon.ico'
   use_default: true
 logo:
   path: 'public://widspunelogo_1_0.png'
@@ -24,7 +24,7 @@ region_wells:
   sidebar_first: ''
   sidebar_second: ''
   content_bottom: ''
-  footer: ''
+  footer_top: ''
   footer_left: ''
   footer_center: ''
   footer_right: ''
@@ -35,6 +35,7 @@ cdn_cache_ttl_assets: '0'
 cdn_cache_ttl_library: '0'
 reset_http_request_cache: ''
 table: ''
+table_bordered: 0
 features:
   comment_user_picture: true
   comment_user_verification: true

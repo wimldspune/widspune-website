@@ -1,0 +1,22 @@
+uuid: deabc962-7e0a-465a-8e1e-868d8d48c21e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.tech_talks
+  module:
+    - text
+id: node.tech_talks.body
+field_name: body
+entity_type: node
+bundle: tech_talks
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

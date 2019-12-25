@@ -1,0 +1,20 @@
+uuid: 7777dc3d-c9aa-4d9f-af9c-162e4cb87d79
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_tech_talk_event_year
+field_name: field_tech_talk_event_year
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

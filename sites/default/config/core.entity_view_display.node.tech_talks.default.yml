@@ -1,0 +1,48 @@
+uuid: eefda9dd-4ff3-41ef-8104-0f23ac8f89ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.tech_talks.body
+    - field.field.node.tech_talks.field_icon
+    - field.field.node.tech_talks.field_tech_talk_event_year
+    - node.type.tech_talks
+  module:
+    - image
+    - text
+    - user
+id: node.tech_talks.default
+targetEntityType: node
+bundle: tech_talks
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_icon:
+    weight: 2
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_tech_talk_event_year:
+    weight: 1
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

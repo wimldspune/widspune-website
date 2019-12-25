@@ -1,17 +1,17 @@
-uuid: 9557829b-fbe7-4cd0-a8c7-8bbdb80b49dc
+uuid: ca0f7bab-b9f1-415c-b4ba-c0755530b4f3
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.image_gallery.body
-    - node.type.image_gallery
+    - field.field.node.tech_talks.body
+    - node.type.tech_talks
   module:
     - text
     - user
-id: node.image_gallery.teaser
+id: node.tech_talks.teaser
 targetEntityType: node
-bundle: image_gallery
+bundle: tech_talks
 mode: teaser
 content:
   body:
@@ -27,6 +27,4 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-hidden:
-  field_event_yeat: true
-  field_gallery_images: true
+hidden: {  }
