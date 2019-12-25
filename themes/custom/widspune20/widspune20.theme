@@ -33,3 +33,10 @@ function widspune20_preprocess_block(&$variables) {
     $variables['attributes']['class'][] = 'justify-content-center';
   }
 }
+
+/**
+ * Implements hook_preprocess_views_view_table().
+ */
+function widspune20_preprocess_views_view_table(&$variables) {
+  $variables['responsive'] = FALSE;
+}

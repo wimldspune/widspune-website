@@ -10095,6 +10095,93 @@ ul#superfish-user-login li a:hover, ul#superfish-user-login li a:focus {
   color: #00b140;
 }
 
+/* line 2, ../scss/component/pages/_tech_talks.scss */
+.path-list .main-container {
+  padding: 0;
+}
+/* line 4, ../scss/component/pages/_tech_talks.scss */
+.path-list .main-container .row {
+  margin: 0 10px;
+}
+/* line 6, ../scss/component/pages/_tech_talks.scss */
+.path-list .main-container .row .wids-tech-talks {
+  font-family: 'Poppins', sans-serif;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+/* line 14, ../bootstrap/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
+.path-list .main-container .row .wids-tech-talks:before, .path-list .main-container .row .wids-tech-talks:after {
+  display: table;
+  content: " ";
+}
+/* line 19, ../bootstrap/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
+.path-list .main-container .row .wids-tech-talks:after {
+  clear: both;
+}
+@media (min-width: 768px) {
+  /* line 6, ../scss/component/pages/_tech_talks.scss */
+  .path-list .main-container .row .wids-tech-talks {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 6, ../scss/component/pages/_tech_talks.scss */
+  .path-list .main-container .row .wids-tech-talks {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 6, ../scss/component/pages/_tech_talks.scss */
+  .path-list .main-container .row .wids-tech-talks {
+    width: 1170px;
+  }
+}
+/* line 25, ../scss/component/pages/_tech_talks.scss */
+.path-list .main-container .row .wids-tech-talks th {
+  background: #525252;
+  background: #00b140;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+}
+/* line 32, ../scss/component/pages/_tech_talks.scss */
+.path-list .main-container .row .wids-tech-talks td, .path-list .main-container .row .wids-tech-talks th {
+  text-align: left;
+  padding: 10px;
+  border-right: 2px solid #fff;
+}
+/* line 37, ../scss/component/pages/_tech_talks.scss */
+.path-list .main-container .row .wids-tech-talks .table td i {
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  font-size: 24px;
+  color: #00b140;
+}
+/* line 44, ../scss/component/pages/_tech_talks.scss */
+.path-list .main-container .row .wids-tech-talks td {
+  font-size: 15px;
+  font-weight: 500;
+}
+/* line 48, ../scss/component/pages/_tech_talks.scss */
+.path-list .main-container .row .wids-tech-talks td img {
+  text-align: center;
+}
+/* line 51, ../scss/component/pages/_tech_talks.scss */
+.path-list .main-container .row .wids-tech-talks tr:nth-child(odd) {
+  background-color: #c0e8c5;
+}
+/* line 54, ../scss/component/pages/_tech_talks.scss */
+.path-list .main-container .row .wids-tech-talks tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
 /* line 1, ../scss/component/forms/_node_forms.scss */
 .node-form {
   font-family: 'Poppins';

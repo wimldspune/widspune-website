@@ -88,14 +88,14 @@ display:
               align: ''
               separator: ''
               empty_column: false
-              responsive: ''
+              responsive: priority-low
             title:
               sortable: false
               default_sort_order: asc
               align: ''
               separator: ''
               empty_column: false
-              responsive: ''
+              responsive: priority-low
           default: '-1'
           empty_table: false
       row:
@@ -274,7 +274,7 @@ display:
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
-      css_class: container
+      css_class: wids-tech-talks
     cache_metadata:
       max-age: -1
       contexts:
