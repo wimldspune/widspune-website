@@ -9149,7 +9149,7 @@ ul#superfish-user-login li a:hover, ul#superfish-user-login li a:focus {
   font-weight: 700;
   padding: 15px 20px;
   font-size: 20px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   line-height: 1;
   letter-spacing: 0.05em;
 }
@@ -9981,23 +9981,28 @@ ul#superfish-user-login li a:hover, ul#superfish-user-login li a:focus {
 }
 
 /* line 2, ../scss/component/pages/_video_gallary_ct.scss */
+.video-gallery h3 {
+  text-align: center;
+  color: #00b140;
+}
+/* line 6, ../scss/component/pages/_video_gallary_ct.scss */
 .video-gallery .page-header {
   text-align: center;
   margin: 0px 0 20px;
 }
-/* line 7, ../scss/component/pages/_video_gallary_ct.scss */
+/* line 11, ../scss/component/pages/_video_gallary_ct.scss */
 .video-gallery .video-info {
   border: 1px solid #ccc;
   box-shadow: 0 0 6px #ccc;
 }
-/* line 11, ../scss/component/pages/_video_gallary_ct.scss */
+/* line 15, ../scss/component/pages/_video_gallary_ct.scss */
 .video-gallery .video-info p {
   margin: 0;
   font-size: 14px;
   padding: 0 5px 5px;
   font-weight: 500;
 }
-/* line 18, ../scss/component/pages/_video_gallary_ct.scss */
+/* line 22, ../scss/component/pages/_video_gallary_ct.scss */
 .video-gallery .other-filed {
   border: none;
   border-bottom: 1px solid #ccc;
@@ -10284,14 +10289,14 @@ ul#superfish-user-login li a:hover, ul#superfish-user-login li a:focus {
 }
 
 /* line 1, ../scss/component/forms/_user_forms.scss */
-.user-login-form, .user-pass {
+.user-register-form, .user-login-form, .user-pass {
   max-width: 400px;
   margin: 30px auto 50px;
   padding: 15px 30px 30px;
   box-shadow: 0 0 6px #ccc;
 }
 /* line 7, ../scss/component/forms/_user_forms.scss */
-.user-login-form .form-actions .button, .user-pass .form-actions .button {
+.user-register-form .form-actions .button, .user-login-form .form-actions .button, .user-pass .form-actions .button {
   border-radius: 2px;
   padding: 8px 15px;
   border: 2px solid #00b140;

@@ -7,6 +7,7 @@
  */
 
 use Drupal\Core\Form\FormStateInterface;
+use phpDocumentor\Reflection\Types\Boolean;
 
 /**
  * Implements hook_form_FORM_ID_alter().
@@ -22,6 +23,7 @@ function widspune_form_user_form_alter(&$form, FormStateInterface $form_state, $
   $form['field_speaker_order']['#access'] = FALSE;
   $form['field_volunteer_order']['#access'] = FALSE;
   $form['field_participation_year']['#access'] = FALSE;
+  $form['field_role_as_volunteer']['#access'] = FALSE;
 
   if ($user->id() == 1 || !empty($result)) {
     $form['field_bio']['#access'] = TRUE;
@@ -29,7 +31,31 @@ function widspune_form_user_form_alter(&$form, FormStateInterface $form_state, $
     $form['field_speaker_order']['#access'] = TRUE;
     $form['field_volunteer_order']['#access'] = TRUE;
     $form['field_participation_year']['#access'] = TRUE;
+    $form['field_role_as_volunteer']['#access'] = TRUE;
   }
+
+  $form['actions']['submit']['#value'] = 'Submit';
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function widspune_form_user_pass_alter(&$form, FormStateInterface $form_state, $form_id) {
+  $user = \Drupal::currentUser();
+  if($user->isAnonymous()) {
+    $form['mail']['#prefix'] = '<p>';
+    $markup = 'Password reset instructions will be sent to your registered email address. <br /> ';
+    $markup .= 'Please check your span/junk folder for password reset instruction';
+    $form['mail']['#markup'] = $markup;
+    $form['mail']['#suffix'] = '</p>';
+  }
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function widspune_form_user_login_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  $form['actions']['submit']['#value'] = 'Sign in';
 }
 
 /**
