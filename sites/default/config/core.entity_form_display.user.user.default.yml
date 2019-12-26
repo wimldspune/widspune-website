@@ -22,6 +22,7 @@ dependencies:
     - field.field.user.user.field_photo_with_frame
     - field.field.user.user.field_pin_code
     - field.field.user.user.field_promotion_source
+    - field.field.user.user.field_role_as_volunteer
     - field.field.user.user.field_speaker_order
     - field.field.user.user.field_total_exp
     - field.field.user.user.field_total_experience
@@ -193,6 +194,14 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete
+    region: content
+  field_role_as_volunteer:
+    weight: 28
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
     region: content
   field_speaker_order:
     type: number

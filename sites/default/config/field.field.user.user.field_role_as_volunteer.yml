@@ -1,0 +1,20 @@
+uuid: a59a4ed4-26f1-4a84-9417-53b83dd591e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_role_as_volunteer
+  module:
+    - user
+id: user.user.field_role_as_volunteer
+field_name: field_role_as_volunteer
+entity_type: user
+bundle: user
+label: 'Role as volunteer'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
