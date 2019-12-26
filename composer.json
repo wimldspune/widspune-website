@@ -31,7 +31,8 @@
         "drupal/smtp": "^1.0@beta",
         "drupal/mailchimp": "^1.11",
         "drupal/time_field": "^1.13",
-        "drupal/recaptcha": "^2.4"
+        "drupal/recaptcha": "^2.4",
+        "drupal/google_analytics": "^3.0"
     },
     "replace": {
         "drupal/core": "^8"
