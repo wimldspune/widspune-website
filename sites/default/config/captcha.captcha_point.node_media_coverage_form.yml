@@ -1,0 +1,7 @@
+uuid: f680bc86-1d03-42a7-bbcc-3d2598fe04f3
+langcode: en
+status: false
+dependencies: {  }
+formId: node_media_coverage_form
+captchaType: default
+label: null
