@@ -10084,22 +10084,43 @@ ul#superfish-user-login li a:hover, ul#superfish-user-login li a:focus {
   margin-top: 0px;
 }
 /* line 7, ../scss/component/pages/_wids_calendar.scss */
+.wids-calendar b, .wids-calendar strong {
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+}
+/* line 12, ../scss/component/pages/_wids_calendar.scss */
 .wids-calendar .calendar-info {
   border: 3px solid #ccc;
   margin: 15px 10px;
   box-shadow: 3px 3px 6px #ccc;
   border-radius: 8px;
 }
-/* line 12, ../scss/component/pages/_wids_calendar.scss */
+/* line 17, ../scss/component/pages/_wids_calendar.scss */
 .wids-calendar .calendar-info .calendar-data {
   padding: 20px;
 }
-/* line 14, ../scss/component/pages/_wids_calendar.scss */
+/* line 19, ../scss/component/pages/_wids_calendar.scss */
 .wids-calendar .calendar-info .calendar-data h4 {
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
   font-weight: normal;
   color: #00b140;
+}
+/* line 24, ../scss/component/pages/_wids_calendar.scss */
+.wids-calendar .calendar-info .calendar-data h4 span {
+  color: #333;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+}
+/* line 30, ../scss/component/pages/_wids_calendar.scss */
+.wids-calendar .calendar-info .calendar-data h4 a {
+  color: #00b140;
+}
+/* line 34, ../scss/component/pages/_wids_calendar.scss */
+.wids-calendar .calendar-info .calendar-data p {
+  color: #333;
 }
 
 /* line 2, ../scss/component/pages/_tech_talks.scss */
