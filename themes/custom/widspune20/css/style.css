@@ -10291,14 +10291,14 @@ ul#superfish-user-login li a:hover, ul#superfish-user-login li a:focus {
 }
 
 /* line 1, ../scss/component/forms/_user_forms.scss */
-.user-register-form, .user-login-form, .user-pass {
+.user-pass-reset, .user-register-form, .user-login-form, .user-pass, .user-form {
   max-width: 400px;
   margin: 30px auto 50px;
   padding: 15px 30px 30px;
   box-shadow: 0 0 6px #ccc;
 }
 /* line 7, ../scss/component/forms/_user_forms.scss */
-.user-register-form .form-actions .button, .user-login-form .form-actions .button, .user-pass .form-actions .button {
+.user-pass-reset .form-actions .button, .user-register-form .form-actions .button, .user-login-form .form-actions .button, .user-pass .form-actions .button, .user-form .form-actions .button {
   border-radius: 2px;
   padding: 8px 15px;
   border: 2px solid #00b140;

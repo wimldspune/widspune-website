@@ -23,6 +23,7 @@ dependencies:
     - field.field.user.user.field_photo_with_frame
     - field.field.user.user.field_pin_code
     - field.field.user.user.field_promotion_source
+    - field.field.user.user.field_role_as_volunteer
     - field.field.user.user.field_speaker_order
     - field.field.user.user.field_total_exp
     - field.field.user.user.field_total_experience
@@ -127,7 +128,7 @@ content:
     region: content
   field_participation_year:
     type: entity_reference_autocomplete
-    weight: 17
+    weight: 16
     region: content
     settings:
       match_operator: CONTAINS
@@ -144,7 +145,7 @@ content:
     third_party_settings: {  }
   field_pin_code:
     type: string_textfield
-    weight: 18
+    weight: 17
     region: content
     settings:
       size: 60
@@ -165,7 +166,7 @@ content:
     third_party_settings: {  }
   field_volunteer_order:
     type: number
-    weight: 16
+    weight: 18
     region: content
     settings:
       placeholder: ''
@@ -194,6 +195,7 @@ hidden:
   field_exp_ds: true
   field_member_of: true
   field_promotion_source: true
+  field_role_as_volunteer: true
   field_total_exp: true
   field_user_phone_type: true
   field_user_remark: true

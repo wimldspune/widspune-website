@@ -59,6 +59,15 @@ function widspune_form_user_login_form_alter(&$form, FormStateInterface $form_st
 }
 
 /**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function widspune_form_user_pass_reset_alter(&$form, FormStateInterface $form_state, $form_id) {
+  $form['actions']['submit']['#value'] = 'Sign in';
+}
+
+
+
+/**
  * Implements hook_local_tasks_alter().
  */
 function widspune_local_tasks_alter(&$local_tasks) {
