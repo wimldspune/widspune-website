@@ -45,7 +45,7 @@ function widspune_form_user_pass_alter(&$form, FormStateInterface $form_state, $
   if($user->isAnonymous()) {
     $form['mail']['#prefix'] = '<p>';
     $markup = 'Password reset instructions will be sent to your registered email address. <br /> ';
-    $markup .= 'Please check your span/junk folder for password reset instruction';
+    $markup .= 'Please check your spam/junk folder for password reset instruction';
     $form['mail']['#markup'] = $markup;
     $form['mail']['#suffix'] = '</p>';
   }
