@@ -355,7 +355,9 @@ ul#superfish-user-login {
   letter-spacing: 0.05em;
   &:hover,
   &:focus {
-    //background-color: #6CBE6F;
-    text-shadow: 1px 1px 0 $boxshadow;
+    background-color: $lightcolor;
+    border: 2px solid $basetextcolor;
+    color: $basetextcolor;
+    transition: 0.5s;
   }
 }

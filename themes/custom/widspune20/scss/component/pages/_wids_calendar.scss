@@ -20,7 +20,7 @@
         font-family: 'Poppins', sans-serif;
         font-size: 16px;
         font-weight: normal;
-        color: #00b140;
+        color: $basetextcolor;
         span {
           color: #333;
           display: inline-block;
@@ -28,13 +28,25 @@
           font-weight:600;
         }
         a {
-          color: #00b140;
+          color: $basetextcolor;
         }
       }
-      p{
+      p {
         color: #333;
+      }
+      .btn-rsvp, .btn-Cancel {
+        background-color: $basetextcolor;
+        border: 2px solid $basetextcolor;
+        color: $lightcolor;
+        outline:none;
+        margin-top:20px;
+        &:hover {
+          background-color: $lightcolor;
+          border: 2px solid $basetextcolor;
+          color: $basetextcolor;
+          transition: 0.5s;
+        }
       }
     }
   }
 }
-

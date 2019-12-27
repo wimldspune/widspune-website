@@ -37,6 +37,13 @@
             border: 1px solid $basetextcolor;
             padding: 14px 30px;
             color: $lightcolor;
+            &:hover,
+            &:focus {
+              background-color: $lightcolor;
+              border: 2px solid $basetextcolor;
+              color: $basetextcolor;
+              transition: 0.5s;
+            }
           }
         }
       }

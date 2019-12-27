@@ -9155,7 +9155,10 @@ ul#superfish-user-login li a:hover, ul#superfish-user-login li a:focus {
 }
 /* line 356, ../scss/component/pages/_default-pages.scss */
 .homepage-signup .btn:hover, .homepage-signup .btn:focus {
-  text-shadow: 1px 1px 0 rgba(40, 40, 40, 0.5);
+  background-color: #fff;
+  border: 2px solid #00b140;
+  color: #00b140;
+  transition: 0.5s;
 }
 
 /* line 2, ../scss/component/pages/_front-page.scss */
@@ -10122,6 +10125,21 @@ ul#superfish-user-login li a:hover, ul#superfish-user-login li a:focus {
 .wids-calendar .calendar-info .calendar-data p {
   color: #333;
 }
+/* line 37, ../scss/component/pages/_wids_calendar.scss */
+.wids-calendar .calendar-info .calendar-data .btn-rsvp, .wids-calendar .calendar-info .calendar-data .btn-Cancel {
+  background-color: #00b140;
+  border: 2px solid #00b140;
+  color: #fff;
+  outline: none;
+  margin-top: 20px;
+}
+/* line 43, ../scss/component/pages/_wids_calendar.scss */
+.wids-calendar .calendar-info .calendar-data .btn-rsvp:hover, .wids-calendar .calendar-info .calendar-data .btn-Cancel:hover {
+  background-color: #fff;
+  border: 2px solid #00b140;
+  color: #00b140;
+  transition: 0.5s;
+}
 
 /* line 2, ../scss/component/pages/_tech_talks.scss */
 .path-list .main-container {
@@ -10562,6 +10580,13 @@ ul#superfish-user-login li a:hover, ul#superfish-user-login li a:focus {
   border: 1px solid #00b140;
   padding: 14px 30px;
   color: #fff;
+}
+/* line 40, ../scss/component/regions/_four-column-block.scss */
+.block-four-column-para .field .field--item .paragraph .field--name-field-content-link a:hover, .block-four-column-para .field .field--item .paragraph .field--name-field-content-link a:focus {
+  background-color: #fff;
+  border: 2px solid #00b140;
+  color: #00b140;
+  transition: 0.5s;
 }
 
 /* line 2, ../scss/component/regions/_six-column-block.scss */
