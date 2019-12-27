@@ -1,4 +1,4 @@
-uuid: aa653e98-e5c3-4287-af03-2cd54dda404f
+uuid: 0f302d83-d75c-471a-a84c-d232dc266881
 langcode: en
 status: true
 dependencies:
@@ -12,8 +12,8 @@ dependencies:
     - node
     - time_field
     - user
-id: wids_pune_calendar
-label: 'WiDS Pune Calendar'
+id: wids_pune_calendar_vertical_listing
+label: 'WiDS Pune Calendar Vertical Listing'
 module: views
 description: ''
 tag: ''
@@ -60,7 +60,7 @@ display:
         type: default
         options:
           grouping: {  }
-          row_class: 'col-lg-4 col-md-4 col-sm-4'
+          row_class: col-lg-12
           default_row_class: true
       row:
         type: fields
@@ -332,7 +332,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"calendar-info\"> \r\n\t<div class=\"calendar-data\">  \r\n\t\t<h4>Title : {{ title }}</h4> \r\n\t\t<p>Venue : {{ field_venue_name }}  </p>\r\n\t\t<p>Date : {{ field_event_date }}</p>\r\n\t\t<p>Time : {{ field_event_time }}</p>\r\n\t</div>\r\n</div>"
+            text: "<div class=\"calendar-info\"> \r\n\t<div class=\"calendar-data\">  \r\n\t\t<h4><span>Title of the event :</span> {{ title }}</h4>\r\n\t\t<p><strong>Date :</strong> {{ field_event_date }}</p>\r\n\t\t<p><strong>Time :</strong> {{ field_event_time }}</p>\r\n\t\t<p><strong>Venue :<strong> {{ field_venue_name }}  </p>\r\n\t</div>\r\n</div>"
             make_link: false
             path: ''
             absolute: false
@@ -444,7 +444,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: list/v1/calendar
+      path: list/calendar
     cache_metadata:
       max-age: -1
       contexts:
