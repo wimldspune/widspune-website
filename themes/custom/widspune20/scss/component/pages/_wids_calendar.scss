@@ -31,6 +31,13 @@
           color: $basetextcolor;
         }
       }
+      a {
+        display: inline;
+        font-size: 15px;
+        color: #337ab7;
+        text-decoration: none;
+        padding: 0;
+      }
       p {
         color: #333;
       }

@@ -10122,10 +10122,18 @@ ul#superfish-user-login li a:hover, ul#superfish-user-login li a:focus {
   color: #00b140;
 }
 /* line 34, ../scss/component/pages/_wids_calendar.scss */
+.wids-calendar .calendar-info .calendar-data a {
+  display: inline;
+  font-size: 15px;
+  color: #337ab7;
+  text-decoration: none;
+  padding: 0;
+}
+/* line 41, ../scss/component/pages/_wids_calendar.scss */
 .wids-calendar .calendar-info .calendar-data p {
   color: #333;
 }
-/* line 37, ../scss/component/pages/_wids_calendar.scss */
+/* line 44, ../scss/component/pages/_wids_calendar.scss */
 .wids-calendar .calendar-info .calendar-data .btn-rsvp, .wids-calendar .calendar-info .calendar-data .btn-Cancel {
   background-color: #00b140;
   border: 2px solid #00b140;
@@ -10133,7 +10141,7 @@ ul#superfish-user-login li a:hover, ul#superfish-user-login li a:focus {
   outline: none;
   margin-top: 20px;
 }
-/* line 43, ../scss/component/pages/_wids_calendar.scss */
+/* line 50, ../scss/component/pages/_wids_calendar.scss */
 .wids-calendar .calendar-info .calendar-data .btn-rsvp:hover, .wids-calendar .calendar-info .calendar-data .btn-Cancel:hover {
   background-color: #fff;
   border: 2px solid #00b140;

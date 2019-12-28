@@ -4,8 +4,10 @@ status: true
 dependencies:
   config:
     - field.field.node.event.body
+    - field.field.node.event.field_event_agenda
     - field.field.node.event.field_event_date
     - field.field.node.event.field_event_time
+    - field.field.node.event.field_event_venue_address
     - field.field.node.event.field_event_year
     - field.field.node.event.field_venue_address_link
     - field.field.node.event.field_venue_name
@@ -28,27 +30,42 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  field_event_agenda:
+    weight: 108
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
   field_event_date:
     weight: 106
-    label: above
+    label: hidden
     settings:
-      format_type: medium
       timezone_override: ''
+      format_type: wids_calendar
     third_party_settings: {  }
     type: datetime_default
     region: content
   field_event_time:
     weight: 107
-    label: above
+    label: hidden
     settings:
+      timerange_format: 'start to end'
       time_format: 'h:i a'
-      timerange_format: 'start ~ end'
     third_party_settings: {  }
     type: time_range_formatter
     region: content
+  field_event_venue_address:
+    weight: 109
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
   field_event_year:
     weight: 102
-    label: above
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
@@ -56,7 +73,7 @@ content:
     region: content
   field_venue_address_link:
     weight: 105
-    label: above
+    label: hidden
     settings:
       trim_length: 80
       url_only: false
@@ -68,7 +85,7 @@ content:
     region: content
   field_venue_name:
     weight: 104
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -76,7 +93,7 @@ content:
     region: content
   links:
     weight: 100
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden: {  }
