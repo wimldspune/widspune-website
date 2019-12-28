@@ -7,12 +7,12 @@ widspune.sponser_us:
     _permission: 'access wids become sponsor'
 
 widspune.user_register:
-  path: '/user/sign-up'
+  path: '/sign-up'
   defaults:
     _title: 'Sign up'
     _form: 'Drupal\widspune\Form\SignUpForm'
   requirements:
-    _permission: 'access wids become sponsor'
+    _permission: 'access wids user_register'
 
 widspune.test:
   path: '/admin/widspune'

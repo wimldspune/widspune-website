@@ -25,9 +25,16 @@ class SignUpForm extends FormBase {
    * {@inheritdoc}
    */
   public function buildForm(array $form, FormStateInterface $form_state, $type = NULL) {
+//    $user = \Drupal::currentUser();
+//    $check_against = ['administrator'];
+//    $roles = $user->getRoles();
+//    $result = array_intersect($check_against, $roles);
+//    if ($user->id() !== 1 || empty($result)) {
+//      $response = new RedirectResponse("user/" . $user->id() . '/edit');
+//      $response->send();
+//    }
 
     $required = TRUE;
-
     // Full Name
     $form['field_full_name'] = [
       '#type' => 'textfield',

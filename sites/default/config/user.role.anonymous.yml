@@ -12,6 +12,8 @@ permissions:
   - 'access comments'
   - 'access content'
   - 'access site-wide contact form'
+  - 'access wids access wids user_register'
   - 'access wids become sponsor'
+  - 'access wids user_register'
   - 'search content'
   - 'view media'

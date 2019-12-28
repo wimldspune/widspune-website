@@ -1,2 +1,4 @@
 access wids become sponsor:
   title: 'Become a Sponsor'
+access wids user_register:
+  title: 'access wids user_register'
