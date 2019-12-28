@@ -1,0 +1,117 @@
+.wids-event-page {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #000000;
+  p {
+    line-height: 1.5;
+    font-size: 15px;
+  }
+  strong {
+    font-size: 16px;
+  }
+  .page-container {
+    .middle-section {
+      border: 1px solid #00b140;
+      padding: 0;
+      .header-content {
+        margin: 0;
+        padding: 0;
+        .heading-text {
+          margin: 20px 0px;
+          color: #00b140;
+          font-size: 30px;
+          padding: 0;
+        }
+        .agenda-section {
+          .field--label {
+            color: $basetextcolor;
+            font-size: 30px;
+            font-weight: normal;
+          }
+          .field--item {
+            ul {
+              list-style-type: none !important;
+              padding-left: 10px;
+              li {
+                margin: 15px 0 15px 10px;
+                position: relative;
+                line-height: 1.5;
+              }
+              li:before {
+                display: block;
+                content: " ";
+                float: left;
+                width: 0;
+                height: 0;
+                border-color: transparent;
+                border-style: solid;
+                border-width: 6px 0 6px 6px;
+                border-left-color: $basetextcolor;
+                margin-top: 5px;
+                margin-left: -20px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .event-info {
+      background-color: #00b140;
+
+      .location-outer {
+        color: $lightcolor;
+        .icon {
+          font-size: 0;
+          width: 50px;
+          height: 48px;
+          display: inline-block;
+          background-size: cover;
+        }
+        .event-date {
+          background-image: url(../images/dateandtime-icon1.png);
+          margin: 0 auto;
+        }
+        .location-icon {
+          background-image: url(../images/location-icon.png);
+          margin: 0 auto;
+        }
+        .field--name-field-date {
+          display: inline-block;
+        }
+      }
+      //.time {
+      //  display: inline-block;
+      //  font-size: 14px;
+      //  line-height: 1.4;
+      //  vertical-align: bottom;
+      //  color: #fff;
+      //  margin-bottom: 15px;
+      //}
+      .logos {
+        width: 135px;
+        margin: 25px 20px 10px 0px;
+        display: inline-block;
+        box-shadow: 0 0 6px #cac5c5;
+        height: 70px;
+        background: #fff;
+      }
+    }
+  }
+  .pd0 {
+    padding: 0;
+  }
+  //.icon {
+  //  font-size: 0;
+  //  width: 50px;
+  //  height: 48px;
+  //  display: inline-block;
+  //  background-size: cover;
+  //}
+  .event-open {
+    clear: both;
+    padding: 15px 0 10px;
+    font-style: italic;
+    font-size: 14px;
+    color: #fff;
+  }
+}
