@@ -10469,17 +10469,32 @@ ul#superfish-user-login li a:hover, ul#superfish-user-login li a:focus {
   width: 100%;
   font-size: 16px;
 }
+/* line 17, ../scss/component/forms/_user_forms.scss */
+.widspune-sign-up-form .forgot-password, .user-pass-reset .forgot-password, .user-register-form .forgot-password, .user-login-form .forgot-password, .user-pass .forgot-password, .user-form .forgot-password {
+  margin-top: 15px;
+}
+/* line 20, ../scss/component/forms/_user_forms.scss */
+.widspune-sign-up-form .register-link-wrapper, .user-pass-reset .register-link-wrapper, .user-register-form .register-link-wrapper, .user-login-form .register-link-wrapper, .user-pass .register-link-wrapper, .user-form .register-link-wrapper {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+/* line 23, ../scss/component/forms/_user_forms.scss */
+.widspune-sign-up-form .register-link-wrapper a, .user-pass-reset .register-link-wrapper a, .user-register-form .register-link-wrapper a, .user-login-form .register-link-wrapper a, .user-pass .register-link-wrapper a, .user-form .register-link-wrapper a {
+  display: block;
+  text-decoration: none;
+  color: #00b140;
+}
 
-/* line 18, ../scss/component/forms/_user_forms.scss */
+/* line 30, ../scss/component/forms/_user_forms.scss */
 .user-register-form {
   margin-top: 20px;
 }
-/* line 21, ../scss/component/forms/_user_forms.scss */
+/* line 33, ../scss/component/forms/_user_forms.scss */
 .user-register-form .bs-region--top .form-wrapper {
   float: left;
   width: 67%;
 }
-/* line 24, ../scss/component/forms/_user_forms.scss */
+/* line 36, ../scss/component/forms/_user_forms.scss */
 .user-register-form .bs-region--top .form-wrapper .form-item-mail, .user-register-form .bs-region--top .form-wrapper .form-item-name {
   width: 49%;
   position: relative;
@@ -10487,12 +10502,12 @@ ul#superfish-user-login li a:hover, ul#superfish-user-login li a:focus {
   padding-right: 15px;
   float: left;
 }
-/* line 31, ../scss/component/forms/_user_forms.scss */
+/* line 43, ../scss/component/forms/_user_forms.scss */
 .user-register-form .bs-region--top .form-wrapper .form-item-name {
   padding-left: 15px;
   width: 51%;
 }
-/* line 36, ../scss/component/forms/_user_forms.scss */
+/* line 48, ../scss/component/forms/_user_forms.scss */
 .user-register-form .bs-region--top .field--name-field-dob {
   width: 33%;
   position: relative;
@@ -10500,16 +10515,16 @@ ul#superfish-user-login li a:hover, ul#superfish-user-login li a:focus {
   padding-right: 15px;
   padding-left: 15px;
 }
-/* line 44, ../scss/component/forms/_user_forms.scss */
+/* line 56, ../scss/component/forms/_user_forms.scss */
 .user-register-form .bs-region--middle {
   margin-bottom: 20px;
 }
-/* line 47, ../scss/component/forms/_user_forms.scss */
+/* line 59, ../scss/component/forms/_user_forms.scss */
 .user-register-form .bs-region--bottom {
   margin-top: 20px;
 }
 
-/* line 54, ../scss/component/forms/_user_forms.scss */
+/* line 66, ../scss/component/forms/_user_forms.scss */
 .user-register-form .field--name-field-participation-year legend, .user-form .field--name-field-participation-year legend {
   border: none;
   font-size: 20px;
@@ -10517,20 +10532,20 @@ ul#superfish-user-login li a:hover, ul#superfish-user-login li a:focus {
   background: #00b140;
   color: #fff;
 }
-/* line 62, ../scss/component/forms/_user_forms.scss */
+/* line 74, ../scss/component/forms/_user_forms.scss */
 .user-register-form .form-actions, .user-form .form-actions {
   padding: 0 30px;
 }
-/* line 64, ../scss/component/forms/_user_forms.scss */
+/* line 76, ../scss/component/forms/_user_forms.scss */
 .user-register-form .form-actions .button, .user-form .form-actions .button {
   font-size: 16px;
 }
 
-/* line 70, ../scss/component/forms/_user_forms.scss */
+/* line 82, ../scss/component/forms/_user_forms.scss */
 .user-form {
   margin-top: 20px;
 }
-/* line 74, ../scss/component/forms/_user_forms.scss */
+/* line 86, ../scss/component/forms/_user_forms.scss */
 .user-form .bs-region--top .form-wrapper > .form-item {
   width: 67%;
   position: relative;
@@ -10539,25 +10554,25 @@ ul#superfish-user-login li a:hover, ul#superfish-user-login li a:focus {
   float: left;
   margin-bottom: 0;
 }
-/* line 82, ../scss/component/forms/_user_forms.scss */
+/* line 94, ../scss/component/forms/_user_forms.scss */
 .user-form .bs-region--top .form-wrapper .form-type-email {
   width: 33%;
   margin-bottom: 36px;
   padding-right: 0;
 }
 
-/* line 94, ../scss/component/forms/_user_forms.scss */
+/* line 106, ../scss/component/forms/_user_forms.scss */
 .user-login-form .form-item label:before, .user-pass .form-item label:before {
   font: normal normal normal 14px/1 FontAwesome;
   margin-right: 8px;
   font-size: 18px;
   color: #00b140;
 }
-/* line 102, ../scss/component/forms/_user_forms.scss */
+/* line 114, ../scss/component/forms/_user_forms.scss */
 .user-login-form .form-item-name label:before, .user-pass .form-item-name label:before {
   content: "\f007";
 }
-/* line 107, ../scss/component/forms/_user_forms.scss */
+/* line 119, ../scss/component/forms/_user_forms.scss */
 .user-login-form .form-item-pass label:before, .user-pass .form-item-pass label:before {
   content: "\f13e";
 }

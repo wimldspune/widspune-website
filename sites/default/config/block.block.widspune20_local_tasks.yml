@@ -2,6 +2,8 @@ uuid: b51f2a96-6fe3-42a6-827b-46be8f8f48e2
 langcode: en
 status: true
 dependencies:
+  module:
+    - system
   theme:
     - widspune20
 _core:
@@ -19,4 +21,9 @@ settings:
   label_display: '0'
   primary: true
   secondary: true
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: "/user/login\r\n/sign-up\r\n/user/register\r\n/user/password"
+    negate: true
+    context_mapping: {  }

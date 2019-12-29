@@ -56,6 +56,22 @@ function widspune_form_user_pass_alter(&$form, FormStateInterface $form_state, $
  */
 function widspune_form_user_login_form_alter(&$form, FormStateInterface $form_state, $form_id) {
   $form['actions']['submit']['#value'] = 'Sign in';
+  $register_link = '/sign-up';
+  $markup = '
+    <div class="forgot-password">
+        <a href="/user/password">Forgot Password ?</a>
+    </div>
+    <div class="register-link-wrapper js-form-item form-item">
+        Haven\'t sign-up yet?
+        <a href="' . $register_link . '">
+         Sign up now
+        </a>
+    </div>
+  ';
+  $form['actions']['prefix']['#markup'] = $markup;
+//  $form['suffix']['#markup'] = '<div class="new-account">
+//  <p>Already registered? <a href="/user/login">Login Now</a></p>
+//</div>';
 }
 
 /**
@@ -65,13 +81,12 @@ function widspune_form_user_pass_reset_alter(&$form, FormStateInterface $form_st
   $form['actions']['submit']['#value'] = 'Sign in';
 }
 
-
-
 /**
  * Implements hook_local_tasks_alter().
  */
 function widspune_local_tasks_alter(&$local_tasks) {
   $local_tasks['user.register']['title'] = 'Sign Up';
+  $local_tasks['user.register']['route_name'] = 'widspune.user_register';
   $local_tasks['user.login']['title'] = 'Sign In';
   $local_tasks['user.pass']['title'] = 'Forgotten password?';
 }
