@@ -22,10 +22,23 @@ rsvp_confirm.view_calendar:
     _permission: 'access content'
 
 rsvp_confirm.rsvp_conform:
-  path: '/rsvp/{node}'
+  path: '/rsvp/confirm/{node}'
   defaults:
     _title: 'RSVP'
-    _controller: '\Drupal\rsvp_confirm\Controller\RsvpConfirm::conform'
+    _controller: '\Drupal\rsvp_confirm\Controller\RsvpConfirm::confirm'
   requirements:
     _permission: 'create rsvp confirm'
     node: \d+
+  options:
+    no_cache: 'TRUE'
+
+rsvp_confirm.rsvp_cancel:
+  path: '/rsvp/cancel/{node}'
+  defaults:
+    _title: 'RSVP'
+    _controller: '\Drupal\rsvp_confirm\Controller\RsvpConfirm::cancel'
+  requirements:
+    _permission: 'delete rsvp confirm'
+    node: \d+
+  options:
+    no_cache: 'TRUE'

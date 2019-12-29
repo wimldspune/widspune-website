@@ -37,4 +37,24 @@ function template_preprocess_rsvp_confirm(array &$variables) {
   }
 }
 
+/**
+ * Implements hook_mail().
+ */
+function rsvp_confirm_mail($key, &$message, $params) {
+
+ switch ($key) {
+   case 'rsvp_confirm':
+     $message['from'] = \Drupal::config('system.site')->get('mail');
+//     $body = <<<str
+//Thank you for your RSVP!
+//Please note that attendance must be confirmed with a confirmation email to attend.
+//We look forward to seeing you soon for this important event!
+//str;
+     $message['subject'] = t('RSVP accepted: @title', ['@title' =>
+       $params['node_title']]);
+     $message['body'][] = $params['message'] . ' here';
+     break;
+ }
+}
+
 

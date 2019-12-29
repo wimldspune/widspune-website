@@ -219,7 +219,7 @@ class RsvpConfirm extends ContentEntityBase implements RsvpConfirmInterface {
       ->setLabel(t('Status'))
       ->setDescription(t('A boolean indicating the user has confirmed.'))
       ->setDefaultValue(TRUE)
-      ->setSetting('on_label', 'Enabled')
+      ->setSetting('on_label', 'RSVP confirmed')
       ->setDisplayOptions('form', [
         'type' => 'boolean_checkbox',
         'settings' => [
@@ -254,10 +254,10 @@ class RsvpConfirm extends ContentEntityBase implements RsvpConfirmInterface {
       ->setDisplayConfigurable('view', TRUE);
 
     $fields['reconfirm'] = BaseFieldDefinition::create('boolean')
-      ->setLabel(t('Status'))
+      ->setLabel(t('Reconfirm Status'))
       ->setDescription(t('A boolean indicating whether user reconfirms.'))
       ->setDefaultValue(TRUE)
-      ->setSetting('on_label', 'Enabled')
+      ->setSetting('on_label', 'RSVP reconfirm')
       ->setDisplayOptions('form', [
         'type' => 'boolean_checkbox',
         'settings' => [
@@ -277,7 +277,7 @@ class RsvpConfirm extends ContentEntityBase implements RsvpConfirmInterface {
       ->setDisplayConfigurable('view', TRUE);
 
     $fields['re_confirmation_date'] = BaseFieldDefinition::create('created')
-      ->setLabel(t('Confirmed on'))
+      ->setLabel(t('Reconfirm  Confirmed on'))
       ->setDescription(t('The time that the rsvp re-confirm'))
       ->setDisplayOptions('view', [
         'label' => 'above',
@@ -292,10 +292,10 @@ class RsvpConfirm extends ContentEntityBase implements RsvpConfirmInterface {
       ->setDisplayConfigurable('view', TRUE);
 
     $fields['cancel'] = BaseFieldDefinition::create('boolean')
-      ->setLabel(t('Status'))
+      ->setLabel(t('Cancelled Status'))
       ->setDescription(t('A boolean indicating whether user cancels.'))
       ->setDefaultValue(TRUE)
-      ->setSetting('on_label', 'Enabled')
+      ->setSetting('on_label', 'RSVP Cancelled')
       ->setDisplayOptions('form', [
         'type' => 'boolean_checkbox',
         'settings' => [
@@ -315,7 +315,7 @@ class RsvpConfirm extends ContentEntityBase implements RsvpConfirmInterface {
       ->setDisplayConfigurable('view', TRUE);
 
     $fields['cancellation_date'] = BaseFieldDefinition::create('created')
-      ->setLabel(t('Confirmed on'))
+      ->setLabel(t('Cancelled  Confirmed on'))
       ->setDescription(t('The time that the rsvp cancelled.'))
       ->setDisplayOptions('view', [
         'label' => 'above',

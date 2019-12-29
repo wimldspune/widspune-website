@@ -41,17 +41,20 @@
       p {
         color: #333;
       }
-      .btn-rsvp, .btn-Cancel {
-        background-color: $basetextcolor;
-        border: 2px solid $basetextcolor;
-        color: $lightcolor;
-        outline:none;
-        margin-top:20px;
-        &:hover {
-          background-color: $lightcolor;
+      .rsvp-links {
+        .btn-rsvp, .btn-Cancel {
+          padding: 5px 10px;
+          background-color: $basetextcolor;
           border: 2px solid $basetextcolor;
-          color: $basetextcolor;
-          transition: 0.5s;
+          color: $lightcolor;
+          outline:none;
+          margin:20px 1px 0 0;
+          &:hover {
+            background-color: $lightcolor;
+            border: 2px solid $basetextcolor;
+            color: $basetextcolor;
+            transition: 0.5s;
+          }
         }
       }
     }
