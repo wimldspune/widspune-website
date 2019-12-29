@@ -1,0 +1,4 @@
+services:
+  rsvp_confirm.confirm:
+    class: Drupal\rsvp_confirm\RsvpServiceConfirmation
+    arguments: ['@entity_type.manager', '@logger.factory', '@user.current_user_context', '@node.node_route_context']

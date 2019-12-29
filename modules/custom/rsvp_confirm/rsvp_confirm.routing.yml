@@ -1,0 +1,31 @@
+entity.rsvp_confirm.collection:
+  path: '/admin/content/rsvp-confirm'
+  defaults:
+    _entity_list: 'rsvp_confirm'
+    _title: 'RSVP Confirm'
+  requirements:
+    _permission: 'view rsvp confirm'
+rsvp_confirm.settings:
+  path: '/admin/config/rsvp_confirm/settings'
+  defaults:
+    _form: 'Drupal\rsvp_confirm\Form\SettingsForm'
+    _title: 'RSVP confirm settings'
+  requirements:
+    _permission: 'administer rsvp_confirm configuration'
+
+rsvp_confirm.view_calendar:
+  path: '/rsvp/calendar'
+  defaults:
+    _title: 'WiDS Pune 2020 Calendar'
+    _controller: '\Drupal\rsvp_confirm\Controller\CalendarViewController::build'
+  requirements:
+    _permission: 'access content'
+
+rsvp_confirm.rsvp_conform:
+  path: '/rsvp/{node}'
+  defaults:
+    _title: 'RSVP'
+    _controller: '\Drupal\rsvp_confirm\Controller\RsvpConfirm::conform'
+  requirements:
+    _permission: 'create rsvp confirm'
+    node: \d+
