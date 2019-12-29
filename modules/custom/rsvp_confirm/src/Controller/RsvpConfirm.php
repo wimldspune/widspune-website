@@ -185,7 +185,7 @@ str;
         '#markup' => $this->t('It works!'),
       ];
       $markup = <<<str
-<h2>You have canceled the RSVP.</h2>
+<h2>You have cancelled the RSVP.</h2>
 
 <p>You have successfully cancelled the RSVP.</p>
 str;
