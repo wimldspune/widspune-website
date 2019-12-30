@@ -1,0 +1,30 @@
+uuid: 45a87936-57a1-4187-8546-f81ce1297883
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_t_shirt_size
+    - taxonomy.vocabulary.t_shirt_sizes
+  module:
+    - user
+id: user.user.field_t_shirt_size
+field_name: field_t_shirt_size
+entity_type: user
+bundle: user
+label: 'T-Shirt Size'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      t_shirt_sizes: t_shirt_sizes
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -3,7 +3,7 @@ name: 'WiDS Pune'
 mail: shinde.r.a@gmail.com
 slogan: ''
 page:
-  403: /user/login
+  403: ''
   404: ''
   front: /node
 admin_compact_mode: false

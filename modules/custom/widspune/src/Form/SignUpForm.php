@@ -25,14 +25,6 @@ class SignUpForm extends FormBase {
    * {@inheritdoc}
    */
   public function buildForm(array $form, FormStateInterface $form_state, $type = NULL) {
-//    $user = \Drupal::currentUser();
-//    $check_against = ['administrator'];
-//    $roles = $user->getRoles();
-//    $result = array_intersect($check_against, $roles);
-//    if ($user->id() !== 1 || empty($result)) {
-//      $response = new RedirectResponse("user/" . $user->id() . '/edit');
-//      $response->send();
-//    }
 
     $required = TRUE;
     // Full Name
@@ -57,6 +49,7 @@ class SignUpForm extends FormBase {
       '#required' => $required,
       '#attributes' => ['class' => ['password-field', 'js-password-field']],
       '#error_no_message' => TRUE,
+      '#placeholder' => $this->t('Your secret to sign in.'),
     ];
 
     // Mobile Number
@@ -66,6 +59,7 @@ class SignUpForm extends FormBase {
       '#required' => $required,
       '#placeholder' => $this->t('e.g. 1234567890'),
     ];
+
     // WhatsApp Number
     $form['field_whatsapp_number'] = [
       '#type' => 'textfield',
@@ -95,6 +89,21 @@ class SignUpForm extends FormBase {
     ];
 
     // T-shirt size
+    $query = \Drupal::entityQuery('taxonomy_term');
+    $query->condition('vid',  'age_groups');
+    $query->sort('tid');
+    $tids = $query->execute();
+    $terms = Term::loadMultiple($tids);
+    $term_data = [];
+    foreach ($terms as $term) {
+      $term_data[$term->id()] = $term->getName();
+    }
+    $form['field_t_shirt_size'] = [
+      '#type' => 'select',
+      '#title' => $this->t('T-shirt size'),
+      '#required' => $required,
+      '#options' => $term_data,
+    ];
 
     // Educational Qualifications with Specialisation e.g. BE - Computer Science
     $form['field_education'] = [
@@ -107,6 +116,7 @@ class SignUpForm extends FormBase {
     // Age
     $query = \Drupal::entityQuery('taxonomy_term');
     $query->condition('vid',  'age_groups');
+    $query->sort('tid');
     $tids = $query->execute();
     $terms = Term::loadMultiple($tids);
     $term_data = [];
@@ -139,6 +149,7 @@ class SignUpForm extends FormBase {
     // Total Experience
     $query = \Drupal::entityQuery('taxonomy_term');
     $query->condition('vid',  'total_experience');
+    $query->sort('tid');
     $tids = $query->execute();
     $terms = Term::loadMultiple($tids);
     $term_data = [];
@@ -155,6 +166,7 @@ class SignUpForm extends FormBase {
     // Experience in DS (Data Science)
     $query = \Drupal::entityQuery('taxonomy_term');
     $query->condition('vid',  'exp_in_ds_data_science');
+    $query->sort('tid');
     $tids = $query->execute();
     $terms = Term::loadMultiple($tids);
     $term_data = [];
@@ -178,14 +190,14 @@ class SignUpForm extends FormBase {
       ),
      '#upload_location' => 'public://profile-pictures',
      '#required' => $required,
-     '#description' => $this->t('Your virtual face or picture.'),
+     '#description' => $this->t('Your virtual face or picture. <br> 100 MB limit. <br>Allowed types: png gif jpg jpeg.<br>Headshot if card size.'),
     ];
 
     // Linkedin profile
     $form['field_linkedin_profile'] = [
       '#type' => 'textfield',
       '#title' => $this->t('Linkedin profile'),
-      '#required' => $required,
+      '#required' => FALSE,
       '#placeholder' => $this->t('e.g. https://www.linkedin.com/'),
     ];
 

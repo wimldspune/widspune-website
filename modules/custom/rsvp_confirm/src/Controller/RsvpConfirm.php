@@ -120,28 +120,14 @@ class RsvpConfirm extends ControllerBase {
       $confirmation->save();
 
       $markup = <<<str
-<h2>Thank you for your RSVP!</h2>
+<h2>Thank you!</h2>
 
-<p>Please note that attendance must be confirmed with a confirmation email to attend.
+<p>We have received your RSVP request.
 <br>
-We look forward to seeing you soon for this important event!</p>
+We will get back to you with confirmation soon.!</p>
 str;
       $email_text = strip_tags($markup);
-
-      /** @var \Drupal\Core\Mail\MailManager $mailManager */
-      $mailManager = \Drupal::service('plugin.manager.mail');
-      $to = $this->user->getEmail();
-      $params['message'] = $email_text;
-      $params['node_title'] = $this->nodeContent->label();
-      $language = $this->user->getPreferredLangcode();
-      $result = $mailManager->mail('rsvp_confirm', 'rsvp_confirm', $to, $language, $params);
-      $messenger = \Drupal::messenger();
-      if ($result['result'] !== true) {
-        $messenger->addError(t('There was a problem sending your message and it was not sent.'));
-      }
-      else {
-        $messenger->addMessage(t('RSVP Email sent to @email.', ['@email' => $to]));
-      }
+      $this->sendEmail('rsvp_confirm', $email_text);
     }
 
     $build['content'] = [
@@ -152,6 +138,23 @@ str;
     ];
 
     return $build;
+  }
+
+  private function sendEmail($key ,$message) {
+    /** @var \Drupal\Core\Mail\MailManager $mailManager */
+    $mailManager = \Drupal::service('plugin.manager.mail');
+    $to = $this->user->getEmail();
+    $params['message'] = $message;
+    $params['node_title'] = $this->nodeContent->label();
+    $language = $this->user->getPreferredLangcode();
+    $result = $mailManager->mail('rsvp_confirm', $key, $to, $language, $params);
+    $messenger = \Drupal::messenger();
+    if ($result['result'] !== true) {
+      $messenger->addError(t('There was a problem sending your message and it was not sent.'));
+    }
+    else {
+      $messenger->addMessage(t('RSVP Email sent to @email.', ['@email' => $to]));
+    }
   }
 
   private function getRsvp() {
@@ -189,6 +192,8 @@ str;
 
 <p>You have successfully cancelled the RSVP.</p>
 str;
+      $email_text = strip_tags($markup);
+      $this->sendEmail('rsvp_cancel', $email_text);
     }
     else {
       $markup = 'You have not RSVPed this event.';
