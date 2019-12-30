@@ -3,6 +3,7 @@
 namespace Drupal\widspune\Form;
 
 use Drupal\Component\Utility\Environment;
+use Drupal\Component\Utility\UrlHelper;
 use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\taxonomy\Entity\Term;
@@ -26,7 +27,7 @@ class SignUpForm extends FormBase {
    */
   public function buildForm(array $form, FormStateInterface $form_state, $type = NULL) {
 
-    $required = TRUE;
+    $required = false;
     // Full Name
     $form['field_full_name'] = [
       '#type' => 'textfield',
@@ -90,7 +91,7 @@ class SignUpForm extends FormBase {
 
     // T-shirt size
     $query = \Drupal::entityQuery('taxonomy_term');
-    $query->condition('vid',  'age_groups');
+    $query->condition('vid',  't_shirt_sizes');
     $query->sort('tid');
     $tids = $query->execute();
     $terms = Term::loadMultiple($tids);
@@ -235,6 +236,17 @@ class SignUpForm extends FormBase {
     elseif ($email !== '' && $this->uniqueEmailValidate($email)) {
       $form_state->setErrorByName('email', t('The email address %mail is already taken.', ['%mail' => $email]));
     }
+
+    $value = $form_state->getValue('field_linkedin_profile');
+    $val1 = 'https://www.linkedin.com/';
+    $val2 = 'http://www.linkedin.com/';
+    if ($value !== '' && !UrlHelper::isValid($value, TRUE)) {
+      $form_state->setErrorByName('field_linkedin_profile', t('The URL %url is not valid.', ['%url' => $value]));
+      if (substr($value, 0, strlen($val1)) !== $val1
+        && substr($value, 0, strlen($val2)) !== $val2) {
+        $form_state->setErrorByName('field_linkedin_profile', t('The URL %url is not valid LinkedIn url.', ['%url' => $value]));
+      }
+    }
   }
 
   /**
@@ -260,6 +272,7 @@ class SignUpForm extends FormBase {
     $user['field_mobile_number'] = $values->getValue('field_mobile_number');
     $user['field_whatsapp_number'] = $values->getValue('field_whatsapp_number');
     $user['field_pin_code'] = $values->getValue('field_pin_code');
+    $user['field_t_shirt_size'] = $values->getValue('field_t_shirt_size');
     $user['field_education'] = $values->getValue('field_education');
     $user['field_designation'] = $values->getValue('field_designation');
 
@@ -274,13 +287,15 @@ class SignUpForm extends FormBase {
     $user['user_picture'] = $file_id;
 
     $field_com_org_uni = $values->getValue('field_com_org_uni');
-    if ($this->checkCompanyUniversity($field_com_org_uni)) {
-      $term = $this->checkCompanyUniversity($field_com_org_uni);
+    if (!empty($field_com_org_uni)) {
+      if ($this->checkCompanyUniversity($field_com_org_uni)) {
+        $term = $this->checkCompanyUniversity($field_com_org_uni);
+      }
+      else {
+        $term = $this->createCompanyUniversity($field_com_org_uni);
+      }
+      $user['field_com_org_uni'] = $term;
     }
-    else {
-      $term = $this->createCompanyUniversity($field_com_org_uni);
-    }
-    $user['field_com_org_uni'] = $term;
 
     $email = $values->getValue('email');
     $pass = $values->getValue('pass');
@@ -293,13 +308,14 @@ class SignUpForm extends FormBase {
     $new_user->activate();
 
     foreach ($user as $field => $value) {
-      $new_user->set($field, $value);
+      if ($value) {
+        $new_user->set($field, $value);
+      }
     }
     $new_user->save();
     _user_mail_notify('register_no_approval_required', $new_user);
     \Drupal::messenger()->addStatus($this->t('Registration successful.'));
     $form_state->setRedirect('<front>');
-
   }
 
   private function checkCompanyUniversity($name) {
