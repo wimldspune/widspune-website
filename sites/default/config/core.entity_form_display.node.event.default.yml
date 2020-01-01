@@ -6,6 +6,8 @@ dependencies:
     - field.field.node.event.body
     - field.field.node.event.field_event_agenda
     - field.field.node.event.field_event_date
+    - field.field.node.event.field_event_speaker
+    - field.field.node.event.field_event_sponsors
     - field.field.node.event.field_event_time
     - field.field.node.event.field_event_venue_address
     - field.field.node.event.field_event_year
@@ -51,6 +53,24 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
+    region: content
+  field_event_speaker:
+    weight: 26
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_event_sponsors:
+    weight: 27
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
     region: content
   field_event_time:
     weight: 4

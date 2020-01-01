@@ -1,0 +1,20 @@
+uuid: 27fc6b67-787d-4fa7-be89-ac8a4c1a6b39
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - user
+id: node.field_event_speaker
+field_name: field_event_speaker
+entity_type: node
+type: entity_reference
+settings:
+  target_type: user
+module: core
+locked: false
+cardinality: 2
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

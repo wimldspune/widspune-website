@@ -6,6 +6,8 @@ dependencies:
     - field.field.node.event.body
     - field.field.node.event.field_event_agenda
     - field.field.node.event.field_event_date
+    - field.field.node.event.field_event_speaker
+    - field.field.node.event.field_event_sponsors
     - field.field.node.event.field_event_time
     - field.field.node.event.field_event_venue_address
     - field.field.node.event.field_event_year
@@ -45,6 +47,22 @@ content:
       format_type: wids_calendar
     third_party_settings: {  }
     type: datetime_default
+    region: content
+  field_event_speaker:
+    weight: 110
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_event_sponsors:
+    weight: 111
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
     region: content
   field_event_time:
     weight: 107

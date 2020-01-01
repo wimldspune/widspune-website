@@ -1,0 +1,10 @@
+uuid: c8ae2f00-13e2-4325-9954-39c35dbc90f1
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.event_details
+label: 'Event details'
+targetEntityType: user
+cache: true

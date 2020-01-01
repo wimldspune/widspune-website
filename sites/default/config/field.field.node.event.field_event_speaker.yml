@@ -1,0 +1,36 @@
+uuid: 1ec7aaed-c579-43b6-9ff7-effd0c138768
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_speaker
+    - node.type.event
+id: node.event.field_event_speaker
+field_name: field_event_speaker
+entity_type: node
+bundle: event
+label: 'Event Speaker'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: false
+    filter:
+      type: role
+      role:
+        speaker_2020: speaker_2020
+        administrator: '0'
+        editor: '0'
+        organiser: '0'
+        volunteer: '0'
+        speaker: '0'
+        volunteer_2020: '0'
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

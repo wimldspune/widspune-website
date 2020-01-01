@@ -49,7 +49,6 @@ module:
   recaptcha: 0
   remove_username: 0
   responsive_image: 0
-  rsvp_confirm: 0
   search: 0
   shortcut: 0
   smtp: 0

@@ -1,0 +1,116 @@
+uuid: 0cd3aa9b-0cf8-4152-b88c-bc6addc6df4a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.user.event_details
+    - field.field.user.user.field_address
+    - field.field.user.user.field_age
+    - field.field.user.user.field_are_you_a_member_of
+    - field.field.user.user.field_bio
+    - field.field.user.user.field_com_org_uni
+    - field.field.user.user.field_designation
+    - field.field.user.user.field_dob
+    - field.field.user.user.field_education
+    - field.field.user.user.field_exp_ds
+    - field.field.user.user.field_exp_in_data_science
+    - field.field.user.user.field_full_name
+    - field.field.user.user.field_gender
+    - field.field.user.user.field_linkedin_profile
+    - field.field.user.user.field_member_of
+    - field.field.user.user.field_mobile_number
+    - field.field.user.user.field_participation_year
+    - field.field.user.user.field_photo_with_frame
+    - field.field.user.user.field_pin_code
+    - field.field.user.user.field_promotion_source
+    - field.field.user.user.field_role_as_volunteer
+    - field.field.user.user.field_speaker_order
+    - field.field.user.user.field_t_shirt_size
+    - field.field.user.user.field_total_exp
+    - field.field.user.user.field_total_experience
+    - field.field.user.user.field_user_phone_type
+    - field.field.user.user.field_user_remark
+    - field.field.user.user.field_volunteer_nature
+    - field.field.user.user.field_volunteer_order
+    - field.field.user.user.field_whatsapp_number
+    - field.field.user.user.user_picture
+    - image.style.thumbnail
+  module:
+    - image
+    - text
+    - user
+_core:
+  default_config_hash: V51QPCKkgNREKtSmB9Iu2wmAMEpktVpnzklWaZV8UYo
+id: user.user.event_details
+targetEntityType: user
+bundle: user
+mode: event_details
+content:
+  field_bio:
+    type: text_trimmed
+    weight: 4
+    region: content
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  field_com_org_uni:
+    weight: 3
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_designation:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_full_name:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  user_picture:
+    type: image
+    weight: 1
+    region: content
+    settings:
+      image_style: thumbnail
+      image_link: ''
+    third_party_settings: {  }
+    label: hidden
+hidden:
+  field_address: true
+  field_age: true
+  field_are_you_a_member_of: true
+  field_dob: true
+  field_education: true
+  field_exp_ds: true
+  field_exp_in_data_science: true
+  field_gender: true
+  field_linkedin_profile: true
+  field_member_of: true
+  field_mobile_number: true
+  field_participation_year: true
+  field_photo_with_frame: true
+  field_pin_code: true
+  field_promotion_source: true
+  field_role_as_volunteer: true
+  field_speaker_order: true
+  field_t_shirt_size: true
+  field_total_exp: true
+  field_total_experience: true
+  field_user_phone_type: true
+  field_user_remark: true
+  field_volunteer_nature: true
+  field_volunteer_order: true
+  field_whatsapp_number: true
+  member_for: true
