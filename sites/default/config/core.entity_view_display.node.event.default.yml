@@ -50,15 +50,15 @@ content:
     region: content
   field_event_speaker:
     weight: 110
-    label: above
+    label: hidden
     settings:
-      link: true
+      link: false
     third_party_settings: {  }
     type: entity_reference_label
     region: content
   field_event_sponsors:
     weight: 111
-    label: above
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }

@@ -16,21 +16,10 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: 'default:user'
+  handler: views
   handler_settings:
-    include_anonymous: false
-    filter:
-      type: role
-      role:
-        speaker_2020: speaker_2020
-        administrator: '0'
-        editor: '0'
-        organiser: '0'
-        volunteer: '0'
-        speaker: '0'
-        volunteer_2020: '0'
-    target_bundles: null
-    sort:
-      field: _none
-    auto_create: false
+    view:
+      view_name: event_speakers
+      display_name: entity_reference_1
+      arguments: {  }
 field_type: entity_reference
