@@ -57,6 +57,27 @@
     }
     .event-info {
       background-color: #00b140;
+      .event-speakers {
+        color: $lightcolor;
+        margin: 10px 0px;
+        .fs14 {
+          font-size: 14px;
+        }
+        .founder-info {
+          img {
+            max-width: 160px;
+            margin: 0 auto;
+            border-radius: 6px;
+          }
+        }
+        .speaker-intro {
+          font-weight: normal;
+        }
+        .border-bottom {
+          border-bottom: 1px dotted $lightcolor;
+          padding-bottom: 20px;
+        }
+      }
 
       .location-outer {
         color: $lightcolor;

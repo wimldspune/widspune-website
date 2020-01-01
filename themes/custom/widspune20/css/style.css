@@ -10304,11 +10304,35 @@ ul#superfish-user-login li a:hover, ul#superfish-user-login li a:focus {
 .wids-event-page .page-container .event-info {
   background-color: #00b140;
 }
-/* line 61, ../scss/component/pages/_wids_event_page.scss */
+/* line 60, ../scss/component/pages/_wids_event_page.scss */
+.wids-event-page .page-container .event-info .event-speakers {
+  color: #fff;
+  margin: 10px 0px;
+}
+/* line 63, ../scss/component/pages/_wids_event_page.scss */
+.wids-event-page .page-container .event-info .event-speakers .fs14 {
+  font-size: 14px;
+}
+/* line 67, ../scss/component/pages/_wids_event_page.scss */
+.wids-event-page .page-container .event-info .event-speakers .founder-info img {
+  max-width: 160px;
+  margin: 0 auto;
+  border-radius: 6px;
+}
+/* line 73, ../scss/component/pages/_wids_event_page.scss */
+.wids-event-page .page-container .event-info .event-speakers .speaker-intro {
+  font-weight: normal;
+}
+/* line 76, ../scss/component/pages/_wids_event_page.scss */
+.wids-event-page .page-container .event-info .event-speakers .border-bottom {
+  border-bottom: 1px dotted #fff;
+  padding-bottom: 20px;
+}
+/* line 82, ../scss/component/pages/_wids_event_page.scss */
 .wids-event-page .page-container .event-info .location-outer {
   color: #fff;
 }
-/* line 63, ../scss/component/pages/_wids_event_page.scss */
+/* line 84, ../scss/component/pages/_wids_event_page.scss */
 .wids-event-page .page-container .event-info .location-outer .icon {
   font-size: 0;
   width: 50px;
@@ -10316,21 +10340,21 @@ ul#superfish-user-login li a:hover, ul#superfish-user-login li a:focus {
   display: inline-block;
   background-size: cover;
 }
-/* line 70, ../scss/component/pages/_wids_event_page.scss */
+/* line 91, ../scss/component/pages/_wids_event_page.scss */
 .wids-event-page .page-container .event-info .location-outer .event-date {
   background-image: url(../images/dateandtime-icon1.png);
   margin: 0 auto;
 }
-/* line 74, ../scss/component/pages/_wids_event_page.scss */
+/* line 95, ../scss/component/pages/_wids_event_page.scss */
 .wids-event-page .page-container .event-info .location-outer .location-icon {
   background-image: url(../images/location-icon.png);
   margin: 0 auto;
 }
-/* line 78, ../scss/component/pages/_wids_event_page.scss */
+/* line 99, ../scss/component/pages/_wids_event_page.scss */
 .wids-event-page .page-container .event-info .location-outer .field--name-field-date {
   display: inline-block;
 }
-/* line 90, ../scss/component/pages/_wids_event_page.scss */
+/* line 111, ../scss/component/pages/_wids_event_page.scss */
 .wids-event-page .page-container .event-info .logos {
   width: 135px;
   margin: 25px 20px 10px 0px;
@@ -10339,11 +10363,11 @@ ul#superfish-user-login li a:hover, ul#superfish-user-login li a:focus {
   height: 70px;
   background: #fff;
 }
-/* line 100, ../scss/component/pages/_wids_event_page.scss */
+/* line 121, ../scss/component/pages/_wids_event_page.scss */
 .wids-event-page .pd0 {
   padding: 0;
 }
-/* line 110, ../scss/component/pages/_wids_event_page.scss */
+/* line 131, ../scss/component/pages/_wids_event_page.scss */
 .wids-event-page .event-open {
   clear: both;
   padding: 15px 0 10px;

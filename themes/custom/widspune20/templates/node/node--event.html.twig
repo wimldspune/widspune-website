@@ -84,9 +84,7 @@
       <div class="row header-content speakers">
         <!-- Objective -->
         <div class="col-md-6">
-{#          <div class="row">#}
-            <h2 class="heading-text">WiDS Pune Presents "{{ label }}"</h2>
-{#          </div>#}
+          <h2 class="heading-text">{{ label }}</h2>
           <p>
             <strong> Objective </strong>:
             {{ content.body }}
@@ -106,10 +104,43 @@
       <!-- Speakers, venue and event sponsors Starts -->
       <div class="col-md-12 event-info">
         <!-- Speakers Starts -->
+        {# Set the variable #}
+        {% set class = 'col-sm-6' %}
+        {% if node.field_event_speaker|length == 1 %}
+          {% set class = 'col-sm-12' %}
+        {% endif %}
+        {% if node.field_event_speaker|length == 2 %}
+          {% set class = 'col-sm-6' %}
+        {% endif %}
+
+        {% if node.field_event_speaker %}
+          <div class="event-speakers">
+            {% for key,speaker in node.field_event_speaker %}
+              <div class="{{ class }} pd0">
+                <div class="row box-shadow">
+                  <div class="col-sm-4 text-center founder-info">
+                    {%if speaker.entity.user_picture.entity.uri.value != "" %}
+                      <img src="{{ file_url(speaker.entity.user_picture.entity.uri.value) }}">
+                    {%endif%}
+                  </div>
+                  <div class="col-sm-8 founder-txt fs14">
+                    <h4>{{ speaker.entity.field_full_name.value }}</h4>
+                    <p>{{ speaker.entity.field_designation.value }}</p>
+                  </div>
+                  <div class="col-sm-12">
+                    <div class="speaker-intro border-bottom clr-white fs14">
+                      {{ speaker.entity.field_bio.value|render|striptags }}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+        {% endif %}
         <!-- Speakers ends -->
 
         <!-- VenueStarts -->
-        <div class="col-md-12 text-center border-bottom location-outer">
+        <div class="col-md-6 text-center border-bottom location-outer">
           <div class="col-sm-6 pd0">
             <span class="icon event-date">img</span>
             <p class="fw600 time">
@@ -134,10 +165,13 @@
         <!-- Venue ends -->
 
         <!-- Event sponsors Starts -->
-{#        <div class="col-sm-6 pd0 event-logos text-right">#}
-{#          <img alt="logo01" class="img-responsive logos" src="http://design2.dcpl.co.in/widspune/images/logo01.png" title="">#}
-{#          <img alt="Logo01" class="img-responsive logos" src="http://design2.dcpl.co.in/widspune/images/logo01.png" title="">#}
-{#        </div>#}
+        <div class="col-sm-6 pd0 event-logos text-right">
+          {% if node.field_event_sponsors %}
+            {% for sponser in node.field_event_sponsors %}
+              <img src="{{ file_url(sponser.entity.field_logo.entity.uri.value) }}" class="img-responsive logos" />
+            {% endfor %}
+          {% endif %}
+        </div>
         <!-- Event sponsors ends -->
       </div>
       <!-- Speakers, venue and event sponsors ends -->
