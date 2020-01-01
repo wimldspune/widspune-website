@@ -27,7 +27,7 @@ class SignUpForm extends FormBase {
    */
   public function buildForm(array $form, FormStateInterface $form_state, $type = NULL) {
 
-    $required = false;
+    $required = TRUE;
     // Full Name
     $form['field_full_name'] = [
       '#type' => 'textfield',
@@ -59,6 +59,7 @@ class SignUpForm extends FormBase {
       '#title' => $this->t('Mobile Number'),
       '#required' => $required,
       '#placeholder' => $this->t('e.g. 1234567890'),
+      '#description' => $this->t('Please enter Indian number without country code.'),
     ];
 
     // WhatsApp Number
@@ -67,6 +68,7 @@ class SignUpForm extends FormBase {
       '#title' => $this->t('WhatsApp Number'),
       '#required' => $required,
       '#placeholder' => $this->t('e.g. 1234567890'),
+      '#description' => $this->t('Please enter Indian number without country code.'),
     ];
 
     // Gender
@@ -86,7 +88,7 @@ class SignUpForm extends FormBase {
       '#type' => 'textfield',
       '#title' => $this->t('Pin Code'),
       '#required' => $required,
-      '#placeholder' => $this->t('e.g. 123 456'),
+      '#placeholder' => $this->t('e.g. 123456'),
     ];
 
     // T-shirt size
@@ -240,13 +242,38 @@ class SignUpForm extends FormBase {
     $value = $form_state->getValue('field_linkedin_profile');
     $val1 = 'https://www.linkedin.com/';
     $val2 = 'http://www.linkedin.com/';
-    if ($value !== '' && !UrlHelper::isValid($value, TRUE)) {
-      $form_state->setErrorByName('field_linkedin_profile', t('The URL %url is not valid.', ['%url' => $value]));
-      if (substr($value, 0, strlen($val1)) !== $val1
+    if ($value !== '') {
+      if (!UrlHelper::isValid($value, TRUE)) {
+        $form_state->setErrorByName('field_linkedin_profile', t('The URL %url is not valid.', ['%url' => $value]));
+      }
+      elseif (substr($value, 0, strlen($val1)) !== $val1
         && substr($value, 0, strlen($val2)) !== $val2) {
         $form_state->setErrorByName('field_linkedin_profile', t('The URL %url is not valid LinkedIn url.', ['%url' => $value]));
       }
+      elseif (strlen($value) < 26) {
+        $form_state->setErrorByName('field_linkedin_profile', t('The URL %url is not valid LinkedIn url.', ['%url' => $value]));
+      }
     }
+
+    $field_mobile_number = $form_state->getValue('field_mobile_number');
+    $mobile_pattern = "/^[6-9][0-9]{9}$/" ;
+    if (!empty($field_mobile_number)
+      && preg_match($mobile_pattern, $field_mobile_number) !== 1) {
+      $form_state->setErrorByName('field_mobile_number', t('Please enter the valid mobile number.'));
+    }
+    $field_whatsapp_number = $form_state->getValue('field_whatsapp_number');
+    if (!empty($field_whatsapp_number)
+      && preg_match($mobile_pattern, $field_whatsapp_number) !== 1) {
+      $form_state->setErrorByName('field_whatsapp_number', t('Please enter the valid number.'));
+    }
+
+    $field_pin_code = $form_state->getValue('field_pin_code');
+    $postal_pin_pattern = "/^[0-9]{6}$/";
+    if (!empty($field_pin_code)
+      && preg_match($postal_pin_pattern, $field_pin_code) !== 1) {
+      $form_state->setErrorByName('field_pin_code', t('Please enter the valid pin code number.'));
+    }
+
   }
 
   /**
