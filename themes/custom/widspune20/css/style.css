@@ -10134,6 +10134,15 @@ ul#superfish-user-login li a:hover, ul#superfish-user-login li a:focus {
   color: #333;
 }
 /* line 45, ../scss/component/pages/_wids_calendar.scss */
+.wids-calendar .calendar-info .calendar-data .rsvp-links span.rsvp-confirmed {
+  padding: 5px 10px;
+  border: 2px solid #00b140;
+  color: #fff;
+  margin: 0 1px 0 0;
+  cursor: default;
+  background: repeating-linear-gradient(-55deg, #00b140, #00b140 5px, grey 10px, grey 10px);
+}
+/* line 67, ../scss/component/pages/_wids_calendar.scss */
 .wids-calendar .calendar-info .calendar-data .rsvp-links .btn-rsvp, .wids-calendar .calendar-info .calendar-data .rsvp-links .btn-Cancel {
   padding: 5px 10px;
   background-color: #00b140;
@@ -10142,7 +10151,7 @@ ul#superfish-user-login li a:hover, ul#superfish-user-login li a:focus {
   outline: none;
   margin: 20px 1px 0 0;
 }
-/* line 52, ../scss/component/pages/_wids_calendar.scss */
+/* line 74, ../scss/component/pages/_wids_calendar.scss */
 .wids-calendar .calendar-info .calendar-data .rsvp-links .btn-rsvp:hover, .wids-calendar .calendar-info .calendar-data .rsvp-links .btn-Cancel:hover {
   background-color: #fff;
   border: 2px solid #00b140;

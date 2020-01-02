@@ -14,7 +14,7 @@ rsvp_confirm.settings:
     _permission: 'administer rsvp_confirm configuration'
 
 rsvp_confirm.view_calendar:
-  path: '/rsvp/calendar'
+  path: '/list/calendar'
   defaults:
     _title: 'WiDS Pune 2020 Calendar'
     _controller: '\Drupal\rsvp_confirm\Controller\CalendarViewController::build'

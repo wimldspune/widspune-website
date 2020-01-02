@@ -42,6 +42,28 @@
         color: #333;
       }
       .rsvp-links {
+        span.rsvp-confirmed {
+          padding: 5px 10px;
+          //background-color: $basetextcolor;
+          border: 2px solid $basetextcolor;
+          color: $lightcolor;
+          margin:0 1px 0 0;
+          cursor: default;
+          //background: repeating-radial-gradient(
+          //    circle,
+          //    $basetextcolor,
+          //    $basetextcolor 10px,
+          //    #C4A66E 10px,
+          //    #C4A66E 15px
+          //);
+          background: repeating-linear-gradient(
+              -55deg,
+              $basetextcolor,
+              $basetextcolor 5px,
+              grey 10px,
+              grey 10px
+          );
+        }
         .btn-rsvp, .btn-Cancel {
           padding: 5px 10px;
           background-color: $basetextcolor;
