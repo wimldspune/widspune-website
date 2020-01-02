@@ -73,8 +73,6 @@ class CalendarViewController extends ControllerBase {
    * @throws \Drupal\Component\Plugin\Exception\PluginNotFoundException
    */
   private function getRsvpLinks($node, $user) {
-    $link = Link::fromTextAndUrl('rsvp', Url::fromRoute('entity.node.canonical',
-      ['node' => 1]));
     $options = [];
     $options['attributes']['class'][] = 'btn btn-rsvp';
     $options['attributes']['target'] = '_blank';
@@ -94,6 +92,11 @@ class CalendarViewController extends ControllerBase {
         $cancel_class = '';
       }
     }
+    if ($user->isAnonymous()) {
+      $links['rsvp'] = Link::fromTextAndUrl('RSVP', Url::fromUserInput('/user/login?destination=/rsvp/confirm/' . $node->id(), $options))->toString();
+      $cancel_class = 'disabled';
+    }
+
     $cancel_options = [];
     $cancel_options['attributes']['class'][] = 'btn btn-rsvp';
     $cancel_options['attributes']['class'][] = $cancel_class;
